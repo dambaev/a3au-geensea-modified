@@ -1,0 +1,4 @@
+_this spawn A3A_fnc_initClient;
+call ADDON_fnc_getSoftTargets_patch;
+call ADDON_fnc_getTargetsAT_patch;
+call ADDON_fnc_controlHCSquad_patch;
