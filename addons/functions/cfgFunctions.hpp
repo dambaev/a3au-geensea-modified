@@ -7,7 +7,7 @@ class CfgFunctions
         class PL_fix
         {
             file = "addons\functions\PL_fix";
-            class pl_add_to_hc_execute_patch {};
+            class pl_add_to_hc_execute_patch { postInit = 1; };
         };
         class DDT_fix
         {
