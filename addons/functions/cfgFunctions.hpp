@@ -13,7 +13,7 @@ class CfgFunctions
             class getSoftTargets_patch { postInit = 1; };
             class autoEquipDronesGroup { };
             class autoEquipDronesIteration { };
-            class autoEquipDrones { postInit = 1; };
+            class autoEquipDrones { };
         };
         class REINF
         {
