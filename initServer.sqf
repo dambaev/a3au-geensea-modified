@@ -1,3 +1,3 @@
 call A3A_fnc_initServer;
 
-test_exist = "working";
+call ADDON_fnc_autoEquipDrones;
