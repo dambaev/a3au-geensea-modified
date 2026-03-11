@@ -81,6 +81,10 @@ _control_unit_id = _doll_next addAction [localize "STR_control_unit_hint_header"
     ADDON_fnc_controlHCUnit];
 _doll_next setVariable [ "ADDON_control_unit_action_id", _control_unit_id, true];
 
+{
+  (hcLeader _x) hcRemoveGroup _x;
+  _doll_next hcSetGroup [_x];
+} forEach (hcAllGroups _doll);
 selectPlayer _doll_next;
 (units group _doll_next) joinsilent group _doll_next;
 group _doll_next selectLeader _doll_next;

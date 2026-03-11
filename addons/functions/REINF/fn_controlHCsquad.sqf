@@ -35,6 +35,10 @@ _eh2 = _unit addEventHandler ["Killed", {
     ] call A3A_fnc_customHint;
   }];
 _unit setVariable ["Killed_eh", _eh2, true];
+{
+  (hcLeader _x) hcRemoveGroup _x;
+  _unit hcSetGroup [_x];
+} forEach (hcAllGroups player);
 selectPlayer _unit;
 
 _return_control_id = _unit addAction

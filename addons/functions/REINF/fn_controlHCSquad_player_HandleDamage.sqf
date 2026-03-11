@@ -24,6 +24,11 @@ if ( isNil { _doll;}) exitWith {
 };
 _original_player setVariable [ "owns", nil, true];
 
+{
+  (hcLeader _x) hcRemoveGroup _x;
+  _original_player hcSetGroup [_x];
+} forEach (hcAllGroups _doll);
+
 _killed_eh = _doll getVariable [ "Killed_eh", nil];
 if (not (isNil { _killed_eh; })) then {
   _doll removeEventHandler ["Killed",_killed_eh];
