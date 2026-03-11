@@ -4,6 +4,11 @@ class CfgFunctions
     class ADDON
     {
         tag = "ADDON";
+        class PL_fix
+        {
+            file = "addons\functions\PL_fix";
+            class pl_add_to_hc_execute_patch {};
+        };
         class DDT_fix
         {
             file = "addons\functions\DDT_fix";
