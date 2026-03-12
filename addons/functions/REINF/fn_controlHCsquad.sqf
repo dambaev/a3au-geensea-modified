@@ -18,8 +18,17 @@ _wp = _groupX addwaypoint [getpos _unit,0];
 hcShowBar false;
 hcShowBar true;
 
-_unit setVariable ["owner",player,true];
-player setVariable ["owns",_unit,true];
+{
+  _original_player = player getVariable [ "owner", player];
+  _player_is_doll_already = player != _original_player;
+
+  if _player_is_doll_already then {
+    call ADDON_fnc_controlHCSquad_player_HandleDamage;
+  };
+};
+
+_unit setVariable ["owner", player,true];
+_original_player setVariable ["owns",_unit,true];
 
 _eh1 = player addEventHandler ["HandleDamage" , {
     call ADDON_fnc_controlHCSquad_player_HandleDamage;
