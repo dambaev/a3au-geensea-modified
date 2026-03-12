@@ -19,8 +19,20 @@ _selected_units = (groupSelectedUnits player) select
   {[_x] call A3A_fnc_canFight; };
 _iterations = 0;
 while { _iterations < 10 && count _selected_units < 1} do {
-  _selected_units = (groupSelectedUnits player) select
-    {[_x] call A3A_fnc_canFight; };
+  if (count (groupSelectedUnits player) > 0 ) then {
+    _selected_units = (groupSelectedUnits player) select
+      {[_x] call A3A_fnc_canFight; };
+  };
+  if (count (hcSelected player) > 0 ) then {
+    {
+      {
+        if ([_x] call A3A_fnc_canFight) then {
+          _selected_units pushBack _x;
+        };
+      } forEach (units _x);
+    } forEach (hcSelected player);
+  };
+
   _iterations = _iterations + 1;
   sleep 1;
 };
