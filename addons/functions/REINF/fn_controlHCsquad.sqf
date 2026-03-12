@@ -28,7 +28,7 @@ hcShowBar true;
 };
 
 _unit setVariable ["owner", player,true];
-_original_player setVariable ["owns",_unit,true];
+player setVariable ["owns",_unit,true];
 
 _eh1 = player addEventHandler ["HandleDamage" , {
     call ADDON_fnc_controlHCSquad_player_HandleDamage;
