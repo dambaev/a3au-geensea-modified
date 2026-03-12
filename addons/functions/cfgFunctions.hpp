@@ -27,6 +27,8 @@ class CfgFunctions
             class controlHCSquad_player_HandleDamage {};
             class controlHCUnit {};
             class controlHCSquad_patch { postInit = 1; };
+            class controlunit {};
+            class controlunit_patch { postInit = 1; };
         };
         class Events
         { //these two functions are used to demonstrate use of events

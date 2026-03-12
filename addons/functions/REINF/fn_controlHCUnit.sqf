@@ -98,7 +98,20 @@ _doll_next setVariable [ "ADDON_control_unit_action_id", _control_unit_id, true]
   _doll_next hcSetGroup [_x];
 } forEach (hcAllGroups _doll);
 selectPlayer _doll_next;
-(units group _doll_next) joinsilent group _doll_next;
 group _doll_next selectLeader _doll_next;
+
+//otherwise unit will lose his identity
+[_unit, createHashMapFromArray [["face", _face], ["speaker", _speaker]]] call A3A_fnc_setIdentity;
+
+if (fatigueEnabled isEqualTo false) then {
+	_unit enableFatigue false;
+};
+
+if (staminaEnabled isEqualTo false) then {
+	_unit enableStamina false;
+};
+
+private _newWeaponSway = swayEnabled / 100;
+_unit setCustomAimCoef _newWeaponSway;
 
 
