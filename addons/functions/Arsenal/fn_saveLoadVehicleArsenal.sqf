@@ -150,8 +150,8 @@ boxX addAction
         if not _is_object_can_be_used exitWith {};
 
         // save arsenal
-        _original_player = player getVariable ["owner", player];
-        [ _objectSelected, _original_player] call ADDON_fnc_store_object_cargo_in_object;
+        [ _objectSelected, profileNamespace] call ADDON_fnc_store_object_cargo_in_object;
+        saveProfileNamespace;
 			};
 			private _conditionActive = {
 				params ["_object"];
@@ -200,8 +200,7 @@ boxX addAction
         if not _is_object_can_be_used exitWith {};
 
         // save arsenal
-        _original_player = player getVariable ["owner", player];
-        [ _objectSelected, _original_player] call ADDON_fnc_set_object_cargo_from_object;
+        [ _objectSelected, profileNamespace] call ADDON_fnc_set_object_cargo_from_object;
 			};
 			private _conditionActive = {
 				params ["_object"];
