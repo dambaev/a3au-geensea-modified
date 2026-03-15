@@ -100,7 +100,7 @@ ADDON_fnc_store_object_cargo_in_object = {
     _items_counts = [_src] call _get_cargo;
     _all_items_counts pushBack [_class, _items_counts];
   } forEach ( ADDON_items_cargos);
-  _dst setVariable [ "ADDON_fnc_saveLoadVehicleArsenal", _all_items_counts, true];
+  _dst setVariable [ "ADDON_fnc_saveLoadVehicleArsenal", _all_items_counts];
   hint "cargo preset saved";
 };
 
