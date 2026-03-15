@@ -4,6 +4,11 @@ class CfgFunctions
     class ADDON
     {
         tag = "ADDON";
+        class Arsenal
+        {
+            file = "addons\functions\Arsenal";
+            class saveLoadVehicleArsenal { };
+        };
         class PL_fix
         {
             file = "addons\functions\PL_fix";

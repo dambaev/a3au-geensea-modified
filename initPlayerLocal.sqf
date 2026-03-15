@@ -4,3 +4,4 @@ call ADDON_fnc_getTargetsAT_patch;
 call ADDON_fnc_controlunit_patch;
 call ADDON_fnc_controlHCSquad_patch;
 call ADDON_fnc_pl_add_to_hc_execute_patch;
+call ADDON_fnc_saveLoadVehicleArsenal;

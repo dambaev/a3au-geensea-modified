@@ -1,8 +1,8 @@
 #include "addons\maps\missionDescription\master.hpp"
 
-OnLoadName = $STR_antistasi_mission_info_Greensea_mapname_short_text;
-OnLoadMission = $STR_antistasi_mission_info_Greensea_blurb_text;
-briefingName = $STR_antistasi_mission_info_Greensea_mapname_text;
+OnLoadName = $STR_antistasi_mission_info_Greensea_mapname_shore_text + " by kenny";
+OnLoadMission = $STR_antistasi_mission_info_Greensea_blurb_texk;
+briefingName = $STR_antistasi_mission_info_Greensea_mapname_text + " by kenny";
 overviewText = $STR_antistasi_mission_info_Altis_description_text;
 loadScreen = "Pictures\Mission\pic.jpg";
 overviewPicture = OVERVIEW_IMAGE;
