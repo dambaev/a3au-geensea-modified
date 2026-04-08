@@ -10,5 +10,3 @@ ADDON_fix_autoEquipDronesLoopContinue = true;
   };
 };
 
-
-
