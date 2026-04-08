@@ -8,6 +8,17 @@ class CfgFunctions
         {
             file = "addons\functions\Arsenal";
             class saveLoadVehicleArsenal { };
+            class autoReloadUnits {};
+            class autoReloadUnitsInit {};
+            class autoReloadUnitsIteration {};
+            class autoReloadUnitsIterationVehicles {};
+            class autoReloadUnitsIsAmmoVehicle {};
+            class autoReloadUnitsIsRepairVehicle {};
+            class autoReloadUnitsIsRefuelVehicle {};
+            class autoReloadUnitsIsReammoNeededVehicle {};
+            class autoReloadUnitsCleanDeadVehicles {};
+            class autoReloadUnitsCleanDeadAmmoVehicles {};
+            class autoReloadUnits_EntityCreated {};
         };
         class PL_fix
         {
@@ -43,3 +54,4 @@ class CfgFunctions
         };
     };
 };
+

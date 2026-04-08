@@ -3,3 +3,4 @@ call A3A_fnc_initServer;
 call ADDON_fnc_getSoftTargets_patch;
 call ADDON_fnc_getTargetsAT_patch;
 call ADDON_fnc_autoEquipDrones;
+call ADDON_fnc_autoReloadUnits;

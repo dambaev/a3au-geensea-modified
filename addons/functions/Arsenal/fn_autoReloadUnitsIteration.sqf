@@ -1,0 +1,6 @@
+call ADDON_fnc_autoReloadUnitsCleanDeadAmmoVehicles;
+call ADDON_fnc_autoReloadUnitsCleanDeadVehicles;
+
+call ADDON_fnc_autoReloadUnitsIterationVehicles;
+
+
