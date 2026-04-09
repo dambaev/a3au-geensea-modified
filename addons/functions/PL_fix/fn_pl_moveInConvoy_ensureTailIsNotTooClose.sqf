@@ -38,7 +38,7 @@ _ideal_distance = _tail getVariable
 if( _leader_distance <= _ideal_distance ) then {
   if( count waypoints _tail > 0) then {
     [_tail, currentWaypoint _tail, getPosASL _tail_unit] remoteExec
-      [ "ADDON_fnc_pl_moveInConvoy_setWaypointPos", _tail];
+      [ "ADDON_fnc_pl_moveInConvoy_setWaypointPos", 0];
   	//[_tail, currentWaypoint _tail] setWaypointPosition
     //  [getPosASL _tail_unit, -1];
     systemChat (_name + ": " + str _tail + " stopping");
