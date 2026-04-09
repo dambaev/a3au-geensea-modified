@@ -29,8 +29,12 @@ _tail_latest_waypoint_leader_idx = _tail getVariable
   ];
 
 if ( _tail_latest_waypoint_leader_idx != _prev_waypoint) then {
+  _target = hcLeader _tail;
+  if( isNull _target) then {
+    _target = _tail;
+  };
   [_tail, _prev_waypoint_pos] remoteExec
-    [ "ADDON_fnc_pl_moveInConvoy_addWaypointPos", 0];
+    [ "ADDON_fnc_pl_moveInConvoy_addWaypointPos", _target];
   // _wp = _tail addWaypoint [ _prev_waypoint_pos, -1 ];
   // _wp setWaypointType "MOVE";
   _tail setVariable
