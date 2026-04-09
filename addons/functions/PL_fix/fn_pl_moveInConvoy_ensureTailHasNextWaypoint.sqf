@@ -16,9 +16,8 @@ if (isNull _tail) exitWith { false; };
 
 _tail_leader = _tail getVariable ["ADDON_fnc_pl_moveInConvoy_leader", objNull];
 if( _tail_leader != _leader) exitWith { false; };
-if( not isNull hcLeader _tail && (hcLeader _tail) != (leader _leader)) then {
-  (hcLeader _tail) hcRemoveGroup _tail;
-  (leader _leader) hcSetGroup [ _tail];
+if( not isNull hcLeader _tail && (hcLeader _tail) != (leader _leader)) exitWith {
+  false;
 };
 
 _prev_waypoint = currentWaypoint _leader - 1;
