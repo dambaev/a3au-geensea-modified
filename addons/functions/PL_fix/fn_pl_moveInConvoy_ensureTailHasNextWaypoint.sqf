@@ -10,7 +10,7 @@ if( not alive _leader_unit) exitWith { false; };
 
 if( currentWaypoint _leader >= count waypoints _leader ) exitWith { true; };
 if( currentWaypoint _leader < 1 ) exitWith { true; };
-if( speed _leader < 2 ) exitWith { true; };
+if( speed (vehicle _leader_unit) < 2 ) exitWith { true; };
 
 _tail = _leader getVariable ["ADDON_fnc_pl_moveInConvoy_tail", objNull];
 if (isNull _tail) exitWith { false; };
