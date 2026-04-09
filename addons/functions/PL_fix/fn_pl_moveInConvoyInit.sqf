@@ -6,7 +6,7 @@ ADDON_fnc_pl_moveInConvoy_iteration_delay = 1;
 ADDON_fnc_pl_moveInConvoy_loop_continue = true;
 
 ADDON_fnc_pl_moveInConvoy_leaders = [];
-publicVarible "ADDON_fnc_pl_moveInConvoy_leaders";
+publicVariable "ADDON_fnc_pl_moveInConvoy_leaders";
 
 [] spawn {
   while {ADDON_fnc_pl_moveInConvoy_loop_continue} do {
