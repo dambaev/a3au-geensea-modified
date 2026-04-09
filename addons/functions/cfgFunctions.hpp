@@ -19,6 +19,7 @@ class CfgFunctions
             class autoReloadUnitsCleanDeadVehicles {};
             class autoReloadUnitsCleanDeadAmmoVehicles {};
             class autoReloadUnits_EntityCreated {};
+            class autoReloadUnits_Fired {};
         };
         class PL_fix
         {

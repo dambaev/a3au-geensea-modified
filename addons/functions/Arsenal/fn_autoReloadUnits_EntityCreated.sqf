@@ -13,6 +13,12 @@ if( not alive _entity) exitWith {
 
 _is_ammo = [_entity ] call ADDON_fnc_autoReloadUnitsIsAmmoVehicle;
 
+_entity addEventHandler ["Fired", {
+  params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
+  [_unit, _weapon, _muzzle, _mode, _ammo, _magazine, _projectile, _gunner]
+    call ADDON_fnc_autoReloadUnits_Fired;
+}];
+
 ADDON_fnc_autoReloadUnits_vehicles pushBackUnique _entity;
 
 if( _is_ammo) exitWith {
