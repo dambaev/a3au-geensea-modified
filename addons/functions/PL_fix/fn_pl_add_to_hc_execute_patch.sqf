@@ -29,11 +29,13 @@ pl_add_to_hc_execute = {
 
       (hcLeader _group) hcRemoveGroup _group;
       player hcSetGroup [_group];
+      _group setVariable [ "ADDON_fnc_pl_moveInConvoy_leader", objNull];
       [_group] spawn pl_set_up_ai;
     } else {
       {
         (hcLeader _x) hcRemoveGroup _x;
         (leader _group) hcSetGroup [_x];
+        _x setVariable [ "ADDON_fnc_pl_moveInConvoy_leader", objNull];
       } forEach pl_add_group_to_hc_selected;
       pl_add_group_to_hc_selected = [];
     };

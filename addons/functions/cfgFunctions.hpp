@@ -25,6 +25,13 @@ class CfgFunctions
         {
             file = "addons\functions\PL_fix";
             class pl_add_to_hc_execute_patch { postInit = 1; };
+            class pl_spawn_getOut_vehicle_patch { postInit = 1; };
+            class pl_moveInConvoy { };
+            class pl_moveInConvoyInit { };
+            class pl_moveInConvoyIteration { };
+            class pl_moveInConvoy_ensureTailIsNotTooFarAway {};
+            class pl_moveInConvoy_ensureTailHasNextWaypoint {};
+            class pl_moveInConvoy_connectTailToLeader {};
         };
         class DDT_fix
         {

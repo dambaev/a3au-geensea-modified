@@ -4,3 +4,5 @@ call ADDON_fnc_getSoftTargets_patch;
 call ADDON_fnc_getTargetsAT_patch;
 call ADDON_fnc_autoEquipDrones;
 call ADDON_fnc_autoReloadUnits;
+call ADDON_fnc_pl_add_to_hc_execute_patch;
+call ADDON_fnc_pl_spawn_getOut_vehicle_patch;
