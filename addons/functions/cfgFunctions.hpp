@@ -29,6 +29,7 @@ class CfgFunctions
             class pl_moveInConvoy { };
             class pl_moveInConvoyInit { };
             class pl_moveInConvoyIteration { };
+            class pl_moveInConvoy_ensureTailIsNotTooClose {};
             class pl_moveInConvoy_ensureTailIsNotTooFarAway {};
             class pl_moveInConvoy_ensureTailHasNextWaypoint {};
             class pl_moveInConvoy_connectTailToLeader {};

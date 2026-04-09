@@ -1,6 +1,6 @@
 _supply_distance_meters = 500;
 _resupply_tick = 1;
-_resupply_tick_to_rearm = 60; // 60 secs, 1 minute
+_resupply_tick_to_rearm = 6; // 60 secs, 1 minute
 
 ADDON_fnc_autoReloadUnits_update_vehicle_supply_status = {
   params [ "_vehicle"];

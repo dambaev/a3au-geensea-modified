@@ -4,23 +4,17 @@ ADDON_fnc_pl_moveInConvoyIterationPerLeader = {
   _tail = _leader getVariable ["ADDON_fnc_pl_moveInConvoy_tail", objNull];
   if (isNull _tail) exitWith { false; };
   _tail_leader = _tail getVariable ["ADDON_fnc_pl_moveInConvoy_leader", objNull];
-  if( _tail_leader != _leader) exitWith { false; };
-  if( not isNull hcLeader _tail && (hcLeader _tail) != (leader _leader)) exitWith {
+  if( isNull _tail_leader || _tail_leader != _leader) exitWith { false; };
+  if( isNull hcLeader _tail || (hcLeader _tail) != (leader _leader)) exitWith {
     false;
   };
 
   _leader_waypoints = waypoints _leader;
   _tail_waypoints = waypoints _tail;
-  if( count _leader_waypoints == currentWaypoint _leader) then {
-    if( count _tail_waypoints == currentWaypoint _tail) then {
-      // [_tail, _leader] call ADDON_fnc_pl_moveInConvoy_ensureTailIsNotTooFarAway;
-      true;
-    }else{
-      true;
-    };
-  } else {
-    [_tail, _leader] call ADDON_fnc_pl_moveInConvoy_ensureTailHasNextWaypoint;
-  };
+  _isStillLeader =
+    [_tail, _leader] call ADDON_fnc_pl_moveInConvoy_ensureTailIsNotTooClose;
+  if (not _isStillLeader) exitWith { _isStillLeader; };
+  [_tail, _leader] call ADDON_fnc_pl_moveInConvoy_ensureTailHasNextWaypoint;
 };
 
 {

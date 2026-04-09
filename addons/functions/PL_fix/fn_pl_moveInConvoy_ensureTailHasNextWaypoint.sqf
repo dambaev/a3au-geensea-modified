@@ -8,19 +8,18 @@ if( isNull _leader_unit) then {
 };
 if( not alive _leader_unit) exitWith { false; };
 
-if( currentWaypoint _leader >= count waypoints _leader ) exitWith { true; };
-if( currentWaypoint _leader < 1 ) exitWith { true; };
-
 _tail = _leader getVariable ["ADDON_fnc_pl_moveInConvoy_tail", objNull];
 if (isNull _tail) exitWith { false; };
 
 _tail_leader = _tail getVariable ["ADDON_fnc_pl_moveInConvoy_leader", objNull];
 if( _tail_leader != _leader) exitWith { false; };
-if( not isNull hcLeader _tail && (hcLeader _tail) != (leader _leader)) exitWith {
+if( isNull hcLeader _tail || (hcLeader _tail) != (leader _leader)) exitWith {
   false;
 };
 
-_prev_waypoint = currentWaypoint _leader - 1;
+if (currentWaypoint _leader < 2) exitWith { true; };
+
+_prev_waypoint = currentWaypoint _leader - 2;
 
 _prev_waypoint_pos = waypointPosition [ _leader, _prev_waypoint];
 
