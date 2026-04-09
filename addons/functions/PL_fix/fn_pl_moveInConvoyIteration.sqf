@@ -14,7 +14,8 @@ ADDON_fnc_pl_moveInConvoyIterationPerLeader = {
   _tail_waypoints = waypoints _tail;
   if( count _leader_waypoints == currentWaypoint _leader) then {
     if( count _tail_waypoints == currentWaypoint _tail) then {
-      [_tail, _leader] call ADDON_fnc_pl_moveInConvoy_ensureTailIsNotTooFarAway;
+      // [_tail, _leader] call ADDON_fnc_pl_moveInConvoy_ensureTailIsNotTooFarAway;
+      true;
     }else{
       true;
     };
