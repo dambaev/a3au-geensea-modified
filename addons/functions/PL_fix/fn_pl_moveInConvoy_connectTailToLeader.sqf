@@ -26,4 +26,8 @@ _tail setVariable [ "ADDON_fnc_pl_moveInConvoy_original_leader"
 (hcLeader _tail) hcRemoveGroup _tail;
 (leader _leader) hcSetGroup [ _tail];
 
+ADDON_fnc_pl_moveInConvoy_leaders = missionNamespace getVariable
+  [ "ADDON_fnc_pl_moveInConvoy_leaders", []];
 ADDON_fnc_pl_moveInConvoy_leaders pushBack _leader;
+missionNamespace setVariable [ "ADDON_fnc_pl_moveInConvoy_leaders",
+  ADDON_fnc_pl_moveInConvoy_leaders];

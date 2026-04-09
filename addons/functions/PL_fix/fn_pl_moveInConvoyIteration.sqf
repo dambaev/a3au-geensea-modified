@@ -23,6 +23,8 @@ ADDON_fnc_pl_moveInConvoyIterationPerLeader = {
   };
 };
 
+ADDON_fnc_pl_moveInConvoy_leaders = missionNamespace getVariable
+  [ "ADDON_fnc_pl_moveInConvoy_leaders", []];
 {
   _isStillLeader = [ _x ] call ADDON_fnc_pl_moveInConvoyIterationPerLeader;
   if( not _isStillLeader) then {
@@ -52,5 +54,5 @@ ADDON_fnc_pl_moveInConvoyIterationPerLeader = {
 } forEach ADDON_fnc_pl_moveInConvoy_leaders;
 
 ADDON_fnc_pl_moveInConvoy_leaders = ADDON_fnc_pl_moveInConvoy_leaders - [objNull];
-
+missionNamespace setVariable [ "ADDON_fnc_pl_moveInConvoy_leaders", ADDON_fnc_pl_moveInConvoy_leaders];
 
