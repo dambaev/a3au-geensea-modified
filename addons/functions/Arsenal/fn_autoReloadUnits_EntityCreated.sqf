@@ -4,21 +4,19 @@ _name = "ADDON_fnc_autoReloadUnits_EntityCreated";
 _is_vehicle = _entity isKindOf "AllVehicles";
 
 if( not _is_vehicle) exitWith {
-  systemChat ( _name + ": not a vehicle");
-  false;
+  1;
 };
 
 if( not alive _entity) exitWith {
-  systemChat( _name + ": not alive");
-  false;
+  2;
 };
 
 _is_ammo = [_entity ] call ADDON_fnc_autoReloadUnitsIsAmmoVehicle;
 
-if( not _is_ammo) exitWith {
-  ADDON_fnc_autoReloadUnits_vehicles pushBackUnique _entity;
-  true;
-}else {
+ADDON_fnc_autoReloadUnits_vehicles pushBackUnique _entity;
+
+if( _is_ammo) exitWith {
   ADDON_fnc_autoReloadUnits_ammo_vehicles pushBackUnique _entity;
-  true;
 };
+
+0;

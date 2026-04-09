@@ -8,5 +8,5 @@ addMissionEventHandler ["EntityCreated", {
 
 {
   [ _x ] call ADDON_fnc_autoReloadUnits_EntityCreated;
-} forEach allVehicles;
+} forEach vehicles;
 
