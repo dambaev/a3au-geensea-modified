@@ -20,5 +20,5 @@ if( not _is_ammo) exitWith {
   false;
 };
 
-ADDON_fnc_autoReloadUnits_ammo_vehicles pushBaskUnique _entity;
+ADDON_fnc_autoReloadUnits_ammo_vehicles pushBackUnique _entity;
 true;
