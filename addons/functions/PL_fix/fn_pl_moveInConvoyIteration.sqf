@@ -23,8 +23,6 @@ ADDON_fnc_pl_moveInConvoyIterationPerLeader = {
   };
 };
 
-_ADDON_fnc_pl_moveInConvoy_leaders = missionNamespace getVariable
-  [ "ADDON_fnc_pl_moveInConvoy_leaders", []];
 {
   _isStillLeader = [ _x ] call ADDON_fnc_pl_moveInConvoyIterationPerLeader;
   if( not _isStillLeader) then {
@@ -48,12 +46,11 @@ _ADDON_fnc_pl_moveInConvoy_leaders = missionNamespace getVariable
         ];
     };
      _x setVariable [ "ADDON_fnc_pl_moveInConvoy_tail", objNull ];
-    _ADDON_fnc_pl_moveInConvoy_leaders set [ _forEachIndex, objNull];
+    ADDON_fnc_pl_moveInConvoy_leaders set [ _forEachIndex, objNull];
     systemChat (str _x + " removed from convoy leaders");
   };
-} forEach _ADDON_fnc_pl_moveInConvoy_leaders;
+} forEach ADDON_fnc_pl_moveInConvoy_leaders;
 
-_ADDON_fnc_pl_moveInConvoy_leaders = _ADDON_fnc_pl_moveInConvoy_leaders - [objNull];
-missionNamespace setVariable [ "ADDON_fnc_pl_moveInConvoy_leaders"
-  , _ADDON_fnc_pl_moveInConvoy_leaders];
+ADDON_fnc_pl_moveInConvoy_leaders = ADDON_fnc_pl_moveInConvoy_leaders - [objNull];
+
 

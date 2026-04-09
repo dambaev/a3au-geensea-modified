@@ -30,4 +30,7 @@ _convoy_leader = _hc_selected select 0;
 
 systemChat ("convoy leader: " + str _convoy_leader + ", convoy tail: " + str _convoy_tail);
 
-[ _convoy_tail, _convoy_leader] call ADDON_fnc_pl_moveInConvoy_connectTailToLeader;
+[ _convoy_tail, _convoy_leader] remoteExec
+  [ "ADDON_fnc_pl_moveInConvoy_connectTailToLeader"
+  , 2
+  ];

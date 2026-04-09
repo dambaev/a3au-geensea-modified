@@ -5,7 +5,7 @@ ADDON_fnc_pl_moveInConvoy_iterations_count = 0;
 ADDON_fnc_pl_moveInConvoy_iteration_delay = 1;
 ADDON_fnc_pl_moveInConvoy_loop_continue = true;
 
-missionNamespace setVariable [ "ADDON_fnc_pl_moveInConvoy_leaders", []];
+ADDON_fnc_pl_moveInConvoy_leaders = [];
 
 [] spawn {
   while {ADDON_fnc_pl_moveInConvoy_loop_continue} do {
