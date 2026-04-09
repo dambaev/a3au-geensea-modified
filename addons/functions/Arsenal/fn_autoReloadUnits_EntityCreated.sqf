@@ -16,9 +16,9 @@ if( not alive _entity) exitWith {
 _is_ammo = [_entity ] call ADDON_fnc_autoReloadUnitsIsAmmoVehicle;
 
 if( not _is_ammo) exitWith {
-  systemChat( _name + ": not an ammo vehicle");
-  false;
+  ADDON_fnc_autoReloadUnits_vehicles pushBackUnique _entity;
+  true;
+}else {
+  ADDON_fnc_autoReloadUnits_ammo_vehicles pushBackUnique _entity;
+  true;
 };
-
-ADDON_fnc_autoReloadUnits_ammo_vehicles pushBackUnique _entity;
-true;
