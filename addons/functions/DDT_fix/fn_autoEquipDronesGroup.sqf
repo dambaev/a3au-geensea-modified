@@ -1,6 +1,8 @@
 params [ "_group"];
 if (isNil "DDT_fnc_getTargetsAT") exitWith {};//safeguard to block running on none DDT missions
 
+_name = "ADDON_fnc_autoEquipDronesGroup";
+
 _opfor_drones =
   [ "O_Crocus_AP_Bag"
   , "O_Crocus_AT_Bag"
@@ -21,13 +23,16 @@ _bluefor_drones =
   ];
 _no_drones = true;
 _no_vehicle = true;
+if( isNull _group) exitWith {
+  systemChat( _name + ": _group = null");
+};
 _side = side _group;
 _units_count = count (units _group);
 _is_allowed = true;
 _side_drones = switch (_side) do
   {
-    case bluefor: { _bluefor_drones };
-    case opfor: { _opfor_drones };
+    case WEST: { _bluefor_drones };
+    case EAST: { _opfor_drones };
     default { _ind_drones };
   };
 _chosen_unit = _group getVariable [ "_chosen_dron_operator", objNull];
