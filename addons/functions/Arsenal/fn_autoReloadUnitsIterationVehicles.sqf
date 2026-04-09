@@ -65,6 +65,9 @@ _resupply_tick_to_rearm = 18; // 180 secs, 3 minutes
         _vehicle setVehicleAmmo 1;
         _new_vehicle_resupply_tick = 0;
       };
+      if( _new_vehicle_resupply_tick < _vehicle_resupply_tick) then {
+        _new_vehicle_resupply_tick = _vehicle_resupply_tick;
+      };
       _vehicle setVariable
         [ "ADDON_autoReloadUnits_resupply_tick"
         , _new_vehicle_resupply_tick
