@@ -14,9 +14,11 @@ if (not (isNil {_HandleDamage_eh;})) then {
   _original_player setVariable [ "HandleDamage_eh", nil, true];
 };
 
-selectPlayer _original_player;
-(units group _original_player) joinsilent group _original_player;
-group _original_player selectLeader _original_player;
+if( not isNull _original_player && alive _original_player) then {
+  selectPlayer _original_player;
+  (units group _original_player) joinsilent group _original_player;
+  group _original_player selectLeader _original_player;
+};
 
 _doll = _original_player getVariable [ "owns", nil];
 if ( isNil { _doll;}) exitWith {
