@@ -33,6 +33,8 @@ class CfgFunctions
             class pl_moveInConvoy_ensureTailIsNotTooFarAway {};
             class pl_moveInConvoy_ensureTailHasNextWaypoint {};
             class pl_moveInConvoy_connectTailToLeader {};
+            class pl_moveInConvoy_setWaypointPos {};
+            class pl_moveInConvoy_addWaypointPos {};
         };
         class DDT_fix
         {
