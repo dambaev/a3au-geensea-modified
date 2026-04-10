@@ -1,8 +1,10 @@
 ADDON_fnc_pl_moveInConvoyIterationPerLeader = {
   params [ "_leader"];
   if( isNull _leader) exitWith { false; };
+  if( not alive (leader _leader)) exitWith { false; };
   _tail = _leader getVariable ["ADDON_fnc_pl_moveInConvoy_tail", objNull];
   if (isNull _tail) exitWith { false; };
+  if (not alive (leader _tail)) exitWith { false; };
   _tail_leader = _tail getVariable ["ADDON_fnc_pl_moveInConvoy_leader", objNull];
   if( isNull _tail_leader || _tail_leader != _leader) exitWith { false; };
 
@@ -44,4 +46,4 @@ ADDON_fnc_pl_moveInConvoyIterationPerLeader = {
 
 ADDON_fnc_pl_moveInConvoy_leaders = ADDON_fnc_pl_moveInConvoy_leaders - [objNull];
 
-
+true;
