@@ -6,7 +6,11 @@ ADDON_fnc_autoReloadUnits_update_vehicle_medical_status = {
   params [ "_group"];
 
   _new_medical_distance = [];
-  _group_crew = leader _group;
+  _group_alive = (units _group) select { alive _x; };
+  if( count _group_alive < 1) exitWith {
+    false;
+  };
+  _group_crew = _group_alive select 0;
   _group_side = side _group_crew;
 
   _group_medical_distance = _group getVariable
@@ -15,7 +19,7 @@ ADDON_fnc_autoReloadUnits_update_vehicle_medical_status = {
     _medical = _group_medical_distance select 0;
     if( not isNull _medical) then {
       _medical_crew = driver _medical;
-      _distance = _group distanceSqr _medical;
+      _distance = _group_crew distanceSqr _medical;
       if ( alive _medical
          && not isNull _medical_crew
          && side _medical_crew == _group_side
