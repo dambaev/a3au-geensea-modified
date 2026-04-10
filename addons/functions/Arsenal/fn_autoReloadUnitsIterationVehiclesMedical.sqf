@@ -76,8 +76,7 @@ ADDON_fnc_autoReloadUnits_search_vehicle_medical = {
 
 ADDON_fnc_autoReloadUnits_update_vehicle_medical_tick = {
   params [ "_group"];
-  _is_group_needs_medical =
-    count ((units _group) select { damage _x > 0.1; } ) > 0;
+  _is_group_needs_medical = true;
   if( not _is_group_needs_medical) then {
     _group setVariable [ "ADDON_autoReloadUnits_medical_tick" , 0 ];
   }else {
