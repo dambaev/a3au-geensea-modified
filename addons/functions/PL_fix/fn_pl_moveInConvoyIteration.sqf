@@ -5,9 +5,6 @@ ADDON_fnc_pl_moveInConvoyIterationPerLeader = {
   if (isNull _tail) exitWith { false; };
   _tail_leader = _tail getVariable ["ADDON_fnc_pl_moveInConvoy_leader", objNull];
   if( isNull _tail_leader || _tail_leader != _leader) exitWith { false; };
-  if( isNull hcLeader _tail || (hcLeader _tail) != (leader _leader)) exitWith {
-    false;
-  };
 
   _leader_waypoints = waypoints _leader;
   _tail_waypoints = waypoints _tail;
