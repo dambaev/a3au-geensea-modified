@@ -36,6 +36,7 @@ ADDON_fnc_autoReloadUnits_update_vehicle_repair_status = {
     };
   };
   _vehicle setVariable ["ADDON_autoReloadUnits_repair_distance", _new_repair_distance];
+  true;
 };
 
 ADDON_fnc_autoReloadUnits_search_vehicle_repair = {
@@ -119,20 +120,11 @@ ADDON_fnc_autoReloadUnits_update_vehicle_repair_tick = {
         ];
     };
   };
+  true;
 };
 
 {
   _vehicle = _x;
-  _vehicle_crew = driver _vehicle;
-  if( isNull _vehicle_crew) then {
-    _vehicle_crew = gunner _vehicle;
-  };
-  if( isNull _vehicle_crew) then {
-    _vehicle_crew = commander _vehicle;
-  };
-  if( isNull _vehicle_crew) then {
-    continue;
-  };
 
   [ _vehicle] call ADDON_fnc_autoReloadUnits_update_vehicle_repair_status;
   [ _vehicle] call ADDON_fnc_autoReloadUnits_search_vehicle_repair;

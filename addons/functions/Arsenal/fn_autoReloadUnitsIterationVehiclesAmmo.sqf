@@ -124,16 +124,6 @@ ADDON_fnc_autoReloadUnits_update_vehicle_supply_tick = {
 
 {
   _vehicle = _x;
-  _vehicle_crew = driver _vehicle;
-  if( isNull _vehicle_crew) then {
-    _vehicle_crew = gunner _vehicle;
-  };
-  if( isNull _vehicle_crew) then {
-    _vehicle_crew = commander _vehicle;
-  };
-  if( isNull _vehicle_crew) then {
-    continue;
-  };
 
   [ _vehicle] call ADDON_fnc_autoReloadUnits_update_vehicle_supply_status;
   [ _vehicle] call ADDON_fnc_autoReloadUnits_search_vehicle_supply;

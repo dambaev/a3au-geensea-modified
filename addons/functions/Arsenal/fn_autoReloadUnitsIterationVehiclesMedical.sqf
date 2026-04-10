@@ -27,6 +27,7 @@ ADDON_fnc_autoReloadUnits_update_vehicle_medical_status = {
     };
   };
   _group setVariable ["ADDON_autoReloadUnits_medical_distance", _new_medical_distance];
+  true;
 };
 
 ADDON_fnc_autoReloadUnits_search_vehicle_medical = {
@@ -112,6 +113,7 @@ ADDON_fnc_autoReloadUnits_update_vehicle_medical_tick = {
         ];
     };
   };
+  true;
 };
 
 {
@@ -123,3 +125,4 @@ ADDON_fnc_autoReloadUnits_update_vehicle_medical_tick = {
 
 } forEach allGroups;
 
+true;
