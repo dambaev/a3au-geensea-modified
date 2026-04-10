@@ -36,6 +36,7 @@ ADDON_fnc_autoReloadUnits_update_vehicle_supply_status = {
     };
   };
   _vehicle setVariable ["ADDON_autoReloadUnits_supply_distance", _new_supply_distance];
+  true;
 };
 
 ADDON_fnc_autoReloadUnits_search_vehicle_supply = {
@@ -120,6 +121,7 @@ ADDON_fnc_autoReloadUnits_update_vehicle_supply_tick = {
         ];
     };
   };
+  true;
 };
 
 {
