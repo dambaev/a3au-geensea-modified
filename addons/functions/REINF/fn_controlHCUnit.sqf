@@ -55,6 +55,11 @@ if (not (isNil { _killed_eh;}) ) then {
   _doll removeEventHandler ["Killed",_killed_eh];
   _doll setVariable [ "Killed_eh", nil, true];
 };
+_handleDamage_eh = _doll getVariable [ "HandleDamage_eh", nil];
+if (not (isNil { _handleDamage_eh;}) ) then {
+  _doll removeEventHandler ["HandleDamage",_handleDamage_eh];
+  _doll setVariable [ "HandleDamage_eh", nil, true];
+};
 _doll setVariable ["owner",nil,true];
 _action_id = _doll getVariable [ "ADDON_return_control_action_id", nil];
 if (not (isNil {_action_id; })) then {
@@ -71,12 +76,24 @@ _doll_next setVariable [ "owner", _original_player, true];
 _original_player setVariable [ "owns", _doll_next, true];
 
 _eh2 = _doll_next addEventHandler ["Killed", {
-    call ADDON_fnc_controlHCSquad_player_HandleDamage;
+    params [ "_unit"];
+    [ _unit] call ADDON_fnc_controlHCSquad_player_HandleDamage;
     [localize "STR_A3A_reinf_control_squad"
     , localize "STR_A3A_reinf_control_return_damage_1"
     ] call A3A_fnc_customHint;
   }];
 _doll_next setVariable ["Killed_eh", _eh2, true];
+_eh3 = _doll_next addEventHandler ["HandleDamage", {
+    params [ "_unit"];
+    _canFight = [_unit] call A3A_fnc_canFight;
+    if (_canFight) exitWith {};
+    [ _unit] call ADDON_fnc_controlHCSquad_player_HandleDamage;
+    [localize "STR_A3A_reinf_control_squad"
+    , localize "STR_A3A_reinf_control_return_damage_1"
+    ] call A3A_fnc_customHint;
+  }];
+_doll_next setVariable ["HandleDamage_eh", _eh3, true];
+
 
 _return_control_id = _doll_next addAction
   [localize "STR_antistasi_actions_return_control_to_ai" , {
@@ -86,7 +103,7 @@ _return_control_id = _doll_next addAction
       , localize "STR_A3A_reinf_control_squad_punishment"
       ] call A3A_fnc_customHint;
     };
-    call ADDON_fnc_controlHCSquad_player_HandleDamage;
+    [ _unit] call ADDON_fnc_controlHCSquad_player_HandleDamage;
   }];
 _doll_next setVariable [ "ADDON_return_control_action_id", _return_control_id, true];
 _control_unit_id = _doll_next addAction [localize "STR_control_unit_hint_header",
