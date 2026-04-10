@@ -12,7 +12,7 @@ _tail = _leader getVariable ["ADDON_fnc_pl_moveInConvoy_tail", objNull];
 if (isNull _tail) exitWith { false; };
 
 _tail_leader = _tail getVariable ["ADDON_fnc_pl_moveInConvoy_leader", objNull];
-if( _tail_leader != _leader) exitWith { false; };
+if( isNull _tail_leader || _tail_leader != _leader) exitWith { false; };
 
 if (currentWaypoint _leader < 2) exitWith { true; };
 
