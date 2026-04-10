@@ -5,5 +5,5 @@ _name = "ADDON_pl_moveInConvoy_addWaypointPos";
 _wp = _group addWaypoint [ _waypoint_pos, -1 ];
 _wp setWaypointType "MOVE";
 
-systemChat (_name + ": waypoint added1");
+systemChat (_name + ": " + str _group + " waypoint added");
 

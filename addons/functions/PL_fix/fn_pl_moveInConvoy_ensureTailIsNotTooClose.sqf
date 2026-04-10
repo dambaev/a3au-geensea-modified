@@ -35,12 +35,25 @@ _ideal_distance = _tail getVariable
   , -1
   ];
 
-if( _leader_distance <= _ideal_distance ) then {
-  if( count waypoints _tail > 0) then {
+_tail_stoping_waypoint = _tail getVariable
+  [ "ADDON_fnc_pl_moveInConvoy_stopping_waypoint"
+  , -1
+  ];
+
+if( _leader_distance < (_ideal_distance * 0.5) ) then {
+  if( count waypoints _tail > 0
+      && currentWaypoint _tail != _tail_stopping_waypoint
+      ) then {
+    _target = hcLeader _tail;
+    if( isNull _target) then {
+      _target = _tail;
+    };
     [_tail, currentWaypoint _tail, getPosASL _tail_unit] remoteExec
-      [ "ADDON_fnc_pl_moveInConvoy_setWaypointPos", 0];
-  	//[_tail, currentWaypoint _tail] setWaypointPosition
-    //  [getPosASL _tail_unit, -1];
+      [ "ADDON_fnc_pl_moveInConvoy_setWaypointPos", target];
+    _tail setVariable
+      [ "ADDON_fnc_pl_moveInConvoy_stopping_waypoint"
+      , _tail_stoping_waypoint
+      ];
     systemChat (_name + ": " + str _tail + " stopping");
   };
 };
