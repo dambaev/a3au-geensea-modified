@@ -106,8 +106,8 @@ ADDON_fnc_autoReloadUnits_update_vehicle_medical_tick = {
       if( _new_group_medical_tick > _medical_tick_to_medical) then {
         {
           [ _x, 0] remoteExec [ "setDamage", _x];
-          if( not isNil { ace_medical_treatment_fnc_fullHeal }) then {
-            [ leader _medical_crew, x] remoteExec
+          if( not (isNil "ace_medical_treatment_fnc_fullHeal")) then {
+            [ leader _medical_crew, _x] remoteExec
               [ "ace_medical_treatment_fnc_fullHeal", _x];
           };
         }forEach (units _group);
