@@ -13,7 +13,7 @@ if( not alive _entity) exitWith {
 
 _is_ammo = [_entity ] call ADDON_fnc_autoReloadUnitsIsAmmoVehicle;
 _is_repair = [_entity ] call ADDON_fnc_autoReloadUnitsIsRepairVehicle;
-_is_refuel = [_entity ] call ADDON_fnc_autoReloadUnitsIsRefuelVehicle;
+_is_fuel = [_entity ] call ADDON_fnc_autoReloadUnitsIsRefuelVehicle;
 _is_medical = [_entity ] call ADDON_fnc_autoReloadUnitsIsMedicalVehicle;
 
 _entity addEventHandler ["Fired", {
