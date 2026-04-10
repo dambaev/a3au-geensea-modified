@@ -5,7 +5,7 @@ if( isNull _entity) exitWith {
   3;
 };
 
-_is_vehicle = _entity isKindOf "AllVehicles";
+_is_vehicle = _entity isKindOf "AllVehicles" && not (_entity isKindOf "Man");
 
 if( not _is_vehicle) exitWith {
   1;
