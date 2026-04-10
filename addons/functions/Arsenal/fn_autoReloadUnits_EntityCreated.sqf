@@ -1,6 +1,10 @@
 params [ "_entity"];
 _name = "ADDON_fnc_autoReloadUnits_EntityCreated";
 
+if( isNull _entity) exitWith {
+  3;
+};
+
 _is_vehicle = _entity isKindOf "AllVehicles";
 
 if( not _is_vehicle) exitWith {

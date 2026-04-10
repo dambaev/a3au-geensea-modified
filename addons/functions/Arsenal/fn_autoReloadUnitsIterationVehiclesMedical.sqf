@@ -13,17 +13,19 @@ ADDON_fnc_autoReloadUnits_update_vehicle_medical_status = {
     [ "ADDON_autoReloadUnits_medical_distance", []];
   if( count _group_medical_distance > 2) then {
     _medical = _group_medical_distance select 0;
-    _medical_crew = driver _medical;
-    _distance = _group distanceSqr _medical;
-    if ( alive _medical
-       && not isNull _medical_crew
-       && side _medical_crew == _group_side
-       && _distance <= _medical_distance_meters * _medical_distance_meters
-       ) then {
-      _new_medical_distance = [ _medical
-                             , _distance
-                             , side _medical_crew
-                             ];
+    if( not isNull _medical) then {
+      _medical_crew = driver _medical;
+      _distance = _group distanceSqr _medical;
+      if ( alive _medical
+         && not isNull _medical_crew
+         && side _medical_crew == _group_side
+         && _distance <= _medical_distance_meters * _medical_distance_meters
+         ) then {
+        _new_medical_distance = [ _medical
+                               , _distance
+                               , side _medical_crew
+                               ];
+      };
     };
   };
   _group setVariable ["ADDON_autoReloadUnits_medical_distance", _new_medical_distance];
