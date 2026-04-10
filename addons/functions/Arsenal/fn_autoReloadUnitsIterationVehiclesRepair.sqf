@@ -140,3 +140,4 @@ ADDON_fnc_autoReloadUnits_update_vehicle_repair_tick = {
 
 } forEach ADDON_fnc_autoReloadUnits_vehicles;
 
+true;

@@ -141,3 +141,4 @@ ADDON_fnc_autoReloadUnits_update_vehicle_supply_tick = {
 
 } forEach ADDON_fnc_autoReloadUnits_vehicles;
 
+true;

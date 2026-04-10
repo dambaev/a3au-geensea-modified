@@ -9,3 +9,4 @@ _name = "ADDON_fnc_autoReloadUnitsCleanDeadVehicles";
 ADDON_fnc_autoReloadUnits_vehicles =
   ADDON_fnc_autoReloadUnits_vehicles - [objNull];
 
+true;
