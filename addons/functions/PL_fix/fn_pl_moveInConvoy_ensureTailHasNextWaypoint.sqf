@@ -23,12 +23,21 @@ _prev_waypoint = currentWaypoint _leader - 2;
 
 _prev_waypoint_pos = waypointPosition [ _leader, _prev_waypoint];
 
+_is_prev_waypoint_outside_map = [ 0, 0, 0] distanceSqr _prev_waypoint_pos <= 100;
+
+if ( _is_prev_waypoint_outside_map) then {
+  systemChat (_name + ": " + str _leader + " waypoint" + str _prev_waypoint
+    + " is at " + str _prev_waypoint_pos + ", won't be added for " + str _tail);
+};
+
 _tail_latest_waypoint_leader_idx = _tail getVariable
   [ "ADDON_fnc_pl_moveInConvoy_leader_waypoint_idx"
   , -1
   ];
 
-if ( _tail_latest_waypoint_leader_idx != _prev_waypoint) then {
+if ( _tail_latest_waypoint_leader_idx != _prev_waypoint
+     && not _is_prev_waypoint_outside_map
+     ) then {
   _target = hcLeader _tail;
   if( isNull _target) then {
     _target = _tail;
