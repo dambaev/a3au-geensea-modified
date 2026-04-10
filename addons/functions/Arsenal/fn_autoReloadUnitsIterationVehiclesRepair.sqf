@@ -1,6 +1,6 @@
 _repair_distance_meters = 500;
-_rerepair_tick = 1;
-_rerepair_tick_to_rerepair = 2; // 20 secs
+_repair_tick = 1;
+_repair_tick_to_repair = 2; // 20 secs
 
 ADDON_fnc_autoReloadUnits_update_vehicle_repair_status = {
   params [ "_vehicle"];
@@ -90,32 +90,32 @@ ADDON_fnc_autoReloadUnits_search_vehicle_repair = {
 
 ADDON_fnc_autoReloadUnits_update_vehicle_repair_tick = {
   params [ "_vehicle"];
-  _is_vehicle_needs_rerepair =
+  _is_vehicle_needs_repair =
     damage _vehicle > 0.1;
-  if( not _is_vehicle_needs_rerepair) then {
-    _vehicle setVariable [ "ADDON_autoReloadUnits_rerepair_tick" , 0 ];
+  if( not _is_vehicle_needs_repair) then {
+    _vehicle setVariable [ "ADDON_autoReloadUnits_repair_tick" , 0 ];
   }else {
-    _vehicle_rerepair_tick = _vehicle getVariable
-      ["ADDON_autoReloadUnits_rerepair_tick", 0];
+    _vehicle_repair_tick = _vehicle getVariable
+      ["ADDON_autoReloadUnits_repair_tick", 0];
     _repair_distance = _vehicle getVariable
       [ "ADDON_autoReloadUnits_repair_distance", []];
     if( count _repair_distance > 2) then {
       _vehicle_repair_distance = _repair_distance select 1;
       _vehicle_repair_distance_coef = 1 -
         _vehicle_repair_distance / (_repair_distance_meters * _repair_distance_meters);
-      _new_vehicle_rerepair_tick = _vehicle_rerepair_tick
-        + _rerepair_tick * _vehicle_repair_distance_coef;
+      _new_vehicle_repair_tick = _vehicle_repair_tick
+        + _repair_tick * _vehicle_repair_distance_coef;
 
-      if( _new_vehicle_rerepair_tick < _vehicle_rerepair_tick) then {
-        _new_vehicle_rerepair_tick = _vehicle_rerepair_tick;
+      if( _new_vehicle_repair_tick < _vehicle_repair_tick) then {
+        _new_vehicle_repair_tick = _vehicle_repair_tick;
       };
-      if( _new_vehicle_rerepair_tick > _rerepair_tick_to_rerepair) then {
+      if( _new_vehicle_repair_tick > _repair_tick_to_repair) then {
         [ _vehicle, 0] remoteExec [ "setDamage", _vehicle];
-        _new_vehicle_rerepair_tick = 0;
+        _new_vehicle_repair_tick = 0;
       };
       _vehicle setVariable
-        [ "ADDON_autoReloadUnits_rerepair_tick"
-        , _new_vehicle_rerepair_tick
+        [ "ADDON_autoReloadUnits_repair_tick"
+        , _new_vehicle_repair_tick
         ];
     };
   };
