@@ -8,8 +8,6 @@ ADDON_fnc_pl_moveInConvoyIterationPerLeader = {
   _tail_leader = _tail getVariable ["ADDON_fnc_pl_moveInConvoy_leader", objNull];
   if( isNull _tail_leader || _tail_leader != _leader) exitWith { false; };
 
-  _leader_waypoints = waypoints _leader;
-  _tail_waypoints = waypoints _tail;
   _isStillLeader =
     [_tail, _leader] call ADDON_fnc_pl_moveInConvoy_ensureTailIsNotTooClose;
   if (not _isStillLeader) exitWith { _isStillLeader; };

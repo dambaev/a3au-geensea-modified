@@ -8,7 +8,6 @@ if( isNull _leader_unit) then {
 };
 if( not alive _leader_unit) exitWith { false; };
 
-_tail = _leader getVariable ["ADDON_fnc_pl_moveInConvoy_tail", objNull];
 if (isNull _tail) exitWith { false; };
 
 _tail_leader = _tail getVariable ["ADDON_fnc_pl_moveInConvoy_leader", objNull];
