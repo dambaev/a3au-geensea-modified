@@ -91,8 +91,7 @@ ADDON_fnc_autoReloadUnits_search_vehicle_repair = {
 
 ADDON_fnc_autoReloadUnits_update_vehicle_repair_tick = {
   params [ "_vehicle"];
-  _is_vehicle_needs_repair =
-    damage _vehicle > 0.1;
+  _is_vehicle_needs_repair = true;
   if( not _is_vehicle_needs_repair) then {
     _vehicle setVariable [ "ADDON_autoReloadUnits_repair_tick" , 0 ];
   }else {
