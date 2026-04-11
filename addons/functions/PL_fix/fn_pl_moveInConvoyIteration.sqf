@@ -7,6 +7,9 @@ ADDON_fnc_pl_moveInConvoyIterationPerLeader = {
   if (not alive (leader _tail)) exitWith { false; };
   _tail_leader = _tail getVariable ["ADDON_fnc_pl_moveInConvoy_leader", objNull];
   if( isNull _tail_leader || _tail_leader != _leader) exitWith { false; };
+  if( isNull (hcLeader _tail) || (group (hcLeader _tail) != _leader)) exitWith {
+    false;
+  };
 
   _isStillLeader =
     [_tail, _leader] call ADDON_fnc_pl_moveInConvoy_ensureTailIsNotTooClose;

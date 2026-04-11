@@ -35,7 +35,7 @@ _ideal_distance = _tail getVariable
   , -1
   ];
 
-_tail_stoping_waypoint = _tail getVariable
+_tail_stopping_waypoint = _tail getVariable
   [ "ADDON_fnc_pl_moveInConvoy_stopping_waypoint"
   , -1
   ];
