@@ -38,7 +38,8 @@ if ( _tail_latest_waypoint_leader_idx != _prev_waypoint
   if( isNull _target) then {
     _target = _tail;
   };
-  [_tail, _prev_waypoint_pos] remoteExec
+  _current_leader_behaviour = combatBehaviour _leader;
+  [_tail, _prev_waypoint_pos, _current_leader_behaviour] remoteExec
     [ "ADDON_fnc_pl_moveInConvoy_addWaypointPos", _target];
   // _wp = _tail addWaypoint [ _prev_waypoint_pos, -1 ];
   // _wp setWaypointType "MOVE";
