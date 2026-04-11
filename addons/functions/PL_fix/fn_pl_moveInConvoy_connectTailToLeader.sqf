@@ -1,5 +1,18 @@
 params [ "_tail", "_leader"];
 
+if( isNull _tail) exitWith {
+  false;
+};
+
+if( isNull _leader) exitWith {
+  false;
+};
+
+if( _tail == _leader) exitWith {
+  systemChat( "should be 2 different groups");
+  false;
+};
+
 _tail_units = ((units _tail) select { alive _x});
 _leader_units = ((units _leader) select { alive _x});
 
@@ -27,3 +40,5 @@ _tail setVariable [ "ADDON_fnc_pl_moveInConvoy_original_leader"
 (leader _leader) hcSetGroup [ _tail];
 
 ADDON_fnc_pl_moveInConvoy_leaders pushBack _leader;
+
+true;
