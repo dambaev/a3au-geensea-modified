@@ -49,7 +49,7 @@ if( _leader_distance < (_ideal_distance * 0.5) ) then {
       _target = _tail;
     };
     [_tail, currentWaypoint _tail, getPosASL _tail_unit] remoteExec
-      [ "ADDON_fnc_pl_moveInConvoy_setWaypointPos", target];
+      [ "ADDON_fnc_pl_moveInConvoy_setWaypointPos", _target];
     _tail setVariable
       [ "ADDON_fnc_pl_moveInConvoy_stopping_waypoint"
       , _tail_stoping_waypoint
