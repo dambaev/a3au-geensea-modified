@@ -10,7 +10,7 @@ DDT_fnc_getSoftTargets_version = 3;
 {
   private _target=vehicle _x;
   private _target_side = side _target;
-  if(_v_side getFriend _man_side >= 0.6) then {
+  if(_target_side getFriend _man_side >= 0.6) then {
     continue;
   };
   if(_target isKindOf "MAN") then {
