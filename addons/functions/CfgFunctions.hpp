@@ -31,8 +31,8 @@ class CfgFunctions
         class PL_fix
         {
             file = "addons\functions\PL_fix";
-            class pl_add_to_hc_execute_patch { postInit = 1; };
-            class pl_spawn_getOut_vehicle_patch { postInit = 1; };
+            class pl_add_to_hc_execute_patch {  };
+            class pl_spawn_getOut_vehicle_patch {  };
             class pl_moveInConvoy { };
             class pl_moveInConvoyInit { };
             class pl_moveInConvoyIteration { };
@@ -67,7 +67,7 @@ class CfgFunctions
         class Events
         { //these two functions are used to demonstrate use of events
             file = "addons\functions\Events";
-            class addExampleEventListener { postInit = 1; };
+            class addExampleEventListener { };
             class AIVehInit {};
         };
     };
