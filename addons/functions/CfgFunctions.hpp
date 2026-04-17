@@ -47,9 +47,9 @@ class CfgFunctions
         {
             file = "addons\functions\DDT_fix";
             class getTargetsAT {};
-            class getTargetsAT_patch { postInit = 1; };
+            class getTargetsAT_patch { };
             class getSoftTargets {};
-            class getSoftTargets_patch { postInit = 1; };
+            class getSoftTargets_patch { };
             class autoEquipDronesGroup { };
             class autoEquipDronesIteration { };
             class autoEquipDrones { };
@@ -60,9 +60,9 @@ class CfgFunctions
             class controlHCSquad {};
             class controlHCSquad_player_HandleDamage {};
             class controlHCUnit {};
-            class controlHCSquad_patch { postInit = 1; };
+            class controlHCSquad_patch { };
             class controlunit {};
-            class controlunit_patch { postInit = 1; };
+            class controlunit_patch { };
         };
         class Events
         { //these two functions are used to demonstrate use of events
