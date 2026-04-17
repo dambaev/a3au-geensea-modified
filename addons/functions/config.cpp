@@ -1,8 +1,8 @@
 #include "script_component.hpp"
 
-class CfgPatches 
+class CfgPatches
 {
-    class ADDON 
+    class ADDON
     {
         name = COMPONENT_NAME;
         units[] = {};
@@ -17,14 +17,14 @@ class CfgPatches
 };
 
 //the pre proccessor ifs are there to make sure we overwrite/add to the correct config
-class A3A 
+class A3A
 {
     #if __A3_DEBUG__
-        #include "CfgFunctions.hpp"
+        #include "cfgfunctions.hpp"
     #endif
 };
 
 #if __A3_DEBUG__
 #else
-    #include "CfgFunctions.hpp"
+    #include "cfgfunctions.hpp"
 #endif
