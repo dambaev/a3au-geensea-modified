@@ -1,4 +1,6 @@
 _this spawn A3A_fnc_initClient;
+if( not hasInterface) exitWith {
+}
 call ADDON_fnc_getSoftTargets_patch;
 call ADDON_fnc_getTargetsAT_patch;
 call ADDON_fnc_controlunit_patch;
