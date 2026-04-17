@@ -1,2 +1,2 @@
 #define COMPONENT maps
-#include "..\..\core\Includes\script_mod.hpp"
+#include "..\core\Includes\script_mod.hpp"
