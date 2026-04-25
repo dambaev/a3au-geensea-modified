@@ -93,7 +93,7 @@ _backpacks_sz = count _side_drones;
 _drone_idx = random (_backpacks_sz - 1);
 _chosen_drone = (_side_drones select _drone_idx);
 if (alive _chosen_unit && backpack _chosen_unit == "") then {
-  _chosen_unit addBackpack _chosen_drone;
+  _chosen_unit addBackpackGlobal _chosen_drone;
 };
 [_chosen_unit, _chosen_drone];
 
