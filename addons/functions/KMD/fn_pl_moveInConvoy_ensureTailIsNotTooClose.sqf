@@ -52,7 +52,7 @@ if( _leader_distance < (_ideal_distance * 0.5) ) then {
       [ "ADDON_fnc_pl_moveInConvoy_setWaypointPos", _target];
     _tail setVariable
       [ "ADDON_fnc_pl_moveInConvoy_stopping_waypoint"
-      , _tail_stoping_waypoint
+      , _tail_stopping_waypoint
       ];
     systemChat (_name + ": " + str _tail + " stopping");
   };
