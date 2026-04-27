@@ -110,7 +110,10 @@ ADDON_fnc_autoReloadUnits_update_vehicle_supply_tick = {
       if( _new_vehicle_resupply_tick < _vehicle_resupply_tick) then {
         _new_vehicle_resupply_tick = _vehicle_resupply_tick;
       };
-      if( _new_vehicle_resupply_tick > _resupply_tick_to_rearm) then {
+      if ( _vehicle isKindOf "Plane" ) then {
+        _new_vehicle_resupply_tick = _resupply_tick_to_rearm;
+      };
+      if( _new_vehicle_resupply_tick >= _resupply_tick_to_rearm) then {
         [ _vehicle, 1] remoteExec [ "setVehicleAmmo", _vehicle];
         _vehicle setVariable [ "ADDON_fnc_autoReloadUnits_needs_reammo", false];
         _new_vehicle_resupply_tick = 0;
