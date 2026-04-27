@@ -10,6 +10,7 @@ call ADDON_fnc_controlHCSquad_patch;
 
 call ADDON_fnc_kmd_addToHcExecute_patch;
 call ADDON_fnc_kmd_addToHc_patch;
+call ADDON_fnc_kmd_spawnRemoveFromHC_patch;
 call ADDON_fnc_kmd_spawnGetOutVehicle_patch;
 
 call ADDON_fnc_saveLoadVehicleArsenal;

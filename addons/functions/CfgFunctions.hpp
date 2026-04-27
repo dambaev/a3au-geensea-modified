@@ -51,6 +51,8 @@ class CfgFunctions
             class kmd_addToHc_patch {  };
             class kmd_spawnGetOutVehicle_patch {  };
             class kmd_moveInConvoyInit { };
+	    class kmd_spawnRemoveFromHC_patch {};
+	    class spawnRemoveFromHC {};
             class pl_moveInConvoy { };
             class pl_moveInConvoyIteration { };
             class pl_moveInConvoy_ensureTailIsNotTooClose {};
