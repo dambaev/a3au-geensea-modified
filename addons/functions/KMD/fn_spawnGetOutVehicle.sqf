@@ -1,6 +1,8 @@
-if (isNil "pl_spawn_getOut_vehicle") exitWith {};
-
-pl_spawn_getOut_vehicle = {
+/*
+Original name: pl_spawn_getOut_vehicle
+New name:      KMD_fnc_spawnGetOutVehicle
+Original url: "Plmod\pl_vehicle_fnc.sqf"
+*/
     params [["_moveInConvoy", false]];
     if ( _moveInConvoy ) exitWith {
       [] spawn ADDON_fnc_pl_moveInConvoy;
@@ -26,9 +28,6 @@ pl_spawn_getOut_vehicle = {
     missionNamespace setVariable [_convoyId + "pos", 0];
     missionNamespace setVariable [_convoyId + "time", 0];
     {
-        [_x, _convoyId, _moveInConvoy] spawn pl_getOut_vehicle;
+        [_x, _convoyId, _moveInConvoy] spawn KMD_fnc_getOutVehicle;
         // sleep 0.1;
     } forEach hcSelected player;
-};
-
-

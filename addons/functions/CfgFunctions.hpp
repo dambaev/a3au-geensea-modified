@@ -28,13 +28,30 @@ class CfgFunctions
             class autoReloadUnits_EntityCreated {};
             class autoReloadUnits_Fired {};
         };
-        class PL_fix
+	// not supported on dedicated server?
+        //class PL_fix
+        //{
+        //    file = "addons\functions\PL_fix";
+        //    class pl_add_to_hc_execute_patch {  };
+        //    class pl_spawn_getOut_vehicle_patch {  };
+        //    class pl_moveInConvoy { };
+        //    class pl_moveInConvoyInit { };
+        //    class pl_moveInConvoyIteration { };
+        //    class pl_moveInConvoy_ensureTailIsNotTooClose {};
+        //    class pl_moveInConvoy_ensureTailIsNotTooFarAway {};
+        //    class pl_moveInConvoy_ensureTailHasNextWaypoint {};
+        //    class pl_moveInConvoy_connectTailToLeader {};
+        //    class pl_moveInConvoy_setWaypointPos {};
+        //    class pl_moveInConvoy_addWaypointPos {};
+        //};
+        class KMD
         {
-            file = "addons\functions\PL_fix";
-            class pl_add_to_hc_execute_patch {  };
-            class pl_spawn_getOut_vehicle_patch {  };
+            file = "addons\functions\KMD";
+            class kmd_addToHcExecute_patch {  };
+            class kmd_addToHc_patch {  };
+            class kmd_spawnGetOutVehicle_patch {  };
+            class kmd_moveInConvoyInit { };
             class pl_moveInConvoy { };
-            class pl_moveInConvoyInit { };
             class pl_moveInConvoyIteration { };
             class pl_moveInConvoy_ensureTailIsNotTooClose {};
             class pl_moveInConvoy_ensureTailIsNotTooFarAway {};
