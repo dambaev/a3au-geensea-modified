@@ -7,7 +7,7 @@
 */
 
 params ["_victim"];
-#include "..\..\script_component.hpp"
+#include "\x\A3A\addons\core\script_component.hpp"
 FIX_LINE_NUMBERS()
 private _group = group _victim;
 
@@ -47,7 +47,7 @@ while {_players_nearby} do {
   if( not (isNil "A3A_fnc_postmortemDebug") && _players_nearby) then {
     Info( "_players_nearby");
   };
-}
+};
 
 if (_victim getVariable ["stopPostmortem", false]) exitWith {};
 
