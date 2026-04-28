@@ -11,3 +11,5 @@ call ADDON_fnc_kmd_addToHc_patch;
 call ADDON_fnc_kmd_spawnGetOutVehicle_patch;
 
 call ADDON_fnc_getCargoConfig_patch;
+
+call ADDON_fnc_sellVehicle_patch;

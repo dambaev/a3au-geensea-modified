@@ -4,6 +4,12 @@ class CfgFunctions
     class ADDON
     {
         tag = "ADDON";
+        class base
+        {
+            file = "addons\functions\base";
+            class sellVehicle {};
+            class sellVehicle_patch {};
+        };
         class logistics
         {
             file = "addons\functions\logistics";
