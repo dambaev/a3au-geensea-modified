@@ -4,6 +4,12 @@ class CfgFunctions
     class ADDON
     {
         tag = "ADDON";
+        class logistics
+        {
+            file = "addons\functions\logistics";
+            class getCargoConfig {};
+            class getCargoConfig_patch {};
+        };
         class Arsenal
         {
             file = "addons\functions\Arsenal";
