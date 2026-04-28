@@ -21,6 +21,15 @@ if( not (isNil "A3A_Logistics_fnc_getCargoConfigDebug")) then {
   systemChat( "A3A_Logistics_fnc_getCargoConfigDebug: model " + str _model);
 };
 
+// make tractor to be loadable into trucks
+if( _model == "CUP_WheeledVehicles_CUP_WheeledVehicles_Tractor_model_CUP_Tractor_2_p3d") then {
+  _model = "A3_Soft_F_Quadbike_01_Quadbike_01_F_p3d";
+};
+
+if( not (isNil "A3A_Logistics_fnc_getCargoConfigDebug")) then {
+  systemChat( "A3A_Logistics_fnc_getCargoConfigDebug: model1 " + str _model);
+};
+
 if (isClass (MissionNodes/_model)) exitWith { (MissionNodes/_model) };
 if (isClass (CfgNodes/_model)) exitWith { (CfgNodes/_model) };
 configNull;
