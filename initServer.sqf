@@ -15,3 +15,6 @@ call ADDON_fnc_getCargoConfig_patch;
 call ADDON_fnc_sellVehicle_patch;
 
 call ADDON_fnc_postmortem_patch;
+call ADDON_fnc_enemyGarrison_patch;
+call ADDON_fnc_groupDespawner_patch;
+call ADDON_fnc_surrenderAction_patch;

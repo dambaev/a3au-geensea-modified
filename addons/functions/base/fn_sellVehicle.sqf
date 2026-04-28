@@ -84,6 +84,7 @@ private _typeX = typeOf _veh;
 if( not (isNil "A3A_fnc_sellVehicleDebug")) then {
   Error( "A3A_fnc_sellVehicleDebug: _typeX = " + str _typeX);
 };
+private _hr = 0;
 private _costs = call {
     if (_typeX in _blacklistedAssets) exitWith {0};
     if (_veh isKindOf "StaticWeapon") exitWith {100};			// in case rebel static is same as enemy statics
@@ -137,20 +138,23 @@ private _costs = call {
     _side = call {
       if( _loadout_side == "loadouts_occ_") exitWith { west; };
       if( _loadout_side == "loadouts_inv_") exitWith { east; };
+      if( _loadout_side == "loadouts_reb_") exitWith { independent; };
       civilian;
     };
     _is_enemy = _side == west || _side == east;
-    _is_danger = side _veh == civilian;
+    _is_danger = side _veh != civilian;
     _is_pow = _is_man && _is_alive && _is_enemy && not _is_danger;
     if( not (isNil "A3A_fnc_sellVehicleDebug")) then {
-      Error( "A3A_fnc_sellVehicleDebug: _is_man = " + str _is_man);
-      Error( "A3A_fnc_sellVehicleDebug: _is_alive = " + str _is_alive);
-      Error( "A3A_fnc_sellVehicleDebug: _is_enemy = " + str _is_enemy);
-      Error( "A3A_fnc_sellVehicleDebug: _is_danger = " + str _is_danger);
-      Error( "A3A_fnc_sellVehicleDebug: _is_pow = " + str _is_pow);
-      Error( "A3A_fnc_sellVehicleDebug: _side = " + str _side);
+      Info( "A3A_fnc_sellVehicleDebug: _is_man = " + str _is_man);
+      Info( "A3A_fnc_sellVehicleDebug: _is_alive = " + str _is_alive);
+      Info( "A3A_fnc_sellVehicleDebug: _is_enemy = " + str _is_enemy);
+      Info( "A3A_fnc_sellVehicleDebug: _loadout_side = " + str _loadout_side);
+      Info( "A3A_fnc_sellVehicleDebug: _is_danger = " + str _is_danger);
+      Info( "A3A_fnc_sellVehicleDebug: _is_pow = " + str _is_pow);
+      Info( "A3A_fnc_sellVehicleDebug: _side = " + str _side);
     };
     if (_is_pow)  exitWith {
+      _hr = 1;
       10000
     };
     0;
@@ -163,7 +167,7 @@ if (_costs == 0) exitWith {
 
 _costs = round (_costs * (1-damage _veh));
 
-[0,_costs] remoteExec ["A3A_fnc_resourcesFIA",2];
+[_hr,_costs] remoteExec ["A3A_fnc_resourcesFIA",2];
 
 if (_veh in staticsToSave) then {staticsToSave = staticsToSave - [_veh]; publicVariable "staticsToSave"};
 

@@ -4,6 +4,20 @@ class CfgFunctions
     class ADDON
     {
         tag = "ADDON";
+        class AI
+        {
+            file = "addons\functions\AI";
+            class enemyGarrison {};
+            class enemyGarrison_patch {};
+            class surrenderAction {};
+            class surrenderAction_patch {};
+        };
+        class CREATE
+        {
+            file = "addons\functions\CREATE";
+            class groupDespawner {};
+            class groupDespawner_patch {};
+        };
         class base
         {
             file = "addons\functions\base";
