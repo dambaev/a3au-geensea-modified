@@ -94,6 +94,8 @@ class CfgFunctions
             class controlHCSquad_patch { };
             class controlunit {};
             class controlunit_patch { };
+            class postmortem {};
+            class postmortem_patch { };
         };
         class Events
         { //these two functions are used to demonstrate use of events

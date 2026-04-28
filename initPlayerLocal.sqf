@@ -17,3 +17,5 @@ call ADDON_fnc_saveLoadVehicleArsenal;
 
 call ADDON_fnc_getCargoConfig_patch;
 call ADDON_fnc_sellVehicle_patch;
+
+call ADDON_fnc_postmortem_patch;
