@@ -39,6 +39,7 @@ _get_side = {
   if( _loadout_side == "loadouts_occ_") exitWith { west; };
   if( _loadout_side == "loadouts_inv_") exitWith { east; };
   if( _loadout_side == "loadouts_reb_") exitWith { independent; };
+  if( isPlayer _x) exitWith { independent; };
   side _x;
 };
 
@@ -58,7 +59,11 @@ _is_enemy = {
   };
   if( isNull _unit ) exitWith { false; };
   _side = [ _unit ] call _get_side;
-  _ret = (_side getFriend _victim_side < 0.6);
+  _relations = _side getFriend _victim_side;
+  if( _victim_side getFriend _side > _relations) then {
+    _relations = _victim_side getFriend _side;
+  }; 
+  _ret = _relations < 0.6;
   if ((!isNil "A3A_fnc_postmortemDebug") && _ret) then {
     Info_4( "A3A_fnc_postmortemDebug: is_enemy: name / side: %1 / %2, %3 / %4" , name _unit, str _side, _name_victim, str _victim_side);
   };
