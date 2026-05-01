@@ -36902,6 +36902,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						name="slot_eng_1";
 						isPlayable=1;
 						class Inventory
 						{
@@ -37522,6 +37523,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						name="slot_eng_2";
 						isPlayable=1;
 						class Inventory
 						{
@@ -38142,6 +38144,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						name="slot_eng_3";
 						isPlayable=1;
 						class Inventory
 						{
@@ -38762,6 +38765,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						name="slot_eng_4";
 						isPlayable=1;
 						class Inventory
 						{
@@ -39382,6 +39386,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						name="slot_eng_5";
 						isPlayable=1;
 						class Inventory
 						{
@@ -40002,6 +40007,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						name="slot_eng_6";
 						isPlayable=1;
 						class Inventory
 						{
@@ -40622,6 +40628,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						name="slot_eng_7";
 						isPlayable=1;
 						class Inventory
 						{
@@ -41242,6 +41249,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						name="slot_eng_8";
 						isPlayable=1;
 						class Inventory
 						{
@@ -41862,6 +41870,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						name="slot_eng_9";
 						isPlayable=1;
 						class Inventory
 						{
@@ -42482,6 +42491,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						name="slot_eng_10";
 						isPlayable=1;
 						class Inventory
 						{
