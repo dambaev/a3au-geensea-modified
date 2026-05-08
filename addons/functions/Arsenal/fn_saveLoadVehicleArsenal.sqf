@@ -98,11 +98,7 @@ ADDON_fnc_store_object_cargo_in_object = {
     _clear_cargo = _x select 3;
 
     _items_counts = [_src] call _get_cargo;
-    _adjusted_items_count = _items_counts;
-     if ( _items_counts > 20) then {
-       _adjusted_items_count = 20;
-     };
-    _all_items_counts pushBack [_class, _adjusted_items_count];
+    _all_items_counts pushBack [_class, _items_counts];
   } forEach ( ADDON_items_cargos);
   _dst setVariable [ "ADDON_fnc_saveLoadVehicleArsenal", _all_items_counts];
   hint "cargo preset saved";
