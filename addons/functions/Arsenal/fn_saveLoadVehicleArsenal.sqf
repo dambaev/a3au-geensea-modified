@@ -110,6 +110,8 @@ ADDON_fnc_store_object_cargo_in_object = {
 
 ADDON_fnc_set_object_cargo_from_object = {
   params [ "_dst", "_src"];
+  _items_already_set = _dst getVariable [ "ADDON_fnc_saveLoadVehicleArsenal", false];
+  if ( _items_already_set) exitWith {};
   _all_items_counts = _src getVariable [ "ADDON_fnc_saveLoadVehicleArsenal" , []];
   {
     _class = _x select 0;
@@ -141,6 +143,7 @@ ADDON_fnc_set_object_cargo_from_object = {
     } forEach ( ADDON_items_cargos);
 
   } forEach ( _all_items_counts);
+  _dst setVariable [ "ADDON_fnc_saveLoadVehicleArsenal", true];
   hint "cargo preset loaded"
 };
 
