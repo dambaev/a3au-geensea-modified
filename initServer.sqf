@@ -1,3 +1,5 @@
+call ADDON_fnc_distance_patch;
+
 call A3A_fnc_initServer;
 
 call ADDON_fnc_getSoftTargets_patch;
@@ -18,3 +20,5 @@ call ADDON_fnc_postmortem_patch;
 call ADDON_fnc_enemyGarrison_patch;
 call ADDON_fnc_groupDespawner_patch;
 call ADDON_fnc_surrenderAction_patch;
+
+

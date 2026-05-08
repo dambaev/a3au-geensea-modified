@@ -23,6 +23,8 @@ class CfgFunctions
             file = "addons\functions\base";
             class sellVehicle {};
             class sellVehicle_patch {};
+            class distance {};
+            class distance_patch {};
         };
         class logistics
         {

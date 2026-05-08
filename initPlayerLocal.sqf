@@ -77,3 +77,4 @@ call ADDON_fnc_groupDespawner_patch;
 call ADDON_fnc_surrenderAction_patch;
 
 
+call ADDON_fnc_distance_patch;
