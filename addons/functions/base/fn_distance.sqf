@@ -20,6 +20,8 @@ Dependencies:
 
 Example: [] spawn A3A_fnc_distance;
 */
+#include "\x\A3A\addons\core\script_component.hpp"
+FIX_LINE_NUMBERS()
 
 /* -------------------------------------------------------------------------- */
 /*                                   defines                                  */
@@ -119,7 +121,7 @@ private _processOccupantMarker = {
                     [[_marker], "A3A_fnc_createAIcontrols"] call A3A_fnc_scheduler;
                 };
 
-                // Prevent other routines taking spawn places 
+                // Prevent other routines taking spawn places
                 [_marker, 1] call A3A_fnc_addTimeForIdle;
 
                 case (_marker in airportsX):
@@ -139,7 +141,7 @@ private _processOccupantMarker = {
                     [[_marker], "A3A_fnc_createAIOutposts"] call A3A_fnc_scheduler;
                 };
 
-                case(_marker in milbases): 
+                case(_marker in milbases):
                 {
                     [[_marker],"A3A_fnc_createAIMilbase"] call A3A_fnc_scheduler;
                 };
@@ -166,8 +168,8 @@ private _processFIAMarker = {
             // or marker is forced to spawn than exit (marker still ENABLED)
             if (_occupants inAreaArray [_position, distanceSPWN, distanceSPWN] isNotEqualTo []
                 || { _invaders inAreaArray [_position, distanceSPWN, distanceSPWN] isNotEqualTo []
-                || { false // _players inAreaArray [_position, distanceSPWN2, distanceSPWN2] isNotEqualTo []
-                   || { _marker in forcedSpawn } 
+                || { _players inAreaArray [_position, distanceSPWN2, distanceSPWN2] isNotEqualTo []
+                   || { _marker in forcedSpawn }
                    }}) exitWith {};
 
             // DISABLE marker
@@ -188,8 +190,8 @@ private _processFIAMarker = {
             // or marker is forced spawn than ENABLE marker
             if (_occupants inAreaArray [_position, distanceSPWN, distanceSPWN] isNotEqualTo []
                 || { _invaders inAreaArray [_position, distanceSPWN, distanceSPWN] isNotEqualTo []
-                || { false // _players inAreaArray [_position, distanceSPWN2, distanceSPWN2] isNotEqualTo []
-                   || { _marker in forcedSpawn } 
+                || { _players inAreaArray [_position, distanceSPWN2, distanceSPWN2] isNotEqualTo []
+                   || { _marker in forcedSpawn }
                    }})
             then
             {
@@ -210,7 +212,7 @@ private _processFIAMarker = {
                 // then exit (marker still DISABLED)
                 if (_occupants inAreaArray [_position, distanceSPWN1, distanceSPWN1] isNotEqualTo []
                     || { _invaders inAreaArray [_position, distanceSPWN1, distanceSPWN1] isNotEqualTo []
-                       // || { _players inAreaArray [_position, distanceSPWN, distanceSPWN] isNotEqualTo [] }
+                       || { _players inAreaArray [_position, distanceSPWN, distanceSPWN] isNotEqualTo [] }
                        }
                    )
                 exitWith {};
@@ -222,16 +224,23 @@ private _processFIAMarker = {
 
         case DESPAWN:
         {
+            _is_should_spawn_by_enemies = _occupants inAreaArray
+                  [_position, distanceSPWN, distanceSPWN] isNotEqualTo []
+              || _invaders inAreaArray
+                  [_position, distanceSPWN, distanceSPWN] isNotEqualTo []
+              || _marker in forcedSpawn
+              ;
+            _is_should_spawn_by_players = _players inAreaArray
+              [_position, distanceSPWN2, distanceSPWN2] isNotEqualTo [];
+            _is_should_spawn_only_by_players = !_is_should_spawn_by_enemies
+              && _is_should_spawn_by_players;
+            _is_should_spawn = _is_should_spawn_by_enemies
+              || _is_should_spawn_by_players;
             // if nobody blufor is inside distanceSPWN
             // and nobody opfor is inside distanceSPWN
             // and nobody green player is inside distanceSPWN2
             // and marker is not forced spawn then exit (marker still DESPAWN)
-            if (_occupants inAreaArray [_position, distanceSPWN, distanceSPWN] isEqualTo []
-                && { _invaders inAreaArray [_position, distanceSPWN, distanceSPWN] isEqualTo []
-                   && { true // _players inAreaArray [_position, distanceSPWN2, distanceSPWN2] isEqualTo []
-                      && { !(_marker in forcedSpawn) } 
-                      }
-                   }) exitWith {};
+            if (!_is_should_spawn) exitWith {};
 
             // ENABLED this marker
             spawner setVariable [_marker, ENABLED, true];
@@ -239,23 +248,32 @@ private _processFIAMarker = {
             // run spawn procedures
             switch (true) do {
                 case (_marker in watchpostsFIA): {
+                    if( _is_should_spawn_only_by_players) exitWith {};
                     [[_marker],"SCRT_fnc_outpost_createWatchpostDistance"] call A3A_fnc_scheduler;
                 };
                 case (_marker in roadblocksFIA): {
+                    if( _is_should_spawn_only_by_players) exitWith {};
                     [[_marker],"SCRT_fnc_outpost_createRoadblockDistance"] call A3A_fnc_scheduler;
                 };
                 case (_marker in aapostsFIA): {
+                    if( _is_should_spawn_only_by_players) exitWith {};
                     [[_marker],"SCRT_fnc_outpost_createAaDistance"] call A3A_fnc_scheduler;
                 };
                 case (_marker in atpostsFIA): {
+                    if( _is_should_spawn_only_by_players) exitWith {};
                     [[_marker],"SCRT_fnc_outpost_createAtDistance"] call A3A_fnc_scheduler;
                 };
                 case (_marker in hmgpostsFIA): {
+                    if( _is_should_spawn_only_by_players) exitWith {};
                     [[_marker],"SCRT_fnc_outpost_createHmgDistance"] call A3A_fnc_scheduler;
                 };
 
                 case !(_marker in controlsX): {
-                    [[_marker], "A3A_fnc_createSDKGarrisons"] call A3A_fnc_scheduler;
+                    if( _is_should_spawn_only_by_players) then {
+                      [[_marker], "A3A_fnc_createFlag"] call A3A_fnc_scheduler;
+                    }else{
+                      [[_marker], "A3A_fnc_createSDKGarrisons"] call A3A_fnc_scheduler;
+                    };
                 };
             };
         };
@@ -343,7 +361,7 @@ private _processInvaderMarker = {
                     [[_marker], "A3A_fnc_createAIcontrols"] call A3A_fnc_scheduler;
                 };
 
-                // Prevent other routines taking spawn places 
+                // Prevent other routines taking spawn places
                 [_marker, 1] call A3A_fnc_addTimeForIdle;
 
                 case (_marker in airportsX):
@@ -363,7 +381,7 @@ private _processInvaderMarker = {
                     [[_marker], "A3A_fnc_createAIOutposts"] call A3A_fnc_scheduler;
                 };
 
-                case(_marker in milbases): 
+                case(_marker in milbases):
                 {
                     [[_marker],"A3A_fnc_createAIMilbase"] call A3A_fnc_scheduler;
                 };
@@ -384,7 +402,7 @@ private _processCityCivMarker = {
         case ENABLED:
         {
             // if player is inside distanceSPWN, reset the timer
-            if (_players inAreaArray [_position, distanceSPWN, distanceSPWN] isNotEqualTo []) exitWith 
+            if (_players inAreaArray [_position, distanceSPWN, distanceSPWN] isNotEqualTo []) exitWith
             {
                 spawner setVariable [_timeKey, time + 30, false];
             };

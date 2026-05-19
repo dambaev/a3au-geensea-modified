@@ -25,6 +25,8 @@ class CfgFunctions
             class sellVehicle_patch {};
             class distance {};
             class distance_patch {};
+            class createFlag {};
+            class createFlag_patch {};
         };
         class logistics
         {

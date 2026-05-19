@@ -1,4 +1,5 @@
 call ADDON_fnc_distance_patch;
+call ADDON_fnc_createFlag_patch;
 
 call A3A_fnc_initServer;
 
