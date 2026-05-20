@@ -104,6 +104,20 @@ ADDON_fnc_store_object_cargo_in_object = {
   hint "cargo preset saved";
 };
 
+ADDON_fnc_A3AisItemUnlocked = {
+  params [ "_item_name"];
+  if !(isClass (missionConfigFile/"A3A")) exitWith { true };//safeguard to block running on none antistasi missions
+  _unlocked = false;
+  _categories = [ _item_name] call A3A_fnc_equipmentClassToCategories;
+  {
+    _cat = missionNamespace getVariable [("unlocked" + _x), []];
+    if( _item_name in _cat) then {
+      _unlocked = true;
+    };
+  } forEach _categories;
+  _unlocked;
+};
+
 ADDON_fnc_set_object_cargo_from_object = {
   params [ "_dst", "_src"];
   _items_already_set = _dst getVariable [ "ADDON_fnc_saveLoadVehicleArsenal", false];
@@ -127,6 +141,10 @@ ADDON_fnc_set_object_cargo_from_object = {
 
       {
         _item_name = _x;
+        _is_item_unlocked = [ _item_name] call ADDON_fnc_A3AisItemUnlocked;
+        if (not _is_item_unlocked) then {
+          continue;
+        };
         _item_count = (_items_counts select 1) select _forEachIndex;
         _adjusted_count = _item_count;
         if( _adjusted_count > 20) then {
