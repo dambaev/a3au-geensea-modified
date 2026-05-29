@@ -8,7 +8,7 @@ class EditorData
 	toggles=1153;
 	class ItemIDProvider
 	{
-		nextID=3883;
+		nextID=3884;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=615;
+		nextID=626;
 	};
 	class Camera
 	{
-		pos[]={6457.4307,58.714211,4914.1147};
-		dir[]={-0.36384904,-0.78830242,0.49617878};
-		up[]={-0.46616066,0.6152879,0.63570052};
-		aside[]={0.80641705,0,0.59134746};
+		pos[]={6481.8433,72.71981,4895.3262};
+		dir[]={0.0062446478,-0.75976902,0.65016866};
+		up[]={0.0072970642,0.6501894,0.75973713};
+		aside[]={0.99995762,-8.260713e-09,-0.0096046999};
 	};
 };
 binarizationWanted=0;
@@ -54,13 +54,14 @@ addons[]=
 	"A3_Weapons_F_Ammoboxes",
 	"A3_Structures_F_EPC_Civ_InfoBoards",
 	"A3_Structures_F_Ind_Cargo",
-	"A3_Structures_F_Mil_Flags"
+	"A3_Structures_F_Mil_Flags",
+	"A3_Missions_F_Curator"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=18;
+		items=19;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -169,6 +170,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item18
+		{
+			className="A3_Missions_F_Curator";
+			name="Arma 3 Zeus Update - Playable Content";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 dlcs[]=
@@ -250,7 +258,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=911;
+		items=912;
 		class Item0
 		{
 			dataType="Marker";
@@ -1538,7 +1546,7 @@ class Mission
 					colorName="ColorBrown";
 					a=20.351999;
 					b=12.158;
-					angle=113.85164;
+					angle=113.85163;
 					id=3641;
 				};
 				class Item96
@@ -1551,7 +1559,7 @@ class Mission
 					colorName="ColorBrown";
 					a=20.351999;
 					b=12.158;
-					angle=113.85164;
+					angle=113.85163;
 					id=3642;
 				};
 			};
@@ -2552,7 +2560,7 @@ class Mission
 					colorName="ColorWEST";
 					a=127.9091;
 					b=99.523102;
-					angle=0.055634253;
+					angle=0.055634249;
 					id=2582;
 				};
 				class Item12
@@ -25869,8 +25877,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={6484.3677,39.43,4926.9639};
-						angles[]={0,0.56222343,0};
+						position[]={6484.3682,39.43,4926.9639};
+						angles[]={0,0.56222296,0};
 					};
 					id=2827;
 					type="ModuleCurator_F";
@@ -42598,16 +42606,26 @@ class Mission
 			};
 			id=3882;
 		};
+		class Item911
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6487.5566,39.43,4932.0762};
+			};
+			id=3883;
+			type="ModuleMPTypeGameMaster_F";
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=2;
+			nextID=3;
 		};
 		class Links
 		{
-			items=2;
+			items=3;
 			class Item0
 			{
 				linkID=0;
@@ -42623,6 +42641,16 @@ class Mission
 				linkID=1;
 				item0=2832;
 				item1=2829;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item2
+			{
+				linkID=2;
+				item0=3883;
+				item1=2827;
 				class CustomData
 				{
 					type="Sync";
