@@ -473,7 +473,6 @@ do
         _teamplayer = units teamPlayer select {
             private _veh = vehicle _x;
             _x getVariable ["spawner", false] and _x == effectiveCommander _veh
-            and (_veh == _x or {!(_veh isKindOf "Plane" and (!isTouchingGround _veh or speed _veh > 80))})
         };
         // Add in rebel-controlled UAVs
         _teamplayer append (allUnitsUAV select { side group _x == teamPlayer });
@@ -487,7 +486,7 @@ do
             private _veh = vehicle _rp;
             if (_veh in _playerVehicles) then { continue };
             if (_veh isNotEqualTo _rp) then { _playerVehicles pushBackUnique _veh};
-            if (_veh == _rp or {!(_veh isKindOf "Air" and speed _veh > 50)}) then { _players pushBack _rp };
+            _players pushBack _rp;
         } forEach (allPlayers - entities "HeadlessClient_F");
     };
 
