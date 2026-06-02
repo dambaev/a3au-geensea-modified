@@ -3,6 +3,9 @@ call ADDON_fnc_createFlag_patch;
 
 
 call ADDON_fnc_initClient_patch;
+
+call ADDON_fnc_aggressionUpdateLoop_patch;
+
 call A3A_fnc_initServer;
 
 call ADDON_fnc_getSoftTargets_patch;

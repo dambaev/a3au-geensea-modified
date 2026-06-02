@@ -53,6 +53,8 @@ class CfgFunctions
             class eligibleCommanderGet {};
             class eligibleCommanderRemoveUID {};
             class eligibleCommanderInit {};
+            class aggressionUpdateLoop {};
+            class aggressionUpdateLoop_patch {};
         };
         class logistics
         {
