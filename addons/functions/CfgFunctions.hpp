@@ -12,6 +12,14 @@ class CfgFunctions
             class surrenderAction {};
             class surrenderAction_patch {};
         };
+        class OrgPlayers
+        {
+            file = "addons\functions\OrgPlayers";
+            class theBossTransfer {};
+            class theBossTransfer_patch {};
+            class theBossToggleEligibility {};
+            class theBossToggleEligibility_patch {};
+        };
         class CREATE
         {
             file = "addons\functions\CREATE";

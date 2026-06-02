@@ -26,3 +26,5 @@ call ADDON_fnc_eligibleCommanderInit;
 call ADDON_fnc_administrationInit;
 
 
+call ADDON_fnc_theBossTransfer_patch;
+call ADDON_fnc_theBossToggleEligibility_patch;
