@@ -12,6 +12,12 @@ class CfgFunctions
             class surrenderAction {};
             class surrenderAction_patch {};
         };
+        class init
+        {
+            file = "addons\functions\init";
+            class initClient {};
+            class initClient_patch {};
+        };
         class OrgPlayers
         {
             file = "addons\functions\OrgPlayers";

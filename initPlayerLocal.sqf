@@ -1,3 +1,5 @@
+call ADDON_fnc_initClient_patch;
+
 _this spawn A3A_fnc_initClient;
 
 call ADDON_fnc_getSoftTargets_patch;
