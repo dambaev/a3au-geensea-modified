@@ -1,3 +1,4 @@
+player setVariable ["eligible",false,true]; // do not become commander by default
 _this spawn A3A_fnc_initClient;
 
 call ADDON_fnc_getSoftTargets_patch;
