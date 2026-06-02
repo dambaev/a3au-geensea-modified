@@ -85,3 +85,5 @@ call ADDON_fnc_createFlag_patch;
 call ADDON_fnc_administrationAddAction;
 call ADDON_fnc_eligibleCommanderAddAction;
 
+call ADDON_fnc_mrkWIN_patch;
+

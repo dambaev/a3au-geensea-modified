@@ -55,6 +55,8 @@ class CfgFunctions
             class eligibleCommanderInit {};
             class aggressionUpdateLoop {};
             class aggressionUpdateLoop_patch {};
+            class mrkWIN {};
+            class mrkWIN_patch {};
         };
         class logistics
         {
