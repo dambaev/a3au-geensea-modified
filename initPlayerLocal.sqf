@@ -1,4 +1,3 @@
-player setVariable ["eligible",false,true]; // do not become commander by default
 _this spawn A3A_fnc_initClient;
 
 call ADDON_fnc_getSoftTargets_patch;
@@ -80,3 +79,7 @@ call ADDON_fnc_surrenderAction_patch;
 
 call ADDON_fnc_distance_patch;
 call ADDON_fnc_createFlag_patch;
+
+call ADDON_fnc_administrationAddAction;
+call ADDON_fnc_eligibleCommanderAddAction;
+

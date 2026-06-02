@@ -27,6 +27,18 @@ class CfgFunctions
             class distance_patch {};
             class createFlag {};
             class createFlag_patch {};
+            class isAdministration {};
+            class administrationAddAction {};
+            class administrationAddUID {};
+            class administrationGet {};
+            class administrationRemoveUID {};
+            class administrationInit {};
+            class isEligibleCommander {};
+            class eligibleCommanderAddAction {};
+            class eligibleCommanderAddUID {};
+            class eligibleCommanderGet {};
+            class eligibleCommanderRemoveUID {};
+            class eligibleCommanderInit {};
         };
         class logistics
         {
