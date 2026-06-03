@@ -1,8 +1,12 @@
 call ADDON_fnc_initClient_patch;
 
 call ADDON_fnc_confirmPlacement_patch;
+
 call ADDON_fnc_flagaction_patch;
+
 call ADDON_fnc_FIAinit_patch;
+
+call ADDON_fnc_mrkWIN_patch;
 
 _this spawn A3A_fnc_initClient;
 
@@ -89,5 +93,4 @@ call ADDON_fnc_createFlag_patch;
 call ADDON_fnc_administrationAddAction;
 call ADDON_fnc_eligibleCommanderAddAction;
 
-call ADDON_fnc_mrkWIN_patch;
 

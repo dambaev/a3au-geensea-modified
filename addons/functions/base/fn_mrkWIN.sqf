@@ -21,9 +21,9 @@ Example:
 #include "\x\A3A\addons\core\script_component.hpp"
 FIX_LINE_NUMBERS()
 
-params ["_flagX", "_caller1" ,"_actionID","_argument"];
+params ["_flagX", "_caller" ,"_actionID","_argument"];
 
-if (_caller1 isNotEqualTo player) exitWith {
+if (_caller isNotEqualTo player) exitWith {
     // These can only get called if someone updates the functionality and forgets to update this.
     ServerError("Flag action mrkWIN must be locally called");
 };
