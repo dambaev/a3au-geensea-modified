@@ -1,5 +1,7 @@
 call ADDON_fnc_initClient_patch;
 
+call ADDON_fnc_confirmPlacement_patch;
+
 _this spawn A3A_fnc_initClient;
 
 call ADDON_fnc_getSoftTargets_patch;
