@@ -63,6 +63,9 @@ class CfgFunctions
             class aggressionUpdateLoop_patch {};
             class mrkWIN {};
             class mrkWIN_patch {};
+	    class flagaction {};
+	    class flagaction_patch {};
+	    class flagaction_sellVehicleAddAction {};
         };
         class logistics
         {

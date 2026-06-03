@@ -1,6 +1,7 @@
 call ADDON_fnc_initClient_patch;
 
 call ADDON_fnc_confirmPlacement_patch;
+call ADDON_fnc_flagaction_patch;
 
 _this spawn A3A_fnc_initClient;
 
