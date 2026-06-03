@@ -1,10 +1,13 @@
 call ADDON_fnc_distance_patch;
 call ADDON_fnc_createFlag_patch;
 
+call ADDON_fnc_FIAinit_patch;
+
 
 call ADDON_fnc_initClient_patch;
 
 call ADDON_fnc_aggressionUpdateLoop_patch;
+call ADDON_fnc_EventHandler_EntityCreatedInit;
 
 call A3A_fnc_initServer;
 
