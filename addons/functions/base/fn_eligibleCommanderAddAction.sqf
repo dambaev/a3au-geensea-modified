@@ -20,7 +20,7 @@ mapX addAction
         _is_object_can_be_used = !isNull _objectSelected && isPlayer _objectSelected;
         if not _is_object_can_be_used exitWith {};
 
-        [ getPlayerUID player, name _objectSelected] remoteExec
+        [ getPlayerUID _objectSelected, name _objectSelected] remoteExec
           ["ADDON_fnc_eligibleCommanderAddUID", 2];
 			};
 			private _conditionActive = {
