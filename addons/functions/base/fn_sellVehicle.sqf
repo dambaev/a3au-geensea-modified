@@ -34,6 +34,11 @@ params [
 #include "\x\A3A\addons\core\script_component.hpp"
 FIX_LINE_NUMBERS()
 
+if( !isServer || hasInterface) exitWith {
+  [ _player, _veh] remoteExec [ "A3A_fnc_sellVehicle", 2];
+};
+
+
 #define OccAndInv(VAR) (FactionGet(occ, VAR) + FactionGet(inv, VAR))
 
 /*
@@ -59,7 +64,7 @@ if (isNull _veh) exitWith {
 
 //private _nearestFriendlyAirfield = (airportsX select {sidesX getVariable _x == teamPlayer && {(getMarkerPos _x distance2D _veh) <= 50}});
 private _nearAirfields = airportsX select {
-    (sidesX getVariable [_x, sideUnknown] == teamPlayer) && 
+    (sidesX getVariable [_x, sideUnknown] == teamPlayer) &&
     (getMarkerPos _x distance2D _veh <= 50)
 };
 private _isHQ = _veh distance (getMarkerPos "Synd_HQ") <= 50;
@@ -167,7 +172,12 @@ if (_costs == 0) exitWith {
 
 _costs = round (_costs * (1-damage _veh));
 
-[_hr,_costs] remoteExec ["A3A_fnc_resourcesFIA",2];
+if( _player == theBoss) then {
+  [ _hr, _costs] call A3A_fnc_resourcesFIA;
+} else {
+  [ _costs / 2 ] remoteExec [ "A3A_fnc_resourcesPlayer", _player];
+  [ _hr, _costs / 2] call A3A_fnc_resourcesFIA;
+};
 
 if (_veh in staticsToSave) then {staticsToSave = staticsToSave - [_veh]; publicVariable "staticsToSave"};
 
