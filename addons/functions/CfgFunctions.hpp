@@ -153,6 +153,8 @@ class CfgFunctions
             class controlunit_patch { };
             class postmortem {};
             class postmortem_patch { };
+            class FIAinit {};
+            class FIAinit_patch {};
         };
         class Events
         { //these two functions are used to demonstrate use of events
