@@ -1,3 +1,4 @@
+call ADDON_fnc_kmd_autoUnstuck_patch;
 call ADDON_fnc_distance_patch;
 call ADDON_fnc_createFlag_patch;
 

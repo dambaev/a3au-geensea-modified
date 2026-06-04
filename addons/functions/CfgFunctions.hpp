@@ -136,6 +136,8 @@ class CfgFunctions
             class pl_moveInConvoy_connectTailToLeader {};
             class pl_moveInConvoy_setWaypointPos {};
             class pl_moveInConvoy_addWaypointPos {};
+            class autoUnstuck {};
+            class kmd_autoUnstuck_patch {};
         };
         class DDT_fix
         {
