@@ -69,6 +69,7 @@ class CfgFunctions
             class EventHandler_EntityCreatedInit {};
             class EventHandler_EntityCreated {};
             class EventHandler_EntityCreated_Man {};
+            class trader_sellVehicle {};
             class trader_sellVehicleAddAction {};
             class trader_sellVehicleAddActionInit {};
         };

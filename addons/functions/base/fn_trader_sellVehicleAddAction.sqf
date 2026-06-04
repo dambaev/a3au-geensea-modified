@@ -31,7 +31,7 @@ _action_id = _trader addAction
           };
         };
 
-        [ player, _objectSelected] remoteExec ["A3A_fnc_sellVehicle", 2];
+        [ player, _objectSelected] remoteExec ["ADDON_fnc_trader_sellVehicle", 2];
 			};
 			private _conditionActive = {
 				params ["_object"];
