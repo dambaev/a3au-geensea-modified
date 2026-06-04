@@ -2,7 +2,7 @@ if !(isClass (missionConfigFile/"A3A")) exitWith {};//safeguard to block running
 
 params [ "_flag"];
 
-_flag addAction
+_action_id = _flag addAction
   [ localize "STR_antistasi_dialogs_main_sell_vehicle"
   , {
 			private _object = _this select 0;
@@ -61,4 +61,5 @@ _flag addAction
   , ""
   , "alive _target && {_target distance _this < 5 && {vehicle player == player}}"
   ];
+_flag setVariable [ "ADDON_fnc_flagaction_sellVehicleAddAction" , _action_id, false];
 
