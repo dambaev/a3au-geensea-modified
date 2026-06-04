@@ -1,15 +1,15 @@
 if !(isClass (missionConfigFile/"A3A")) exitWith {};//safeguard to block running on none antistasi missions
 
-params [ "_flag"];
+params [ "_trader"];
 
-_flag addAction
+_action_id = _trader addAction
   [ localize "STR_antistasi_dialogs_main_sell_vehicle"
   , {
 			private _object = _this select 0;
-      _is_commander = [ player] call ADDON_fnc_isEligibleCommander;
-      if( !_is_commander) exitWith {
+      _is_member = player call A3A_fnc_isMember;
+      if( !_is_member) exitWith {
         [ localize "STR_antistasi_dialogs_main_sell_vehicle"
-          , localize "STR_HR_GRG_Feedback_sellVehicle_comOnly"
+          , localize "STR_A3A_OrgPlayers_membership_success_remove_target"
           ] call SCRT_fnc_misc_deniedHint;
       };
 
@@ -61,4 +61,6 @@ _flag addAction
   , ""
   , "alive _target && {_target distance _this < 5 && {vehicle player == player}}"
   ];
+
+_trader setVariable [ "ADDON_fnc_trader_sellVehicleAddAction", _action_id, false];
 

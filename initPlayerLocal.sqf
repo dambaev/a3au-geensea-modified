@@ -93,6 +93,8 @@ call ADDON_fnc_createFlag_patch;
 call ADDON_fnc_administrationAddAction;
 call ADDON_fnc_eligibleCommanderAddAction;
 
+call ADDON_fnc_trader_sellVehicleAddActionInit;
+
 _is_commander = [ player ] call ADDON_fnc_isEligibleCommander;
 if( leader group player == player && _is_commander) then {
   (hcLeader (group player)) hcRemoveGroup (group player);
