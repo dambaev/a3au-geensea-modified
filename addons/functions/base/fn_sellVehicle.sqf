@@ -160,7 +160,7 @@ private _costs = call {
     };
     if (_is_pow)  exitWith {
       _hr = 1;
-      10000
+      10000 * (1 + tierWar / 10);
     };
     0;
 };
