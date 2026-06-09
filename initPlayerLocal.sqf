@@ -89,7 +89,6 @@ call ADDON_fnc_surrenderAction_patch;
 
 
 call ADDON_fnc_distance_patch;
-call ADDON_fnc_createFlag_patch;
 
 call ADDON_fnc_administrationAddAction;
 call ADDON_fnc_eligibleCommanderAddAction;

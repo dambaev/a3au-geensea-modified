@@ -37,6 +37,7 @@ class CfgFunctions
             file = "addons\functions\CREATE";
             class groupDespawner {};
             class groupDespawner_patch {};
+            class createAIAA {};
         };
         class base
         {
@@ -46,7 +47,6 @@ class CfgFunctions
             class distance {};
             class distance_patch {};
             class createFlag {};
-            class createFlag_patch {};
             class isAdministration {};
             class administrationAddAction {};
             class administrationAddUID {};

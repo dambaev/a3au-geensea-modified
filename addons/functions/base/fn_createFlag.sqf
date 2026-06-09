@@ -29,6 +29,7 @@ FIX_LINE_NUMBERS()
 
 // the spawn units array will update ones at this count cycles
 #define DESPAWN 2
+#define DESPAWNPLAYER 6
 
 /* -------------------------------------------------------------------------- */
 /*                                 procedures                                 */
@@ -59,27 +60,16 @@ if (_markerX != "Synd_HQ" && {!(_markerX in milAdministrationsX)}) then {  ///ma
   };
   Info_1("flag had been created for %1", _markerX);
 };
-["locationSpawned", [_markerX, "RebelOutpost", true]] call EFUNC(Events,triggerEvent);
 
 Info_1("wait loop for %1", _markerX);
 waitUntil {
   sleep 1;
-  _occupants = units Occupants select { _x getVariable ["spawner", false] and _x == effectiveCommander vehicle _x };
-  _invaders = units Invaders select { _x getVariable ["spawner", false] and _x == effectiveCommander vehicle _x };
-  _is_should_spawn_by_enemies = _occupants inAreaArray
-        [_positionX, distanceSPWN, distanceSPWN] isNotEqualTo []
-    || _invaders inAreaArray
-        [_positionX, distanceSPWN, distanceSPWN] isNotEqualTo []
-    || _markerX in forcedSpawn
-    ;
-  if( _is_should_spawn_by_enemies) then {
-    // DESPAWN this marker to trigger full garrison respawn
-    spawner setVariable [_markerX, DESPAWN, true];
-  };
-  (spawner getVariable _markerX == DESPAWN )
+  ( isNil {spawner getVariable _markerX}
+  || spawner getVariable _markerX == DESPAWNPLAYER
+  )
 };
 
 {if (!(_x in staticsToSave)) then {deleteVehicle _x}} forEach _vehiclesX;
-["locationSpawned", [_markerX, "RebelOutpost", false]] call EFUNC(Events,triggerEvent);
 Info_1("flag had been deleted for %1", _markerX);
+spawner setVariable [ _markerX, DESPAWN, true];
 
