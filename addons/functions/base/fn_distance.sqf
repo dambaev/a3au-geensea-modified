@@ -351,20 +351,17 @@ private _processFIAMarker = {
             _spawn_by_inv_slow = _invaders inAreaArray
               [_position, distanceSPWN, distanceSPWN] isNotEqualTo [];
             if( _spawn_by_inv_slow) exitWith {};
-            // or somebody green is control unit and is inside distanceSPWN2
-            _spawn_by_player_slow = _players inAreaArray
-              [_position, distanceSPWN2, distanceSPWN2] isNotEqualTo [];
-            if( _spawn_by_player_slow) exitWith {};
             // or marker is forced to spawn than exit (marker still ENABLED)
             _is_forced = _marker in forcedSpawn;
             if( _is_forced) exitWith {};
 
+            _is_aa_post = _marker in aapostsFIA;
             // if somebody opfor fast target is inside _AA_spawn_distance
-            _spawn_by_inv_fast = _invaders_planes inAreaArray
+            _spawn_by_inv_fast = _is_aa_post && _invaders_planes inAreaArray
                 [_position, _AA_spawn_distance, _AA_spawn_distance] isNotEqualTo [];
             if( _spawn_by_inv_fast) exitWith {};
             // if somebody opfor fast target is inside _AA_spawn_distance
-            _spawn_by_occ_fast = _occupants_planes inAreaArray
+            _spawn_by_occ_fast = _is_aa_post && _occupants_planes inAreaArray
                 [_position, _AA_spawn_distance, _AA_spawn_distance] isNotEqualTo [];
             if( _spawn_by_occ_fast) exitWith {};
 
@@ -386,24 +383,12 @@ private _processFIAMarker = {
             // or sombody opfor is inside distanceSPWN
             _spawn_by_inv_slow = _invaders inAreaArray
               [_position, distanceSPWN, distanceSPWN] isNotEqualTo [];
-            // or somebody green is player and is inside distanceSPWN2
-            _spawn_by_player_slow = _players inAreaArray
-              [_position, distanceSPWN2, distanceSPWN2] isNotEqualTo [];
             // or marker is forced to spawn than exit (marker still ENABLED)
             _is_forced = _marker in forcedSpawn;
 
-            // if somebody opfor fast target is inside _AA_despawn_distance
-            _spawn_by_inv_fast = _invaders_planes inAreaArray
-                [_position, _AA_despawn_distance, _AA_despawn_distance] isNotEqualTo [];
-            // if somebody west fast target is inside _AA_despawn_distance
-            _spawn_by_occ_fast = _occupants_planes inAreaArray
-                [_position, _AA_despawn_distance, _AA_despawn_distance] isNotEqualTo [];
             _is_should_spawn = _spawn_by_occ_slow
               || _spawn_by_inv_slow
-              || _spawn_by_player_slow
               || _is_forced
-              || _spawn_by_inv_fast
-              || _spawn_by_occ_fast
               ;
 
             if (_is_should_spawn)
@@ -425,9 +410,7 @@ private _processFIAMarker = {
                 // or somebody green is player and is inside distanceSPWN
                 // then exit (marker still DISABLED)
                 if (_occupants inAreaArray [_position, distanceSPWN1, distanceSPWN1] isNotEqualTo []
-                    || { _invaders inAreaArray [_position, distanceSPWN1, distanceSPWN1] isNotEqualTo []
-                       || { _players inAreaArray [_position, distanceSPWN, distanceSPWN] isNotEqualTo [] }
-                       }
+                    || { _invaders inAreaArray [_position, distanceSPWN1, distanceSPWN1] isNotEqualTo [] }
                    )
                 exitWith {};
 
@@ -857,42 +840,85 @@ do
         _counter = 0;
 
         // only count one spawner per vehicle
-        _occupants = allUnits select { side _x == Occupants
-          and _x getVariable ["spawner", false]
-          and _x == effectiveCommander vehicle _x
-        };
-        _occupants_planes = _occupants select {
-          private _veh = vehicle _x;
-          _x getVariable ["spawner", false] and _x == effectiveCommander _veh
-          and _veh isKindOf "Plane"
-          and (!isTouchingGround _veh or speed _veh > 80)
-        };
-        _invaders = allUnits select { side _x == Invaders
-          and _x getVariable ["spawner", false]
-          and _x == effectiveCommander vehicle _x
-        };
-        _invaders_planes = _invaders select {
-          private _veh = vehicle _x;
-          _x getVariable ["spawner", false] and _x == effectiveCommander _veh
-          and _veh isKindOf "Plane"
-          and (!isTouchingGround _veh or speed _veh > 80)
-        };
+        _occupants = [];
+        _occupants_planes = [];
+        _invaders = [];
+        _invaders_planes = [];
+        {
+          if( !alive _x) then { continue; };
+          _side = side _x;
+          switch( _side) do {
+            case Occupants: {
+              private _veh = vehicle _x;
+              if( _x getVariable [ "spawner", false]
+                && _x == effectiveCommander _veh
+                ) then {
+                _occupants pushBack _x;
+              };
+              if( _veh != _x) then {
+                if( _x == effectiveCommander _veh
+                  && (_veh isKindOf "Plane")
+                  && (speed _veh > 80)
+                  ) then {
+                  _occupants_planes pushBack _veh;
+                }
+              };
+            };
+            case Invaders: {
+              private _veh = vehicle _x;
+              if( _x getVariable [ "spawner", false]
+                && _x == effectiveCommander _veh
+                ) then {
+                _invaders pushBack _x;
+              };
+              if( _veh != _x) then {
+                if( _x == effectiveCommander _veh
+                  && (_veh isKindOf "Plane")
+                  && (speed _veh > 80)
+                  ) then {
+                  _invaders_planes pushBack _veh;
+                }
+              };
+            };
+            case teamPlayer: {
+              private _veh = vehicle _x;
+              if( _x getVariable [ "spawner", false]
+                && _x == effectiveCommander _veh
+                ) then {
+                _teamplayer pushBack _x;
+              };
+              if( _veh != _x) then {
+                if( _x == effectiveCommander _veh
+                  && (_veh isKindOf "Plane")
+                  && (speed _veh > 80)
+                  ) then {
+                  _teamplayer_planes pushBack _veh;
+                }
+              };
+            };
+          };
+        } forEach (allUnits);
 
-        // Exclude players in fast-moving fixed-wing aircraft
-        _teamplayer = units teamPlayer select {
-            private _veh = vehicle _x;
-            _x getVariable ["spawner", false] and _x == effectiveCommander _veh
-        };
-        // non-optimal, use 1 forEach
-        _teamplayer_planes = _teamplayer select {
-          private _veh = vehicle _x;
-          _x getVariable ["spawner", false] and _x == effectiveCommander _veh
-            and _veh isKindOf "Plane"
-            and (!isTouchingGround _veh or speed _veh > 80)
-        };
         // Add in rebel-controlled UAVs
-        _teamplayer append (allUnitsUAV select { side group _x == teamPlayer });
-        _teamplayer_planes append (allUnitsUAV select { side group _x == teamPlayer });
+        {
+          switch( side group _x) do {
+            case Occupants:
+            {
+              _occupants pushBack _x;
+              _occupants_planes pushBack _x;
+            };
+            case Invaders:
+            {
+              _invaders pushBack _x;
+              _invaders_planes pushBack _x;
+            };
+            case teamPlayer:
+            {
+              _teamplayer pushBack _x;
+              _teamplayer_planes pushBack _x;
+            };
+          };
+        } forEach( allUnitsUAV);
 
         // Players array is used to spawn civilians in cities and rebel garrisons, so ignore remote controlled and airborne units
         // Players array is used to spawn civilians in cities and rebel garrisons, so ignore airborne units and translate remote-control
