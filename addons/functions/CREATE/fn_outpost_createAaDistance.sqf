@@ -173,7 +173,7 @@ waitUntil {
       if( !(_vehicle isKindOf "Air")) then { continue; };
       _height = (getPosASL _target) select 2;
       _height_atl = (getPosATL _target) select 2;
-      if( _height_atl > _height) then {  _height = _height_atl;};
+      if( isNil {_height} || _height_atl > _height) then {  _height = _height_atl;};
       if( _height >= 100) then { continue; }; // TODO: height?
       _side = side (effectiveCommander _vehicle);
       if( _side != Occupants && _side != Invaders) then { continue; };
@@ -187,12 +187,15 @@ waitUntil {
       if( _groupX knowsAbout _target < 4) then {
         _groupX reveal [ _target, 4.0];
       };
-      _height_asl = (getPosASL _target) select 2;
+      _height = (getPosASL _target) select 2;
       _height_atl = (getPosATL _target) select 2;
+      if( isNil {_height} || _height < _height_atl) then { _height = _height_atl; };
+      if( _height > 500) then {
+        _target flyInHeight [500, true];
+      };
       _groupX setBehaviour "COMBAT";
       _groupX setCombatMode "RED";
-      ServerInfo_4("[%1] targetting at %2, height asl/atl: %3, %4", _markerX
-        , typeOf _target, _height_asl, _height_atl);
+      ServerInfo_3("[%1] targetting at %2, height: %3", _markerX , typeOf _target, _height);
       {
         if( vehicle _x == _x) then {
           [ _x, _target] call _infantry_fire_at_with_aa;
