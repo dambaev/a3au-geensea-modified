@@ -38,6 +38,7 @@ class CfgFunctions
             class groupDespawner {};
             class groupDespawner_patch {};
             class createAIAA {};
+            class outpost_createAaDistance {};
         };
         class base
         {

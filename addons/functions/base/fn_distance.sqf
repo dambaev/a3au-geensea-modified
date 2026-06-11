@@ -485,13 +485,13 @@ private _processFIAMarker = {
                       Info_1("[%1]: full spawn");
                       // ENABLED this marker
                       spawner setVariable [_marker, ENABLED, true];
-                      [[_marker],"SCRT_fnc_outpost_createAaDistance"] call A3A_fnc_scheduler;
+                      [[_marker, _AA_spawn_distance],"ADDON_fnc_outpost_createAaDistance"] call A3A_fnc_scheduler;
                     };
                     case( _is_should_spawn_by_fast): {
                       Info_1("[%1]: spawn by planes");
                       // ENABLED this marker
                       spawner setVariable [_marker, ENABLED, true];
-                      [[_marker],"SCRT_fnc_outpost_createAaDistance"] call A3A_fnc_scheduler;
+                      [[_marker, _AA_spawn_distance],"ADDON_fnc_outpost_createAaDistance"] call A3A_fnc_scheduler;
                     };
                   };
                 };
