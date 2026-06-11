@@ -11,6 +11,19 @@ call ADDON_fnc_EventHandler_EntityCreatedInit;
 
 call A3A_fnc_initServer;
 
+// C-130J is unlockable by any AA. So don't use it
+waitUntil { sleep 1; !(isNil {A3A_faction_occ})};
+waitUntil { sleep 1; !(isNil {A3A_faction_inv})};
+if( A3A_faction_occ get "name" == "CDF") then {
+  A3A_faction_occ set ["vehiclesPlanesTransport", [ "rhsgref_cdf_reg_Mi8amt"], false];
+  publicVariable "A3A_faction_occ";
+};
+if( A3A_faction_inv get "name" == "US Army") then {
+  A3A_faction_inv set ["vehiclesPlanesTransport", ["RHS_CH_47F_10"], false];
+  publicVariable "A3A_faction_inv";
+};
+
+
 call ADDON_fnc_getSoftTargets_patch;
 call ADDON_fnc_getTargetsAT_patch;
 call ADDON_fnc_autoEquipDrones;
