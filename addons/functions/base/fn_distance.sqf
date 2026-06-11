@@ -318,16 +318,16 @@ private _processFIAMarker = {
               // DESPAWN marker
               spawner setVariable [_marker, DESPAWNPLAYER, true];
             };
-            // if somebody opfor fast target is inside _AA_spawn_distance
+            // if somebody opfor fast target is inside _AA_fia_despawn_distance
             _spawn_by_inv_fast = _invaders_planes inAreaArray
-                [_position, _AA_spawn_distance, _AA_spawn_distance] isNotEqualTo [];
+                [_position, _AA_fia_despawn_distance, _AA_fia_despawn_distance] isNotEqualTo [];
             if( _spawn_by_inv_fast) exitWith {
               // DESPAWN marker
               spawner setVariable [_marker, DESPAWNPLAYER, true];
             };
-            // if somebody opfor fast target is inside _AA_spawn_distance
+            // if somebody opfor fast target is inside _AA_fia_despawn_distance
             _spawn_by_occ_fast = _occupants_planes inAreaArray
-                [_position, _AA_spawn_distance, _AA_spawn_distance] isNotEqualTo [];
+                [_position, _AA_fia_despawn_distance, _AA_fia_despawn_distance] isNotEqualTo [];
             if( _spawn_by_occ_fast) exitWith {
               // DESPAWN marker
               spawner setVariable [_marker, DESPAWNPLAYER, true];
@@ -356,13 +356,13 @@ private _processFIAMarker = {
             if( _is_forced) exitWith {};
 
             _is_aa_post = _marker in aapostsFIA;
-            // if somebody opfor fast target is inside _AA_spawn_distance
+            // if somebody opfor fast target is inside _AA_fia_spawn_distance
             _spawn_by_inv_fast = _is_aa_post && _invaders_planes inAreaArray
-                [_position, _AA_spawn_distance, _AA_spawn_distance] isNotEqualTo [];
+                [_position, _AA_fia_spawn_distance, _AA_fia_spawn_distance] isNotEqualTo [];
             if( _spawn_by_inv_fast) exitWith {};
-            // if somebody opfor fast target is inside _AA_spawn_distance
+            // if somebody opfor fast target is inside _AA_fia_spawn_distance
             _spawn_by_occ_fast = _is_aa_post && _occupants_planes inAreaArray
-                [_position, _AA_spawn_distance, _AA_spawn_distance] isNotEqualTo [];
+                [_position, _AA_fia_spawn_distance, _AA_fia_spawn_distance] isNotEqualTo [];
             if( _spawn_by_occ_fast) exitWith {};
 
             // DISABLE marker
@@ -429,7 +429,7 @@ private _processFIAMarker = {
                 true;
               }else {
                 _invaders_planes inAreaArray
-                  [_position, _AA_spawn_distance, _AA_spawn_distance] isNotEqualTo [];
+                  [_position, _AA_fia_spawn_distance, _AA_fia_spawn_distance] isNotEqualTo [];
               };
             // if somebody west fast target is inside _AA_spawn_distance
             _spawn_by_occ_slow = _occupants inAreaArray
@@ -439,7 +439,7 @@ private _processFIAMarker = {
                 true;
               }else{
                 _occupants_planes inAreaArray
-                  [_position, _AA_spawn_distance, _AA_spawn_distance] isNotEqualTo [];
+                  [_position, _AA_fia_spawn_distance, _AA_fia_spawn_distance] isNotEqualTo [];
               };
             _is_should_be_full_spawn = _spawn_by_occ_slow
               || _spawn_by_inv_slow
@@ -485,13 +485,13 @@ private _processFIAMarker = {
                       Info_1("[%1]: full spawn");
                       // ENABLED this marker
                       spawner setVariable [_marker, ENABLED, true];
-                      [[_marker, _AA_spawn_distance],"ADDON_fnc_outpost_createAaDistance"] call A3A_fnc_scheduler;
+                      [[_marker, _AA_fia_spawn_distance],"ADDON_fnc_outpost_createAaDistance"] call A3A_fnc_scheduler;
                     };
                     case( _is_should_spawn_by_fast): {
                       Info_1("[%1]: spawn by planes");
                       // ENABLED this marker
                       spawner setVariable [_marker, ENABLED, true];
-                      [[_marker, _AA_spawn_distance],"ADDON_fnc_outpost_createAaDistance"] call A3A_fnc_scheduler;
+                      [[_marker, _AA_fia_spawn_distance],"ADDON_fnc_outpost_createAaDistance"] call A3A_fnc_scheduler;
                     };
                   };
                 };
@@ -826,6 +826,8 @@ private _playerVehicles = [];
 
 private _AA_spawn_distance = 8000;
 private _AA_despawn_distance = 9000;
+private _AA_fia_spawn_distance = 6000;
+private _AA_fia_despawn_distance = 7000;
 
 private ["_markers", "_marker", "_position"];
 

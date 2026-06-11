@@ -57,8 +57,10 @@ if (_crewManIndex != -1) then {
     [_crewMan, EGVAR(core,scanHorizonHeight)] spawn SCRT_fnc_common_scanHorizon;
 };
 
-_groupX setBehaviour "AWARE";
-_groupX setCombatMode "YELLOW";
+//_groupX setBehaviour "AWARE";
+//_groupX setCombatMode "YELLOW";
+_groupX setBehaviour "COMBAT";
+_groupX setCombatMode "RED";
 
 [_veh, teamPlayer] call A3A_fnc_AIVEHinit;
 
@@ -164,7 +166,7 @@ _counter = 0;
 waitUntil {
 	sleep 1;
   _counter = _counter + 1;
-  if( _counter > 10) then {
+  if( _counter > 20) then {
     _counter = 0;
     _target = objNull;
     _target_distance = _spawn_distance * _spawn_distance;
@@ -197,11 +199,9 @@ waitUntil {
       _groupX setCombatMode "RED";
       ServerInfo_3("[%1] targetting at %2, height: %3", _markerX , typeOf _target, _height);
       {
-        if( vehicle _x == _x) then {
-          [ _x, _target] call _infantry_fire_at_with_aa;
-        } else {
-          [ _x, _target] call _vehicle_fire_at_with_aa;
-        };
+        _unit reload [_weapon, ""];
+        _unit doTarget _target;
+        _unit commandTarget _target;
       } forEach (units _groupX);
     };
   };
