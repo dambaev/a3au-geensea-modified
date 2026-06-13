@@ -97,7 +97,12 @@ call ADDON_fnc_eligibleCommanderAddAction;
 
 call ADDON_fnc_trader_sellVehicleAddActionInit;
 
-_is_commander = [ player ] call ADDON_fnc_isEligibleCommander;
+_is_commander
+waitUntil {
+  sleep 1;
+  _is_commander = [ player ] call ADDON_fnc_isEligibleCommander;
+  !isNil {_is_commander}
+};
 if( leader group player == player && _is_commander) then {
   (hcLeader (group player)) hcRemoveGroup (group player);
   player hcSetGroup [group player];

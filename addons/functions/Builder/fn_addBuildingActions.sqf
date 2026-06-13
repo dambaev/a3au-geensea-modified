@@ -16,7 +16,7 @@ params ["_plankObject", "_holdTime"];
     "a3\ui_f\data\igui\cfg\actions\repair_ca.paa",
     "a3\ui_f\data\igui\cfg\actions\repair_ca.paa",
     "isNull objectParent player && {player call A3A_fnc_isEngineer && {(player distance _target < 8)}}",
-    "_is_repair = ( ((_this#0) getVariable ['A3A_build_name','']) select [0,7] == 'Repair '); (_is_repair || ([player] call A3A_fnc_canFight)) and (player distance _target < 10)",
+    "_is_repair = ( (_target getVariable ['A3A_build_name','']) select [0,7] == 'Repair '); (_is_repair || ([player] call A3A_fnc_canFight)) and (player distance _target < 10)",
     {},
     {},
     {
