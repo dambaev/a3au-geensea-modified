@@ -46,6 +46,7 @@ call ADDON_fnc_groupDespawner_patch;
 call ADDON_fnc_surrenderAction_patch;
 
 call ADDON_fnc_eligibleCommanderInit;
+call ADDON_fnc_participantTutorInit;
 call ADDON_fnc_administrationInit;
 
 

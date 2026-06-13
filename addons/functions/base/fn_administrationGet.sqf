@@ -6,6 +6,10 @@ if( isServer) then {
   };
   ADDON_fnc_administrationGet_administration_uids;
 } else {
+  waitUntil {
+    sleep 1;
+    !(isNil {ADDON_fnc_administrationGet_administration_uids})
+  };
   ADDON_fnc_administrationGet_administration_uids;
 };
 

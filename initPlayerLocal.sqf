@@ -94,10 +94,11 @@ call ADDON_fnc_distance_patch;
 
 call ADDON_fnc_administrationAddAction;
 call ADDON_fnc_eligibleCommanderAddAction;
+call ADDON_fnc_participantTutorAddAction;
 
 call ADDON_fnc_trader_sellVehicleAddActionInit;
 
-_is_commander
+_is_commander = false;
 waitUntil {
   sleep 1;
   _is_commander = [ player ] call ADDON_fnc_isEligibleCommander;

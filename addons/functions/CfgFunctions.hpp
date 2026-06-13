@@ -37,6 +37,8 @@ class CfgFunctions
             class theBossTransfer_patch {};
             class theBossToggleEligibility {};
             class theBossToggleEligibility_patch {};
+            class memberAdd {};
+            class memberAdd_patch {};
         };
         class CREATE
         {
@@ -66,6 +68,12 @@ class CfgFunctions
             class eligibleCommanderGet {};
             class eligibleCommanderRemoveUID {};
             class eligibleCommanderInit {};
+            class isParticipantTutor {};
+            class participantTutorAddAction {};
+            class participantTutorAddUID {};
+            class participantTutorGet {};
+            class participantTutorRemoveUID {};
+            class participantTutorInit {};
             class aggressionUpdateLoop {};
             class aggressionUpdateLoop_patch {};
             class mrkWIN {};
