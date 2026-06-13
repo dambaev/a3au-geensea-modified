@@ -98,13 +98,19 @@ call ADDON_fnc_participantTutorAddAction;
 
 call ADDON_fnc_trader_sellVehicleAddActionInit;
 
-_is_commander = false;
-waitUntil {
-  sleep 1;
-  _is_commander = [ player ] call ADDON_fnc_isEligibleCommander;
-  !isNil {_is_commander}
+[] spawn {
+  while { true} do {
+    _is_commander = false;
+    waitUntil {
+      sleep 1;
+      _is_commander = [ player ] call ADDON_fnc_isEligibleCommander;
+      !isNil {_is_commander}
+    };
+    if( leader group player == player && _is_commander) then {
+      (hcLeader (group player)) hcRemoveGroup (group player);
+      player hcSetGroup [group player];
+    };
+    sleep 5;
+  };
 };
-if( leader group player == player && _is_commander) then {
-  (hcLeader (group player)) hcRemoveGroup (group player);
-  player hcSetGroup [group player];
-};
+
