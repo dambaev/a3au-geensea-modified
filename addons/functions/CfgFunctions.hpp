@@ -12,6 +12,12 @@ class CfgFunctions
             class surrenderAction {};
             class surrenderAction_patch {};
         };
+        class Builder
+        {
+            file = "addons\functions\Builder";
+            class addBuildingActions {};
+            class addBuildingActions_patch {};
+        };
         class garage
         {
             file = "addons\functions\garage";

@@ -9,6 +9,8 @@ call ADDON_fnc_FIAinit_patch;
 
 call ADDON_fnc_mrkWIN_patch;
 
+call ADDON_fnc_addBuildingActions_patch;
+
 _this spawn A3A_fnc_initClient;
 
 call ADDON_fnc_getSoftTargets_patch;

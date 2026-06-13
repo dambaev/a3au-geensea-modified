@@ -9,6 +9,8 @@ call ADDON_fnc_initClient_patch;
 call ADDON_fnc_aggressionUpdateLoop_patch;
 call ADDON_fnc_EventHandler_EntityCreatedInit;
 
+call ADDON_fnc_addBuildingActions_patch;
+
 call A3A_fnc_initServer;
 
 // C-130J is unlockable by any AA. So don't use it
