@@ -4,6 +4,12 @@ class CfgFunctions
     class ADDON
     {
         tag = "ADDON";
+        class Dialogs
+        {
+            file = "addons\functions\Dialogs";
+            class persistentSave {};
+            class persistentSaveAddAction {};
+        };
         class AI
         {
             file = "addons\functions\AI";

@@ -95,6 +95,7 @@ call ADDON_fnc_distance_patch;
 call ADDON_fnc_administrationAddAction;
 call ADDON_fnc_eligibleCommanderAddAction;
 call ADDON_fnc_participantTutorAddAction;
+call ADDON_fnc_persistentSaveAddAction;
 
 call ADDON_fnc_trader_sellVehicleAddActionInit;
 
