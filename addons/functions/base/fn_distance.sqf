@@ -826,8 +826,8 @@ private _playerVehicles = [];
 
 private _AA_spawn_distance = 8000;
 private _AA_despawn_distance = 9000;
-private _AA_fia_spawn_distance = 6000;
-private _AA_fia_despawn_distance = 7000;
+private _AA_fia_spawn_distance = 3000;
+private _AA_fia_despawn_distance = 4000;
 
 private ["_markers", "_marker", "_position"];
 
