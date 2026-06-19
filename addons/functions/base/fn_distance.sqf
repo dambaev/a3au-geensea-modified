@@ -911,6 +911,7 @@ do
         _counter = 0;
 
         // only count one spawner per vehicle
+        _teamplayer_planes = [];
         _occupants = [];
         _occupants_planes = [];
         _invaders = [];
