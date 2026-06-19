@@ -666,7 +666,7 @@ private _processInvaderMarker = {
             _full_spawn_by_occ_fast = _occupants_planes inAreaArray
                 [_position, _Fast_full_spawn_distance, _Fast_full_spawn_distance] isNotEqualTo [];
 
-            // if somebody green fast target is inside _AA_despawn_distance
+            // if somebody green fast target is inside _AA_spawn_distance
             _spawn_by_fia_fast = _teamplayer_planes inAreaArray
                 [_position, _AA_spawn_distance, _AA_spawn_distance] isNotEqualTo [];
             _spawn_by_occ_fast = _occupants_planes inAreaArray
