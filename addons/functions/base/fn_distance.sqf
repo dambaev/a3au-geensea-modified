@@ -141,10 +141,10 @@ private _processOccupantMarker = {
             // or this marker is forced spawn than exit (marker still ENABLED)
             _is_forced = _marker in forcedSpawn;
 
-            // if somebody green fast target is inside _AA_despawn_distance
+            // if somebody green fast target is inside _Fast_full_despawn_distance
             _spawn_by_fia_fast = _teamplayer_planes inAreaArray
                 [_position, _Fast_full_despawn_distance, _Fast_full_despawn_distance] isNotEqualTo [];
-            // if somebody opfor fast target is inside _AA_despawn_distance
+            // if somebody opfor fast target is inside _Fast_full_despawn_distance
             _spawn_by_inv_fast = _invaders_planes inAreaArray
                 [_position, _Fast_full_despawn_distance, _Fast_full_despawn_distance] isNotEqualTo [];
             // if somebody green is inside distanceSPWN
@@ -928,6 +928,7 @@ do
               };
               if( _veh != _x) then {
                 if( _x == effectiveCommander _veh
+                  && (alive _veh)
                   && (_veh isKindOf "Plane")
                   && (speed _veh > 80)
                   ) then {
@@ -944,6 +945,7 @@ do
               };
               if( _veh != _x) then {
                 if( _x == effectiveCommander _veh
+                  && (alive _veh)
                   && (_veh isKindOf "Plane")
                   && (speed _veh > 80)
                   ) then {
@@ -960,6 +962,7 @@ do
               };
               if( _veh != _x) then {
                 if( _x == effectiveCommander _veh
+                  && (alive _veh)
                   && (_veh isKindOf "Plane")
                   && (speed _veh > 80)
                   ) then {
@@ -975,16 +978,19 @@ do
           switch( side group _x) do {
             case Occupants:
             {
+              if( !(alive _x)) then { continue; };
               _occupants pushBack _x;
               _occupants_planes pushBack _x;
             };
             case Invaders:
             {
+              if( !(alive _x)) then { continue; };
               _invaders pushBack _x;
               _invaders_planes pushBack _x;
             };
             case teamPlayer:
             {
+              if( !(alive _x)) then { continue; };
               _teamplayer pushBack _x;
               _teamplayer_planes pushBack _x;
             };
