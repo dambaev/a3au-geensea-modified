@@ -171,12 +171,6 @@ private _processOccupantMarker = {
             }
             else
             {
-                // if somebody green is inside distanceSPWN1
-                // or somebody opfor is inside distanceSPWN than exit (marker still DISABLED)
-                if (_teamplayer inAreaArray [_position, distanceSPWN1, distanceSPWN1] isNotEqualTo []
-                    || { _invaders inAreaArray [_position, distanceSPWN, distanceSPWN] isNotEqualTo [] })
-                exitWith {};
-
                 // DESPAWN this marker
                 spawner setVariable [_marker, DESPAWN, true];
             };
@@ -429,15 +423,6 @@ private _processFIAMarker = {
             }
             else
             {
-                // if sombody blufor is inside distanceSPWN1
-                // or somebody opfor is inside distanceSPWN1
-                // or somebody green is player and is inside distanceSPWN
-                // then exit (marker still DISABLED)
-                if (_occupants inAreaArray [_position, distanceSPWN1, distanceSPWN1] isNotEqualTo []
-                    || { _invaders inAreaArray [_position, distanceSPWN1, distanceSPWN1] isNotEqualTo [] }
-                   )
-                exitWith {};
-
                 // DESPAWN this marker
                 spawner setVariable [_marker, DESPAWN, true];
             };
@@ -696,12 +681,6 @@ private _processInvaderMarker = {
             }
             else
             {
-                // if somebody green is inside distanceSPWN1
-                // or somebody bluefor is inside distanceSPWN then exit (marker still DISABLED)
-                if (_teamplayer inAreaArray [_position, distanceSPWN1, distanceSPWN1] isNotEqualTo []
-                    || { _occupants inAreaArray [_position, distanceSPWN, distanceSPWN] isNotEqualTo [] })
-                exitWith {};
-
                 // DESPAWN this marker
                 spawner setVariable [_marker, DESPAWN, true];
             };
