@@ -37,6 +37,8 @@ FIX_LINE_NUMBERS()
 #define DESPAWNAA 5
 #define DESPAWNPLAYER 6
 
+A3A_processOccupantMarkerDebug = false;
+
 /* -------------------------------------------------------------------------- */
 /*                                 procedures                                 */
 /* -------------------------------------------------------------------------- */
@@ -101,23 +103,33 @@ private _processOccupantMarker = {
             // if somebody green is inside distanceSPWN
             _spawn_by_fia_slow = _teamplayer inAreaArray
                 [_position, distanceSPWN, distanceSPWN] isNotEqualTo [];
-            if( _spawn_by_fia_slow) exitWith {};
+            if( _spawn_by_fia_slow) exitWith {
+              if( A3A_processOccupant) then { Info("ENABLED by _spawn_by_fia_slow");};
+            };
             // or somebody opfor is inside distanceSPWN2
             _spawn_by_inv_slow = _invaders inAreaArray
               [_position, distanceSPWN2, distanceSPWN2] isNotEqualTo [];
-            if( _spawn_by_inv_slow) exitWith {};
+            if( _spawn_by_inv_slow) exitWith {
+              if( A3A_processOccupant) then { Info("ENABLED by _spawn_by_inv_slow");};
+            };
             // or this marker is forced spawn than exit (marker still ENABLED)
             _is_forced = _marker in forcedSpawn;
-            if( _is_forced) exitWith {};
+            if( _is_forced) exitWith {
+              if( A3A_processOccupant) then { Info("ENABLED by _is_forced");};
+            };
 
             // if somebody green fast target is inside _Fast_full_despawn_distance
             _spawn_by_fia_fast = _teamplayer_planes inAreaArray
                 [_position, _Fast_full_despawn_distance, _Fast_full_despawn_distance] isNotEqualTo [];
-            if( _spawn_by_fia_fast) exitWith {};
+            if( _spawn_by_fia_fast) exitWith {
+              if( A3A_processOccupant) then { Info("ENABLED by _spawn_by_fia_fast");};
+            };
             // if somebody opfor fast target is inside _Fast_full_despawn_distance
             _spawn_by_inv_fast = _invaders_planes inAreaArray
                 [_position, _Fast_full_despawn_distance, _Fast_full_despawn_distance] isNotEqualTo [];
-            if( _spawn_by_inv_fast) exitWith {};
+            if( _spawn_by_inv_fast) exitWith {
+              if( A3A_processOccupant) then { Info("ENABLED by _spawn_by_inv_fast");};
+            };
 
             // DISABLE this marker
             spawner setVariable [_marker, DISABLED, true];
@@ -159,6 +171,12 @@ private _processOccupantMarker = {
             if (_is_should_be_enabled)
             then
             {
+                if( A3A_processOccupant) then {
+                  Info_5("DISABLED-> ENABLED: _spawn_by_fia_slow %1, _spawn_by_inv_slow %2, _is_forced %3, _spawn_by_fia_fast %4, _spawn_by_inv_fast %5"
+                    , _spawn_by_fia_slow, _spawn_by_inv_slow, _is_forced
+                    , _spawn_by_fia_fast, _spawn_by_inv_fast
+                    );
+                };
                 // ENABLE this marker
                 spawner setVariable [_marker, ENABLED, true];
 

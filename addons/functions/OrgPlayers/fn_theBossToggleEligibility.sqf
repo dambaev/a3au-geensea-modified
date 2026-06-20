@@ -6,10 +6,7 @@ _playerX = _playerX getVariable ["owner", _playerX];
 
 private _forceElection = false;
 private _text = "";
-
-_is_in_commanders_list = [ _playerX ] call ADDON_fnc_isEligibleCommander;
-
-if (!_is_in_commanders_list || _playerX getVariable ["eligible",false]) then
+if (_playerX getVariable ["eligible",false]) then
 {
 	_playerX setVariable ["eligible",false,true];
 	if (_playerX == theBoss) then
