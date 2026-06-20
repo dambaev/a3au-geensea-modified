@@ -987,18 +987,21 @@ do
             case Occupants:
             {
               if( !(alive _x)) then { continue; };
+              if( speed _x < 80) then { continue; };
               _occupants pushBack _x;
               _occupants_planes pushBack _x;
             };
             case Invaders:
             {
               if( !(alive _x)) then { continue; };
+              if( speed _x < 80) then { continue; };
               _invaders pushBack _x;
               _invaders_planes pushBack _x;
             };
             case teamPlayer:
             {
               if( !(alive _x)) then { continue; };
+              if( speed _x < 80) then { continue; };
               _teamplayer pushBack _x;
               _teamplayer_planes pushBack _x;
             };
