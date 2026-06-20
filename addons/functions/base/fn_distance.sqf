@@ -104,31 +104,31 @@ private _processOccupantMarker = {
             _spawn_by_fia_slow = _teamplayer inAreaArray
                 [_position, distanceSPWN, distanceSPWN] isNotEqualTo [];
             if( _spawn_by_fia_slow) exitWith {
-              if( A3A_processOccupantMarkerDebug) then { ServerInfo_1("[%1] ENABLED by _spawn_by_fia_slow", _marker);};
+              if( A3A_processOccupantMarkerDebug) then { Info_1("[%1] ENABLED by _spawn_by_fia_slow", _marker);};
             };
             // or somebody opfor is inside distanceSPWN2
             _spawn_by_inv_slow = _invaders inAreaArray
               [_position, distanceSPWN2, distanceSPWN2] isNotEqualTo [];
             if( _spawn_by_inv_slow) exitWith {
-              if( A3A_processOccupantMarkerDebug) then { ServerInfo_1("[%1] ENABLED by _spawn_by_inv_slow", _marker);};
+              if( A3A_processOccupantMarkerDebug) then { Info_1("[%1] ENABLED by _spawn_by_inv_slow", _marker);};
             };
             // or this marker is forced spawn than exit (marker still ENABLED)
             _is_forced = _marker in forcedSpawn;
             if( _is_forced) exitWith {
-              if( A3A_processOccupantMarkerDebug) then { ServerInfo_1("[%1] ENABLED by _is_forced", _marker);};
+              if( A3A_processOccupantMarkerDebug) then { Info_1("[%1] ENABLED by _is_forced", _marker);};
             };
 
             // if somebody green fast target is inside _Fast_full_despawn_distance
             _spawn_by_fia_fast = _teamplayer_planes inAreaArray
                 [_position, _Fast_full_despawn_distance, _Fast_full_despawn_distance] isNotEqualTo [];
             if( _spawn_by_fia_fast) exitWith {
-              if( A3A_processOccupantMarkerDebug) then { ServerInfo_1("[%1] ENABLED by _spawn_by_fia_fast", _marker);};
+              if( A3A_processOccupantMarkerDebug) then { Info_1("[%1] ENABLED by _spawn_by_fia_fast", _marker);};
             };
             // if somebody opfor fast target is inside _Fast_full_despawn_distance
             _spawn_by_inv_fast = _invaders_planes inAreaArray
                 [_position, _Fast_full_despawn_distance, _Fast_full_despawn_distance] isNotEqualTo [];
             if( _spawn_by_inv_fast) exitWith {
-              if( A3A_processOccupantMarkerDebug) then { ServerInfo_1("[%1] ENABLED by _spawn_by_inv_fast", _marker);};
+              if( A3A_processOccupantMarkerDebug) then { Info_1("[%1] ENABLED by _spawn_by_inv_fast", _marker);};
             };
 
             // DISABLE this marker
@@ -172,7 +172,7 @@ private _processOccupantMarker = {
             then
             {
                 if( A3A_processOccupantMarkerDebug) then {
-                  ServerInfo_6("[%6] DISABLED-> ENABLED: _spawn_by_fia_slow %1, _spawn_by_inv_slow %2, _is_forced %3, _spawn_by_fia_fast %4, _spawn_by_inv_fast %5"
+                  Info_6("[%6] DISABLED-> ENABLED: _spawn_by_fia_slow %1, _spawn_by_inv_slow %2, _is_forced %3, _spawn_by_fia_fast %4, _spawn_by_inv_fast %5"
                     , _spawn_by_fia_slow, _spawn_by_inv_slow, _is_forced
                     , _spawn_by_fia_fast, _spawn_by_inv_fast
                     , _marker
@@ -243,7 +243,7 @@ private _processOccupantMarker = {
             // and marker is not forced to spawn than exit (marker still DESPAWN)
             if( !_is_should_be_enabled) exitWith {};
             if( A3A_processOccupantMarkerDebug) then {
-              ServerInfo_8("[%1] DESPAWN-> ENABLED*: _spawn_by_fia_slow %2, _spawn_by_inv_slow %3, _is_forced %4, _full_spawn_by_fia_fast %5, _full_spawn_by_inv_fast %6, _spawn_by_fia_fast %7, _spawn_by_inv_fast %8"
+              Info_8("[%1] DESPAWN-> ENABLED*: _spawn_by_fia_slow %2, _spawn_by_inv_slow %3, _is_forced %4, _full_spawn_by_fia_fast %5, _full_spawn_by_inv_fast %6, _spawn_by_fia_fast %7, _spawn_by_inv_fast %8"
                 , _marker
                 , _spawn_by_fia_slow, _spawn_by_inv_slow, _is_forced
                 , _full_spawn_by_fia_fast, _full_spawn_by_inv_fast
@@ -518,13 +518,13 @@ private _processFIAMarker = {
                 case (_marker in aapostsFIA): {
                   switch(true) do {
                     case( _is_should_be_full_spawn): {
-                      ServerInfo_1("[%1]: full spawn", _marker);
+                      Info_1("[%1]: full spawn", _marker);
                       // ENABLED this marker
                       spawner setVariable [_marker, ENABLED, true];
                       [[_marker, _AA_fia_spawn_distance],"ADDON_fnc_outpost_createAaDistance"] call A3A_fnc_scheduler;
                     };
                     case( _is_should_spawn_by_fast): {
-                      ServerInfo_1("[%1]: spawn by planes", _marker);
+                      Info_1("[%1]: spawn by planes", _marker);
                       // ENABLED this marker
                       spawner setVariable [_marker, ENABLED, true];
                       [[_marker, _AA_fia_spawn_distance],"ADDON_fnc_outpost_createAaDistance"] call A3A_fnc_scheduler;
@@ -1016,7 +1016,7 @@ do
             if (_veh isNotEqualTo _rp) then { _playerVehicles pushBackUnique _veh};
             _players pushBack _rp;
         } forEach (allPlayers - entities "HeadlessClient_F");
-        ServerInfo_7("_players %1, _teamplayer %2, _teamplayer_planes %3, _occupants %4, _occupants_planes %5, _invaders %6, _invaders_planes %7"
+        Info_7("_players %1, _teamplayer %2, _teamplayer_planes %3, _occupants %4, _occupants_planes %5, _invaders %6, _invaders_planes %7"
           , count _players, count _teamplayer, count _teamplayer_planes
           , count _occupants, count _occupant_planes, count _invaders
           , count _invaders_planes
