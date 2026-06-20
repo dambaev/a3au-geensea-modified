@@ -104,31 +104,31 @@ private _processOccupantMarker = {
             _spawn_by_fia_slow = _teamplayer inAreaArray
                 [_position, distanceSPWN, distanceSPWN] isNotEqualTo [];
             if( _spawn_by_fia_slow) exitWith {
-              if( A3A_processOccupant) then { Info_1("[%1] ENABLED by _spawn_by_fia_slow", _marker);};
+              if( A3A_processOccupantMarkerDebug) then { Info_1("[%1] ENABLED by _spawn_by_fia_slow", _marker);};
             };
             // or somebody opfor is inside distanceSPWN2
             _spawn_by_inv_slow = _invaders inAreaArray
               [_position, distanceSPWN2, distanceSPWN2] isNotEqualTo [];
             if( _spawn_by_inv_slow) exitWith {
-              if( A3A_processOccupant) then { Info_1("[%1] ENABLED by _spawn_by_inv_slow", _marker);};
+              if( A3A_processOccupantMarkerDebug) then { Info_1("[%1] ENABLED by _spawn_by_inv_slow", _marker);};
             };
             // or this marker is forced spawn than exit (marker still ENABLED)
             _is_forced = _marker in forcedSpawn;
             if( _is_forced) exitWith {
-              if( A3A_processOccupant) then { Info_1("[%1] ENABLED by _is_forced", _marker);};
+              if( A3A_processOccupantMarkerDebug) then { Info_1("[%1] ENABLED by _is_forced", _marker);};
             };
 
             // if somebody green fast target is inside _Fast_full_despawn_distance
             _spawn_by_fia_fast = _teamplayer_planes inAreaArray
                 [_position, _Fast_full_despawn_distance, _Fast_full_despawn_distance] isNotEqualTo [];
             if( _spawn_by_fia_fast) exitWith {
-              if( A3A_processOccupant) then { Info_1("[%1] ENABLED by _spawn_by_fia_fast", _marker);};
+              if( A3A_processOccupantMarkerDebug) then { Info_1("[%1] ENABLED by _spawn_by_fia_fast", _marker);};
             };
             // if somebody opfor fast target is inside _Fast_full_despawn_distance
             _spawn_by_inv_fast = _invaders_planes inAreaArray
                 [_position, _Fast_full_despawn_distance, _Fast_full_despawn_distance] isNotEqualTo [];
             if( _spawn_by_inv_fast) exitWith {
-              if( A3A_processOccupant) then { Info_1("[%1] ENABLED by _spawn_by_inv_fast", _marker);};
+              if( A3A_processOccupantMarkerDebug) then { Info_1("[%1] ENABLED by _spawn_by_inv_fast", _marker);};
             };
 
             // DISABLE this marker
@@ -171,7 +171,7 @@ private _processOccupantMarker = {
             if (_is_should_be_enabled)
             then
             {
-                if( A3A_processOccupant) then {
+                if( A3A_processOccupantMarkerDebug) then {
                   Info_6("[%6] DISABLED-> ENABLED: _spawn_by_fia_slow %1, _spawn_by_inv_slow %2, _is_forced %3, _spawn_by_fia_fast %4, _spawn_by_inv_fast %5"
                     , _spawn_by_fia_slow, _spawn_by_inv_slow, _is_forced
                     , _spawn_by_fia_fast, _spawn_by_inv_fast
@@ -242,6 +242,14 @@ private _processOccupantMarker = {
             // and nobody opfor is inside distanceSPWN2
             // and marker is not forced to spawn than exit (marker still DESPAWN)
             if( !_is_should_be_enabled) exitWith {};
+            if( A3A_processOccupantMarkerDebug) then {
+              Info_8("[%1] DESPAWN-> ENABLED*: _spawn_by_fia_slow %2, _spawn_by_inv_slow %3, _is_forced %4, _full_spawn_by_fia_fast %5, _full_spawn_by_inv_fast %6, _spawn_by_fia_fast %7, _spawn_by_inv_fast %8"
+                , _marker
+                , _spawn_by_fia_slow, _spawn_by_inv_slow, _is_forced
+                , _full_spawn_by_fia_fast, _full_spawn_by_inv_fast
+                , _spawn_by_fia_fast, _spawn_by_inv_fast
+                );
+            };
 
             switch(true) do
             {
