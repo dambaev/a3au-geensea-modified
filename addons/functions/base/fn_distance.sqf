@@ -1016,6 +1016,11 @@ do
             if (_veh isNotEqualTo _rp) then { _playerVehicles pushBackUnique _veh};
             _players pushBack _rp;
         } forEach (allPlayers - entities "HeadlessClient_F");
+        ServerInfo_7("_players %1, _teamplayer %2, _teamplayer_planes %3, _occupants %4, _occupants_planes %5, _invaders %6, _invaders_planes %7"
+          , count _players, count _teamplayer, count _teamplayer_planes
+          , count _occupants, count _occupant_planes, count _invaders
+          , count _invaders_planes
+          );
     };
 
     {
