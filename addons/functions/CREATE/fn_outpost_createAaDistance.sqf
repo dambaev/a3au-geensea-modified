@@ -199,6 +199,8 @@ waitUntil {
       _groupX setCombatMode "RED";
       ServerInfo_3("[%1] targetting at %2, height: %3", _markerX , typeOf _target, _height);
       {
+        _unit = _x;
+        _weapon = secondaryWeapon _unit;
         _unit reload [_weapon, ""];
         _unit doTarget _target;
         _unit commandTarget _target;
