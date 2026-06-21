@@ -193,10 +193,12 @@ private _processOccupantMarker = {
             _is_forced = _marker in forcedSpawn;
 
             // if somebody green fast target is inside _AA_spawn_distance
-            _spawn_by_fia_fast = _teamplayer_planes inAreaArray
+            _timeKey = _marker + "_AA_reload_after_time";
+            _is_AA_reload_time_reached = spawner getVariable [ _timeKey, 0] <= time;
+            _spawn_by_fia_fast = _is_AA_reload_time_reached && _teamplayer_planes inAreaArray
                 [_position, _AA_spawn_distance, _AA_spawn_distance] isNotEqualTo [];
             // if somebody opfor fast target is inside _AA_spawn_distance
-            _spawn_by_inv_fast = (gameMode == 1) && _invaders_planes inAreaArray
+            _spawn_by_inv_fast = (gameMode == 1) && _is_AA_reload_time_reached && _invaders_planes inAreaArray
                 [_position, _AA_spawn_distance, _AA_spawn_distance] isNotEqualTo [];
             // if somebody green is inside distanceSPWN
             // or somebody opfor is inside distanceSPWN2
@@ -671,10 +673,12 @@ private _processInvaderMarker = {
             _is_forced = _marker in forcedSpawn;
 
             // if somebody green fast target is inside _AA_spawn_distance
-            _spawn_by_fia_fast = _teamplayer_planes inAreaArray
+            _timeKey = _marker + "_AA_reload_after_time";
+            _is_AA_reload_time_reached = spawner getVariable [ _timeKey, 0] <= time;
+            _spawn_by_fia_fast = _is_AA_reload_time_reached && _teamplayer_planes inAreaArray
                 [_position, _AA_spawn_distance, _AA_spawn_distance] isNotEqualTo [];
             // if somebody opfor fast target is inside _AA_spawn_distance
-            _spawn_by_occ_fast = (gameMode == 1) && _occupants_planes inAreaArray
+            _spawn_by_occ_fast = (gameMode == 1) && _is_AA_reload_time_reached && _occupants_planes inAreaArray
                 [_position, _AA_spawn_distance, _AA_spawn_distance] isNotEqualTo [];
 
             _should_be_full_spawn = _spawn_by_fia_slow
@@ -865,7 +869,11 @@ do
               if( _veh != _x) then {
                 if( _x == effectiveCommander _veh
                   && (alive _veh)
-                  && ( (_veh isKindOf "Plane" && speed _veh > 180) || (_veh isKindOf "Air" && speed _veh > 100))
+                  && ( (_veh isKindOf "Plane" && speed _veh > 220)
+                     || ((!(_veh isKindOf "Plane"))
+                         && _veh isKindOf "Air" && speed _veh > 150
+                        )
+                     )
                   ) then {
                   _occupants_planes pushBack _veh;
                 }
@@ -882,7 +890,11 @@ do
               if( _veh != _x) then {
                 if( _x == effectiveCommander _veh
                   && (alive _veh)
-                  && ( (_veh isKindOf "Plane" && speed _veh > 180) || (_veh isKindOf "Air" && speed _veh > 100))
+                  && ( (_veh isKindOf "Plane" && speed _veh > 220)
+                     || ((!(_veh isKindOf "Plane"))
+                         && _veh isKindOf "Air" && speed _veh > 150
+                        )
+                     )
                   ) then {
                   _invaders_planes pushBack _veh;
                 }
@@ -899,7 +911,11 @@ do
               if( _veh != _x) then {
                 if( _x == effectiveCommander _veh
                   && (alive _veh)
-                  && ( (_veh isKindOf "Plane" && speed _veh > 180) || (_veh isKindOf "Air" && speed _veh > 100))
+                  && ( (_veh isKindOf "Plane" && speed _veh > 220)
+                     || ((!(_veh isKindOf "Plane"))
+                         && _veh isKindOf "Air" && speed _veh > 150
+                        )
+                     )
                   ) then {
                   _teamplayer_planes pushBack _veh;
                 }
@@ -920,7 +936,7 @@ do
             case Occupants:
             {
               if( !(alive _x)) then { continue; };
-              if( !( (_veh isKindOf "Plane" && speed _veh > 180) || (_veh isKindOf "Air" && speed _veh > 100))) then {
+              if( speed _x < 100) then {
                 _occupants pushBackUnique _x;
               } else {
                 _occupants_planes pushBackUnique _x;
@@ -929,7 +945,7 @@ do
             case Invaders:
             {
               if( !(alive _x)) then { continue; };
-              if( !( (_veh isKindOf "Plane" && speed _veh > 180) || (_veh isKindOf "Air" && speed _veh > 100))) then {
+              if( speed _x < 100) then {
                 _invaders pushBack _x;
               } else {
                 _invaders_planes pushBackUnique _x;
@@ -938,7 +954,7 @@ do
             case teamPlayer:
             {
               if( !(alive _x)) then { continue; };
-              if( !( (_veh isKindOf "Plane" && speed _veh > 180) || (_veh isKindOf "Air" && speed _veh > 100))) then {
+              if( speed _x < 100) then {
                 _teamplayer pushBackUnique _x;
               } else {
                 _teamplayer_planes pushBackUnique _x;
@@ -956,10 +972,11 @@ do
             private _veh = vehicle _rp;
             if (_veh in _playerVehicles) then { continue };
             if (_veh isNotEqualTo _rp) then { _playerVehicles pushBackUnique _veh};
-            if( ( (_veh isKindOf "Plane" && speed _veh > 180)
-              || (_veh isKindOf "Air" && speed _veh > 100))
-              ) then { continue; };
-            _players pushBack _rp;
+            if ( (_veh isKindOf "Plane" && speed _veh > 220)
+               || ((!(_veh isKindOf "Plane"))
+                   && _veh isKindOf "Air" && speed _veh > 150
+                  )
+               ) then { continue; };
         } forEach (allPlayers - entities "HeadlessClient_F");
         if( A3A_distanceDebug) then {
           Info_7("_players %1, _teamplayer %2, _teamplayer_planes %3, _occupants %4, _occupants_planes %5, _invaders %6, _invaders_planes %7"

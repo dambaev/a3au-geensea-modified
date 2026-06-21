@@ -129,7 +129,7 @@ if (random 10 < (tierWar + difficultyCoef)) then {
 			_veh setDir (_spawnParameter select 1);
 		};
     if( !isNil { _veh}) then {
-      ServerInfo_2("[%1]: created AA %1", _markerX, typeOf _veh);
+      ServerInfo_2("[%1]: created AA %2", _markerX, typeOf _veh);
     };
 
 		_groupVeh = [_sideX, _veh] call A3A_fnc_createVehicleCrew;
@@ -171,9 +171,19 @@ deleteMarker _mrk;
 { deleteVehicle _x } forEach _dogs;
 { deleteGroup _x }forEach _groups;
 { deleteVehicle _x } forEach _props;
+_alive_vehicles_count = count (_vehiclesX select { alive _x});
+_vehicles_count = count _vehiclesX;
+_dead_vehicles_coef = 0;
+if( _vehicles_count > 0) then {
+  _dead_vehicles_coef = 1 - (_alive_vehicles_count /  _vehicles_count);
+};
+if( _dead_vehicles_coef > 0) then {
+  _timeKey = _markerX + "_AA_reload_after_time";
+  spawner setVariable [_timeKey, time + 600 * _dead_vehicles_coef, true];
+};
 { deleteVehicle _x; } forEach _vehiclesX;
 
 
-ServerInfo_1("[%1]: DESPAWNED", _markerX);
+ServerInfo_2("[%1]: DESPAWNED, dead vehicles coef %2", _markerX, _dead_vehicles_coef);
 spawner setVariable [ _markerX, DESPAWN, true];
 
