@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=648;
+		nextID=659;
 	};
 	class Camera
 	{
@@ -2560,7 +2560,7 @@ class Mission
 					colorName="ColorWEST";
 					a=127.9091;
 					b=99.523102;
-					angle=0.055634242;
+					angle=0.055634238;
 					id=2582;
 				};
 				class Item12
@@ -41339,11 +41339,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=2;
+			nextID=3;
 		};
 		class Links
 		{
-			items=2;
+			items=3;
 			class Item0
 			{
 				linkID=0;
@@ -41359,6 +41359,16 @@ class Mission
 				linkID=1;
 				item0=2832;
 				item1=2829;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item2
+			{
+				linkID=2;
+				item0=4084;
+				item1=2827;
 				class CustomData
 				{
 					type="Sync";
