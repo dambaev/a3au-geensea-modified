@@ -8,7 +8,7 @@ class EditorData
 	toggles=1153;
 	class ItemIDProvider
 	{
-		nextID=4084;
+		nextID=4085;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=637;
+		nextID=648;
 	};
 	class Camera
 	{
@@ -54,13 +54,14 @@ addons[]=
 	"A3_Weapons_F_Ammoboxes",
 	"A3_Structures_F_EPC_Civ_InfoBoards",
 	"A3_Structures_F_Ind_Cargo",
-	"A3_Structures_F_Mil_Flags"
+	"A3_Structures_F_Mil_Flags",
+	"A3_Missions_F_Curator"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=18;
+		items=19;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -169,6 +170,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item18
+		{
+			className="A3_Missions_F_Curator";
+			name="Arma 3 Zeus Update - Playable Content";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 dlcs[]=
@@ -250,7 +258,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=811;
+		items=812;
 		class Item0
 		{
 			dataType="Marker";
@@ -2552,7 +2560,7 @@ class Mission
 					colorName="ColorWEST";
 					a=127.9091;
 					b=99.523102;
-					angle=0.055634245;
+					angle=0.055634242;
 					id=2582;
 				};
 				class Item12
@@ -41315,6 +41323,16 @@ class Mission
 			};
 			id=3679;
 			atlOffset=-0.00015640259;
+		};
+		class Item811
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6488.5801,39.43,4925.7129};
+			};
+			id=4084;
+			type="ModuleMPTypeGameMaster_F";
 		};
 	};
 	class Connections
