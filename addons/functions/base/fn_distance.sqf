@@ -865,8 +865,7 @@ do
               if( _veh != _x) then {
                 if( _x == effectiveCommander _veh
                   && (alive _veh)
-                  && (_veh isKindOf "Air")
-                  && (speed _veh > 80)
+                  && ( (_veh isKindOf "Plane" && speed _veh > 180) || (_veh isKindOf "Air" && speed _veh > 100))
                   ) then {
                   _occupants_planes pushBack _veh;
                 }
@@ -883,8 +882,7 @@ do
               if( _veh != _x) then {
                 if( _x == effectiveCommander _veh
                   && (alive _veh)
-                  && (_veh isKindOf "Air")
-                  && (speed _veh > 80)
+                  && ( (_veh isKindOf "Plane" && speed _veh > 180) || (_veh isKindOf "Air" && speed _veh > 100))
                   ) then {
                   _invaders_planes pushBack _veh;
                 }
@@ -901,8 +899,7 @@ do
               if( _veh != _x) then {
                 if( _x == effectiveCommander _veh
                   && (alive _veh)
-                  && (_veh isKindOf "Air")
-                  && (speed _veh > 80)
+                  && ( (_veh isKindOf "Plane" && speed _veh > 180) || (_veh isKindOf "Air" && speed _veh > 100))
                   ) then {
                   _teamplayer_planes pushBack _veh;
                 }
@@ -923,7 +920,7 @@ do
             case Occupants:
             {
               if( !(alive _x)) then { continue; };
-              if( speed _x < 80) then {
+              if( !( (_veh isKindOf "Plane" && speed _veh > 180) || (_veh isKindOf "Air" && speed _veh > 100))) then {
                 _occupants pushBackUnique _x;
               } else {
                 _occupants_planes pushBackUnique _x;
@@ -932,7 +929,7 @@ do
             case Invaders:
             {
               if( !(alive _x)) then { continue; };
-              if( speed _x < 80) then {
+              if( !( (_veh isKindOf "Plane" && speed _veh > 180) || (_veh isKindOf "Air" && speed _veh > 100))) then {
                 _invaders pushBack _x;
               } else {
                 _invaders_planes pushBackUnique _x;
@@ -941,7 +938,7 @@ do
             case teamPlayer:
             {
               if( !(alive _x)) then { continue; };
-              if( speed _x < 80) then {
+              if( !( (_veh isKindOf "Plane" && speed _veh > 180) || (_veh isKindOf "Air" && speed _veh > 100))) then {
                 _teamplayer pushBackUnique _x;
               } else {
                 _teamplayer_planes pushBackUnique _x;
@@ -959,6 +956,9 @@ do
             private _veh = vehicle _rp;
             if (_veh in _playerVehicles) then { continue };
             if (_veh isNotEqualTo _rp) then { _playerVehicles pushBackUnique _veh};
+            if( ( (_veh isKindOf "Plane" && speed _veh > 180)
+              || (_veh isKindOf "Air" && speed _veh > 100))
+              ) then { continue; };
             _players pushBack _rp;
         } forEach (allPlayers - entities "HeadlessClient_F");
         if( A3A_distanceDebug) then {
