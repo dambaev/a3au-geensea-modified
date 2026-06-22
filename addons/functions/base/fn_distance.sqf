@@ -478,11 +478,11 @@ private _processFIAMarker = {
               };
             _spawn_by_inv_fast = !_spawn_by_occ_slow && {
                 _invaders_planes inAreaArray
-                  [_position, _AA_fia_spawn_distance, _AA_fia_spawn_distance] isNotEqualTo [];
+                  [_position, _AA_fia_spawn_distance, _AA_fia_spawn_distance] isNotEqualTo []
               };
             _spawn_by_occ_fast = !_spawn_by_inv_fast && {
                 _occupants_planes inAreaArray
-                  [_position, _AA_fia_spawn_distance, _AA_fia_spawn_distance] isNotEqualTo [];
+                  [_position, _AA_fia_spawn_distance, _AA_fia_spawn_distance] isNotEqualTo []
               };
             _is_should_be_full_spawn = _spawn_by_occ_slow
               || _spawn_by_inv_slow
@@ -934,7 +934,9 @@ do
                      )
                   ) then {
                   _occupants_planes pushBack _veh;
-                }
+                } else {
+                  _occupants pushBack _x;
+                };
               }else {
                 if( _x getVariable [ "spawner", false]
                   && _x == effectiveCommander _veh
@@ -955,7 +957,9 @@ do
                      )
                   ) then {
                   _invaders_planes pushBack _veh;
-                }
+                } else {
+                  _invaders pushBack _x;
+                };
               } else {
                 if( _x getVariable [ "spawner", false]
                   && _x == effectiveCommander _veh
@@ -976,7 +980,9 @@ do
                      )
                   ) then {
                   _teamplayer_planes pushBack _veh;
-                }
+                } else {
+                  _teamplayer pushBack _x;
+                };
               }else {
                 if( _x getVariable [ "spawner", false]
                   && _x == effectiveCommander _veh
