@@ -11,6 +11,9 @@ call ADDON_fnc_EventHandler_EntityCreatedInit;
 
 call ADDON_fnc_addBuildingActions_patch;
 
+A3A_invaderAttackTierWar = 7;
+publicVariable "A3A_invaderAttackTierWar";
+
 call A3A_fnc_initServer;
 
 // C-130J is unlockable by any AA. So don't use it

@@ -99,7 +99,7 @@ while {true} do
         A3A_resourcesDefenceInv = (A3A_resourcesDefenceInv + _resRateDef) min _maxDef;
         A3A_resourcesAttackInv = A3A_resourcesAttackInv + _resRateAtk;
 
-        if ((!isNull theBoss) && A3A_resourcesAttackInv > 0 && !bigAttackInProgress) then
+        if ((!isNull theBoss) && tierWar >= A3A_invaderAttackTierWar && A3A_resourcesAttackInv > 0 && !bigAttackInProgress) then
         {
             private _success = [Invaders] call A3A_fnc_chooseAttack;
             if (!_success) then {
