@@ -51,6 +51,12 @@ private _processOccupantMarker = {
     {
         case ENABLEDAA:
         {
+            // or this marker is forced spawn than exit (marker still ENABLED)
+            _is_forced = _marker in forcedSpawn;
+            if( _is_forced) exitWith {
+              // DESPAWN this marker and then will trigger full spawn
+              spawner setVariable [_marker, DESPAWNAA, true];
+            };
             // if somebody green is inside distanceSPWN
             _spawn_by_fia_slow = _teamplayer inAreaArray
                 [_position, distanceSPWN, distanceSPWN] isNotEqualTo [];
@@ -59,26 +65,23 @@ private _processOccupantMarker = {
               spawner setVariable [_marker, DESPAWNAA, true];
             };
             // or somebody opfor is inside distanceSPWN2
-            _spawn_by_inv_slow = (gameMode == 1) && _invaders inAreaArray
-              [_position, distanceSPWN2, distanceSPWN2] isNotEqualTo [];
+            _spawn_by_inv_slow = (gameMode == 1) && {
+                _invaders inAreaArray
+                  [_position, distanceSPWN2, distanceSPWN2] isNotEqualTo []
+              };
             if( _spawn_by_inv_slow) exitWith {
-              // DESPAWN this marker and then will trigger full spawn
-              spawner setVariable [_marker, DESPAWNAA, true];
-            };
-            // or this marker is forced spawn than exit (marker still ENABLED)
-            _is_forced = _marker in forcedSpawn;
-            if( _is_forced) exitWith {
               // DESPAWN this marker and then will trigger full spawn
               spawner setVariable [_marker, DESPAWNAA, true];
             };
 
             // if somebody green fast target is inside _AA_despawn_distance
-            _spawn_by_fia_fast = _teamplayer_planes inAreaArray
-                [_position, _AA_despawn_distance, _AA_despawn_distance] isNotEqualTo [];
+            _spawn_by_fia_fast = true;
             if( _spawn_by_fia_fast) exitWith {};
             // if somebody opfor fast target is inside _AA_despawn_distance
-            _spawn_by_inv_fast = (gameMode == 1) && _invaders_planes inAreaArray
-                [_position, _AA_despawn_distance, _AA_despawn_distance] isNotEqualTo [];
+            _spawn_by_inv_fast = (gameMode == 1) && {
+                _invaders_planes inAreaArray
+                  [_position, _AA_despawn_distance, _AA_despawn_distance] isNotEqualTo []
+              };
             if( _spawn_by_inv_fast) exitWith {};
 
             // DESPAWNAA this marker and then will trigger full spawn
@@ -86,6 +89,11 @@ private _processOccupantMarker = {
         };
         case ENABLED:
         {
+            // or this marker is forced spawn than exit (marker still ENABLED)
+            _is_forced = _marker in forcedSpawn;
+            if( _is_forced) exitWith {
+              if( A3A_processOccupantMarkerDebug) then { Info_1("[%1] ENABLED by _is_forced", _marker);};
+            };
             // if somebody green is inside distanceSPWN
             _spawn_by_fia_slow = _teamplayer inAreaArray
                 [_position, distanceSPWN, distanceSPWN] isNotEqualTo [];
@@ -98,11 +106,6 @@ private _processOccupantMarker = {
             if( _spawn_by_inv_slow) exitWith {
               if( A3A_processOccupantMarkerDebug) then { Info_1("[%1] ENABLED by _spawn_by_inv_slow", _marker);};
             };
-            // or this marker is forced spawn than exit (marker still ENABLED)
-            _is_forced = _marker in forcedSpawn;
-            if( _is_forced) exitWith {
-              if( A3A_processOccupantMarkerDebug) then { Info_1("[%1] ENABLED by _is_forced", _marker);};
-            };
 
             // if somebody green fast target is inside _Fast_full_despawn_distance
             _spawn_by_fia_fast = _teamplayer_planes inAreaArray
@@ -111,8 +114,10 @@ private _processOccupantMarker = {
               if( A3A_processOccupantMarkerDebug) then { Info_1("[%1] ENABLED by _spawn_by_fia_fast", _marker);};
             };
             // if somebody opfor fast target is inside _Fast_full_despawn_distance
-            _spawn_by_inv_fast = (gameMode == 1) && _invaders_planes inAreaArray
-                [_position, _Fast_full_despawn_distance, _Fast_full_despawn_distance] isNotEqualTo [];
+            _spawn_by_inv_fast = (gameMode == 1) && {
+                _invaders_planes inAreaArray
+                  [_position, _Fast_full_despawn_distance, _Fast_full_despawn_distance] isNotEqualTo []
+              };
             if( _spawn_by_inv_fast) exitWith {
               if( A3A_processOccupantMarkerDebug) then { Info_1("[%1] ENABLED by _spawn_by_inv_fast", _marker);};
             };
@@ -130,21 +135,33 @@ private _processOccupantMarker = {
 
         case DISABLED:
         {
-            // if somebody green is inside distanceSPWN
-            _spawn_by_fia_slow = _teamplayer inAreaArray
-                [_position, distanceSPWN, distanceSPWN] isNotEqualTo [];
-            // or somebody opfor is inside distanceSPWN2
-            _spawn_by_inv_slow = (gameMode == 1) && _invaders inAreaArray
-              [_position, distanceSPWN2, distanceSPWN2] isNotEqualTo [];
             // or this marker is forced spawn than exit (marker still ENABLED)
             _is_forced = _marker in forcedSpawn;
+            // if somebody green is inside distanceSPWN
+            _spawn_by_fia_slow = !_is_forced && {
+                _teamplayer inAreaArray
+                  [_position, distanceSPWN, distanceSPWN] isNotEqualTo []
+              };
+            // or somebody opfor is inside distanceSPWN2
+            _spawn_by_inv_slow = !_spawn_by_fia_slow && {
+                (gameMode == 1)
+              } && {
+                _invaders inAreaArray
+                  [_position, distanceSPWN2, distanceSPWN2] isNotEqualTo []
+              };
 
             // if somebody green fast target is inside _Fast_full_despawn_distance
-            _spawn_by_fia_fast = _teamplayer_planes inAreaArray
-                [_position, _Fast_full_despawn_distance, _Fast_full_despawn_distance] isNotEqualTo [];
+            _spawn_by_fia_fast = !_spawn_by_inv_slow && {
+                _teamplayer_planes inAreaArray
+                  [_position, _Fast_full_despawn_distance, _Fast_full_despawn_distance] isNotEqualTo []
+              };
             // if somebody opfor fast target is inside _Fast_full_despawn_distance
-            _spawn_by_inv_fast = (gameMode == 1) && _invaders_planes inAreaArray
-                [_position, _Fast_full_despawn_distance, _Fast_full_despawn_distance] isNotEqualTo [];
+            _spawn_by_inv_fast = !_spawn_by_fia_fast && {
+                (gameMode == 1)
+              } && {
+                _invaders_planes inAreaArray
+                  [_position, _Fast_full_despawn_distance, _Fast_full_despawn_distance] isNotEqualTo []
+              };
             // if somebody green is inside distanceSPWN
             // or somebody opfor is inside distanceSPWN2
             // or this marker is forced to spawn than ENABLE marker
@@ -183,23 +200,31 @@ private _processOccupantMarker = {
 
         case DESPAWN:
         {
-            // if somebody green is inside distanceSPWN
-            _spawn_by_fia_slow = _teamplayer inAreaArray
-                [_position, distanceSPWN, distanceSPWN] isNotEqualTo [];
-            // or somebody opfor is inside distanceSPWN2
-            _spawn_by_inv_slow = (gameMode == 1) && _invaders inAreaArray
-              [_position, distanceSPWN2, distanceSPWN2] isNotEqualTo [];
             // or this marker is forced spawn than exit (marker still ENABLED)
             _is_forced = _marker in forcedSpawn;
+            // if somebody green is inside distanceSPWN
+            _spawn_by_fia_slow = !_is_forced && {
+                _teamplayer inAreaArray
+                  [_position, distanceSPWN, distanceSPWN] isNotEqualTo []
+              };
+            // or somebody opfor is inside distanceSPWN2
+            _spawn_by_inv_slow = !_spawn_by_fia_slow && {
+                (gameMode == 1)
+              } && {
+                _invaders inAreaArray
+                  [_position, distanceSPWN2, distanceSPWN2] isNotEqualTo []
+              };
 
             // if somebody green fast target is inside _AA_spawn_distance
             _timeKey = _marker + "_AA_reload_after_time";
-            _is_AA_reload_time_reached = spawner getVariable [ _timeKey, 0] <= time;
-            _spawn_by_fia_fast = _is_AA_reload_time_reached && _teamplayer_planes inAreaArray
-                [_position, _AA_spawn_distance, _AA_spawn_distance] isNotEqualTo [];
+            _is_AA_reload_time_reached = !_spawn_by_inv_slow && {
+                tierWar > 5
+              } && {
+                spawner getVariable [ _timeKey, 0] <= time
+              };
+            _spawn_by_fia_fast = _is_AA_reload_time_reached;
             // if somebody opfor fast target is inside _AA_spawn_distance
-            _spawn_by_inv_fast = (gameMode == 1) && _is_AA_reload_time_reached && _invaders_planes inAreaArray
-                [_position, _AA_spawn_distance, _AA_spawn_distance] isNotEqualTo [];
+            _spawn_by_inv_fast = _spawn_by_fia_fast;
             // if somebody green is inside distanceSPWN
             // or somebody opfor is inside distanceSPWN2
             // or this marker is forced to spawn than ENABLE marker
@@ -317,6 +342,12 @@ private _processFIAMarker = {
     {
         case ENABLEDPLAYER:
         {
+            // or marker is forced to spawn than exit (marker still ENABLED)
+            _is_forced = _marker in forcedSpawn;
+            if( _is_forced) exitWith {
+              // DESPAWN marker
+              spawner setVariable [_marker, DESPAWNPLAYER, true];
+            };
             // if somebody blufor is inside distanceSPWN
             _spawn_by_occ_slow = _occupants inAreaArray
               [_position, distanceSPWN, distanceSPWN] isNotEqualTo [];
@@ -328,12 +359,6 @@ private _processFIAMarker = {
             _spawn_by_inv_slow = _invaders inAreaArray
               [_position, distanceSPWN, distanceSPWN] isNotEqualTo [];
             if( _spawn_by_inv_slow) exitWith {
-              // DESPAWN marker
-              spawner setVariable [_marker, DESPAWNPLAYER, true];
-            };
-            // or marker is forced to spawn than exit (marker still ENABLED)
-            _is_forced = _marker in forcedSpawn;
-            if( _is_forced) exitWith {
               // DESPAWN marker
               spawner setVariable [_marker, DESPAWNPLAYER, true];
             };
@@ -362,6 +387,9 @@ private _processFIAMarker = {
         };
         case ENABLED:
         {
+            // or marker is forced to spawn than exit (marker still ENABLED)
+            _is_forced = _marker in forcedSpawn;
+            if( _is_forced) exitWith {};
             // if somebody blufor is inside distanceSPWN
             _spawn_by_occ_slow = _occupants inAreaArray
               [_position, distanceSPWN, distanceSPWN] isNotEqualTo [];
@@ -370,18 +398,19 @@ private _processFIAMarker = {
             _spawn_by_inv_slow = _invaders inAreaArray
               [_position, distanceSPWN, distanceSPWN] isNotEqualTo [];
             if( _spawn_by_inv_slow) exitWith {};
-            // or marker is forced to spawn than exit (marker still ENABLED)
-            _is_forced = _marker in forcedSpawn;
-            if( _is_forced) exitWith {};
 
             _is_aa_post = _marker in aapostsFIA;
             // if somebody opfor fast target is inside _AA_fia_spawn_distance
-            _spawn_by_inv_fast = _is_aa_post && _invaders_planes inAreaArray
-                [_position, _AA_fia_spawn_distance, _AA_fia_spawn_distance] isNotEqualTo [];
+            _spawn_by_inv_fast = _is_aa_post && {
+                _invaders_planes inAreaArray
+                  [_position, _AA_fia_spawn_distance, _AA_fia_spawn_distance] isNotEqualTo []
+              };
             if( _spawn_by_inv_fast) exitWith {};
             // if somebody opfor fast target is inside _AA_fia_spawn_distance
-            _spawn_by_occ_fast = _is_aa_post && _occupants_planes inAreaArray
-                [_position, _AA_fia_spawn_distance, _AA_fia_spawn_distance] isNotEqualTo [];
+            _spawn_by_occ_fast = _is_aa_post && {
+                _occupants_planes inAreaArray
+                  [_position, _AA_fia_spawn_distance, _AA_fia_spawn_distance] isNotEqualTo []
+              };
             if( _spawn_by_occ_fast) exitWith {};
 
             // DISABLE marker
@@ -396,14 +425,18 @@ private _processFIAMarker = {
 
         case DISABLED:
         {
-            // if somebody blufor is inside distanceSPWN
-            _spawn_by_occ_slow = _occupants inAreaArray
-              [_position, distanceSPWN, distanceSPWN] isNotEqualTo [];
-            // or sombody opfor is inside distanceSPWN
-            _spawn_by_inv_slow = _invaders inAreaArray
-              [_position, distanceSPWN, distanceSPWN] isNotEqualTo [];
             // or marker is forced to spawn than exit (marker still ENABLED)
             _is_forced = _marker in forcedSpawn;
+            // if somebody blufor is inside distanceSPWN
+            _spawn_by_occ_slow = !_is_forced && {
+                _occupants inAreaArray
+                  [_position, distanceSPWN, distanceSPWN] isNotEqualTo []
+              };
+            // or sombody opfor is inside distanceSPWN
+            _spawn_by_inv_slow = !_spawn_by_occ_slow && {
+              _invaders inAreaArray
+                [_position, distanceSPWN, distanceSPWN] isNotEqualTo []
+              };
 
             _is_should_spawn = _spawn_by_occ_slow
               || _spawn_by_inv_slow
@@ -431,29 +464,29 @@ private _processFIAMarker = {
 
         case DESPAWN:
         {
+            // or this marker is forced spawn than exit (marker still ENABLED)
+            _is_forced = _marker in forcedSpawn;
             // if somebody opfor fast target is inside _AA_spawn_distance
-            _spawn_by_inv_slow = _invaders inAreaArray
-                  [_position, distanceSPWN, distanceSPWN] isNotEqualTo [];
-            _spawn_by_inv_fast =
-              if( _spawn_by_inv_slow) then {
-                true;
-              }else {
+            _spawn_by_inv_slow = !_is_forced && {
+                _invaders inAreaArray
+                  [_position, distanceSPWN, distanceSPWN] isNotEqualTo []
+              };
+            // if somebody west fast target is inside _AA_spawn_distance
+            _spawn_by_occ_slow = !_spawn_by_inv_slow && {
+                _occupants inAreaArray
+                  [_position, distanceSPWN, distanceSPWN] isNotEqualTo []
+              };
+            _spawn_by_inv_fast = !_spawn_by_occ_slow && {
                 _invaders_planes inAreaArray
                   [_position, _AA_fia_spawn_distance, _AA_fia_spawn_distance] isNotEqualTo [];
               };
-            // if somebody west fast target is inside _AA_spawn_distance
-            _spawn_by_occ_slow = _occupants inAreaArray
-                  [_position, distanceSPWN, distanceSPWN] isNotEqualTo [];
-            _spawn_by_occ_fast =
-              if( _spawn_by_occ_slow) then {
-                true;
-              }else{
+            _spawn_by_occ_fast = !_spawn_by_inv_fast && {
                 _occupants_planes inAreaArray
                   [_position, _AA_fia_spawn_distance, _AA_fia_spawn_distance] isNotEqualTo [];
               };
             _is_should_be_full_spawn = _spawn_by_occ_slow
               || _spawn_by_inv_slow
-              || _marker in forcedSpawn
+              || _is_forced
               ;
             _is_should_spawn_by_fast = _spawn_by_inv_fast
               || _spawn_by_occ_fast
@@ -549,6 +582,12 @@ private _processInvaderMarker = {
     {
         case ENABLEDAA:
         {
+            // or this marker is forced spawn than exit (marker still ENABLED)
+            _is_forced = _marker in forcedSpawn;
+            if( _is_forced) exitWith {
+              // DESPAWN this marker and then will trigger full spawn
+              spawner setVariable [_marker, DESPAWNAA, true];
+            };
             // if somebody green is inside distanceSPWN
             _spawn_by_fia_slow = _teamplayer inAreaArray
                 [_position, distanceSPWN, distanceSPWN] isNotEqualTo [];
@@ -563,20 +602,15 @@ private _processInvaderMarker = {
               // DESPAWN this marker and then will trigger full spawn
               spawner setVariable [_marker, DESPAWNAA, true];
             };
-            // or this marker is forced spawn than exit (marker still ENABLED)
-            _is_forced = _marker in forcedSpawn;
-            if( _is_forced) exitWith {
-              // DESPAWN this marker and then will trigger full spawn
-              spawner setVariable [_marker, DESPAWNAA, true];
-            };
 
             // if somebody green fast target is inside _AA_despawn_distance
-            _spawn_by_fia_fast = _teamplayer_planes inAreaArray
-                [_position, _AA_despawn_distance, _AA_despawn_distance] isNotEqualTo [];
+            _spawn_by_fia_fast = true;
             if( _spawn_by_fia_fast) exitWith {};
             // if somebody west fast target is inside _AA_despawn_distance
-            _spawn_by_occ_fast = (gameMode == 1) && _occupants_planes inAreaArray
-                [_position, _AA_despawn_distance, _AA_despawn_distance] isNotEqualTo [];
+            _spawn_by_occ_fast = (gameMode == 1) && {
+                _occupants_planes inAreaArray
+                  [_position, _AA_despawn_distance, _AA_despawn_distance] isNotEqualTo []
+              };
             if( _spawn_by_occ_fast) exitWith {};
 
             // DESPAWN this marker and then will trigger full spawn
@@ -584,25 +618,29 @@ private _processInvaderMarker = {
         };
         case ENABLED:
         {
+            // or marker is forced spawn then exit (marker still ENABLED)
+            _is_forced = _marker in forcedSpawn;
+            if( _is_forced) exitWith {};
             // if somebody green is inside distanceSPWN
             _spawn_by_fia_slow = _teamplayer inAreaArray
                 [_position, distanceSPWN, distanceSPWN] isNotEqualTo [];
             if( _spawn_by_fia_slow) exitWith {};
             // or somebody blufor is inside distanceSPWN2
-            _spawn_by_occ_slow = (gameMode == 1) && _occupants inAreaArray
-              [_position, distanceSPWN2, distanceSPWN2] isNotEqualTo [];
+            _spawn_by_occ_slow = (gameMode == 1) && {
+                _occupants inAreaArray
+                  [_position, distanceSPWN2, distanceSPWN2] isNotEqualTo []
+              };
             if( _spawn_by_occ_slow) exitWith {};
-            // or marker is forced spawn then exit (marker still ENABLED)
-            _is_forced = _marker in forcedSpawn;
-            if( _is_forced) exitWith {};
 
             // if somebody green fast target is inside _Fast_full_despawn_distance
             _full_spawn_by_fia_fast = _teamplayer_planes inAreaArray
                 [_position, _Fast_full_despawn_distance, _Fast_full_despawn_distance] isNotEqualTo [];
             if( _full_spawn_by_fia_fast) exitWith { };
             // if somebody west fast target is inside _Fast_full_despawn_distance
-            _full_spawn_by_occ_fast = (gameMode == 1) && _occupants_planes inAreaArray
-                [_position, _Fast_full_despawn_distance, _Fast_full_despawn_distance] isNotEqualTo [];
+            _full_spawn_by_occ_fast = (gameMode == 1) && {
+                _occupants_planes inAreaArray
+                  [_position, _Fast_full_despawn_distance, _Fast_full_despawn_distance] isNotEqualTo []
+              };
             if( _full_spawn_by_occ_fast) exitWith { };
 
             // DISABLE this marker
@@ -617,21 +655,33 @@ private _processInvaderMarker = {
 
         case DISABLED:
         {
-            // if somebody green is inside distanceSPWN
-            _spawn_by_fia_slow = _teamplayer inAreaArray
-                [_position, distanceSPWN, distanceSPWN] isNotEqualTo [];
-            // or somebody blufor is inside distanceSPWN2
-            _spawn_by_occ_slow = (gameMode == 1) && _occupants inAreaArray
-              [_position, distanceSPWN2, distanceSPWN2] isNotEqualTo [];
             // or marker is forced spawn then exit (marker still ENABLED)
             _is_forced = _marker in forcedSpawn;
+            // if somebody green is inside distanceSPWN
+            _spawn_by_fia_slow = !_is_forced && {
+                _teamplayer inAreaArray
+                  [_position, distanceSPWN, distanceSPWN] isNotEqualTo []
+              };
+            // or somebody blufor is inside distanceSPWN2
+            _spawn_by_occ_slow = !_spawn_by_fia_slow && {
+                (gameMode == 1)
+              } && {
+                _occupants inAreaArray
+                  [_position, distanceSPWN2, distanceSPWN2] isNotEqualTo []
+              };
 
             // if somebody green fast target is inside _Fast_full_spawn_distance
-            _full_spawn_by_fia_fast = _teamplayer_planes inAreaArray
-                [_position, _Fast_full_spawn_distance, _Fast_full_spawn_distance] isNotEqualTo [];
+            _full_spawn_by_fia_fast = !_spawn_by_occ_slow && {
+                _teamplayer_planes inAreaArray
+                  [_position, _Fast_full_spawn_distance, _Fast_full_spawn_distance] isNotEqualTo []
+              };
             // if somebody west fast target is inside _Fast_full_spawn_distance
-            _full_spawn_by_occ_fast = (gameMode == 1) && _occupants_planes inAreaArray
-                [_position, _Fast_full_spawn_distance, _Fast_full_spawn_distance] isNotEqualTo [];
+            _full_spawn_by_occ_fast = !_full_spawn_by_fia_fast && {
+                (gameMode == 1)
+              } && {
+                _occupants_planes inAreaArray
+                  [_position, _Fast_full_spawn_distance, _Fast_full_spawn_distance] isNotEqualTo []
+              };
 
             // if somebody green is inside distanceSPWN
             // or somebody bluefor is inside distanceSPWN2
@@ -663,23 +713,31 @@ private _processInvaderMarker = {
 
         case DESPAWN:
         {
-            // if nobody is inside distanceSPWN
-            _spawn_by_fia_slow = _teamplayer inAreaArray
-                [_position, distanceSPWN, distanceSPWN] isNotEqualTo [];
-            // and nobody is inside distanceSPWN2
-            _spawn_by_occ_slow = (gameMode == 1) && _occupants inAreaArray
-              [_position, distanceSPWN2, distanceSPWN2] isNotEqualTo [];
             // and marker is not forced to spawn then exit (marker still DESPAWN)
             _is_forced = _marker in forcedSpawn;
+            // if nobody is inside distanceSPWN
+            _spawn_by_fia_slow = !_is_forced && {
+                _teamplayer inAreaArray
+                  [_position, distanceSPWN, distanceSPWN] isNotEqualTo [];
+              };
+            // and nobody is inside distanceSPWN2
+            _spawn_by_occ_slow = (gameMode == 1) && {
+                !_spawn_by_fia_slow
+              } && {
+                _occupants inAreaArray
+                  [_position, distanceSPWN2, distanceSPWN2] isNotEqualTo []
+              };
 
             // if somebody green fast target is inside _AA_spawn_distance
             _timeKey = _marker + "_AA_reload_after_time";
-            _is_AA_reload_time_reached = spawner getVariable [ _timeKey, 0] <= time;
-            _spawn_by_fia_fast = _is_AA_reload_time_reached && _teamplayer_planes inAreaArray
-                [_position, _AA_spawn_distance, _AA_spawn_distance] isNotEqualTo [];
+            _is_AA_reload_time_reached = !_spawn_by_occ_slow && {
+                tierWar > 5
+              } && {
+                spawner getVariable [ _timeKey, 0] <= time
+              };
+            _spawn_by_fia_fast = _is_AA_reload_time_reached;
             // if somebody opfor fast target is inside _AA_spawn_distance
-            _spawn_by_occ_fast = (gameMode == 1) && _is_AA_reload_time_reached && _occupants_planes inAreaArray
-                [_position, _AA_spawn_distance, _AA_spawn_distance] isNotEqualTo [];
+            _spawn_by_occ_fast = _spawn_by_fia_fast;
 
             _should_be_full_spawn = _spawn_by_fia_slow
               || _spawn_by_occ_slow
