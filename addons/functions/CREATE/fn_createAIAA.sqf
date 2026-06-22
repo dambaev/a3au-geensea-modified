@@ -155,6 +155,9 @@ if (random 10 < (tierWar + difficultyCoef)) then {
 ServerInfo_2("[%1]: DESPAWNAA wait loop", _markerX);
 waitUntil {
   sleep 1;
+  if( count (_vehiclesX select { alive _x} ) < 1 ) then {
+    spawner setVariable [ _markerX, DESPAWNAA, true];
+  };
   ( (isNil {spawner getVariable _markerX})
   || spawner getVariable _markerX == DESPAWNAA
   )
@@ -179,7 +182,7 @@ if( _vehicles_count > 0) then {
 };
 if( _dead_vehicles_coef > 0) then {
   _timeKey = _markerX + "_AA_reload_after_time";
-  spawner setVariable [_timeKey, time + 600 * _dead_vehicles_coef, true];
+  spawner setVariable [_timeKey, time + 1200 * _dead_vehicles_coef, true];
 };
 { deleteVehicle _x; } forEach _vehiclesX;
 
