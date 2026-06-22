@@ -1035,6 +1035,7 @@ do
                    && _veh isKindOf "Air" && speed _veh > 150
                   )
                ) then { continue; };
+            _players pushBackUnique _rp;
         } forEach (allPlayers - entities "HeadlessClient_F");
         if( A3A_distanceDebug) then {
           Info_7("_players %1, _teamplayer %2, _teamplayer_planes %3, _occupants %4, _occupants_planes %5, _invaders %6, _invaders_planes %7"

@@ -156,7 +156,7 @@ ServerInfo_2("[%1]: DESPAWNAA wait loop", _markerX);
 _timeKey = _markerX + "_AA_reload_after_time";
 if( count (_vehiclesX ) < 1 ) then {
   ServerInfo_2("[%1]: unable to spawn AA units, delay next call", _markerX);
-  spawner setVariable [_timeKey, time + 1200 * _dead_vehicles_coef, true];
+  spawner setVariable [_timeKey, time + 300, true];
   spawner setVariable [ _markerX, DESPAWNAA, true];
 };
 waitUntil {
