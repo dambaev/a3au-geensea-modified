@@ -920,76 +920,63 @@ do
         _invaders_planes = [];
         {
           if( !alive _x) then { continue; };
+          if( !(_x getVariable [ "spawner", false])) then { continue; };
           _side = side _x;
+          private _veh = vehicle _x;
           switch( _side) do {
             case Occupants: {
-              private _veh = vehicle _x;
-              if( _veh != _x) then {
-                if( _x == effectiveCommander _veh
-                  && (alive _veh)
-                  && ( (_veh isKindOf "Plane" && speed _veh > 220)
-                     || ((!(_veh isKindOf "Plane"))
-                         && _veh isKindOf "Air" && speed _veh > 150
-                        )
-                     )
-                  ) then {
-                  _occupants_planes pushBack _veh;
-                } else {
-                  _occupants pushBack _x;
-                };
-              }else {
-                if( _x getVariable [ "spawner", false]
-                  && _x == effectiveCommander _veh
-                  ) then {
-                  _occupants pushBack _x;
-                };
+              if( _veh == _x) then {
+                _occupants pushBack _x;
+                continue;
               };
+              if( _x != effectiveCommander _veh || !(alive _veh)) then {
+                continue;
+              };
+              if ( (_veh isKindOf "Plane" && speed _veh > 220)
+                 || ((!(_veh isKindOf "Plane"))
+                     && _veh isKindOf "Air" && speed _veh > 150
+                    )
+                 ) then {
+                _occupants_planes pushBack _veh;
+                continue;
+              };
+              _occupants pushBack _x;
             };
             case Invaders: {
-              private _veh = vehicle _x;
-              if( _veh != _x) then {
-                if( _x == effectiveCommander _veh
-                  && (alive _veh)
-                  && ( (_veh isKindOf "Plane" && speed _veh > 220)
-                     || ((!(_veh isKindOf "Plane"))
-                         && _veh isKindOf "Air" && speed _veh > 150
-                        )
-                     )
-                  ) then {
-                  _invaders_planes pushBack _veh;
-                } else {
-                  _invaders pushBack _x;
-                };
-              } else {
-                if( _x getVariable [ "spawner", false]
-                  && _x == effectiveCommander _veh
-                  ) then {
-                  _invaders pushBack _x;
-                };
+              if( _veh == _x) then {
+                _invaders pushBack _x;
+                continue;
               };
+              if( _x != effectiveCommander _veh || !(alive _veh)) then {
+                continue;
+              };
+              if ( (_veh isKindOf "Plane" && speed _veh > 220)
+                 || ((!(_veh isKindOf "Plane"))
+                     && _veh isKindOf "Air" && speed _veh > 150
+                    )
+                 ) then {
+                _invaders_planes pushBack _veh;
+                continue;
+              };
+              _invaders pushBack _x;
             };
             case teamPlayer: {
-              private _veh = vehicle _x;
-              if( _veh != _x) then {
-                if( _x == effectiveCommander _veh
-                  && (alive _veh)
-                  && ( (_veh isKindOf "Plane" && speed _veh > 220)
-                     || ((!(_veh isKindOf "Plane"))
-                         && _veh isKindOf "Air" && speed _veh > 150
-                        )
-                     )
-                  ) then {
-                  _teamplayer_planes pushBack _veh;
-                } else {
-                  _teamplayer pushBack _x;
-                };
-              }else {
-                if( _x getVariable [ "spawner", false]
-                  && _x == effectiveCommander _veh
-                  ) then {
-                  _teamplayer pushBack _x;
-                };
+              if( _veh == _x) then {
+                _teamplayer pushBack _x;
+                continue;
               };
+              if( _x != effectiveCommander _veh || !(alive _veh)) then {
+                continue;
+              };
+              if ( (_veh isKindOf "Plane" && speed _veh > 220)
+                 || ((!(_veh isKindOf "Plane"))
+                     && _veh isKindOf "Air" && speed _veh > 150
+                    )
+                 ) then {
+                _teamplayer_planes pushBack _veh;
+                continue;
+              };
+              _teamplayer pushBack _x;
             };
           };
         } forEach (allUnits);
