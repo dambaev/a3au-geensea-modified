@@ -218,7 +218,7 @@ private _processOccupantMarker = {
             // if somebody green fast target is inside _AA_spawn_distance
             _timeKey = _marker + "_AA_reload_after_time";
             _is_AA_reload_time_reached = !_spawn_by_inv_slow && {
-                tierWar > 5
+                tierWar >= A3A_occupantPermanentSAMTierWar
               } && {
                 spawner getVariable [ _timeKey, 0] <= time
               };
@@ -731,7 +731,7 @@ private _processInvaderMarker = {
             // if somebody green fast target is inside _AA_spawn_distance
             _timeKey = _marker + "_AA_reload_after_time";
             _is_AA_reload_time_reached = !_spawn_by_occ_slow && {
-                tierWar > 5
+                tierWar >= A3A_invaderPermanentSAMTierWar
               } && {
                 spawner getVariable [ _timeKey, 0] <= time
               };

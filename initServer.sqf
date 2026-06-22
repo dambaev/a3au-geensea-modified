@@ -11,7 +11,11 @@ call ADDON_fnc_EventHandler_EntityCreatedInit;
 
 call ADDON_fnc_addBuildingActions_patch;
 
-A3A_invaderAttackTierWar = 7;
+A3A_occupantPermanentSAMTierWar = 6;
+publicVariable "A3A_occupantPermanentSAMTierWar";
+A3A_invaderPermanentSAMTierWar = 7;
+publicVariable "A3A_invaderPermanentSAMTierWar";
+A3A_invaderAttackTierWar = 8;
 publicVariable "A3A_invaderAttackTierWar";
 
 call A3A_fnc_initServer;
