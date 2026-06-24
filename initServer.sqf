@@ -18,6 +18,8 @@ publicVariable "A3A_invaderPermanentSAMTierWar";
 A3A_invaderAttackTierWar = 8;
 publicVariable "A3A_invaderAttackTierWar";
 
+call ADDON_fnc_RIV_ENC_Rivals_patch;
+
 call A3A_fnc_initServer;
 
 // C-130J is unlockable by any AA. So don't use it

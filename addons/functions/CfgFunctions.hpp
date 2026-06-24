@@ -4,6 +4,12 @@ class CfgFunctions
     class ADDON
     {
         tag = "ADDON";
+        class Missions
+        {
+          file = "addons\functions\Missions";
+          class RIV_ENC_Rivals {};
+          class RIV_ENC_Rivals_patch {};
+        };
         class Dialogs
         {
             file = "addons\functions\Dialogs";
