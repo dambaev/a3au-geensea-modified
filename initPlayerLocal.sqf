@@ -13,6 +13,18 @@ call ADDON_fnc_addBuildingActions_patch;
 
 _this spawn A3A_fnc_initClient;
 
+waitUntil { sleep 1; !(isNil {A3A_faction_occ})};
+waitUntil { sleep 1; !(isNil {A3A_faction_inv})};
+if( A3A_faction_occ get "name" == "CDF") then {
+  A3A_faction_occ set ["name", "ЧСО", false];
+  publicVariable "A3A_faction_occ";
+};
+if( A3A_faction_inv get "name" == "US Army") then {
+  A3A_faction_inv set ["name", "Армия США", false];
+  publicVariable "A3A_faction_inv";
+};
+A3A_faction_reb set ["name", "ДВ РФ", false];
+
 call ADDON_fnc_getSoftTargets_patch;
 call ADDON_fnc_getTargetsAT_patch;
 

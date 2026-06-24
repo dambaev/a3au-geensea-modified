@@ -27,12 +27,16 @@ waitUntil { sleep 1; !(isNil {A3A_faction_occ})};
 waitUntil { sleep 1; !(isNil {A3A_faction_inv})};
 if( A3A_faction_occ get "name" == "CDF") then {
   A3A_faction_occ set ["vehiclesPlanesTransport", [ "rhsgref_cdf_reg_Mi8amt"], false];
+  A3A_faction_occ set ["name", "ЧСО", false];
   publicVariable "A3A_faction_occ";
 };
 if( A3A_faction_inv get "name" == "US Army") then {
   A3A_faction_inv set ["vehiclesPlanesTransport", ["RHS_CH_47F_10"], false];
+  A3A_faction_inv set ["name", "Армия США", false];
   publicVariable "A3A_faction_inv";
 };
+A3A_faction_reb set ["name", "ДВ РФ", false];
+publicVariable "A3A_faction_reb";
 
 
 call ADDON_fnc_getSoftTargets_patch;
