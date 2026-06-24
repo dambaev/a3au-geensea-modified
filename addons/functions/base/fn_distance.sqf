@@ -901,6 +901,10 @@ private _Fast_full_despawn_distance = 4000;
 
 private ["_markers", "_marker", "_position"];
 
+if ( isNil {A3A_excludePlayersFromPlanes}) then {
+  A3A_excludePlayersFromPlanes = false;
+};
+
 while { true }
 do
 {
@@ -1023,7 +1027,8 @@ do
             private _veh = vehicle _rp;
             if (_veh in _playerVehicles) then { continue };
             if (_veh isNotEqualTo _rp) then { _playerVehicles pushBackUnique _veh};
-            if ( (_veh isKindOf "Plane" && speed _veh > 300)
+            if ( A3A_excludePlayersFromPlanes
+               && (_veh isKindOf "Plane" && speed _veh > 300)
                || ((!(_veh isKindOf "Plane"))
                    && _veh isKindOf "Air" && speed _veh > 150
                   )
