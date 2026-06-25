@@ -75,6 +75,7 @@ class CfgFunctions
             class administrationRemoveUID {};
             class administrationInit {};
             class isEligibleCommander {};
+            class isEligibleCommanderByUUID {};
             class eligibleCommanderAddAction {};
             class eligibleCommanderAddUID {};
             class eligibleCommanderGet {};
@@ -101,6 +102,11 @@ class CfgFunctions
             class trader_sellVehicleAddActionInit {};
             class tierWarMonitorLoop {};
             class tierWarChanged {};
+            class server_mapMarkersGetMarkerSide {};
+            class server_mapMarkersLoad {};
+            class server_mapMarkersMonitor {};
+            class server_mapMarkersMonitorSide {};
+            class server_mapMarkersSave {};
         };
         class logistics
         {
