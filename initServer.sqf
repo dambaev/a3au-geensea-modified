@@ -15,7 +15,7 @@ A3A_occupantPermanentSAMTierWar = 6;
 publicVariable "A3A_occupantPermanentSAMTierWar";
 A3A_invaderPermanentSAMTierWar = 7;
 publicVariable "A3A_invaderPermanentSAMTierWar";
-A3A_invaderAttackTierWar = 8;
+A3A_invaderAttackTierWar = 9;
 publicVariable "A3A_invaderAttackTierWar";
 
 call ADDON_fnc_RIV_ENC_Rivals_patch;
