@@ -66,3 +66,6 @@ call ADDON_fnc_administrationInit;
 call ADDON_fnc_theBossTransfer_patch;
 call ADDON_fnc_theBossToggleEligibility_patch;
 call ADDON_fnc_mrkWIN_patch;
+
+[] spawn ADDON_fnc_tierWarMonitorLoop;
+

@@ -99,6 +99,8 @@ class CfgFunctions
             class trader_sellVehicle {};
             class trader_sellVehicleAddAction {};
             class trader_sellVehicleAddActionInit {};
+            class tierWarMonitorLoop {};
+            class tierWarChanged {};
         };
         class logistics
         {
