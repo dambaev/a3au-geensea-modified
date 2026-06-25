@@ -74,7 +74,7 @@ _tierWarDecreased = {
   params [ "_new_tierWar"];
   switch (_new_tierWar) do
   {
-    case 6:
+    case 3:
     {
       _aa_vehicles = A3A_faction_occ get "vehiclesAA";
       _aa_vehicles = _aa_vehicles - [ "CUP_B_nM1097_AVENGER_AFU"];
@@ -112,7 +112,7 @@ _tierWarDecreased = {
       A3A_faction_occ set ["vehiclesAPCs", _apcs_vehicles, false];
     };
 
-    case 7:
+    case 4:
     {
       _planesCAS_vehicles = A3A_faction_occ get "vehiclesPlanesCAS";
       _planesCAS_vehicles = _planesCAS_vehicles - [ "PRACS_F16CJR"];
