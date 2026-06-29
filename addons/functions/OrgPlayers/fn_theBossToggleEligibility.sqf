@@ -4,6 +4,10 @@ params ["_playerX", ["_newBoss", objNull]];
 // Find real player unit, in case of remote control
 _playerX = _playerX getVariable ["owner", _playerX];
 
+if( _playerX distanceSqr mapX > 10000) exitWith {
+  [localize "STR_antistasi_actions_commander_text", "Только в штаб квартире"] remoteExec ["A3A_fnc_customHint", _playerX];
+};
+
 private _forceElection = false;
 private _text = "";
 if (_playerX getVariable ["eligible",false]) then
