@@ -15,7 +15,7 @@ r_vCH=[true,true];//Vehicle Channel											>> Default: [true,true]
 r_dCH=[true,true];//Direct Channel												>> Default: [false,true]
 r_mCH=[true,true];//Air Channel  												>> Default: [false,true]
 r_mCHName="Air";//Shown by player name in RTO channel		>> Default: "Air"
-r_RTOBP=[];//Add to list of backpacks RTO checks for					>> Default: []
+r_RTOBP=["CUP_B_Kombat_Radio_Olive"];//Add to list of backpacks RTO checks for					>> Default: []
 
 r_incap=false;//Block incapacitated players from using radios		>> Default: false
 r_alertOn=true;//Talking alerts nearby enemies							>> Default: true
