@@ -1,3 +1,5 @@
+__EXEC (MISSION_ROOT = __FILE__ select [0, count __FILE__ - 15])
+
 #include "addons\maps\missionDescription\master.hpp"
 
 OnLoadName = $STR_antistasi_mission_info_Greensea_mapname_shore_text + " by kenny";
@@ -29,3 +31,4 @@ class CfgDebriefing {
 };
 
 #include "addons\functions\CfgFunctions.hpp"
+
