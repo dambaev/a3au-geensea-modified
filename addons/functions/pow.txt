@@ -1,0 +1,12 @@
+"markerx",
+"a3u_pow_unittype",
+"a3u_pow_eh_handledamage",
+"a3a_respool",
+"a3u_pow_speaker",
+"randomValue",
+"surrendered",
+"morale",
+"unittype",
+"unitprefix",
+
+

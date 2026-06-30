@@ -1,0 +1,34 @@
+__EXEC (MISSION_ROOT = __FILE__ select [0, count __FILE__ - 15])
+
+#include "addons\maps\missionDescription\master.hpp"
+
+OnLoadName = $STR_antistasi_mission_info_Greensea_mapname_shore_text + " by kenny";
+OnLoadMission = $STR_antistasi_mission_info_Greensea_blurb_texk;
+briefingName = $STR_antistasi_mission_info_Greensea_mapname_text;
+overviewText = $STR_antistasi_mission_info_Altis_description_text;
+loadScreen = "Pictures\Mission\pic.jpg";
+overviewPicture = OVERVIEW_IMAGE;
+
+class CfgDiscordRichPresence
+{
+    applicationID="1270380812684230746";
+    defaultDetails="In campaign";
+    defaultState="Green Sea";
+    defaultLargeImageKey="greensea";
+    defaultLargeImageText="Rebelling in Green Sea";
+    defaultSmallImageKey="au-logo";
+    defaultSmallImageText="Antistasi Ultimate";
+    useTimeElapsed=1;
+};
+//Steam Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=2645015212
+class CfgNotifications
+{
+    #include "addons\maps\missionDescription\CfgNotificationsContents.hpp"
+};
+
+class CfgDebriefing {
+    #include "addons\maps\missionDescription\CfgDebriefingContents.hpp"
+};
+
+#include "addons\functions\CfgFunctions.hpp"
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="A3UExtender">
+  <Package name="A3UExtender">
+    <Container name="credits_generic">
+      <Key ID="STR_A3UE_credits_generic_author">
+        <Original>The Official Antistasi Community and Barbolani</Original>
+      </Key>
+    </Container>
+    <Container name="mission_info">
+      <Key ID="STR_A3UE_maps_green_sea_2023_mapname_short">
+        <Original>Antistasi green_sea_2023 Extender Overwritten map</Original>
+      </Key>
+      <Key ID="STR_A3UE_maps_green_sea_2023_mapname">
+        <Original>Antistasi - Liberation of green_sea_2023 Extender Overwritten map</Original>
+      </Key>
+      <Key ID="STR_A3UE_maps_green_sea_2023_description">
+        <Original>Fuck some shit up on a overwritten map</Original>
+      </Key>
+      <Key ID="STR_A3UE_maps_green_sea_2023_loadText">
+        <Original>Because nothing is more important than fun. on a overwritten map</Original>
+      </Key>
+
+    </Container>
+  </Package>
+</Project>

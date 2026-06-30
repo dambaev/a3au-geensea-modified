@@ -1,0 +1,12 @@
+call ADDON_fnc_autoReloadUnitsCleanDeadAmmoVehicles;
+call ADDON_fnc_autoReloadUnitsCleanDeadRepairVehicles;
+call ADDON_fnc_autoReloadUnitsCleanDeadFuelVehicles;
+call ADDON_fnc_autoReloadUnitsCleanDeadMedicalVehicles;
+call ADDON_fnc_autoReloadUnitsCleanDeadVehicles;
+
+call ADDON_fnc_autoReloadUnitsIterationVehiclesAmmo;
+call ADDON_fnc_autoReloadUnitsIterationVehiclesRepair;
+call ADDON_fnc_autoReloadUnitsIterationVehiclesFuel;
+call ADDON_fnc_autoReloadUnitsIterationVehiclesMedical;
+
+
