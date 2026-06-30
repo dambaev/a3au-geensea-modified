@@ -32,3 +32,11 @@ class CfgDebriefing {
 
 #include "addons\functions\CfgFunctions.hpp"
 
+#include "AFAR\ui\defines.hpp"
+#include "AFAR\ui\dialogs.hpp"
+
+class CfgSounds {
+  #include "AFAR\f\SFX.hpp"
+  sounds[]={};
+};
+

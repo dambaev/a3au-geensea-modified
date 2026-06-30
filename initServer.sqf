@@ -67,3 +67,5 @@ call ADDON_fnc_mrkWIN_patch;
 
 [] spawn ADDON_fnc_tierWarMonitorLoop;
 
+[] spawn compileFinal(preprocessFile"AFAR\init.sqf");
+

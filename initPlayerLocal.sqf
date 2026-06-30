@@ -127,3 +127,4 @@ call ADDON_fnc_trader_sellVehicleAddActionInit;
   };
 };
 
+[]spawn compileFinal(preprocessFile"AFAR\init.sqf");
