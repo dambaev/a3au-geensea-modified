@@ -13,6 +13,21 @@ _tierWarIncreased = {
   params [ "_new_tierWar"];
   switch (_new_tierWar) do
   {
+    case 1:
+    {
+      _vehiclesPlanesTransport = A3A_faction_occ get "vehiclesPlanesTransport";
+      _vehiclesPlanesTransport = _vehiclesPlanesTransport - ["RHS_C130J"];
+      _vehiclesPlanesTransport pushBackUnique "rhsgref_cdf_reg_Mi8amt";
+      A3A_faction_occ set ["vehiclesPlanesTransport", _vehiclesPlanesTransport, false];
+
+      _vehiclesPlanesTransport = A3A_faction_inv get "vehiclesPlanesTransport";
+      _vehiclesPlanesTransport = _vehiclesPlanesTransport - ["RHS_C130J"];
+      _vehiclesPlanesTransport pushBackUnique "RHS_CH_47F_10";
+      A3A_faction_inv set ["vehiclesPlanesTransport", _vehiclesPlanesTransport, false];
+
+      publicVariable "A3A_faction_occ";
+      publicVariable "A3A_faction_inv";
+    };
     case 7:
     {
       _aa_vehicles = A3A_faction_occ get "vehiclesAA";
@@ -64,7 +79,18 @@ _tierWarIncreased = {
       A3A_faction_occ set ["vehicleSam", "B_SAM_System_03_F", false];
       A3A_faction_occ set ["vehicleRadar", "B_Radar_System_01_F", false];
 
+      _vehiclesPlanesTransport = A3A_faction_occ get "vehiclesPlanesTransport";
+      _vehiclesPlanesTransport = _vehiclesPlanesTransport - ["rhsgref_cdf_reg_Mi8amt"];
+      _vehiclesPlanesTransport pushBackUnique "RHS_C130J";
+      A3A_faction_occ set ["vehiclesPlanesTransport", _vehiclesPlanesTransport, false];
+
+      _vehiclesPlanesTransport = A3A_faction_inv get "vehiclesPlanesTransport";
+      _vehiclesPlanesTransport = _vehiclesPlanesTransport - ["RHS_CH_47F_10"];
+      _vehiclesPlanesTransport pushBackUnique "RHS_C130J";
+      A3A_faction_inv set ["vehiclesPlanesTransport", _vehiclesPlanesTransport, false];
+
       publicVariable "A3A_faction_occ";
+      publicVariable "A3A_faction_inv";
     };
     default {};
   };
@@ -122,10 +148,21 @@ _tierWarDecreased = {
       _planesAA_vehicles = _planesAA_vehicles - [ "PRACS_F16CJ" ];
       A3A_faction_occ set ["vehiclesPlanesAA", _planesAA_vehicles, false];
 
+      _vehiclesPlanesTransport = A3A_faction_occ get "vehiclesPlanesTransport";
+      _vehiclesPlanesTransport = _vehiclesPlanesTransport - ["RHS_C130J"];
+      _vehiclesPlanesTransport pushBackUnique "rhsgref_cdf_reg_Mi8amt";
+      A3A_faction_occ set ["vehiclesPlanesTransport", _vehiclesPlanesTransport, false];
+
+      _vehiclesPlanesTransport = A3A_faction_inv get "vehiclesPlanesTransport";
+      _vehiclesPlanesTransport = _vehiclesPlanesTransport - ["RHS_C130J"];
+      _vehiclesPlanesTransport pushBackUnique "RHS_CH_47F_10";
+      A3A_faction_inv set ["vehiclesPlanesTransport", _vehiclesPlanesTransport, false];
+
       A3A_faction_occ set ["vehicleSam", "", false];
       A3A_faction_occ set ["vehicleRadar", "", false];
 
       publicVariable "A3A_faction_occ";
+      publicVariable "A3A_faction_inv";
     };
     default {};
   };
