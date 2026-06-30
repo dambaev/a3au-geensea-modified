@@ -320,8 +320,6 @@ private _processOccupantMarker = {
                     {
                       // ENABLE this marker
                       spawner setVariable [_marker, ENABLEDAA, true];
-                      // Prevent other routines taking spawn places
-                      [_marker, 1] call A3A_fnc_addTimeForIdle;
                       [[_marker],"ADDON_fnc_createAIAA"] call A3A_fnc_scheduler;
                     };
                     default { };
@@ -813,8 +811,6 @@ private _processInvaderMarker = {
                   {
                     // ENABLE this marker
                     spawner setVariable [_marker, ENABLEDAA, true];
-                    // Prevent other routines taking spawn places
-                    [_marker, 1] call A3A_fnc_addTimeForIdle;
                     [[_marker],"ADDON_fnc_createAIAA"] call A3A_fnc_scheduler;
                   };
                   default { };
