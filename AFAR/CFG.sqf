@@ -7,13 +7,13 @@
 
 *///CONFIGURATIONS:
 //CHANNEL PERMISSIONS		~		[TEXT,VOIP]			~			! Use all lower-case letters !
-r_sideCH=false;//Enable Side Channel											>> Default: false
+r_sideCH=true;//Enable Side Channel											>> Default: false
 r_sCH=[true,true];//Side Channel  												>> Default: [true,true]
 r_cCH=[true,true];//Command Channel  										>> Default: [true,true]
-r_grCH=[false,true];//Group Channel											>> Default: [false,true]
+r_grCH=[true,true];//Group Channel											>> Default: [false,true]
 r_vCH=[true,true];//Vehicle Channel											>> Default: [true,true]
-r_dCH=[false,true];//Direct Channel												>> Default: [false,true]
-r_mCH=[false,true];//Air Channel  												>> Default: [false,true]
+r_dCH=[true,true];//Direct Channel												>> Default: [false,true]
+r_mCH=[true,true];//Air Channel  												>> Default: [false,true]
 r_mCHName="Air";//Shown by player name in RTO channel		>> Default: "Air"
 r_RTOBP=[];//Add to list of backpacks RTO checks for					>> Default: []
 
