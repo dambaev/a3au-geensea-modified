@@ -5,6 +5,9 @@ FIX_LINE_NUMBERS()
 
 Info("patching A3A functions");
 
+["A3A\addons\core\functions\Base\", "A3A_fnc_", [["localizar", "fn_localizar"]], true] call BIS_fnc_loadFunctions;
+["A3A_fnc_localizar"] call BIS_fnc_recompile;
+
 ["A3A\addons\core\functions\CREATE\", "A3A_fnc_", [["attackHQ", "fn_attackHQ"]], true] call BIS_fnc_loadFunctions;
 ["A3A_fnc_attackHQ"] call BIS_fnc_recompile;
 
