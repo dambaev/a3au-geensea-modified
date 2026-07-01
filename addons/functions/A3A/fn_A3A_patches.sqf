@@ -8,8 +8,8 @@ Info("patching A3A functions");
 ["A3A\addons\core\functions\Base\", "A3A_fnc_", [["localizar", "fn_localizar"]], true] call BIS_fnc_loadFunctions;
 ["A3A_fnc_localizar"] call BIS_fnc_recompile;
 
-["A3A\addons\core\functions\Base\", "A3A_fnc_", [["localize_format_setTaskLocal", "fn_localize_format_setTaskLocal"]], true] call BIS_fnc_loadFunctions;
-["A3A_fnc_localize_format_setTaskLocal"] call BIS_fnc_recompile;
+["A3A\addons\core\functions\Base\", "A3A_fnc_", [["localize_format_taskSetDescription", "fn_localize_format_taskSetDescription"]], true] call BIS_fnc_loadFunctions;
+["A3A_fnc_localize_format_taskSetDescription"] call BIS_fnc_recompile;
 
 ["A3A\addons\core\functions\CREATE\", "A3A_fnc_", [["attackHQ", "fn_attackHQ"]], true] call BIS_fnc_loadFunctions;
 ["A3A_fnc_attackHQ"] call BIS_fnc_recompile;

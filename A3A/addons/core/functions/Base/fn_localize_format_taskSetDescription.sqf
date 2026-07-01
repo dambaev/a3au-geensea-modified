@@ -1,21 +1,21 @@
 if( isServer || !hasInterface) exitWith {};
 
-params ["_taskId", "_target", "_description"];
+params ["_taskId", "_description"];
 
 _description params [ "_textRaw", "_taskTitleRaw", "_mrkDest"];
 
 _recursive_localize_format = {
   params [ "_arr"];
-  _ret = [];
+  private _ret = [];
   {
     _localized = _x;
-    switch {true} do
+    switch (true) do
     {
       case (_localized isEqualType []):
       {
         _localized = [_x] call _recursive_localize_format;
       };
-      case ((_localized isEqualType "string")):
+      case (_localized isEqualType "string"):
       {
         if( (_x select [0,4]) == "STR_") then {
           _localized = localize _x;
@@ -38,11 +38,9 @@ if( _taskTitleRaw isEqualType []) then {
 };
 
 
-systemChat ( str [ _taskId, _target, _description ] );
 systemChat ( str [ _textRaw, _taskTitleRaw] );
-systemChat ( str [ _taskId, _target, [_textX,_taskTitle,_mrkDest] ] );
+systemChat ( str [ _taskId, [_textX,_taskTitle,_mrkDest] ] );
 [ _taskId,
-  _target,
   [_textX,_taskTitle,_mrkDest]
-  ] call BIS_fnc_setTaskLocal;
+  ] call BIS_fnc_taskSetDescription;
 
