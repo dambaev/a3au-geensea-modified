@@ -48,8 +48,6 @@ if( _taskTitleRaw isEqualType []) then {
 };
 
 
-systemChat ( str [ _textRaw, _taskTitleRaw] );
-systemChat ( str [ _taskId, [_textX,_taskTitle,_mrkDest] ] );
 [ _taskId,
   [_textX,_taskTitle,_mrkDest]
   ] call BIS_fnc_taskSetDescription;
