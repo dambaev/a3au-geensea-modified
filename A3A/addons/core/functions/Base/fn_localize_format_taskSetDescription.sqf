@@ -23,7 +23,13 @@ _recursive_localize_format = {
           {
             _x_sz = count _x;
             _marker = _x select [ 9, _x_sz - 9];
-            _localized = text (nearestLocation [getMarkerPos _marker, "NameCity"]);
+            _localized = text (nearestLocation [getMarkerPos _marker, [
+                "Name",
+                "NameCity",
+                "NameCityCapital",
+                "NameMarine",
+                "NameVillage"
+              ]]);
           };
           case( (_x select [0,4]) == "STR_"):
           {
