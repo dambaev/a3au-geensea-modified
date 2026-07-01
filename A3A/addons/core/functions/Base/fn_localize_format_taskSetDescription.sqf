@@ -17,8 +17,18 @@ _recursive_localize_format = {
       };
       case (_localized isEqualType "string"):
       {
-        if( (_x select [0,4]) == "STR_") then {
-          _localized = localize _x;
+        switch(true) do
+        {
+          case( (_x select [0,9]) == "STR_CITY_"):
+          {
+            _x_sz = count _x;
+            _marker = _x select [ 9, _x_sz - 9];
+            _localized = text (nearestLocation [getMarkerPos _marker, "NameCity"]);
+          };
+          case( (_x select [0,4]) == "STR_"):
+          {
+            _localized = localize _x;
+          };
         };
       };
     };

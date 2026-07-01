@@ -4,9 +4,9 @@ private _pos = getMarkerPos _siteX;
 private _textX = "";
 
 if (_siteX in citiesX) then {
-	_textX = format ["%1",_siteX];
+	_textX = format ["STR_CITY_%1",_siteX];
 } else {
-	private _city = [citiesX, _pos] call BIS_fnc_nearestPosition;
+	private _city = "STR_CITY_" + _siteX;
 
 	switch (true) do {
 		case (_siteX in airportsX): {
