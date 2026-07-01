@@ -1,3 +1,6 @@
+#include "\x\A3A\addons\core\script_component.hpp"
+FIX_LINE_NUMBERS()
+
 params [ "_old_tierWar"];
 
 if( !isServer) exitWith {};
@@ -15,6 +18,7 @@ _tierWarIncreased = {
   {
     case 1:
     {
+      Info_1("increase 1: %1", _new_tierWar);
       _vehiclesPlanesTransport = A3A_faction_occ get "vehiclesPlanesTransport";
       _vehiclesPlanesTransport = _vehiclesPlanesTransport - ["RHS_C130J"];
       _vehiclesPlanesTransport pushBackUnique "rhsgref_cdf_reg_Mi8amt";
@@ -30,6 +34,7 @@ _tierWarIncreased = {
     };
     case 7:
     {
+      Info_1("increase 7: %1", _new_tierWar);
       _aa_vehicles = A3A_faction_occ get "vehiclesAA";
       _aa_vehicles pushBackUnique "CUP_B_nM1097_AVENGER_AFU";
       _aa_vehicles pushBackUnique "CUP_B_M6LineBacker_AFU";
@@ -68,6 +73,7 @@ _tierWarIncreased = {
 
     case 8:
     {
+      Info_1("increase 8: %1", _new_tierWar);
       _planesCAS_vehicles = A3A_faction_occ get "vehiclesPlanesCAS";
       _planesCAS_vehicles pushBackUnique "PRACS_F16CJR";
       A3A_faction_occ set ["vehiclesPlanesCAS", _planesCAS_vehicles, false];
@@ -102,6 +108,7 @@ _tierWarDecreased = {
   {
     case 3:
     {
+      Info_1("decrease 3: %1", _new_tierWar);
       _aa_vehicles = A3A_faction_occ get "vehiclesAA";
       _aa_vehicles = _aa_vehicles - [ "CUP_B_nM1097_AVENGER_AFU"];
       _aa_vehicles = _aa_vehicles - [ "CUP_B_M6LineBacker_AFU" ];
@@ -140,6 +147,7 @@ _tierWarDecreased = {
 
     case 4:
     {
+      Info_1("decrease 4: %1", _new_tierWar);
       _planesCAS_vehicles = A3A_faction_occ get "vehiclesPlanesCAS";
       _planesCAS_vehicles = _planesCAS_vehicles - [ "PRACS_F16CJR"];
       A3A_faction_occ set ["vehiclesPlanesCAS", _planesCAS_vehicles, false];
@@ -172,14 +180,14 @@ switch (true) do
 {
   case ( tierWar > _old_tierWar):
   {
-    while { _old_tierWar <= tierWar} do {
+    while { _old_tierWar < tierWar} do {
       _old_tierWar = _old_tierWar + 1;
       [ _old_tierWar] call _tierWarIncreased;
     };
   };
   case (tierWar < _old_tierWar):
   {
-    while { _old_tierWar >= tierWar} do {
+    while { _old_tierWar > tierWar} do {
       _old_tierWar = _old_tierWar - 1;
       [ _old_tierWar] call _tierWarDecreased;
     };
