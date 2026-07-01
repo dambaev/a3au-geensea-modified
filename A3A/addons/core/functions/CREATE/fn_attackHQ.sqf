@@ -11,7 +11,7 @@ Arguments:
     <SCALAR> Optional: Delay in seconds after creating the task (Default: Auto-calculated from balancePlayerScale)
 */
 
-#include "\x\A3A\addons\core\functions\CREATE\..\..\script_component.hpp"
+#include "\x\A3A\addons\core\script_component.hpp"
 FIX_LINE_NUMBERS()
 //Mission: HQ is under attack
 if (!isServer) exitWith { Error("Server-only function miscalled") };

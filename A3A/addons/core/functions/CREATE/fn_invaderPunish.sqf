@@ -10,7 +10,7 @@ Arguments:
     <STRING> Origin marker (should be airbase)
     <SCALAR> Optional, delay in seconds before sending vehicles (Default: Auto-calculated)
 */
-#include "\x\A3A\addons\core\functions\CREATE\..\..\script_component.hpp"
+#include "\x\A3A\addons\core\script_component.hpp"
 FIX_LINE_NUMBERS()
 
 private _lowCiv = Faction(civilian) getOrDefault ["attributeLowCiv", false];

@@ -1,7 +1,7 @@
-#include "\x\A3A\addons\core\functions\REINF\..\..\script_component.hpp"
+#include "\x\A3A\addons\core\script_component.hpp"
 FIX_LINE_NUMBERS()
 
-#include "\x\A3A\addons\core\functions\REINF\..3\Ui_f\hpp\defineResinclDesign.inc"
+#include "\x\A3A\addons\core3\Ui_f\hpp\defineResinclDesign.inc"
 
 if (!isServer and hasInterface) exitWith {};
 

@@ -1,4 +1,4 @@
-#include "\x\A3A\addons\scrt\Outpost\..\defines.inc"
+#include "\x\A3A\addons\scrt\defines.inc"
 FIX_LINE_NUMBERS()
 
 params ["_position", "_direction", "_moneyCost", "_hrCost", "_commanderNetworkId"];

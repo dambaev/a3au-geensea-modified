@@ -11,7 +11,7 @@ Arguments:
     <INTEGER> Maximum number of attack waves to send
 */
 
-#include "\x\A3A\addons\core\functions\CREATE\..\..\script_component.hpp"
+#include "\x\A3A\addons\core\script_component.hpp"
 FIX_LINE_NUMBERS()
 
 params ["_mrkDest", "_mrkOrigin", "_maxWaves"];

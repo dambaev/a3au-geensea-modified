@@ -1,4 +1,4 @@
-#include "\x\A3A\addons\core\functions\Missions\..\..\script_component.hpp"
+#include "\x\A3A\addons\core\script_component.hpp"
 FIX_LINE_NUMBERS()
 
 params ["_marker"];
