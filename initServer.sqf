@@ -1,3 +1,4 @@
+call ADDON_fnc_A3A_patches;
 call ADDON_fnc_kmd_autoUnstuck_patch;
 call ADDON_fnc_distance_patch;
 
@@ -17,8 +18,6 @@ A3A_invaderPermanentSAMTierWar = 7;
 publicVariable "A3A_invaderPermanentSAMTierWar";
 A3A_invaderAttackTierWar = 9;
 publicVariable "A3A_invaderAttackTierWar";
-
-call ADDON_fnc_RIV_ENC_Rivals_patch;
 
 call A3A_fnc_initServer;
 

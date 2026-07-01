@@ -1,3 +1,4 @@
+call ADDON_fnc_A3A_patches;
 call ADDON_fnc_kmd_autoUnstuck_patch;
 call ADDON_fnc_initClient_patch;
 
