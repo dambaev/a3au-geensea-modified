@@ -47,7 +47,9 @@ if ( _tail_latest_waypoint_leader_idx != _prev_waypoint
     [ "ADDON_fnc_pl_moveInConvoy_leader_waypoint_idx"
     , _prev_waypoint
     ];
-  systemChat (_name + ": " + str _tail + " waypoints added");
+  if( !isNil {KMD_moveInConvoyDebug}) then {
+    systemChat (_name + ": " + str _tail + " waypoints added");
+  };
 };
 
 

@@ -20,6 +20,7 @@ A3A_invaderAttackTierWar = 9;
 publicVariable "A3A_invaderAttackTierWar";
 
 call A3A_fnc_initServer;
+call ADDON_fnc_initServer;
 
 // C-130J is unlockable by any AA. So don't use it
 waitUntil { sleep 1; !(isNil {A3A_faction_occ})};

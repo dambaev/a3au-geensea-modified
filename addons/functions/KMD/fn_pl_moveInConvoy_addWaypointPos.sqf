@@ -7,5 +7,7 @@ _wp setWaypointType "MOVE";
 _wp setWaypointBehaviour _behaviour;
 _group setCombatBehaviour _behaviour;
 
-systemChat (_name + ": " + str _group + " waypoint added");
+if( !isNil {KMD_moveInConvoyDebug}) then {
+  systemChat (_name + ": " + str _group + " waypoint added");
+};
 

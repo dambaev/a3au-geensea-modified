@@ -5,6 +5,34 @@
             <Original>Solnichniy</Original>
             <Russian>Солнечный</Russian>
         </Key>
+        <Key ID="STR_persistentUserMarkers_restore_map_markers">
+          <Original>restore user map markers from the last report</Original>
+          <Russian>Восстановить метки на карте из последнего доклада</Russian>
+        </Key>
+        <Key ID="STR_persistentUserMarkers_clean_and_restore_map_markers">
+          <Original>clean all the user map markers and restore them from the latest report</Original>
+          <Russian>Очистить пользовательские метки и восстановить их из последнего отчета</Russian>
+        </Key>
+        <Key ID="STR_persistentUserMarkers_save_map_markers">
+          <Original>persist map markers by reporting to command</Original>
+          <Russian>Сохранить метки на карте докладом командованию</Russian>
+        </Key>
+        <Key ID="STR_persistentUserMarkers_user_map_markers_cleaned_and_restored">
+          <Original>user map markers have been cleaned and restored</Original>
+          <Russian>Пользовательские метки были очищены и восстановлены из доклада командованию</Russian>
+        </Key>
+        <Key ID="STR_persistentUserMarkers_only_commander_can_do_this">
+          <Original>only commander can perform this action</Original>
+          <Russian>Только командир может выполнить это действие</Russian>
+        </Key>
+        <Key ID="STR_persistentUserMarkers_user_map_markers_loaded_and_restored">
+          <Original>user map markers have been loaded and restored</Original>
+          <Russian>Пользовательские метки восстановлены из доклада командованию</Russian>
+        </Key>
+        <Key ID="STR_persistentUserMarkers_user_map_markers_saved">
+          <Original>user map markers have been reported to commander</Original>
+          <Russian>Пользовательские метки добавлены в доклад командованию</Russian>
+        </Key>
     </Package>
     <Package name="A3UE-Your-Extender-Name">
         <Key ID="STR_A3UE_params_YourExtenderName_ParamName">

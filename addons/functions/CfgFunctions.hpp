@@ -59,6 +59,15 @@ class CfgFunctions
             class createAIAA {};
             class outpost_createAaDistance {};
         };
+	class addon
+	{
+            file = "addons\functions\addon";
+	    class libraries { preInit = 1; };
+	    class persistentUserMarkers { preInit = 1;};
+	    class support { preInit = 1; };
+	    class initClient { };
+	    class initServer { };
+	};
         class base
         {
             file = "addons\functions\base";

@@ -13,6 +13,7 @@ call ADDON_fnc_mrkWIN_patch;
 call ADDON_fnc_addBuildingActions_patch;
 
 _this spawn A3A_fnc_initClient;
+call ADDON_fnc_initClient;
 
 waitUntil { sleep 1; !(isNil {A3A_faction_occ})};
 waitUntil { sleep 1; !(isNil {A3A_faction_inv})};
@@ -129,3 +130,4 @@ call ADDON_fnc_trader_sellVehicleAddActionInit;
 };
 
 []spawn compileFinal(preprocessFile"AFAR\init.sqf");
+
