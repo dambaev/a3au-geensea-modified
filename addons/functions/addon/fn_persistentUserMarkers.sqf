@@ -2948,9 +2948,9 @@ private _Tmplab_sqf = 0;
   _Tmp416 = [ _Tmp417] call /*emit_f0ide*/ libarma3__localize;
   _Tmp419 = [ "STR_persistentUserMarkers_save_map_markers"] call /*emit_f0ide*/ text__pack_string;
   _Tmp418 = [ _Tmp419] call /*emit_f0ide*/ libarma3__localize;
-  _Tmp420 = [ _Tmp413, _Tmp414, fn_persistentUserMarkers__restoreMapMarkers_action, 0, 1.5, false, true] call /*emit_f0ide*/ libarma3__addAction;
-  _Tmp421 = [ _Tmp413, _Tmp416, fn_persistentUserMarkers__cleanAndRestoreMapMarkers_action, 0, 1.5, false, true] call /*emit_f0ide*/ libarma3__addAction;
-  _Tmp422 = [ _Tmp413, _Tmp418, fn_persistentUserMarkers__saveMapMarkers_action, 0, 1.5, false, true] call /*emit_f0ide*/ libarma3__addAction;
+  _Tmp420 = [ _Tmp412, _Tmp414, fn_persistentUserMarkers__restoreMapMarkers_action, 0, 1.5, false, true] call /*emit_f0ide*/ libarma3__addAction;
+  _Tmp421 = [ _Tmp412, _Tmp416, fn_persistentUserMarkers__cleanAndRestoreMapMarkers_action, 0, 1.5, false, true] call /*emit_f0ide*/ libarma3__addAction;
+  _Tmp422 = [ _Tmp412, _Tmp418, fn_persistentUserMarkers__saveMapMarkers_action, 0, 1.5, false, true] call /*emit_f0ide*/ libarma3__addAction;
    /*ATSINSmove_void _*/[ _Tmp414] call /*emit_f0ide*/ text__free_text;
    /*ATSINSmove_void _*/[ _Tmp416] call /*emit_f0ide*/ text__free_text;
    /*ATSINSmove_void _*/[ _Tmp418] call /*emit_f0ide*/ text__free_text;
@@ -3212,7 +3212,7 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_beg
             case 3 : {
               if(/*ATSCKptrisnull*/ ( isNil { _Tmp467 select 0 }) ) then {
-                systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 52269(line=1381, offs=22) -- 52926(line=1393, offs=21)");
+                systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 52251(line=1381, offs=22) -- 52908(line=1393, offs=21)");
               } else {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
               };
