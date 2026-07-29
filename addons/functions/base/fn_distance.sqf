@@ -490,7 +490,7 @@ private _processFIAMarker = {
                   [_position, distanceSPWN, distanceSPWN] isNotEqualTo []
               };
             _is_should_be_full_spawn = _is_should_be_full_spawn || _spawn_by_occ_slow;
-            private _is_should_spawn_by_fast = !_is_should_be_full_spawn;
+            private _is_should_spawn_by_fast = false;
             private _spawn_by_inv_fast = !_is_should_spawn_by_fast && {
                 _invaders_planes inAreaArray
                   [_position, _AA_fia_spawn_distance, _AA_fia_spawn_distance] isNotEqualTo []
