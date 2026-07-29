@@ -411,6 +411,9 @@ private _processFIAMarker = {
             private _spawn_by_inv_slow = _invaders inAreaArray
               [_position, distanceSPWN, distanceSPWN] isNotEqualTo [];
             if( _spawn_by_inv_slow) exitWith {};
+            private _spawn_by_players_slow = _players inAreaArray
+              [_position, distanceSPWN, distanceSPWN] isNotEqualTo [];
+            if( _spawn_by_players_slow) exitWith {};
 
             private _is_aa_post = _marker in aapostsFIA;
             // if somebody opfor fast target is inside _AA_fia_spawn_distance
@@ -523,12 +526,22 @@ private _processFIAMarker = {
                     spawner setVariable [_marker, ENABLED, true];
                     [[_marker],"SCRT_fnc_outpost_createWatchpostDistance"] call A3A_fnc_scheduler;
                   };
+                  if( _is_should_spawn_only_by_players) then {
+                    // ENABLED this marker
+                    spawner setVariable [_marker, ENABLED, true];
+                    [[_marker],"SCRT_fnc_outpost_createWatchpostDistance"] call A3A_fnc_scheduler;
+                  };
                 };
                 case (_marker in roadblocksFIA): {
                   if( _is_should_be_full_spawn) then {
                     // ENABLED this marker
                     spawner setVariable [_marker, ENABLED, true];
                     [[_marker],"SCRT_fnc_outpost_createRoadblockDistance"] call A3A_fnc_scheduler;
+                  };
+                  if( _is_should_spawn_only_by_players) then {
+                    // ENABLEDPLAYER this marker
+                    spawner setVariable [_marker, ENABLEDPLAYER, true];
+                    [[_marker],"ADDON_fnc_outpost_createRoadblockDistance"] call A3A_fnc_scheduler;
                   };
                 };
                 case (_marker in aapostsFIA): {
@@ -549,6 +562,11 @@ private _processFIAMarker = {
                       spawner setVariable [_marker, ENABLED, true];
                       [[_marker, _AA_fia_spawn_distance],"ADDON_fnc_outpost_createAaDistance"] call A3A_fnc_scheduler;
                     };
+                    case ( _is_should_spawn_only_by_players): {
+                      // ENABLEDPLAYER this marker
+                      spawner setVariable [_marker, ENABLEDPLAYER, true];
+                      [[_marker],"ADDON_fnc_outpost_createAaDistance1"] call A3A_fnc_scheduler;
+                    };
                   };
                 };
                 case (_marker in atpostsFIA): {
@@ -557,12 +575,22 @@ private _processFIAMarker = {
                     spawner setVariable [_marker, ENABLED, true];
                     [[_marker],"SCRT_fnc_outpost_createAtDistance"] call A3A_fnc_scheduler;
                   };
+                  if( _is_should_spawn_only_by_players) then {
+                    // ENABLEDPLAYER this marker
+                    spawner setVariable [_marker, ENABLEDPLAYER, true];
+                    [[_marker],"ADDON_fnc_outpost_createAtDistance"] call A3A_fnc_scheduler;
+                  };
                 };
                 case (_marker in hmgpostsFIA): {
                   if( _is_should_be_full_spawn) then {
                     // ENABLED this marker
                     spawner setVariable [_marker, ENABLED, true];
                     [[_marker],"SCRT_fnc_outpost_createHmgDistance"] call A3A_fnc_scheduler;
+                  };
+                  if( _is_should_spawn_only_by_players) then {
+                    // ENABLEDPLAYER this marker
+                    spawner setVariable [_marker, ENABLEDPLAYER, true];
+                    [[_marker],"ADDON_fnc_outpost_createHmgDistance"] call A3A_fnc_scheduler;
                   };
                 };
                 case !(_marker in controlsX): {

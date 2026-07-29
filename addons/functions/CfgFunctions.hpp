@@ -76,6 +76,10 @@ class CfgFunctions
             class distance {};
             class distance_patch {};
             class createFlag {};
+            class outpost_createRoadblockDistance {};
+            class outpost_createAaDistance1 {};
+            class outpost_createAtDistance {};
+            class outpost_createHmgDistance {};
             class isAdministration {};
             class administrationAddAction {};
             class administrationAddUID {};
