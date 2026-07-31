@@ -15,17 +15,6 @@ ext_mapX = {
 // ATSextcode_end()
 //
 
-//
-// ATSextcode_beg()
-//
-ext_ADDON_fnc_isEligibleCommander = {
-  params ["_unit"];
-  [ _unit ] call ADDON_fnc_isEligibleCommander;
-};
-//
-// ATSextcode_end()
-//
-
 /*fun*/
 /*emit_f0ide*/ hide_non_users_markers_0 = compileFinal {
   params ["_Arg0"];
@@ -3274,23 +3263,6 @@ private _Tmplab_sqf = 0;
 
 
 /*fun*/
-/*emit_f0ide*/ fn_persistentUserMarkers__ADDON_fnc_isEligibleCommander = compileFinal {
-  params ["_Arg0"];
-//
-// knd = 0
-// var _Tmpret484
-private _Tmpret484 = 0;
-// var Tmplab, Tmplab_sqf
-private _Tmplab = 0;
-private _Tmplab_sqf = 0;
-//
-  // __patsflab_ADDON_fnc_isEligibleCommander /*ATSINSflab*/ ;
-  _Tmpret484 = [ _Arg0] call /*emit_f0ide*/ ext_ADDON_fnc_isEligibleCommander;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret484;
-}; // end-of-function
-
-
-/*fun*/
 /*emit_f0ide*/ fn_persistentUserMarkers__main = compileFinal {
 //
 // knd = 0
@@ -3335,12 +3307,12 @@ _this call fn_persistentUserMarkers__main;
 // fn_persistentUserMarkers__userMarkerThread
 // f___patsfun_9
 ////// called external functions: 
-// ext_ADDON_fnc_isEligibleCommander
 // ext_mapX
 // ext_libarma3_eq_a_a
 // ext_libarma3_hasInterface
 ////// called undefined functions: 
 // libarma3__deleteMarker
+// fn_persistentUserMarkers__ADDON_fnc_isEligibleCommander
 // libarma3__isNotNull
 // libarma3__addAction
 // libarma3__localize
