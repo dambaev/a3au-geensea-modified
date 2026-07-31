@@ -15,6 +15,7 @@ private _Tmplab_sqf = 0;
 //
   // __patsflab_main /*ATSINSflab*/ ;
    /*ATSINSmove_void _*/[ ] call /*emit_f0ide*/ fn_persistentUserMarkers__initClient;
+   /*ATSINSmove_void _*/[ ] call /*emit_f0ide*/ fn_support__initClient;
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
 }; // end-of-function
 
@@ -25,6 +26,7 @@ _this call fn_initClient__main;
 // fn_initClient__main
 ////// called external functions: 
 ////// called undefined functions: 
+// fn_support__initClient
 // fn_persistentUserMarkers__initClient
 // end-of-compilation-unit
 //

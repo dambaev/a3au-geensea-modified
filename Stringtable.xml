@@ -33,6 +33,43 @@
           <Original>user map markers have been reported to commander</Original>
           <Russian>Пользовательские метки добавлены в доклад командованию</Russian>
         </Key>
+        <Key ID="STR_support_request_support">
+          <Original>Request attack support form command</Original>
+          <Russian>Запросить материальную помощь для наступления</Russian>
+        </Key>
+        <Key ID="STR_support_editor">
+          <Original>Request support editor</Original>
+          <Russian>Редактирование материальной помощи для наступления</Russian>
+        </Key>
+        <Key ID="STR_support_add_vehicle_to_support">
+          <Original>add vehicle to support</Original>
+          <Russian>Добавить технику в поддержку наступления</Russian>
+        </Key>
+        <Key ID="STR_support_delete_vehicle_from_support">
+          <Original>delete vehicle from support</Original>
+          <Russian>Убрать технику из поддержки</Russian>
+        </Key>
+        <Key ID="STR_support_exit_support_editor">
+          <Original>exit support editor</Original>
+          <Russian>Завершить редактирование поддержки</Russian>
+        </Key>
+        <Key ID="STR_support_caller_null">
+          <Original>caller is null</Original>
+          <Russian>caller is null</Russian>
+        </Key>
+        <Key ID="STR_support_no_requestable_support_vehicles">
+          <Original>no requestable support vehicle</Original>
+          <Russian>Транспорт поддержки не найден?</Russian>
+        </Key>
+        <Key ID="STR_support_place_vehicle">
+          <Original>place support vehicle</Original>
+          <Russian>Разместить технику поддержки</Russian>
+        </Key>
+        <Key ID="STR_support_finish_support_request">
+          <Original>finish support request</Original>
+          <Russian>Завершить запрос поддержки</Russian>
+        </Key>
+
     </Package>
     <Package name="A3UE-Your-Extender-Name">
         <Key ID="STR_A3UE_params_YourExtenderName_ParamName">
