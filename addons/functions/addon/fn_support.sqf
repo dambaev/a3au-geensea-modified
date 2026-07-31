@@ -1606,6 +1606,51 @@ private _Tmplab_sqf = 0;
 
 
 /*fun*/
+/*emit_f0ide*/ fn_support__addVehicleToSupport_action = compileFinal {
+  params ["_Arg0", "_Arg1", "_Arg2", "_Arg3"];
+//
+// knd = 0
+// var Tmplab, Tmplab_sqf
+private _Tmplab = 0;
+private _Tmplab_sqf = 0;
+//
+  // __patsflab_addVehicleToSupport_action /*ATSINSflab*/ ;
+  ; // ATSINSmove_void();
+/*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
+}; // end-of-function
+
+
+/*fun*/
+/*emit_f0ide*/ fn_support__deleteVehicleFromSupport_action = compileFinal {
+  params ["_Arg0", "_Arg1", "_Arg2", "_Arg3"];
+//
+// knd = 0
+// var Tmplab, Tmplab_sqf
+private _Tmplab = 0;
+private _Tmplab_sqf = 0;
+//
+  // __patsflab_deleteVehicleFromSupport_action /*ATSINSflab*/ ;
+  ; // ATSINSmove_void();
+/*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
+}; // end-of-function
+
+
+/*fun*/
+/*emit_f0ide*/ fn_support__exitSupportEditor_action = compileFinal {
+  params ["_Arg0", "_Arg1", "_Arg2", "_Arg3"];
+//
+// knd = 0
+// var Tmplab, Tmplab_sqf
+private _Tmplab = 0;
+private _Tmplab_sqf = 0;
+//
+  // __patsflab_exitSupportEditor_action /*ATSINSflab*/ ;
+  ; // ATSINSmove_void();
+/*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
+}; // end-of-function
+
+
+/*fun*/
 /*emit_f0ide*/ fn_support__main = compileFinal {
 //
 // knd = 0
@@ -1623,6 +1668,8 @@ _this call fn_support__main;
 //////
 ////// defined but not used: 
 // fn_support__main
+// fn_support__deleteVehicleFromSupport_action
+// fn_support__addVehicleToSupport_action
 // f___patsfun_27
 // f___patsfun_26
 // f___patsfun_25
