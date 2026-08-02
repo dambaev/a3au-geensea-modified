@@ -51,36 +51,24 @@ ext_commander = {
 
 /*fun*/
 /*emit_f0ide*/ fn_addon__ensure_not_null = compileFinal {
-  params ["_Arg0", "_Arg1"];
+  params ["_Arg0"];
 //
 // knd = 0
 // var _Tmpret0
 private _Tmpret0 = 0;
 // var _Tmp1
 private _Tmp1 = 0;
-// var _Tmp2
-private _Tmp2 = 0;
-// var _Tmp3
-private _Tmp3 = 0;
-// var _Tmp4
-private _Tmp4 = 0;
-// var _Tmp5
-private _Tmp5 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_ensure_not_null /*ATSINSflab*/ ;
-  _Tmp1 = /* ATSSELfltrec */ (_Arg0 select 0);
-  _Tmp2 = /* ATSSELfltrec */ (_Arg0 select 1);
-  _Tmp3 = [ _Tmp1] call /*emit_f0ide*/ libarma3__isNotNull;
-  if (_Tmp3) then {
-      _Tmp4 = [_Tmp1, _Tmp2];
-      _Tmpret0 = [ 1, _Tmp4 ]/* emit2_ATSINSmove_con1 */;
+  _Tmp1 = [ _Arg0] call /*emit_f0ide*/ libarma3__isNotNull;
+  if (_Tmp1) then {
+      _Tmpret0 = [ 1, _Arg0 ]/* emit2_ATSINSmove_con1 */;
     } // if-then
     else {
-      _Tmp5 =  /*D0Eappexp ATSfunclo_fun*/[_Tmp1, _Tmp2] call /*ATSfunclo_fun*/ _Arg1;
-      _Tmpret0 = [ 0, _Tmp5 ]/* emit2_ATSINSmove_con1 */
+      _Tmpret0 = [ 0, _Arg0 ]/* emit2_ATSINSmove_con1 */
     // if-else
     };
 /*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret0;
@@ -89,77 +77,53 @@ private _Tmplab_sqf = 0;
 
 /*fun*/
 /*emit_f0ide*/ fn_addon__ensure_boss = compileFinal {
-  params ["_Arg0", "_Arg1"];
+  params ["_Arg0"];
 //
 // knd = 0
-// var _Tmpret6
-private _Tmpret6 = 0;
-// var _Tmp7
-private _Tmp7 = 0;
-// var _Tmp8
-private _Tmp8 = 0;
-// var _Tmp9
-private _Tmp9 = 0;
-// var _Tmp10
-private _Tmp10 = 0;
-// var _Tmp11
-private _Tmp11 = 0;
+// var _Tmpret2
+private _Tmpret2 = 0;
+// var _Tmp3
+private _Tmp3 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_ensure_boss /*ATSINSflab*/ ;
-  _Tmp7 = /* ATSSELfltrec */ (_Arg0 select 0);
-  _Tmp8 = /* ATSSELfltrec */ (_Arg0 select 1);
-  _Tmp9 = [ _Tmp7] call /*emit_f0ide*/ fn_addon__isBoss;
-  if (_Tmp9) then {
-      _Tmp10 = [_Tmp7, _Tmp8];
-      _Tmpret6 = [ 1, _Tmp10 ]/* emit2_ATSINSmove_con1 */;
+  _Tmp3 = [ _Arg0] call /*emit_f0ide*/ fn_addon__isBoss;
+  if (_Tmp3) then {
+      _Tmpret2 = [ 1, _Arg0 ]/* emit2_ATSINSmove_con1 */;
     } // if-then
     else {
-      _Tmp11 =  /*D0Eappexp ATSfunclo_fun*/[_Tmp7, _Tmp8] call /*ATSfunclo_fun*/ _Arg1;
-      _Tmpret6 = [ 0, _Tmp11 ]/* emit2_ATSINSmove_con1 */
+      _Tmpret2 = [ 0, _Arg0 ]/* emit2_ATSINSmove_con1 */
     // if-else
     };
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret6;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret2;
 }; // end-of-function
 
 
 /*fun*/
 /*emit_f0ide*/ fn_addon__ensure_administrator = compileFinal {
-  params ["_Arg0", "_Arg1"];
+  params ["_Arg0"];
 //
 // knd = 0
-// var _Tmpret12
-private _Tmpret12 = 0;
-// var _Tmp13
-private _Tmp13 = 0;
-// var _Tmp14
-private _Tmp14 = 0;
-// var _Tmp15
-private _Tmp15 = 0;
-// var _Tmp16
-private _Tmp16 = 0;
-// var _Tmp17
-private _Tmp17 = 0;
+// var _Tmpret4
+private _Tmpret4 = 0;
+// var _Tmp5
+private _Tmp5 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_ensure_administrator /*ATSINSflab*/ ;
-  _Tmp13 = /* ATSSELfltrec */ (_Arg0 select 0);
-  _Tmp14 = /* ATSSELfltrec */ (_Arg0 select 1);
-  _Tmp15 = [ _Tmp13] call /*emit_f0ide*/ fn_addon__ADDON_fnc_isAdministration;
-  if (_Tmp15) then {
-      _Tmp16 = [_Tmp13, _Tmp14];
-      _Tmpret12 = [ 1, _Tmp16 ]/* emit2_ATSINSmove_con1 */;
+  _Tmp5 = [ _Arg0] call /*emit_f0ide*/ fn_addon__ADDON_fnc_isAdministration;
+  if (_Tmp5) then {
+      _Tmpret4 = [ 1, _Arg0 ]/* emit2_ATSINSmove_con1 */;
     } // if-then
     else {
-      _Tmp17 =  /*D0Eappexp ATSfunclo_fun*/[_Tmp13, _Tmp14] call /*ATSfunclo_fun*/ _Arg1;
-      _Tmpret12 = [ 0, _Tmp17 ]/* emit2_ATSINSmove_con1 */
+      _Tmpret4 = [ 0, _Arg0 ]/* emit2_ATSINSmove_con1 */
     // if-else
     };
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret12;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret4;
 }; // end-of-function
 
 
@@ -168,15 +132,15 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmpret18
-private _Tmpret18 = 0;
+// var _Tmpret6
+private _Tmpret6 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_isBoss /*ATSINSflab*/ ;
-  _Tmpret18 = [ _Arg0] call /*emit_f0ide*/ ext_isBoss;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret18;
+  _Tmpret6 = [ _Arg0] call /*emit_f0ide*/ ext_isBoss;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret6;
 }; // end-of-function
 
 
@@ -185,10 +149,10 @@ private _Tmplab_sqf = 0;
   params ["_Arg0", "_Arg1", "_Arg2", "_Arg3"];
 //
 // knd = 0
-// var _Tmp22
-private _Tmp22 = 0;
-// var _Tmp23
-private _Tmp23 = 0;
+// var _Tmp10
+private _Tmp10 = 0;
+// var _Tmp11
+private _Tmp11 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
@@ -196,9 +160,9 @@ private _Tmplab_sqf = 0;
   // __patsflab_HR_GRG_fnc_confirmPlacement /*ATSINSflab*/ ;
    /*ATSINSmove_void _*/ /*D0Eappexp ATSfunclo_fun*/[_Arg0] call /*ATSfunclo_fun*/ text__lemma_text_param;
    /*ATSINSmove_void _*/ /*D0Eappexp ATSfunclo_fun*/[_Arg3] call /*ATSfunclo_fun*/ text__lemma_text_param;
-  _Tmp22 = [ _Arg0] call /*emit_f0ide*/ text__text2string;
-  _Tmp23 = [ _Arg3] call /*emit_f0ide*/ text__text2string;
-   /*ATSINSmove_void _*/[ _Tmp22, _Arg1, _Arg2, _Tmp23] call /*emit_f0ide*/ ext_libarma3_HR_GRG_fnc_confirmPlacement;
+  _Tmp10 = [ _Arg0] call /*emit_f0ide*/ text__text2string;
+  _Tmp11 = [ _Arg3] call /*emit_f0ide*/ text__text2string;
+   /*ATSINSmove_void _*/[ _Tmp10, _Arg1, _Arg2, _Tmp11] call /*emit_f0ide*/ ext_libarma3_HR_GRG_fnc_confirmPlacement;
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
 }; // end-of-function
 
@@ -208,15 +172,15 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmpret24
-private _Tmpret24 = 0;
+// var _Tmpret12
+private _Tmpret12 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_ADDON_fnc_isAdministration /*ATSINSflab*/ ;
-  _Tmpret24 = [ _Arg0] call /*emit_f0ide*/ ext_ADDON_fnc_isAdministration;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret24;
+  _Tmpret12 = [ _Arg0] call /*emit_f0ide*/ ext_ADDON_fnc_isAdministration;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret12;
 }; // end-of-function
 
 
@@ -224,15 +188,15 @@ private _Tmplab_sqf = 0;
 /*emit_f0ide*/ fn_addon__commander = compileFinal {
 //
 // knd = 0
-// var _Tmpret25
-private _Tmpret25 = 0;
+// var _Tmpret13
+private _Tmpret13 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_commander /*ATSINSflab*/ ;
-  _Tmpret25 = [ ] call /*emit_f0ide*/ ext_commander;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret25;
+  _Tmpret13 = [ ] call /*emit_f0ide*/ ext_commander;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret13;
 }; // end-of-function
 
 
