@@ -9698,6 +9698,7 @@ private _Tmplab_sqf = 0;
   // __patsflab_bind_env_result_vt /*ATSINSflab*/ ;
   _Casefunx1 /* emit_Casefunx */  = {
     params [ "_Casefun", "_Tmplab"];
+    systemChat( "result_vb__bind_env_result_vt _Tmplab " + str _Tmplab);
     // switch(_Tmplab) {
     switch(_Tmplab) do
     {
