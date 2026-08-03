@@ -3039,7 +3039,7 @@ private _Tmplab_sqf = 0;
         // ATSbranchseq_end
         // ATSbranchseq_beg
         case 3 : {
-           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ 
+           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/
         };
         case 4 : {
 /*emit2_branchlst rest-of-ATSINS*/          _Tmp201__1 = (_Arg1 select 0);
@@ -3058,7 +3058,7 @@ private _Tmplab_sqf = 0;
       }; // endcase
       //} // end-of-switch
     }; // endfun
-    [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+    [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */
 ;
     if (_Funlab_sqf < 1) then { break; };
   }; // endwhile-fun
@@ -7126,7 +7126,7 @@ private _Tmplab_sqf = 0;
           }; // endcase
           //} // end-of-switch
         }; // endfun
-        [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+        [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */
 
       // if-else
       };
@@ -8069,7 +8069,7 @@ private _Tmplab_sqf = 0;
                 }; // endcase
                 //} // end-of-switch
               }; // endfun
-              [ _Casefunx2 /* emit_Casefunx */ , 1 ] call _Casefunx2 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+              [ _Casefunx2 /* emit_Casefunx */ , 1 ] call _Casefunx2 /* emit_Casefunx */  /* emit_Casefunx2 */
 
             };
             // ATSbranchseq_end
@@ -8077,7 +8077,7 @@ private _Tmplab_sqf = 0;
           }; // endcase
           //} // end-of-switch
         }; // endfun
-        [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+        [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */
 ;
         /* ATSINSmove_tlcal */ _Apy0 = _Arg0;
         /* ATSINSmove_tlcal */ _Apy1 = _Arg1;
@@ -8521,7 +8521,7 @@ private _Tmplab_sqf = 0;
         }; // endcase
         //} // end-of-switch
       }; // endfun
-      [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+      [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */
 
     // if-else
     };
@@ -9527,7 +9527,7 @@ private _Tmplab_sqf = 0;
                 }; // endcase
                 //} // end-of-switch
               }; // endfun
-              [ _Casefunx2 /* emit_Casefunx */ , 1 ] call _Casefunx2 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+              [ _Casefunx2 /* emit_Casefunx */ , 1 ] call _Casefunx2 /* emit_Casefunx */  /* emit_Casefunx2 */
 
             };
             // ATSbranchseq_end
@@ -9535,7 +9535,7 @@ private _Tmplab_sqf = 0;
           }; // endcase
           //} // end-of-switch
         }; // endfun
-        [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+        [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */
 ;
         _Tmp923 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
         _Tmp922 = [ _Arg5, _Tmp923] call /*emit_f0ide*/ atspre_g1uint_add_size;
@@ -9662,7 +9662,7 @@ private _Tmplab_sqf = 0;
     }; // endcase
     //} // end-of-switch
   }; // endfun
-  [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+  [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */
 ;
 /*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret930;
 }; // end-of-function
@@ -9703,6 +9703,7 @@ private _Tmplab_sqf = 0;
     {
       // ATSbranchseq_beg
       case 1 : {
+        systemChat( "result_vb__bind_env_result_vt _Arg0 " + str _Arg0);
         if(not(/*ATSCKpat_con1(*/(_Arg0 select 0) == 0)) then {
           _Tmp937 = (_Arg0 select 1);
         } else {
@@ -9711,7 +9712,7 @@ private _Tmplab_sqf = 0;
         };
       };
       case 2 : {
-         [ _Casefun, 3 ]  call _Casefun /*emit_Casefun2*/ 
+         [ _Casefun, 3 ]  call _Casefun /*emit_Casefun2*/
       };
       case 3 : {
 /*emit2_branchlst rest-of-ATSINS*/        _Tmp935 = /* ATSSELfltrec */ (_Tmp934 select 0);
@@ -9731,7 +9732,7 @@ private _Tmplab_sqf = 0;
         };
       };
       case 5 : {
-         [ _Casefun, 6 ]  call _Casefun /*emit_Casefun2*/ 
+         [ _Casefun, 6 ]  call _Casefun /*emit_Casefun2*/
       };
       case 6 : {
 /*emit2_branchlst rest-of-ATSINS*/        _Tmp938 = /* ATSSELfltrec */ (_Tmp937 select 0);
@@ -9745,7 +9746,7 @@ private _Tmplab_sqf = 0;
     }; // endcase
     //} // end-of-switch
   }; // endfun
-  [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+  [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */
 ;
 /*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret933;
 }; // end-of-function
@@ -9810,7 +9811,7 @@ private _Tmplab_sqf = 0;
     }; // endcase
     //} // end-of-switch
   }; // endfun
-  [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+  [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */
 ;
 /*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret942;
 }; // end-of-function
@@ -9913,7 +9914,7 @@ private _Tmplab_sqf = 0;
     }; // endcase
     //} // end-of-switch
   }; // endfun
-  [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+  [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */
 ;
 /*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret951;
 }; // end-of-function
@@ -9949,7 +9950,7 @@ private _Tmplab_sqf = 0;
 atscc2sqf_unit_heap resize 1;
 _this call fn_libraries__main;
 //////
-////// defined but not used: 
+////// defined but not used:
 // fn_libraries__main
 // result_vb__main
 // result_vb__withExcept
@@ -10136,7 +10137,7 @@ _this call fn_libraries__main;
 // bytestring__get_char_at_int
 // bytestring__bs2bytes_rw
 // bytestring__empty
-////// called external functions: 
+////// called external functions:
 // ext_libarma3_atspre_g1int_sub_int
 // ext_libarma3_format
 // ext_libarma3_getText
@@ -10278,7 +10279,7 @@ _this call fn_libraries__main;
 // ext_bytestring_eq_bytestring_bytestring
 // ext_bytestring_array_count
 // ext_bytestring_string_toArray
-////// called undefined functions: 
+////// called undefined functions:
 // bytestring__grow_bsC_bs
 // bytestring__growC
 // end-of-compilation-unit
