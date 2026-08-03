@@ -103,9 +103,9 @@ private _Tmplab_sqf = 0;
    /*ATSINSmove_void _*/[ _Tmp40] call /*emit_f0ide*/ libarma3__systemChat;
    /*ATSINSmove_void _*/[ _Tmp40] call /*emit_f0ide*/ text__free_text;
   _Tmp36 = [ _Tmp37, /*emit_f0ide*/ f___patsfun_4] call /*emit_f0ide*/ result_vb__bind_env_result_vt;
-  systemChat( "_Tmp36 = ", _Tmp36);
+  systemChat( "_Tmp36 = " + str _Tmp36);
   _Tmp35 = [ _Tmp36, /*emit_f0ide*/ add_actions_verified_2] call /*emit_f0ide*/ result_vb__bind_env_result_vt;
-  systemChat( "_Tmp35 = ", _Tmp35);
+  systemChat( "_Tmp35 = " + str _Tmp35);
   _Casefunx1 /* emit_Casefunx */  = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
