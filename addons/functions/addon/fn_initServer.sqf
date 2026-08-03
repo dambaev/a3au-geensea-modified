@@ -22,10 +22,10 @@ private _Tmplab_sqf = 0;
 atscc2sqf_unit_heap resize 1;
 _this call fn_initServer__main;
 //////
-////// defined but not used: 
+////// defined but not used:
 // fn_initServer__main
-////// called external functions: 
-////// called undefined functions: 
+////// called external functions:
+////// called undefined functions:
 // fn_support__initServer
 // fn_persistentUserMarkers__initServer
 // end-of-compilation-unit

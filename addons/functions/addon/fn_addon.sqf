@@ -216,19 +216,19 @@ private _Tmplab_sqf = 0;
 atscc2sqf_unit_heap resize 1;
 _this call fn_addon__main;
 //////
-////// defined but not used: 
+////// defined but not used:
 // fn_addon__main
 // fn_addon__commander
 // fn_addon__HR_GRG_fnc_confirmPlacement
 // fn_addon__ensure_administrator
 // fn_addon__ensure_boss
 // fn_addon__ensure_not_null
-////// called external functions: 
+////// called external functions:
 // ext_commander
 // ext_ADDON_fnc_isAdministration
 // ext_libarma3_HR_GRG_fnc_confirmPlacement
 // ext_isBoss
-////// called undefined functions: 
+////// called undefined functions:
 // text__text2string
 // libarma3__isNotNull
 // end-of-compilation-unit

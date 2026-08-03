@@ -170,7 +170,7 @@ private _Tmplab_sqf = 0;
       } // if-then
       else {
         _Tmp3 = [ _Arg1, _Arg3] call /*emit_f0ide*/ libarma3__array_vt_get1;
-        _Casefunx1 /* emit_Casefunx */  = {
+        _Casefunx1 /* emit_Casefunx */ = {
           params [ "_Casefun", "_Tmplab"];
           // switch(_Tmplab) {
           switch(_Tmplab) do
@@ -178,9 +178,9 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_beg
             case 1 : {
               if(/*ATSCKptriscons*/ (not(isNil { _Tmp3 select 0 } )) ) then {
-                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               } else {
-                 [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/ ;
+                 [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 2 : {
@@ -194,7 +194,7 @@ private _Tmplab_sqf = 0;
               if(/*ATSCKptrisnull*/ ( isNil { _Tmp3 select 0 }) ) then {
                 systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 1613(line=48, offs=13) -- 3046(line=70, offs=14)");
               } else {
-                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 4 : {
@@ -232,7 +232,7 @@ private _Tmplab_sqf = 0;
           }; // endcase
           //} // end-of-switch
         }; // endfun
-        [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+        [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
         _Tmp26 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
         _Tmp25 = [ _Arg3, _Tmp26] call /*emit_f0ide*/ atspre_g1uint_add_size;
@@ -351,7 +351,7 @@ private _Tmplab_sqf = 0;
    /*ATSINSmove_void _*/[ _Arg0] call /*emit_f0ide*/ hide_non_users_markers_0;
   _Tmp53 = [ _Arg0] call /*emit_f0ide*/ fn_persistentUserMarkers__am_i_the_first_user_of_side;
   _Tmp54 = [ _Arg2, _Arg1] call /*emit_f0ide*/ libarma3__getVariable1;
-  _Casefunx1 /* emit_Casefunx */  = {
+  _Casefunx1 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
     switch(_Tmplab) do
@@ -359,9 +359,9 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 1 : {
         if(/*ATSCKptriscons*/ (not(isNil { _Tmp54 select 0 } )) ) then {
-           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
-           [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/ ;
+           [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 2 : {
@@ -373,7 +373,7 @@ private _Tmplab_sqf = 0;
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp54 select 0 }) ) then {
           systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 5529(line=138, offs=46) -- 5633(line=140, offs=35)");
         } else {
-           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
@@ -385,7 +385,7 @@ private _Tmplab_sqf = 0;
     }; // endcase
     //} // end-of-switch
   }; // endfun
-  [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+  [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
   if (_Tmp53) then {
       _Tmp57 = [ _Tmp55] call /*emit_f0ide*/ atspre_neg_bool0;
@@ -714,7 +714,7 @@ private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_option2result_18 /*ATSINSflab*/ ;
-  _Casefunx1 /* emit_Casefunx */  = {
+  _Casefunx1 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
     switch(_Tmplab) do
@@ -722,9 +722,9 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 1 : {
         if(/*ATSCKptriscons*/ (not(isNil { _Arg4 select 0 } )) ) then {
-           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
-           [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/ ;
+           [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 2 : {
@@ -737,7 +737,7 @@ private _Tmplab_sqf = 0;
         if(/*ATSCKptrisnull*/ ( isNil { _Arg4 select 0 }) ) then {
           systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 15071(line=386, offs=3) -- 15266(line=392, offs=6)");
         } else {
-           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
@@ -752,7 +752,7 @@ private _Tmplab_sqf = 0;
     }; // endcase
     //} // end-of-switch
   }; // endfun
-  [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+  [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
 /*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret134;
 }; // end-of-function
@@ -910,7 +910,7 @@ private _Tmplab_sqf = 0;
       } // if-then
       else {
         _Tmp151 = [ _Arg1, _Arg3] call /*emit_f0ide*/ libarma3__array_vt_get1;
-        _Casefunx1 /* emit_Casefunx */  = {
+        _Casefunx1 /* emit_Casefunx */ = {
           params [ "_Casefun", "_Tmplab"];
           // switch(_Tmplab) {
           switch(_Tmplab) do
@@ -918,9 +918,9 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_beg
             case 1 : {
               if(/*ATSCKptriscons*/ (not(isNil { _Tmp151 select 0 } )) ) then {
-                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               } else {
-                 [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/ ;
+                 [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 2 : {
@@ -945,7 +945,7 @@ private _Tmplab_sqf = 0;
               if(/*ATSCKptrisnull*/ ( isNil { _Tmp151 select 0 }) ) then {
                 systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 17247(line=448, offs=19) -- 20761(line=515, offs=24)");
               } else {
-                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 4 : {
@@ -972,7 +972,7 @@ private _Tmplab_sqf = 0;
                 else {
                   _Tmp161 = [ _Tmp152] call /*emit_f0ide*/ fn_persistentUserMarkers__markerToSide;
                   _Tmp162 = [ _Tmp152] call /*emit_f0ide*/ libarma3__markerChannel;
-                  _Casefunx2 /* emit_Casefunx */  = {
+                  _Casefunx2 /* emit_Casefunx */ = {
                     params [ "_Casefun", "_Tmplab"];
                     // switch(_Tmplab) {
                     switch(_Tmplab) do
@@ -980,9 +980,9 @@ private _Tmplab_sqf = 0;
                       // ATSbranchseq_beg
                       case 1 : {
                         if(/*ATSCKptriscons*/ (not(isNil { _Tmp161 select 0 } )) ) then {
-                           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+                           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
                         } else {
-                           [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/ ;
+                           [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
                         };
                       };
                       case 2 : {
@@ -1007,7 +1007,7 @@ private _Tmplab_sqf = 0;
                         if(/*ATSCKptrisnull*/ ( isNil { _Tmp161 select 0 }) ) then {
                           systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 18547(line=477, offs=31) -- 20677(line=512, offs=32)");
                         } else {
-                           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+                           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
                         };
                       };
                       case 4 : {
@@ -1063,7 +1063,7 @@ private _Tmplab_sqf = 0;
                     }; // endcase
                     //} // end-of-switch
                   }; // endfun
-                  [ _Casefunx2 /* emit_Casefunx */ , 1 ] call _Casefunx2 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+                  [ _Casefunx2 /* emit_Casefunx */, 1 ] call _Casefunx2 /* emit_Casefunx */ /* emit_Casefunx2 */
 
                 // if-else
                 }
@@ -1073,7 +1073,7 @@ private _Tmplab_sqf = 0;
           }; // endcase
           //} // end-of-switch
         }; // endfun
-        [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+        [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 
       // if-else
       };
@@ -1610,7 +1610,7 @@ private _Tmplab_sqf = 0;
       } // if-then
       else {
         _Tmp255 = [ _Arg2, _Arg4] call /*emit_f0ide*/ libarma3__array_vt_get1;
-        _Casefunx1 /* emit_Casefunx */  = {
+        _Casefunx1 /* emit_Casefunx */ = {
           params [ "_Casefun", "_Tmplab"];
           // switch(_Tmplab) {
           switch(_Tmplab) do
@@ -1618,9 +1618,9 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_beg
             case 1 : {
               if(/*ATSCKptriscons*/ (not(isNil { _Tmp255 select 0 } )) ) then {
-                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               } else {
-                 [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/ ;
+                 [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 2 : {
@@ -1645,7 +1645,7 @@ private _Tmplab_sqf = 0;
               if(/*ATSCKptrisnull*/ ( isNil { _Tmp255 select 0 }) ) then {
                 systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 31835(line=806, offs=15) -- 32965(line=835, offs=18)");
               } else {
-                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 4 : {
@@ -1686,7 +1686,7 @@ private _Tmplab_sqf = 0;
           }; // endcase
           //} // end-of-switch
         }; // endfun
-        [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+        [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 
       // if-else
       };
@@ -1757,7 +1757,7 @@ private _Tmplab_sqf = 0;
   _Tmp269 = [ "persistentUserMarkers"] call /*emit_f0ide*/ text__pack_string;
   _Tmp270 = [ _Tmp268, _Tmp269, true] call /*emit_f0ide*/ libarma3__borrowVariable_vt1;
   _Tmp271 = [ ] call /*emit_f0ide*/ fn_persistentUserMarkers__is_map_marks_restore_enforced;
-  _Casefunx1 /* emit_Casefunx */  = {
+  _Casefunx1 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
     switch(_Tmplab) do
@@ -1765,9 +1765,9 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 1 : {
         if(/*ATSCKptriscons*/ (not(isNil { _Tmp270 select 0 } )) ) then {
-           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
-           [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/ ;
+           [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 2 : {
@@ -1781,7 +1781,7 @@ private _Tmplab_sqf = 0;
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp270 select 0 }) ) then {
           systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 33915(line=861, offs=11) -- 34268(line=870, offs=68)");
         } else {
-           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
@@ -1794,14 +1794,14 @@ private _Tmplab_sqf = 0;
     }; // endcase
     //} // end-of-switch
   }; // endfun
-  [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+  [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
   _Tmp276 = [ _Tmp272] call /*emit_f0ide*/ libarma3__hashMap_vt_count;
   _Tmp277 = [ _Tmp267] call /*emit_f0ide*/ libarma3__array_vt_count;
   _Tmp278 = [_Tmp272, _Tmp276];
   _Tmp279 = /* ATSSELfltrec */ (_Tmp278 select 0);
   _Tmp280 = [ _Tmp268, _Tmp269, _Tmp279, true] call /*emit_f0ide*/ libarma3__swapVariable_vt1;
-  _Casefunx2 /* emit_Casefunx */  = {
+  _Casefunx2 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
     switch(_Tmplab) do
@@ -1809,9 +1809,9 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 1 : {
         if(/*ATSCKptriscons*/ (not(isNil { _Tmp280 select 0 } )) ) then {
-           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
-           [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/ ;
+           [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 2 : {
@@ -1823,7 +1823,7 @@ private _Tmplab_sqf = 0;
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp280 select 0 }) ) then {
           systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 34753(line=884, offs=9) -- 35000(line=892, offs=12)");
         } else {
-           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
@@ -1836,7 +1836,7 @@ private _Tmplab_sqf = 0;
     }; // endcase
     //} // end-of-switch
   }; // endfun
-  [ _Casefunx2 /* emit_Casefunx */ , 1 ] call _Casefunx2 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+  [ _Casefunx2 /* emit_Casefunx */, 1 ] call _Casefunx2 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
    /*ATSINSmove_void _*/[ _Tmp269] call /*emit_f0ide*/ text__free_text;
    /*ATSINSmove_void _*/[ _Tmp267, /*emit_f0ide*/ f___patsfun_47] call /*emit_f0ide*/ libarma3__array_vt_free;
@@ -1905,7 +1905,7 @@ private _Tmplab_sqf = 0;
   _Tmp289 = [ _Tmp290, _Tmp291] call /*emit_f0ide*/ text__appendC_text_text;
   _Tmp292 = [ ] call /*emit_f0ide*/ libarma3__missionProfileNamespace;
   _Tmp293 = [ _Tmp292, _Tmp289, _Arg0, false] call /*emit_f0ide*/ libarma3__swapVariable_vt1;
-  _Casefunx1 /* emit_Casefunx */  = {
+  _Casefunx1 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
     switch(_Tmplab) do
@@ -1913,9 +1913,9 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 1 : {
         if(/*ATSCKptriscons*/ (not(isNil { _Tmp293 select 0 } )) ) then {
-           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
-           [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/ ;
+           [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 2 : {
@@ -1927,7 +1927,7 @@ private _Tmplab_sqf = 0;
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp293 select 0 }) ) then {
           systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 35584(line=907, offs=12) -- 35680(line=909, offs=54)");
         } else {
-           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
@@ -1940,7 +1940,7 @@ private _Tmplab_sqf = 0;
     }; // endcase
     //} // end-of-switch
   }; // endfun
-  [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+  [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
    /*ATSINSmove_void _*/[ ] call /*emit_f0ide*/ libarma3__saveMissionProfileNamespace;
    /*ATSINSmove_void _*/[ _Tmp289] call /*emit_f0ide*/ text__free_text;
@@ -2012,7 +2012,7 @@ private _Tmplab_sqf = 0;
   _Tmp305 = [ _Tmp306, _Tmp307] call /*emit_f0ide*/ text__appendC_text_text;
   _Tmp308 = [ ] call /*emit_f0ide*/ libarma3__missionProfileNamespace;
   _Tmp309 = [ _Tmp308, _Tmp305, false] call /*emit_f0ide*/ libarma3__borrowVariable_vt1;
-  _Casefunx1 /* emit_Casefunx */  = {
+  _Casefunx1 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
     switch(_Tmplab) do
@@ -2020,9 +2020,9 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 1 : {
         if(/*ATSCKptriscons*/ (not(isNil { _Tmp309 select 0 } )) ) then {
-           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
-           [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/ ;
+           [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 2 : {
@@ -2035,7 +2035,7 @@ private _Tmplab_sqf = 0;
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp309 select 0 }) ) then {
           systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 36298(line=927, offs=3) -- 36814(line=940, offs=4)");
         } else {
-           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
@@ -2043,7 +2043,7 @@ private _Tmplab_sqf = 0;
 /*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp309);;
 /*emit2_branchlst rest-of-ATSINS*/        _Tmp312 = [ _Tmp310] call /*emit_f0ide*/ libarma3__vt_copy;
 /*emit2_branchlst rest-of-ATSINS*/        _Tmp313 = [ _Tmp308, _Tmp305, _Tmp312, false] call /*emit_f0ide*/ libarma3__swapVariable_vt1;
-/*emit2_branchlst rest-of-ATSINS*/        _Casefunx2 /* emit_Casefunx */  = {
+/*emit2_branchlst rest-of-ATSINS*/        _Casefunx2 /* emit_Casefunx */ = {
           params [ "_Casefun", "_Tmplab"];
           // switch(_Tmplab) {
           switch(_Tmplab) do
@@ -2051,9 +2051,9 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_beg
             case 1 : {
               if(/*ATSCKptriscons*/ (not(isNil { _Tmp313 select 0 } )) ) then {
-                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               } else {
-                 [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/ ;
+                 [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 2 : {
@@ -2065,7 +2065,7 @@ private _Tmplab_sqf = 0;
               if(/*ATSCKptrisnull*/ ( isNil { _Tmp313 select 0 }) ) then {
                 systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 36639(line=935, offs=14) -- 36739(line=937, offs=56)");
               } else {
-                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 4 : {
@@ -2078,7 +2078,7 @@ private _Tmplab_sqf = 0;
           }; // endcase
           //} // end-of-switch
         }; // endfun
-        [ _Casefunx2 /* emit_Casefunx */ , 1 ] call _Casefunx2 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+        [ _Casefunx2 /* emit_Casefunx */, 1 ] call _Casefunx2 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
 /*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp305] call /*emit_f0ide*/ text__free_text;
 /*emit2_branchlst rest-of-ATSINS*/        _Tmpret303 = [ _Tmp310 ]/* emit2_ATSINSmove_con1 */
@@ -2088,7 +2088,7 @@ private _Tmplab_sqf = 0;
     }; // endcase
     //} // end-of-switch
   }; // endfun
-  [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+  [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
 /*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret303;
 }; // end-of-function
@@ -2404,7 +2404,7 @@ private _Tmplab_sqf = 0;
         _Tmp345 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
         _Tmp344 = [ _Arg3, _Tmp345] call /*emit_f0ide*/ atspre_g1uint_add_size;
         _Tmp346 = [ _Arg0, _Arg3] call /*emit_f0ide*/ libarma3__array_vt_get1;
-        _Casefunx1 /* emit_Casefunx */  = {
+        _Casefunx1 /* emit_Casefunx */ = {
           params [ "_Casefun", "_Tmplab"];
           // switch(_Tmplab) {
           switch(_Tmplab) do
@@ -2412,9 +2412,9 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_beg
             case 1 : {
               if(/*ATSCKptriscons*/ (not(isNil { _Tmp346 select 0 } )) ) then {
-                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               } else {
-                 [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/ ;
+                 [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 2 : {
@@ -2435,7 +2435,7 @@ private _Tmplab_sqf = 0;
               if(/*ATSCKptrisnull*/ ( isNil { _Tmp346 select 0 }) ) then {
                 systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 39226(line=1017, offs=15) -- 39660(line=1026, offs=16)");
               } else {
-                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 4 : {
@@ -2464,7 +2464,7 @@ private _Tmplab_sqf = 0;
           }; // endcase
           //} // end-of-switch
         }; // endfun
-        [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+        [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 
       // if-else
       };
@@ -2569,7 +2569,7 @@ private _Tmplab_sqf = 0;
 //
   // __patsflab_persist_user_map_markers /*ATSINSflab*/ ;
   _Tmp375 = [ ] call /*emit_f0ide*/ fn_persistentUserMarkers__gatherUsersSideMapMarkers;
-  _Casefunx1 /* emit_Casefunx */  = {
+  _Casefunx1 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
     switch(_Tmplab) do
@@ -2577,9 +2577,9 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 1 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp375 select 0) == 0)) then {
-           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
-           [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/ ;
+           [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 2 : {
@@ -2594,7 +2594,7 @@ private _Tmplab_sqf = 0;
         if(not(/*ATSCKpat_con1(*/(_Tmp375 select 0) == 1)) then {
           systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 41684(line=1081, offs=11) -- 42012(line=1088, offs=88)");
         } else {
-           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
@@ -2607,7 +2607,7 @@ private _Tmplab_sqf = 0;
     }; // endcase
     //} // end-of-switch
   }; // endfun
-  [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+  [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
 }; // end-of-function
@@ -2635,7 +2635,7 @@ private _Tmplab_sqf = 0;
   // __patsflab_load_and_restore_user_map_markers_server_side /*ATSINSflab*/ ;
   _Tmp380 = [ _Arg0] call /*emit_f0ide*/ libarma3__side;
   _Tmp381 = [ _Tmp380] call /*emit_f0ide*/ fn_persistentUserMarkers__loadUsersSideMapMarkers;
-  _Casefunx1 /* emit_Casefunx */  = {
+  _Casefunx1 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
     switch(_Tmplab) do
@@ -2643,9 +2643,9 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 1 : {
         if(/*ATSCKptriscons*/ (not(isNil { _Tmp381 select 0 } )) ) then {
-           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
-           [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/ ;
+           [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 2 : {
@@ -2660,7 +2660,7 @@ private _Tmplab_sqf = 0;
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp381 select 0 }) ) then {
           systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 42275(line=1098, offs=11) -- 42994(line=1114, offs=10)");
         } else {
-           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+           [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
@@ -2673,7 +2673,7 @@ private _Tmplab_sqf = 0;
     }; // endcase
     //} // end-of-switch
   }; // endfun
-  [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+  [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
 }; // end-of-function
@@ -2775,7 +2775,7 @@ private _Tmplab_sqf = 0;
         _Tmp394 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
         _Tmp393 = [ _Arg3, _Tmp394] call /*emit_f0ide*/ atspre_g1uint_add_size;
         _Tmp395 = [ _Arg0, _Arg3] call /*emit_f0ide*/ libarma3__array_vt_get1;
-        _Casefunx1 /* emit_Casefunx */  = {
+        _Casefunx1 /* emit_Casefunx */ = {
           params [ "_Casefun", "_Tmplab"];
           // switch(_Tmplab) {
           switch(_Tmplab) do
@@ -2783,9 +2783,9 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_beg
             case 1 : {
               if(/*ATSCKptriscons*/ (not(isNil { _Tmp395 select 0 } )) ) then {
-                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               } else {
-                 [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/ ;
+                 [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 2 : {
@@ -2797,7 +2797,7 @@ private _Tmplab_sqf = 0;
               if(/*ATSCKptrisnull*/ ( isNil { _Tmp395 select 0 }) ) then {
                 systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 44379(line=1153, offs=19) -- 45188(line=1167, offs=19)");
               } else {
-                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 4 : {
@@ -2821,7 +2821,7 @@ private _Tmplab_sqf = 0;
           }; // endcase
           //} // end-of-switch
         }; // endfun
-        [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+        [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
         /* ATSINSmove_tlcal */ _Apy0 = _Arg0;
         /* ATSINSmove_tlcal */ _Apy1 = _Arg1;
@@ -3181,7 +3181,7 @@ private _Tmplab_sqf = 0;
       } // if-then
       else {
         _Tmp467 = [ _Arg0, _Arg2] call /*emit_f0ide*/ libarma3__array_vt_get1;
-        _Casefunx1 /* emit_Casefunx */  = {
+        _Casefunx1 /* emit_Casefunx */ = {
           params [ "_Casefun", "_Tmplab"];
           // switch(_Tmplab) {
           switch(_Tmplab) do
@@ -3189,9 +3189,9 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_beg
             case 1 : {
               if(/*ATSCKptriscons*/ (not(isNil { _Tmp467 select 0 } )) ) then {
-                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               } else {
-                 [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/ ;
+                 [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 2 : {
@@ -3203,7 +3203,7 @@ private _Tmplab_sqf = 0;
               if(/*ATSCKptrisnull*/ ( isNil { _Tmp467 select 0 }) ) then {
                 systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 52251(line=1381, offs=22) -- 52908(line=1393, offs=21)");
               } else {
-                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/ ;
+                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 4 : {
@@ -3227,7 +3227,7 @@ private _Tmplab_sqf = 0;
           }; // endcase
           //} // end-of-switch
         }; // endfun
-        [ _Casefunx1 /* emit_Casefunx */ , 1 ] call _Casefunx1 /* emit_Casefunx */  /* emit_Casefunx2 */ 
+        [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
         _Tmp476 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
         _Tmp475 = [ _Arg2, _Tmp476] call /*emit_f0ide*/ atspre_g1uint_add_size;
@@ -3278,7 +3278,7 @@ private _Tmplab_sqf = 0;
 atscc2sqf_unit_heap resize 1;
 _this call fn_persistentUserMarkers__main;
 //////
-////// defined but not used: 
+////// defined but not used:
 // fn_persistentUserMarkers__main
 // f___patsfun_80
 // fn_persistentUserMarkers__cleanAndRestoreMapMarkers_action
@@ -3306,11 +3306,11 @@ _this call fn_persistentUserMarkers__main;
 // fn_persistentUserMarkers__initClient
 // fn_persistentUserMarkers__userMarkerThread
 // f___patsfun_9
-////// called external functions: 
+////// called external functions:
 // ext_mapX
 // ext_libarma3_eq_a_a
 // ext_libarma3_hasInterface
-////// called undefined functions: 
+////// called undefined functions:
 // libarma3__deleteMarker
 // fn_persistentUserMarkers__ADDON_fnc_isEligibleCommander
 // libarma3__isNotNull
