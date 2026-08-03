@@ -62,10 +62,7 @@ class CfgFunctions
 	class addon
 	{
             file = "addons\functions\addon";
-	    class libraries { preInit = 1; };
-	    class persistentUserMarkers { preInit = 1;};
-	    class addon { preInit = 1; };
-	    class support { preInit = 1; };
+	    class a3u_btr { preInit = 1; };
 	    class initClient { };
 	    class initServer { };
 	};
