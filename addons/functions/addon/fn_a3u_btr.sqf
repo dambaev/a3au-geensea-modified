@@ -11686,6 +11686,10 @@ private _Tmp1247 = 0;
 private _Tmp1249 = 0;
 // var _Tmp1250
 private _Tmp1250 = 0;
+// var _Tmp1253
+private _Tmp1253 = 0;
+// var _Tmp1254
+private _Tmp1254 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
@@ -11776,7 +11780,7 @@ private _Tmplab_sqf = 0;
       };
       case 11 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp1238 select 0) == 2)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 19250(line=508, offs=3) -- 20449(line=537, offs=6)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 19250(line=508, offs=3) -- 20557(line=538, offs=6)");
         } else {
            [ _Casefun, 12 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -11794,7 +11798,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 13 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp1220 select 0) == 1)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 19250(line=508, offs=3) -- 20449(line=537, offs=6)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 19250(line=508, offs=3) -- 20557(line=538, offs=6)");
         } else {
 /*emit2_branchlst rest-of-ATSINS*/          _Tmp1240 = (_Tmp1220 select 1);
            [ _Casefun, 14 ]  call _Casefun /*emit_Casefun2*/;
@@ -11806,6 +11810,9 @@ private _Tmplab_sqf = 0;
       case 15 : {
 /*emit2_branchlst rest-of-ATSINS*/        _Tmp1242 = /* ATSSELfltrec */ (_Tmp1240 select 1);
 /*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1220);;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1254 = [ "STR_support_request_support_new_actions_added"] call /*emit_f0ide*/ text__pack_string;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1253 = [ _Tmp1254] call /*emit_f0ide*/ libarma3__localize;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1253] call /*emit_f0ide*/ libarma3__systemChat0;
 /*emit2_branchlst rest-of-ATSINS*/        ; // ATSINSmove_void()
       };
       // ATSbranchseq_end
@@ -11879,7 +11886,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp1156 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 22267(line=587, offs=11) -- 22744(line=597, offs=21)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 22375(line=588, offs=11) -- 22852(line=598, offs=21)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -11988,7 +11995,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp1208 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 30273(line=748, offs=16) -- 31308(line=768, offs=19)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 30381(line=749, offs=16) -- 31416(line=769, offs=19)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -12029,7 +12036,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp1215 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 31657(line=778, offs=16) -- 31821(line=782, offs=17)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 31765(line=779, offs=16) -- 31929(line=783, offs=17)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -12149,7 +12156,7 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_beg
             case 3 : {
               if(/*ATSCKptrisnull*/ ( isNil { _Tmp1174 select 0 }) ) then {
-                systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 25737(line=668, offs=27) -- 29146(line=723, offs=30)");
+                systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 25845(line=669, offs=27) -- 29254(line=724, offs=30)");
               } else {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
@@ -12184,7 +12191,7 @@ private _Tmplab_sqf = 0;
                   // ATSbranchseq_beg
                   case 3 : {
                     if(/*ATSCKptrisnull*/ ( isNil { _Tmp1177 select 0 }) ) then {
-                      systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 26589(line=683, offs=39) -- 26767(line=685, offs=76)");
+                      systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 26697(line=684, offs=39) -- 26875(line=686, offs=76)");
                     } else {
                        [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
                     };
@@ -12315,15 +12322,15 @@ private _Tmplab_sqf = 0;
 /*emit_f0ide*/ fn_support__initClient = compileFinal {
 //
 // knd = 0
-// var _Tmp1253
-private _Tmp1253 = 0;
+// var _Tmp1256
+private _Tmp1256 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_initClient /*ATSINSflab*/ ;
-  _Tmp1253 = [ ] call /*emit_f0ide*/ ext_libarma3_hasInterface;
-  if (_Tmp1253) then {
+  _Tmp1256 = [ ] call /*emit_f0ide*/ ext_libarma3_hasInterface;
+  if (_Tmp1256) then {
        /*ATSINSmove_void _*/[ ] call /*emit_f0ide*/ fn_support__addActions;
     } // if-then
     else {
@@ -12338,15 +12345,15 @@ private _Tmplab_sqf = 0;
 /*emit_f0ide*/ fn_support__initServer = compileFinal {
 //
 // knd = 0
-// var _Tmp1255
-private _Tmp1255 = 0;
+// var _Tmp1258
+private _Tmp1258 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_initServer /*ATSINSflab*/ ;
-  _Tmp1255 = [ ] call /*emit_f0ide*/ ext_libarma3_hasInterface;
-  if (_Tmp1255) then {
+  _Tmp1258 = [ ] call /*emit_f0ide*/ ext_libarma3_hasInterface;
+  if (_Tmp1258) then {
        /*ATSINSmove_void _*/[ ] call /*emit_f0ide*/ fn_support__addActions;
     } // if-then
     else {
@@ -12362,15 +12369,15 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmp1257
-private _Tmp1257 = 0;
+// var _Tmp1260
+private _Tmp1260 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_free_request_support_vehicle_record_vt /*ATSINSflab*/ ;
-  _Tmp1257 = /* ATSSELfltrec */ (_Arg0 select 0);
-   /*ATSINSmove_void _*/[ _Tmp1257] call /*emit_f0ide*/ text__free_text;
+  _Tmp1260 = /* ATSSELfltrec */ (_Arg0 select 0);
+   /*ATSINSmove_void _*/[ _Tmp1260] call /*emit_f0ide*/ text__free_text;
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
 }; // end-of-function
 
@@ -12380,15 +12387,15 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmp1259
-private _Tmp1259 = 0;
+// var _Tmp1262
+private _Tmp1262 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_free_request_support_vehicles_vt /*ATSINSflab*/ ;
-  _Tmp1259 = /* ATSSELfltrec */ (_Arg0 select 1);
-   /*ATSINSmove_void _*/[ _Tmp1259, fn_support__free_request_support_vehicle_record_vt] call /*emit_f0ide*/ libarma3__array_vt_free;
+  _Tmp1262 = /* ATSSELfltrec */ (_Arg0 select 1);
+   /*ATSINSmove_void _*/[ _Tmp1262, fn_support__free_request_support_vehicle_record_vt] call /*emit_f0ide*/ libarma3__array_vt_free;
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
 }; // end-of-function
 
@@ -12398,42 +12405,38 @@ private _Tmplab_sqf = 0;
   params ["_Arg0", "_Arg1", "_Arg2", "_Arg3"];
 //
 // knd = 0
-// var _Tmp1278
-private _Tmp1278 = 0;
-// var _Tmp1279
-private _Tmp1279 = 0;
-// var _Tmp1280
-private _Tmp1280 = 0;
 // var _Tmp1281
 private _Tmp1281 = 0;
 // var _Tmp1282
 private _Tmp1282 = 0;
-// var _Tmp1286
-private _Tmp1286 = 0;
-// var _Tmp1288
-private _Tmp1288 = 0;
+// var _Tmp1283
+private _Tmp1283 = 0;
+// var _Tmp1284
+private _Tmp1284 = 0;
+// var _Tmp1285
+private _Tmp1285 = 0;
 // var _Tmp1289
 private _Tmp1289 = 0;
-// var _Tmp1290
-private _Tmp1290 = 0;
+// var _Tmp1291
+private _Tmp1291 = 0;
 // var _Tmp1292
 private _Tmp1292 = 0;
 // var _Tmp1293
 private _Tmp1293 = 0;
-// var _Tmp1294
-private _Tmp1294 = 0;
+// var _Tmp1295
+private _Tmp1295 = 0;
 // var _Tmp1296
 private _Tmp1296 = 0;
 // var _Tmp1297
 private _Tmp1297 = 0;
-// var _Tmp1298
-private _Tmp1298 = 0;
+// var _Tmp1299
+private _Tmp1299 = 0;
 // var _Tmp1300
 private _Tmp1300 = 0;
 // var _Tmp1301
 private _Tmp1301 = 0;
-// var _Tmp1302
-private _Tmp1302 = 0;
+// var _Tmp1303
+private _Tmp1303 = 0;
 // var _Tmp1304
 private _Tmp1304 = 0;
 // var _Tmp1305
@@ -12442,17 +12445,21 @@ private _Tmp1305 = 0;
 private _Tmp1307 = 0;
 // var _Tmp1308
 private _Tmp1308 = 0;
+// var _Tmp1310
+private _Tmp1310 = 0;
+// var _Tmp1311
+private _Tmp1311 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_place_requested_vehicle_action /*ATSINSflab*/ ;
    /*ATSINSmove_void _*/[ _Arg3] call /*emit_f0ide*/ text__free_text;
-  _Tmp1282 = [0, _Arg1];
-  _Tmp1281 = [ _Tmp1282, /*emit_f0ide*/ f___patsfun_413, fn_addon__ensure_not_null] call /*emit_f0ide*/ result_vb__withExcept;
-  _Tmp1280 = [ _Tmp1281, /*emit_f0ide*/ f___patsfun_414] call /*emit_f0ide*/ result_vb__bind_env_result_vt;
-  _Tmp1279 = [ _Tmp1280, fn_a3u_btr__get_deployeable_support_vehicle] call /*emit_f0ide*/ result_vb__bind_env_result_vt;
-  _Tmp1278 = [ _Tmp1279, /*emit_f0ide*/ confirm_vehicle_placement_411] call /*emit_f0ide*/ result_vb__bind_env_result_vt;
+  _Tmp1285 = [0, _Arg1];
+  _Tmp1284 = [ _Tmp1285, /*emit_f0ide*/ f___patsfun_413, fn_addon__ensure_not_null] call /*emit_f0ide*/ result_vb__withExcept;
+  _Tmp1283 = [ _Tmp1284, /*emit_f0ide*/ f___patsfun_414] call /*emit_f0ide*/ result_vb__bind_env_result_vt;
+  _Tmp1282 = [ _Tmp1283, fn_a3u_btr__get_deployeable_support_vehicle] call /*emit_f0ide*/ result_vb__bind_env_result_vt;
+  _Tmp1281 = [ _Tmp1282, /*emit_f0ide*/ confirm_vehicle_placement_411] call /*emit_f0ide*/ result_vb__bind_env_result_vt;
   _Casefunx1 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
@@ -12460,100 +12467,100 @@ private _Tmplab_sqf = 0;
     {
       // ATSbranchseq_beg
       case 1 : {
-        if(not(/*ATSCKpat_con1(*/(_Tmp1278 select 0) == 0)) then {
-          _Tmp1298 = (_Tmp1278 select 1);
+        if(not(/*ATSCKpat_con1(*/(_Tmp1281 select 0) == 0)) then {
+          _Tmp1301 = (_Tmp1281 select 1);
         } else {
-/*emit2_branchlst rest-of-ATSINS*/          _Tmp1286 = (_Tmp1278 select 1);
+/*emit2_branchlst rest-of-ATSINS*/          _Tmp1289 = (_Tmp1281 select 1);
            [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 2 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1288 = /* ATSSELfltrec */ (_Tmp1286 select 1);
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1291 = /* ATSSELfltrec */ (_Tmp1289 select 1);
          [ _Casefun, 3 ]  call _Casefun /*emit_Casefun2*/
       };
       case 3 : {
-        if(not(/*ATSCKpat_con1(*/(_Tmp1288 select 0) == 0)) then {
-          _Tmp1290 = _Tmp1286;
+        if(not(/*ATSCKpat_con1(*/(_Tmp1291 select 0) == 0)) then {
+          _Tmp1293 = _Tmp1289;
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1289 = (_Tmp1288 select 1);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1288);;
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1278);;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1302 = [ "STR_support_caller_null"] call /*emit_f0ide*/ text__pack_string;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1301 = [ _Tmp1302] call /*emit_f0ide*/ libarma3__localize;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1301] call /*emit_f0ide*/ libarma3__systemChat;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1301] call /*emit_f0ide*/ text__free_text
-      };
-      // ATSbranchseq_end
-      // ATSbranchseq_beg
-      case 5 : {
-        if(not(/*ATSCKpat_con1(*/(_Tmp1278 select 0) == 0)) then {
-          _Tmp1298 = (_Tmp1278 select 1);
-        } else {
-/*emit2_branchlst rest-of-ATSINS*/          _Tmp1290 = (_Tmp1278 select 1);
-           [ _Casefun, 6 ]  call _Casefun /*emit_Casefun2*/;
-        };
-      };
-      case 6 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1292 = /* ATSSELfltrec */ (_Tmp1290 select 1);
-         [ _Casefun, 7 ]  call _Casefun /*emit_Casefun2*/
-      };
-      case 7 : {
-        if(not(/*ATSCKpat_con1(*/(_Tmp1292 select 0) == 1)) then {
-          _Tmp1294 = _Tmp1290;
-        } else {
-           [ _Casefun, 8 ]  call _Casefun /*emit_Casefun2*/;
-        };
-      };
-      case 8 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1293 = (_Tmp1292 select 1);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1292);;
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1278);;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1305 = [ "STR_persistentUserMarkers_only_commander_can_do_this"] call /*emit_f0ide*/ text__pack_string;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1292 = (_Tmp1291 select 1);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1291);;
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1281);;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1305 = [ "STR_support_caller_null"] call /*emit_f0ide*/ text__pack_string;
 /*emit2_branchlst rest-of-ATSINS*/        _Tmp1304 = [ _Tmp1305] call /*emit_f0ide*/ libarma3__localize;
 /*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1304] call /*emit_f0ide*/ libarma3__systemChat;
 /*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1304] call /*emit_f0ide*/ text__free_text
       };
       // ATSbranchseq_end
       // ATSbranchseq_beg
-      case 9 : {
-        if(not(/*ATSCKpat_con1(*/(_Tmp1278 select 0) == 0)) then {
-          _Tmp1298 = (_Tmp1278 select 1);
+      case 5 : {
+        if(not(/*ATSCKpat_con1(*/(_Tmp1281 select 0) == 0)) then {
+          _Tmp1301 = (_Tmp1281 select 1);
         } else {
-/*emit2_branchlst rest-of-ATSINS*/          _Tmp1294 = (_Tmp1278 select 1);
-           [ _Casefun, 10 ]  call _Casefun /*emit_Casefun2*/;
+/*emit2_branchlst rest-of-ATSINS*/          _Tmp1293 = (_Tmp1281 select 1);
+           [ _Casefun, 6 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
-      case 10 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1296 = /* ATSSELfltrec */ (_Tmp1294 select 1);
-         [ _Casefun, 11 ]  call _Casefun /*emit_Casefun2*/
+      case 6 : {
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1295 = /* ATSSELfltrec */ (_Tmp1293 select 1);
+         [ _Casefun, 7 ]  call _Casefun /*emit_Casefun2*/
       };
-      case 11 : {
-        if(not(/*ATSCKpat_con1(*/(_Tmp1296 select 0) == 2)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 34461(line=867, offs=5) -- 35750(line=897, offs=6)");
+      case 7 : {
+        if(not(/*ATSCKpat_con1(*/(_Tmp1295 select 0) == 1)) then {
+          _Tmp1297 = _Tmp1293;
         } else {
-           [ _Casefun, 12 ]  call _Casefun /*emit_Casefun2*/;
+           [ _Casefun, 8 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
-      case 12 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1297 = (_Tmp1296 select 1);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1296);;
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1278);;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1308 = [ "STR_support_no_requestable_support_vehicle"] call /*emit_f0ide*/ text__pack_string;
+      case 8 : {
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1296 = (_Tmp1295 select 1);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1295);;
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1281);;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1308 = [ "STR_persistentUserMarkers_only_commander_can_do_this"] call /*emit_f0ide*/ text__pack_string;
 /*emit2_branchlst rest-of-ATSINS*/        _Tmp1307 = [ _Tmp1308] call /*emit_f0ide*/ libarma3__localize;
 /*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1307] call /*emit_f0ide*/ libarma3__systemChat;
 /*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1307] call /*emit_f0ide*/ text__free_text
       };
       // ATSbranchseq_end
       // ATSbranchseq_beg
-      case 13 : {
-        if(not(/*ATSCKpat_con1(*/(_Tmp1278 select 0) == 1)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 34461(line=867, offs=5) -- 35750(line=897, offs=6)");
+      case 9 : {
+        if(not(/*ATSCKpat_con1(*/(_Tmp1281 select 0) == 0)) then {
+          _Tmp1301 = (_Tmp1281 select 1);
         } else {
-/*emit2_branchlst rest-of-ATSINS*/          _Tmp1298 = (_Tmp1278 select 1);
+/*emit2_branchlst rest-of-ATSINS*/          _Tmp1297 = (_Tmp1281 select 1);
+           [ _Casefun, 10 ]  call _Casefun /*emit_Casefun2*/;
+        };
+      };
+      case 10 : {
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1299 = /* ATSSELfltrec */ (_Tmp1297 select 1);
+         [ _Casefun, 11 ]  call _Casefun /*emit_Casefun2*/
+      };
+      case 11 : {
+        if(not(/*ATSCKpat_con1(*/(_Tmp1299 select 0) == 2)) then {
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 34569(line=868, offs=5) -- 35858(line=898, offs=6)");
+        } else {
+           [ _Casefun, 12 ]  call _Casefun /*emit_Casefun2*/;
+        };
+      };
+      case 12 : {
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1300 = (_Tmp1299 select 1);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1299);;
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1281);;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1311 = [ "STR_support_no_requestable_support_vehicle"] call /*emit_f0ide*/ text__pack_string;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1310 = [ _Tmp1311] call /*emit_f0ide*/ libarma3__localize;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1310] call /*emit_f0ide*/ libarma3__systemChat;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1310] call /*emit_f0ide*/ text__free_text
+      };
+      // ATSbranchseq_end
+      // ATSbranchseq_beg
+      case 13 : {
+        if(not(/*ATSCKpat_con1(*/(_Tmp1281 select 0) == 1)) then {
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 34569(line=868, offs=5) -- 35858(line=898, offs=6)");
+        } else {
+/*emit2_branchlst rest-of-ATSINS*/          _Tmp1301 = (_Tmp1281 select 1);
            [ _Casefun, 14 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
@@ -12561,8 +12568,8 @@ private _Tmplab_sqf = 0;
          [ _Casefun, 15 ]  call _Casefun /*emit_Casefun2*/
       };
       case 15 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1300 = /* ATSSELfltrec */ (_Tmp1298 select 1);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1278);;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1303 = /* ATSSELfltrec */ (_Tmp1301 select 1);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1281);;
 /*emit2_branchlst rest-of-ATSINS*/        ; // ATSINSmove_void()
       };
       // ATSbranchseq_end
@@ -12581,37 +12588,37 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmpret1261
-private _Tmpret1261 = 0;
-// var _Tmp1262
-private _Tmp1262 = 0;
-// var _Tmp1263
-private _Tmp1263 = 0;
-// var _Tmp1264
-private _Tmp1264 = 0;
+// var _Tmpret1264
+private _Tmpret1264 = 0;
 // var _Tmp1265
 private _Tmp1265 = 0;
 // var _Tmp1266
 private _Tmp1266 = 0;
-// var _Tmp1275
-private _Tmp1275 = 0;
-// var _Tmp1276
-private _Tmp1276 = 0;
+// var _Tmp1267
+private _Tmp1267 = 0;
+// var _Tmp1268
+private _Tmp1268 = 0;
+// var _Tmp1269
+private _Tmp1269 = 0;
+// var _Tmp1278
+private _Tmp1278 = 0;
+// var _Tmp1279
+private _Tmp1279 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_confirm_vehicle_placement_411 /*ATSINSflab*/ ;
-  _Tmp1262 = /* ATSSELfltrec */ (_Arg0 select 1);
-  _Tmp1263 = /* ATSSELfltrec */ (_Arg0 select 0);
-  _Tmp1264 = /* ATSSELfltrec */ (_Tmp1262 select 0);
-  _Tmp1265 = /* ATSSELfltrec */ (_Tmp1262 select 1);
-  _Tmp1266 = [ /* ATSSELfltrec */ (_Tmp1265 select 0)] call /*emit_f0ide*/ text__copy;
-  _Tmp1275 = [ "test"] call /*emit_f0ide*/ text__pack_string;
-   /*ATSINSmove_void _*/[ /* ATSSELfltrec */ (_Tmp1265 select 0), /*emit_f0ide*/ on_placed_412, _Tmp1266, _Tmp1275] call /*emit_f0ide*/ fn_addon__HR_GRG_fnc_confirmPlacement;
-  _Tmp1276 = [_Tmp1263, _Tmp1264];
-  _Tmpret1261 = [ 1, _Tmp1276 ]/* emit2_ATSINSmove_con1 */;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1261;
+  _Tmp1265 = /* ATSSELfltrec */ (_Arg0 select 1);
+  _Tmp1266 = /* ATSSELfltrec */ (_Arg0 select 0);
+  _Tmp1267 = /* ATSSELfltrec */ (_Tmp1265 select 0);
+  _Tmp1268 = /* ATSSELfltrec */ (_Tmp1265 select 1);
+  _Tmp1269 = [ /* ATSSELfltrec */ (_Tmp1268 select 0)] call /*emit_f0ide*/ text__copy;
+  _Tmp1278 = [ "test"] call /*emit_f0ide*/ text__pack_string;
+   /*ATSINSmove_void _*/[ /* ATSSELfltrec */ (_Tmp1268 select 0), /*emit_f0ide*/ on_placed_412, _Tmp1269, _Tmp1278] call /*emit_f0ide*/ fn_addon__HR_GRG_fnc_confirmPlacement;
+  _Tmp1279 = [_Tmp1266, _Tmp1267];
+  _Tmpret1264 = [ 1, _Tmp1279 ]/* emit2_ATSINSmove_con1 */;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1264;
 }; // end-of-function
 
 
@@ -12620,27 +12627,27 @@ private _Tmplab_sqf = 0;
   params ["_Arg0", "_Arg1"];
 //
 // knd = 0
-// var _Tmp1269
-private _Tmp1269 = 0;
-// var _Tmp1270
-private _Tmp1270 = 0;
 // var _Tmp1272
 private _Tmp1272 = 0;
+// var _Tmp1273
+private _Tmp1273 = 0;
+// var _Tmp1275
+private _Tmp1275 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_on_placed_412 /*ATSINSflab*/ ;
-  _Tmp1269 = [ _Arg0] call /*emit_f0ide*/ libarma3__isNotNull;
-  if (_Tmp1269) then {
-      _Tmp1270 = [ "item is not null"] call /*emit_f0ide*/ text__pack_string;
-       /*ATSINSmove_void _*/[ _Tmp1270] call /*emit_f0ide*/ libarma3__systemChat;
-       /*ATSINSmove_void _*/[ _Tmp1270] call /*emit_f0ide*/ text__free_text;
+  _Tmp1272 = [ _Arg0] call /*emit_f0ide*/ libarma3__isNotNull;
+  if (_Tmp1272) then {
+      _Tmp1273 = [ "item is not null"] call /*emit_f0ide*/ text__pack_string;
+       /*ATSINSmove_void _*/[ _Tmp1273] call /*emit_f0ide*/ libarma3__systemChat;
+       /*ATSINSmove_void _*/[ _Tmp1273] call /*emit_f0ide*/ text__free_text;
     } // if-then
     else {
-      _Tmp1272 = [ "item is null"] call /*emit_f0ide*/ text__pack_string;
-       /*ATSINSmove_void _*/[ _Tmp1272] call /*emit_f0ide*/ libarma3__systemChat;
-       /*ATSINSmove_void _*/[ _Tmp1272] call /*emit_f0ide*/ text__free_text
+      _Tmp1275 = [ "item is null"] call /*emit_f0ide*/ text__pack_string;
+       /*ATSINSmove_void _*/[ _Tmp1275] call /*emit_f0ide*/ libarma3__systemChat;
+       /*ATSINSmove_void _*/[ _Tmp1275] call /*emit_f0ide*/ text__free_text
     // if-else
     };
    /*ATSINSmove_void _*/[ _Arg1] call /*emit_f0ide*/ text__free_text;
@@ -12653,15 +12660,15 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmpret1283
-private _Tmpret1283 = 0;
+// var _Tmpret1286
+private _Tmpret1286 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab___patsfun_413 /*ATSINSflab*/ ;
-  _Tmpret1283 = [ 0, _Arg0 ]/* emit2_ATSINSmove_con1 */;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1283;
+  _Tmpret1286 = [ 0, _Arg0 ]/* emit2_ATSINSmove_con1 */;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1286;
 }; // end-of-function
 
 
@@ -12670,15 +12677,15 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmpret1284
-private _Tmpret1284 = 0;
+// var _Tmpret1287
+private _Tmpret1287 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab___patsfun_414 /*ATSINSflab*/ ;
-  _Tmpret1284 = [ _Arg0, /*emit_f0ide*/ f___patsfun_415, fn_addon__ensure_boss] call /*emit_f0ide*/ result_vb__withExcept;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1284;
+  _Tmpret1287 = [ _Arg0, /*emit_f0ide*/ f___patsfun_415, fn_addon__ensure_boss] call /*emit_f0ide*/ result_vb__withExcept;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1287;
 }; // end-of-function
 
 
@@ -12687,15 +12694,15 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmpret1285
-private _Tmpret1285 = 0;
+// var _Tmpret1288
+private _Tmpret1288 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab___patsfun_415 /*ATSINSflab*/ ;
-  _Tmpret1285 = [ 1, _Arg0 ]/* emit2_ATSINSmove_con1 */;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1285;
+  _Tmpret1288 = [ 1, _Arg0 ]/* emit2_ATSINSmove_con1 */;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1288;
 }; // end-of-function
 
 
@@ -12719,81 +12726,83 @@ private _Tmplab_sqf = 0;
   params ["_Arg0", "_Arg1", "_Arg2", "_Arg3"];
 //
 // knd = 0
-// var _Tmp1392
-private _Tmp1392 = 0;
-// var _Tmp1393
-private _Tmp1393 = 0;
-// var _Tmp1394
-private _Tmp1394 = 0;
-// var _Tmp1395
-private _Tmp1395 = 0;
-// var _Tmp1396
-private _Tmp1396 = 0;
-// var _Tmp1397
-private _Tmp1397 = 0;
-// var _Tmp1398
-private _Tmp1398 = 0;
-// var _Tmp1399
-private _Tmp1399 = 0;
-// var _Tmp1414
-private _Tmp1414 = 0;
-// var _Tmp1416
-private _Tmp1416 = 0;
-// var _Tmp1417
-private _Tmp1417 = 0;
-// var _Tmp1419
-private _Tmp1419 = 0;
-// var _Tmp1420
-private _Tmp1420 = 0;
-// var _Tmp1421
-private _Tmp1421 = 0;
-// var _Tmp1423
-private _Tmp1423 = 0;
-// var _Tmp1424
-private _Tmp1424 = 0;
+// var _Tmp1403
+private _Tmp1403 = 0;
+// var _Tmp1404
+private _Tmp1404 = 0;
+// var _Tmp1405
+private _Tmp1405 = 0;
+// var _Tmp1406
+private _Tmp1406 = 0;
+// var _Tmp1407
+private _Tmp1407 = 0;
+// var _Tmp1408
+private _Tmp1408 = 0;
+// var _Tmp1409
+private _Tmp1409 = 0;
+// var _Tmp1410
+private _Tmp1410 = 0;
 // var _Tmp1425
 private _Tmp1425 = 0;
 // var _Tmp1427
 private _Tmp1427 = 0;
 // var _Tmp1428
 private _Tmp1428 = 0;
-// var _Tmp1429
-private _Tmp1429 = 0;
+// var _Tmp1430
+private _Tmp1430 = 0;
 // var _Tmp1431
 private _Tmp1431 = 0;
 // var _Tmp1432
 private _Tmp1432 = 0;
-// var _Tmp1433
-private _Tmp1433 = 0;
 // var _Tmp1434
 private _Tmp1434 = 0;
 // var _Tmp1435
 private _Tmp1435 = 0;
-// var _Tmp1437
-private _Tmp1437 = 0;
+// var _Tmp1436
+private _Tmp1436 = 0;
 // var _Tmp1438
 private _Tmp1438 = 0;
+// var _Tmp1439
+private _Tmp1439 = 0;
 // var _Tmp1440
 private _Tmp1440 = 0;
-// var _Tmp1441
-private _Tmp1441 = 0;
+// var _Tmp1442
+private _Tmp1442 = 0;
 // var _Tmp1443
 private _Tmp1443 = 0;
 // var _Tmp1444
 private _Tmp1444 = 0;
+// var _Tmp1445
+private _Tmp1445 = 0;
+// var _Tmp1446
+private _Tmp1446 = 0;
+// var _Tmp1447
+private _Tmp1447 = 0;
+// var _Tmp1449
+private _Tmp1449 = 0;
+// var _Tmp1450
+private _Tmp1450 = 0;
+// var _Tmp1452
+private _Tmp1452 = 0;
+// var _Tmp1453
+private _Tmp1453 = 0;
+// var _Tmp1455
+private _Tmp1455 = 0;
+// var _Tmp1456
+private _Tmp1456 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_addVehicleToSupport_action /*ATSINSflab*/ ;
-  _Tmp1399 = [0, _Arg1];
-  _Tmp1398 = [ _Tmp1399, /*emit_f0ide*/ f___patsfun_424, fn_addon__ensure_not_null] call /*emit_f0ide*/ result_vb__withExcept;
-  _Tmp1397 = [ _Tmp1398, /*emit_f0ide*/ f___patsfun_425] call /*emit_f0ide*/ result_vb__bind_env_result_vt;
-  _Tmp1396 = [ _Tmp1397, /*emit_f0ide*/ ensure_cursor_object_is_vehicle_418] call /*emit_f0ide*/ result_vb__bind_env_result_vt;
-  _Tmp1395 = [ _Tmp1396, /*emit_f0ide*/ get_cursor_object_type_419__419__1] call /*emit_f0ide*/ result_vb__bind_env_result_vt;
-  _Tmp1394 = [ _Tmp1395, /*emit_f0ide*/ get_or_create_vehicle_record_420] call /*emit_f0ide*/ result_vb__bind_env_result_vt;
-  _Tmp1393 = [ _Tmp1394, /*emit_f0ide*/ update_vehicle_count_422] call /*emit_f0ide*/ result_vb__bind_env_result_vt;
-  _Tmp1392 = [ _Tmp1393, /*emit_f0ide*/ store_vehicle_record_423] call /*emit_f0ide*/ result_vb__bind_env_result_vt;
+  _Tmp1410 = [0, _Arg1];
+  _Tmp1409 = [ _Tmp1410, /*emit_f0ide*/ f___patsfun_424, fn_addon__ensure_not_null] call /*emit_f0ide*/ result_vb__withExcept;
+  _Tmp1408 = [ _Tmp1409, /*emit_f0ide*/ f___patsfun_425] call /*emit_f0ide*/ result_vb__bind_env_result_vt;
+  _Tmp1407 = [ _Tmp1408, /*emit_f0ide*/ ensure_cursor_object_is_vehicle_418] call /*emit_f0ide*/ result_vb__bind_env_result_vt;
+  _Tmp1406 = [ _Tmp1407, /*emit_f0ide*/ get_cursor_object_type_419__419__1] call /*emit_f0ide*/ result_vb__bind_env_result_vt;
+  _Tmp1405 = [ _Tmp1406, /*emit_f0ide*/ get_or_create_vehicle_record_420] call /*emit_f0ide*/ result_vb__bind_env_result_vt;
+  _Tmp1404 = [ _Tmp1405, /*emit_f0ide*/ update_vehicle_count_422] call /*emit_f0ide*/ result_vb__bind_env_result_vt;
+  _Tmp1403 = [ _Tmp1404, /*emit_f0ide*/ store_vehicle_record_423] call /*emit_f0ide*/ result_vb__bind_env_result_vt;
   _Casefunx1 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
@@ -12801,10 +12810,10 @@ private _Tmplab_sqf = 0;
     {
       // ATSbranchseq_beg
       case 1 : {
-        if(not(/*ATSCKpat_con1(*/(_Tmp1392 select 0) == 1)) then {
-          _Tmp1417 = (_Tmp1392 select 1);
+        if(not(/*ATSCKpat_con1(*/(_Tmp1403 select 0) == 1)) then {
+          _Tmp1428 = (_Tmp1403 select 1);
         } else {
-/*emit2_branchlst rest-of-ATSINS*/          _Tmp1414 = (_Tmp1392 select 1);
+/*emit2_branchlst rest-of-ATSINS*/          _Tmp1425 = (_Tmp1403 select 1);
            [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
@@ -12812,130 +12821,131 @@ private _Tmplab_sqf = 0;
          [ _Casefun, 3 ]  call _Casefun /*emit_Casefun2*/
       };
       case 3 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1416 = /* ATSSELfltrec */ (_Tmp1414 select 1);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1392);;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1433 = [ "success"] call /*emit_f0ide*/ text__pack_string;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1433] call /*emit_f0ide*/ libarma3__systemChat0
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1427 = /* ATSSELfltrec */ (_Tmp1425 select 1);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1403);;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1445 = [ "STR_support_vehicle_added_to_support"] call /*emit_f0ide*/ text__pack_string;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1444 = [ _Tmp1445] call /*emit_f0ide*/ libarma3__localize;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1444] call /*emit_f0ide*/ libarma3__systemChat0
       };
       // ATSbranchseq_end
       // ATSbranchseq_beg
       case 4 : {
-        if(not(/*ATSCKpat_con1(*/(_Tmp1392 select 0) == 0)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 40518(line=1035, offs=3) -- 42104(line=1073, offs=4)");
+        if(not(/*ATSCKpat_con1(*/(_Tmp1403 select 0) == 0)) then {
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 40626(line=1036, offs=3) -- 42257(line=1074, offs=4)");
         } else {
-/*emit2_branchlst rest-of-ATSINS*/          _Tmp1417 = (_Tmp1392 select 1);
+/*emit2_branchlst rest-of-ATSINS*/          _Tmp1428 = (_Tmp1403 select 1);
            [ _Casefun, 5 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 5 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1419 = /* ATSSELfltrec */ (_Tmp1417 select 1);
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1430 = /* ATSSELfltrec */ (_Tmp1428 select 1);
          [ _Casefun, 6 ]  call _Casefun /*emit_Casefun2*/
       };
       case 6 : {
-        if(not(/*ATSCKpat_con1(*/(_Tmp1419 select 0) == 3)) then {
-          _Tmp1421 = _Tmp1417;
+        if(not(/*ATSCKpat_con1(*/(_Tmp1430 select 0) == 3)) then {
+          _Tmp1432 = _Tmp1428;
         } else {
            [ _Casefun, 7 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 7 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1420 = (_Tmp1419 select 1);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1419);;
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1392);;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1435 = [ "STR_support_cant_borrow_new_vehicle"] call /*emit_f0ide*/ text__pack_string;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1434 = [ _Tmp1435] call /*emit_f0ide*/ libarma3__localize;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1434] call /*emit_f0ide*/ libarma3__systemChat;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1434] call /*emit_f0ide*/ text__free_text
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1431 = (_Tmp1430 select 1);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1430);;
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1403);;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1447 = [ "STR_support_cant_borrow_new_vehicle"] call /*emit_f0ide*/ text__pack_string;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1446 = [ _Tmp1447] call /*emit_f0ide*/ libarma3__localize;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1446] call /*emit_f0ide*/ libarma3__systemChat;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1446] call /*emit_f0ide*/ text__free_text
       };
       // ATSbranchseq_end
       // ATSbranchseq_beg
       case 8 : {
-        if(not(/*ATSCKpat_con1(*/(_Tmp1392 select 0) == 0)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 40518(line=1035, offs=3) -- 42104(line=1073, offs=4)");
+        if(not(/*ATSCKpat_con1(*/(_Tmp1403 select 0) == 0)) then {
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 40626(line=1036, offs=3) -- 42257(line=1074, offs=4)");
         } else {
-/*emit2_branchlst rest-of-ATSINS*/          _Tmp1421 = (_Tmp1392 select 1);
+/*emit2_branchlst rest-of-ATSINS*/          _Tmp1432 = (_Tmp1403 select 1);
            [ _Casefun, 9 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 9 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1423 = /* ATSSELfltrec */ (_Tmp1421 select 1);
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1434 = /* ATSSELfltrec */ (_Tmp1432 select 1);
          [ _Casefun, 10 ]  call _Casefun /*emit_Casefun2*/
       };
       case 10 : {
-        if(not(/*ATSCKpat_con1(*/(_Tmp1423 select 0) == 2)) then {
-          _Tmp1425 = _Tmp1421;
+        if(not(/*ATSCKpat_con1(*/(_Tmp1434 select 0) == 2)) then {
+          _Tmp1436 = _Tmp1432;
         } else {
            [ _Casefun, 11 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 11 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1424 = (_Tmp1423 select 1);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1423);;
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1392);;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1438 = [ "STR_support_cursor_object_not_vehicle"] call /*emit_f0ide*/ text__pack_string;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1437 = [ _Tmp1438] call /*emit_f0ide*/ libarma3__localize;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1437] call /*emit_f0ide*/ libarma3__systemChat;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1437] call /*emit_f0ide*/ text__free_text
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1435 = (_Tmp1434 select 1);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1434);;
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1403);;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1450 = [ "STR_support_cursor_object_not_vehicle"] call /*emit_f0ide*/ text__pack_string;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1449 = [ _Tmp1450] call /*emit_f0ide*/ libarma3__localize;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1449] call /*emit_f0ide*/ libarma3__systemChat;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1449] call /*emit_f0ide*/ text__free_text
       };
       // ATSbranchseq_end
       // ATSbranchseq_beg
       case 12 : {
-        if(not(/*ATSCKpat_con1(*/(_Tmp1392 select 0) == 0)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 40518(line=1035, offs=3) -- 42104(line=1073, offs=4)");
+        if(not(/*ATSCKpat_con1(*/(_Tmp1403 select 0) == 0)) then {
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 40626(line=1036, offs=3) -- 42257(line=1074, offs=4)");
         } else {
-/*emit2_branchlst rest-of-ATSINS*/          _Tmp1425 = (_Tmp1392 select 1);
+/*emit2_branchlst rest-of-ATSINS*/          _Tmp1436 = (_Tmp1403 select 1);
            [ _Casefun, 13 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 13 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1427 = /* ATSSELfltrec */ (_Tmp1425 select 1);
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1438 = /* ATSSELfltrec */ (_Tmp1436 select 1);
          [ _Casefun, 14 ]  call _Casefun /*emit_Casefun2*/
       };
       case 14 : {
-        if(not(/*ATSCKpat_con1(*/(_Tmp1427 select 0) == 0)) then {
-          _Tmp1429 = _Tmp1425;
+        if(not(/*ATSCKpat_con1(*/(_Tmp1438 select 0) == 0)) then {
+          _Tmp1440 = _Tmp1436;
         } else {
            [ _Casefun, 15 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 15 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1428 = (_Tmp1427 select 1);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1427);;
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1392);;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1441 = [ "STR_support_caller_null"] call /*emit_f0ide*/ text__pack_string;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1440 = [ _Tmp1441] call /*emit_f0ide*/ libarma3__localize;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1440] call /*emit_f0ide*/ libarma3__systemChat;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1440] call /*emit_f0ide*/ text__free_text
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1439 = (_Tmp1438 select 1);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1438);;
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1403);;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1453 = [ "STR_support_caller_null"] call /*emit_f0ide*/ text__pack_string;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1452 = [ _Tmp1453] call /*emit_f0ide*/ libarma3__localize;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1452] call /*emit_f0ide*/ libarma3__systemChat;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1452] call /*emit_f0ide*/ text__free_text
       };
       // ATSbranchseq_end
       // ATSbranchseq_beg
       case 16 : {
-        if(not(/*ATSCKpat_con1(*/(_Tmp1392 select 0) == 0)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 40518(line=1035, offs=3) -- 42104(line=1073, offs=4)");
+        if(not(/*ATSCKpat_con1(*/(_Tmp1403 select 0) == 0)) then {
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 40626(line=1036, offs=3) -- 42257(line=1074, offs=4)");
         } else {
-/*emit2_branchlst rest-of-ATSINS*/          _Tmp1429 = (_Tmp1392 select 1);
+/*emit2_branchlst rest-of-ATSINS*/          _Tmp1440 = (_Tmp1403 select 1);
            [ _Casefun, 17 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 17 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1431 = /* ATSSELfltrec */ (_Tmp1429 select 1);
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1442 = /* ATSSELfltrec */ (_Tmp1440 select 1);
          [ _Casefun, 18 ]  call _Casefun /*emit_Casefun2*/
       };
       case 18 : {
-        if(not(/*ATSCKpat_con1(*/(_Tmp1431 select 0) == 1)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 40518(line=1035, offs=3) -- 42104(line=1073, offs=4)");
+        if(not(/*ATSCKpat_con1(*/(_Tmp1442 select 0) == 1)) then {
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 40626(line=1036, offs=3) -- 42257(line=1074, offs=4)");
         } else {
            [ _Casefun, 19 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 19 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1432 = (_Tmp1431 select 1);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1431);;
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1392);;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1444 = [ "STR_persistentUserMarkers_only_administrator_can_do_this"] call /*emit_f0ide*/ text__pack_string;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1443 = [ _Tmp1444] call /*emit_f0ide*/ libarma3__localize;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1443] call /*emit_f0ide*/ libarma3__systemChat;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1443] call /*emit_f0ide*/ text__free_text
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1443 = (_Tmp1442 select 1);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1442);;
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1403);;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1456 = [ "STR_persistentUserMarkers_only_administrator_can_do_this"] call /*emit_f0ide*/ text__pack_string;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1455 = [ _Tmp1456] call /*emit_f0ide*/ libarma3__localize;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1455] call /*emit_f0ide*/ libarma3__systemChat;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1455] call /*emit_f0ide*/ text__free_text
       };
       // ATSbranchseq_end
       default { assert(false); };
@@ -12953,35 +12963,35 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmpret1312
-private _Tmpret1312 = 0;
-// var _Tmp1313
-private _Tmp1313 = 0;
-// var _Tmp1314
-private _Tmp1314 = 0;
-// var _Tmp1315
-private _Tmp1315 = 0;
+// var _Tmpret1315
+private _Tmpret1315 = 0;
 // var _Tmp1316
 private _Tmp1316 = 0;
+// var _Tmp1317
+private _Tmp1317 = 0;
 // var _Tmp1318
 private _Tmp1318 = 0;
 // var _Tmp1319
 private _Tmp1319 = 0;
-// var _Tmp1320
-private _Tmp1320 = 0;
 // var _Tmp1321
 private _Tmp1321 = 0;
 // var _Tmp1322
 private _Tmp1322 = 0;
+// var _Tmp1323
+private _Tmp1323 = 0;
+// var _Tmp1324
+private _Tmp1324 = 0;
+// var _Tmp1325
+private _Tmp1325 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_ensure_cursor_object_is_vehicle_418 /*ATSINSflab*/ ;
-  _Tmp1313 = /* ATSSELfltrec */ (_Arg0 select 0);
-  _Tmp1314 = /* ATSSELfltrec */ (_Arg0 select 1);
-  _Tmp1315 = [ ] call /*emit_f0ide*/ libarma3__cursorObject;
-  _Tmp1316 = [ _Tmp1315] call /*emit_f0ide*/ fn_addon__ensure_not_null;
+  _Tmp1316 = /* ATSSELfltrec */ (_Arg0 select 0);
+  _Tmp1317 = /* ATSSELfltrec */ (_Arg0 select 1);
+  _Tmp1318 = [ ] call /*emit_f0ide*/ libarma3__cursorObject;
+  _Tmp1319 = [ _Tmp1318] call /*emit_f0ide*/ fn_addon__ensure_not_null;
   _Casefunx1 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
@@ -12989,33 +12999,33 @@ private _Tmplab_sqf = 0;
     {
       // ATSbranchseq_beg
       case 1 : {
-        if(not(/*ATSCKpat_con1(*/(_Tmp1316 select 0) == 0)) then {
+        if(not(/*ATSCKpat_con1(*/(_Tmp1319 select 0) == 0)) then {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
            [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 2 : {
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1316);;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1320 = [ 2, _Tmp1314 ]/* emit2_ATSINSmove_con1 */;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1319 = [0, _Tmp1320];
-/*emit2_branchlst rest-of-ATSINS*/        _Tmpret1312 = [ 0, _Tmp1319 ]/* emit2_ATSINSmove_con1 */
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1319);;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1323 = [ 2, _Tmp1317 ]/* emit2_ATSINSmove_con1 */;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1322 = [0, _Tmp1323];
+/*emit2_branchlst rest-of-ATSINS*/        _Tmpret1315 = [ 0, _Tmp1322 ]/* emit2_ATSINSmove_con1 */
       };
       // ATSbranchseq_end
       // ATSbranchseq_beg
       case 3 : {
-        if(not(/*ATSCKpat_con1(*/(_Tmp1316 select 0) == 1)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 43319(line=1106, offs=7) -- 43842(line=1119, offs=8)");
+        if(not(/*ATSCKpat_con1(*/(_Tmp1319 select 0) == 1)) then {
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 43472(line=1107, offs=7) -- 43995(line=1120, offs=8)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1318 = (_Tmp1316 select 1);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1316);;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1321 = [_Tmp1314, _Tmp1318];
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1322 = [0, _Tmp1321];
-/*emit2_branchlst rest-of-ATSINS*/        _Tmpret1312 = [ 1, _Tmp1322 ]/* emit2_ATSINSmove_con1 */
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1321 = (_Tmp1319 select 1);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1319);;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1324 = [_Tmp1317, _Tmp1321];
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1325 = [0, _Tmp1324];
+/*emit2_branchlst rest-of-ATSINS*/        _Tmpret1315 = [ 1, _Tmp1325 ]/* emit2_ATSINSmove_con1 */
       };
       // ATSbranchseq_end
       default { assert(false); };
@@ -13024,7 +13034,7 @@ private _Tmplab_sqf = 0;
   }; // endfun
   [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1312;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1315;
 }; // end-of-function
 
 
@@ -13033,14 +13043,8 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmpret1334
-private _Tmpret1334 = 0;
-// var _Tmp1335
-private _Tmp1335 = 0;
-// var _Tmp1336
-private _Tmp1336 = 0;
-// var _Tmp1337
-private _Tmp1337 = 0;
+// var _Tmpret1337
+private _Tmpret1337 = 0;
 // var _Tmp1338
 private _Tmp1338 = 0;
 // var _Tmp1339
@@ -13049,31 +13053,37 @@ private _Tmp1339 = 0;
 private _Tmp1340 = 0;
 // var _Tmp1341
 private _Tmp1341 = 0;
+// var _Tmp1342
+private _Tmp1342 = 0;
 // var _Tmp1343
 private _Tmp1343 = 0;
 // var _Tmp1344
 private _Tmp1344 = 0;
-// var _Tmp1345
-private _Tmp1345 = 0;
 // var _Tmp1346
 private _Tmp1346 = 0;
 // var _Tmp1347
 private _Tmp1347 = 0;
-// var _Tmp1361
-private _Tmp1361 = 0;
+// var _Tmp1348
+private _Tmp1348 = 0;
+// var _Tmp1349
+private _Tmp1349 = 0;
+// var _Tmp1350
+private _Tmp1350 = 0;
+// var _Tmp1372
+private _Tmp1372 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_get_or_create_vehicle_record_420 /*ATSINSflab*/ ;
-  _Tmp1335 = /* ATSSELfltrec */ (_Arg0 select 1);
-  _Tmp1336 = /* ATSSELfltrec */ (_Arg0 select 0);
-  _Tmp1337 = /* ATSSELfltrec */ (_Tmp1335 select 0);
-  _Tmp1338 = /* ATSSELfltrec */ (_Tmp1335 select 1);
-  _Tmp1339 = [ ] call /*emit_f0ide*/ libarma3__missionNamespace;
-  _Tmp1340 = [ "fn_support_request_support_vehicles"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1341 = [ _Tmp1339, _Tmp1340, false] call /*emit_f0ide*/ libarma3__borrowVariable_vt1;
-   /*ATSINSmove_void _*/[ _Tmp1340] call /*emit_f0ide*/ text__free_text;
+  _Tmp1338 = /* ATSSELfltrec */ (_Arg0 select 1);
+  _Tmp1339 = /* ATSSELfltrec */ (_Arg0 select 0);
+  _Tmp1340 = /* ATSSELfltrec */ (_Tmp1338 select 0);
+  _Tmp1341 = /* ATSSELfltrec */ (_Tmp1338 select 1);
+  _Tmp1342 = [ ] call /*emit_f0ide*/ libarma3__missionNamespace;
+  _Tmp1343 = [ "fn_support_request_support_vehicles"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1344 = [ _Tmp1342, _Tmp1343, false] call /*emit_f0ide*/ libarma3__borrowVariable_vt1;
+   /*ATSINSmove_void _*/[ _Tmp1343] call /*emit_f0ide*/ text__free_text;
   _Casefunx1 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
@@ -13081,30 +13091,30 @@ private _Tmplab_sqf = 0;
     {
       // ATSbranchseq_beg
       case 1 : {
-        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1341 select 0 } )) ) then {
+        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1344 select 0 } )) ) then {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
            [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 2 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1346 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1345 = [ _Tmp1346] call /*emit_f0ide*/ libarma3__array_vt_create;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1343 = [1, _Tmp1345]
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1349 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1348 = [ _Tmp1349] call /*emit_f0ide*/ libarma3__array_vt_create;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1346 = [1, _Tmp1348]
       };
       // ATSbranchseq_end
       // ATSbranchseq_beg
       case 3 : {
-        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1341 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 47637(line=1235, offs=24) -- 47881(line=1239, offs=48)");
+        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1344 select 0 }) ) then {
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 47790(line=1236, offs=24) -- 48034(line=1240, offs=48)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1344 = (_Tmp1341 select 0);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1341);;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1343 = _Tmp1344
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1347 = (_Tmp1344 select 0);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1344);;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1346 = _Tmp1347
       };
       // ATSbranchseq_end
       default { assert(false); };
@@ -13113,10 +13123,10 @@ private _Tmplab_sqf = 0;
   }; // endfun
   [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
-  _Tmp1347 = [ /* ATSSELfltrec */ (_Tmp1343 select 1)] call /*emit_f0ide*/ libarma3__array_vt_count;
-  _Tmp1361 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-  _Tmpret1334 = [ _Tmp1336, _Tmp1337, _Tmp1338, _Tmp1343, _Tmp1347, _Tmp1361] call /*emit_f0ide*/ loop_421;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1334;
+  _Tmp1350 = [ /* ATSSELfltrec */ (_Tmp1346 select 1)] call /*emit_f0ide*/ libarma3__array_vt_count;
+  _Tmp1372 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+  _Tmpret1337 = [ _Tmp1339, _Tmp1340, _Tmp1341, _Tmp1346, _Tmp1350, _Tmp1372] call /*emit_f0ide*/ loop_421;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1337;
 }; // end-of-function
 
 
@@ -13137,90 +13147,32 @@ private _Apy3 = 0;
 private _Apy4 = 0;
 // var _Apy5
 private _Apy5 = 0;
-// var _Tmpret1348
-private _Tmpret1348 = 0;
-// var _Tmp1349
-private _Tmp1349 = 0;
-// var _Tmp1350
-private _Tmp1350 = 0;
-// var _Tmp1351
-private _Tmp1351 = 0;
+// var _Tmpret1351
+private _Tmpret1351 = 0;
 // var _Tmp1352
 private _Tmp1352 = 0;
 // var _Tmp1353
 private _Tmp1353 = 0;
+// var _Tmp1354
+private _Tmp1354 = 0;
 // var _Tmp1355
 private _Tmp1355 = 0;
 // var _Tmp1356
 private _Tmp1356 = 0;
-// var _Tmp1357
-private _Tmp1357 = 0;
 // var _Tmp1358
 private _Tmp1358 = 0;
 // var _Tmp1359
 private _Tmp1359 = 0;
 // var _Tmp1360
 private _Tmp1360 = 0;
-// var Funlab_sqf
-private _Funlab_sqf = 0;
-// var Tmplab, Tmplab_sqf
-private _Tmplab = 0;
-private _Tmplab_sqf = 0;
-//
-  while {true} do {
-    _Funlab_sqf = 0;
-    // __patsflab_loop_421 /*ATSINSflab*/ ;
-    _Tmp1349 = [ _Arg5, _Arg4] call /*emit_f0ide*/ atspre_g1uint_eq_size;
-    if (_Tmp1349) then {
-        _Tmp1351 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-        _Tmp1352 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-        /* ATSINSmove_nil */ _Tmp1353 = /*ATSINSmove_nil*/ [nil];
-        _Tmp1350 = [_Arg2, _Tmp1351, _Tmp1352, _Tmp1353];
-        _Tmp1356 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-        _Tmp1355 = [ _Arg4, _Tmp1356] call /*emit_f0ide*/ atspre_g1uint_add_size;
-         /*ATSINSmove_void _*/[ /* ATSSELfltrec */ (_Arg3 select 1), _Tmp1355] call /*emit_f0ide*/ libarma3__array_vt_resize;
-        _Tmp1358 = [_Arg1, _Arg3, _Arg4, _Tmp1350];
-        _Tmp1357 = [_Arg0, _Tmp1358];
-        _Tmpret1348 = [ 1, _Tmp1357 ]/* emit2_ATSINSmove_con1 */;
-      } // if-then
-      else {
-        _Tmp1360 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-        _Tmp1359 = [ _Arg5, _Tmp1360] call /*emit_f0ide*/ atspre_g1uint_add_size;
-        /* ATSINSmove_tlcal */ _Apy0 = _Arg0;
-        /* ATSINSmove_tlcal */ _Apy1 = _Arg1;
-        /* ATSINSmove_tlcal */ _Apy2 = _Arg2;
-        /* ATSINSmove_tlcal */ _Apy3 = _Arg3;
-        /* ATSINSmove_tlcal */ _Apy4 = _Arg4;
-        /* ATSINSmove_tlcal */ _Apy5 = _Tmp1359;
-        /* ATSINSargmove_tlcal */ _Arg0 = _Apy0;
-        /* ATSINSargmove_tlcal */ _Arg1 = _Apy1;
-        /* ATSINSargmove_tlcal */ _Arg2 = _Apy2;
-        /* ATSINSargmove_tlcal */ _Arg3 = _Apy3;
-        /* ATSINSargmove_tlcal */ _Arg4 = _Apy4;
-        /* ATSINSargmove_tlcal */ _Arg5 = _Apy5;
-        _Funlab_sqf = 1; /*ATSINSfgoto*/ // __patsflab_loop_421
-         /*emit2_tailcalseqlst*/
-      // if-else
-      };
-    if (_Funlab_sqf < 1) then { break; };
-  }; // endwhile-fun
- /* ATSreturn */ _Tmpret1348;
-}; // end-of-function
-
-
-/*fun*/
-/*emit_f0ide*/ update_vehicle_count_422 = compileFinal {
-  params ["_Arg0"];
-//
-// knd = 0
-// var _Tmpret1362
-private _Tmpret1362 = 0;
+// var _Tmp1361
+private _Tmp1361 = 0;
+// var _Tmp1362
+private _Tmp1362 = 0;
 // var _Tmp1363
 private _Tmp1363 = 0;
 // var _Tmp1364
 private _Tmp1364 = 0;
-// var _Tmp1365
-private _Tmp1365 = 0;
 // var _Tmp1366
 private _Tmp1366 = 0;
 // var _Tmp1367
@@ -13233,41 +13185,126 @@ private _Tmp1369 = 0;
 private _Tmp1370 = 0;
 // var _Tmp1371
 private _Tmp1371 = 0;
-// var _Tmp1372
-private _Tmp1372 = 0;
-// var _Tmp1373
-private _Tmp1373 = 0;
-// var _Tmp1374
-private _Tmp1374 = 0;
+// var Funlab_sqf
+private _Funlab_sqf = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
-  // __patsflab_update_vehicle_count_422 /*ATSINSflab*/ ;
-  _Tmp1363 = /* ATSSELfltrec */ (_Arg0 select 1);
-  _Tmp1364 = /* ATSSELfltrec */ (_Arg0 select 0);
-  _Tmp1365 = /* ATSSELfltrec */ (_Tmp1363 select 0);
-  _Tmp1366 = /* ATSSELfltrec */ (_Tmp1363 select 1);
-  _Tmp1367 = /* ATSSELfltrec */ (_Tmp1363 select 2);
-  _Tmp1368 = /* ATSSELfltrec */ (_Tmp1363 select 3);
-  _Tmp1371 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-  _Tmp1370 = [ /* ATSSELfltrec */ (_Tmp1368 select 1), _Tmp1371] call /*emit_f0ide*/ atspre_g0uint_add_size;
-  /* ATSINSmove_nil */ _Tmp1372 = /*ATSINSmove_nil*/ [nil];
-  _Tmp1369 = [/* ATSSELfltrec */ (_Tmp1368 select 0), _Tmp1370, /* ATSSELfltrec */ (_Tmp1368 select 2), _Tmp1372];
-  _Tmp1374 = [_Tmp1365, _Tmp1366, _Tmp1367, _Tmp1369];
-  _Tmp1373 = [_Tmp1364, _Tmp1374];
-  _Tmpret1362 = [ 1, _Tmp1373 ]/* emit2_ATSINSmove_con1 */;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1362;
+  while {true} do {
+    _Funlab_sqf = 0;
+    // __patsflab_loop_421 /*ATSINSflab*/ ;
+    _Tmp1352 = [ _Arg5, _Arg4] call /*emit_f0ide*/ atspre_g1uint_eq_size;
+    if (_Tmp1352) then {
+        _Tmp1354 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+        _Tmp1355 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+        /* ATSINSmove_nil */ _Tmp1356 = /*ATSINSmove_nil*/ [nil];
+        _Tmp1353 = [_Arg2, _Tmp1354, _Tmp1355, _Tmp1356];
+        _Tmp1359 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+        _Tmp1358 = [ _Arg4, _Tmp1359] call /*emit_f0ide*/ atspre_g1uint_add_size;
+         /*ATSINSmove_void _*/[ /* ATSSELfltrec */ (_Arg3 select 1), _Tmp1358] call /*emit_f0ide*/ libarma3__array_vt_resize;
+        _Tmp1361 = [_Arg1, _Arg3, _Arg4, _Tmp1353];
+        _Tmp1360 = [_Arg0, _Tmp1361];
+        _Tmpret1351 = [ 1, _Tmp1360 ]/* emit2_ATSINSmove_con1 */;
+      } // if-then
+      else {
+        _Tmp1362 = [ /* ATSSELfltrec */ (_Arg3 select 1), _Arg5] call /*emit_f0ide*/ libarma3__array_vt_get1;
+        _Casefunx1 /* emit_Casefunx */ = {
+          params [ "_Casefun", "_Tmplab"];
+          // switch(_Tmplab) {
+          switch(_Tmplab) do
+          {
+            // ATSbranchseq_beg
+            case 1 : {
+              if(/*ATSCKptrisnull*/ ( isNil { _Tmp1362 select 0 }) ) then {
+                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
+              } else {
+                 [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
+              };
+            };
+            case 2 : {
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1363 = (_Tmp1362 select 0);
+/*emit2_branchlst rest-of-ATSINS*/              // ATSINSfreecon(_Tmp1362);;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1364 = [ /* ATSSELfltrec */ (_Tmp1363 select 0), _Arg2] call /*emit_f0ide*/ text__eq_text_text;
+/*emit2_branchlst rest-of-ATSINS*/              if (_Tmp1364) then {
+                   /*ATSINSmove_void _*/[ _Arg2] call /*emit_f0ide*/ text__free_text;
+                  _Tmp1367 = [_Arg1, _Arg3, _Arg5, _Tmp1363];
+                  _Tmp1366 = [_Arg0, _Tmp1367];
+                  _Tmpret1351 = [ 1, _Tmp1366 ]/* emit2_ATSINSmove_con1 */;
+                } // if-then
+                else {
+                  _Tmp1369 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+                  _Tmp1368 = [ _Arg5, _Tmp1369] call /*emit_f0ide*/ atspre_g1uint_add_size;
+                  /* ATSINSmove_tlcal */ _Apy0 = _Arg0;
+                  /* ATSINSmove_tlcal */ _Apy1 = _Arg1;
+                  /* ATSINSmove_tlcal */ _Apy2 = _Arg2;
+                  /* ATSINSmove_tlcal */ _Apy3 = _Arg3;
+                  /* ATSINSmove_tlcal */ _Apy4 = _Arg4;
+                  /* ATSINSmove_tlcal */ _Apy5 = _Tmp1368;
+                  /* ATSINSargmove_tlcal */ _Arg0 = _Apy0;
+                  /* ATSINSargmove_tlcal */ _Arg1 = _Apy1;
+                  /* ATSINSargmove_tlcal */ _Arg2 = _Apy2;
+                  /* ATSINSargmove_tlcal */ _Arg3 = _Apy3;
+                  /* ATSINSargmove_tlcal */ _Arg4 = _Apy4;
+                  /* ATSINSargmove_tlcal */ _Arg5 = _Apy5;
+                  _Funlab_sqf = 1; /*ATSINSfgoto*/ // __patsflab_loop_421
+                   /*emit2_tailcalseqlst*/
+                // if-else
+                }
+            };
+            // ATSbranchseq_end
+            // ATSbranchseq_beg
+            case 3 : {
+              if(/*ATSCKptriscons*/ (not(isNil { _Tmp1362 select 0 } )) ) then {
+                systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 50951(line=1315, offs=15) -- 52661(line=1359, offs=16)");
+              } else {
+                 [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
+              };
+            };
+            case 4 : {
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1371 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1370 = [ _Arg5, _Tmp1371] call /*emit_f0ide*/ atspre_g1uint_add_size;
+/*emit2_branchlst rest-of-ATSINS*/              /* ATSINSmove_tlcal */ _Apy0 = _Arg0;
+              /* ATSINSmove_tlcal */ _Apy1 = _Arg1;
+              /* ATSINSmove_tlcal */ _Apy2 = _Arg2;
+              /* ATSINSmove_tlcal */ _Apy3 = _Arg3;
+              /* ATSINSmove_tlcal */ _Apy4 = _Arg4;
+              /* ATSINSmove_tlcal */ _Apy5 = _Tmp1370;
+              /* ATSINSargmove_tlcal */ _Arg0 = _Apy0;
+              /* ATSINSargmove_tlcal */ _Arg1 = _Apy1;
+              /* ATSINSargmove_tlcal */ _Arg2 = _Apy2;
+              /* ATSINSargmove_tlcal */ _Arg3 = _Apy3;
+              /* ATSINSargmove_tlcal */ _Arg4 = _Apy4;
+              /* ATSINSargmove_tlcal */ _Arg5 = _Apy5;
+              _Funlab_sqf = 1; /*ATSINSfgoto*/ // __patsflab_loop_421
+               /*emit2_tailcalseqlst*/
+            };
+            // ATSbranchseq_end
+            default { assert(false); };
+          }; // endcase
+          //} // end-of-switch
+        }; // endfun
+        [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
+
+      // if-else
+      };
+    if (_Funlab_sqf < 1) then { break; };
+  }; // endwhile-fun
+ /* ATSreturn */ _Tmpret1351;
 }; // end-of-function
 
 
 /*fun*/
-/*emit_f0ide*/ store_vehicle_record_423 = compileFinal {
+/*emit_f0ide*/ update_vehicle_count_422 = compileFinal {
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmpret1375
-private _Tmpret1375 = 0;
+// var _Tmpret1373
+private _Tmpret1373 = 0;
+// var _Tmp1374
+private _Tmp1374 = 0;
+// var _Tmp1375
+private _Tmp1375 = 0;
 // var _Tmp1376
 private _Tmp1376 = 0;
 // var _Tmp1377
@@ -13286,28 +13323,77 @@ private _Tmp1382 = 0;
 private _Tmp1383 = 0;
 // var _Tmp1384
 private _Tmp1384 = 0;
-// var _Tmp1386
-private _Tmp1386 = 0;
+// var _Tmp1385
+private _Tmp1385 = 0;
+// var Tmplab, Tmplab_sqf
+private _Tmplab = 0;
+private _Tmplab_sqf = 0;
+//
+  // __patsflab_update_vehicle_count_422 /*ATSINSflab*/ ;
+  _Tmp1374 = /* ATSSELfltrec */ (_Arg0 select 1);
+  _Tmp1375 = /* ATSSELfltrec */ (_Arg0 select 0);
+  _Tmp1376 = /* ATSSELfltrec */ (_Tmp1374 select 0);
+  _Tmp1377 = /* ATSSELfltrec */ (_Tmp1374 select 1);
+  _Tmp1378 = /* ATSSELfltrec */ (_Tmp1374 select 2);
+  _Tmp1379 = /* ATSSELfltrec */ (_Tmp1374 select 3);
+  _Tmp1382 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+  _Tmp1381 = [ /* ATSSELfltrec */ (_Tmp1379 select 1), _Tmp1382] call /*emit_f0ide*/ atspre_g0uint_add_size;
+  /* ATSINSmove_nil */ _Tmp1383 = /*ATSINSmove_nil*/ [nil];
+  _Tmp1380 = [/* ATSSELfltrec */ (_Tmp1379 select 0), _Tmp1381, /* ATSSELfltrec */ (_Tmp1379 select 2), _Tmp1383];
+  _Tmp1385 = [_Tmp1376, _Tmp1377, _Tmp1378, _Tmp1380];
+  _Tmp1384 = [_Tmp1375, _Tmp1385];
+  _Tmpret1373 = [ 1, _Tmp1384 ]/* emit2_ATSINSmove_con1 */;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1373;
+}; // end-of-function
+
+
+/*fun*/
+/*emit_f0ide*/ store_vehicle_record_423 = compileFinal {
+  params ["_Arg0"];
+//
+// knd = 0
+// var _Tmpret1386
+private _Tmpret1386 = 0;
 // var _Tmp1387
 private _Tmp1387 = 0;
+// var _Tmp1388
+private _Tmp1388 = 0;
 // var _Tmp1389
 private _Tmp1389 = 0;
+// var _Tmp1390
+private _Tmp1390 = 0;
 // var _Tmp1391
 private _Tmp1391 = 0;
+// var _Tmp1392
+private _Tmp1392 = 0;
+// var _Tmp1393
+private _Tmp1393 = 0;
+// var _Tmp1394
+private _Tmp1394 = 0;
+// var _Tmp1395
+private _Tmp1395 = 0;
+// var _Tmp1397
+private _Tmp1397 = 0;
+// var _Tmp1398
+private _Tmp1398 = 0;
+// var _Tmp1400
+private _Tmp1400 = 0;
+// var _Tmp1402
+private _Tmp1402 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_store_vehicle_record_423 /*ATSINSflab*/ ;
-  _Tmp1376 = /* ATSSELfltrec */ (_Arg0 select 1);
-  _Tmp1377 = /* ATSSELfltrec */ (_Arg0 select 0);
-  _Tmp1378 = /* ATSSELfltrec */ (_Tmp1376 select 0);
-  _Tmp1379 = /* ATSSELfltrec */ (_Tmp1376 select 1);
-  _Tmp1380 = /* ATSSELfltrec */ (_Tmp1376 select 2);
-  _Tmp1381 = /* ATSSELfltrec */ (_Tmp1376 select 3);
-  _Tmp1382 = [ "fn_support_request_support_vehicles"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1383 = [ ] call /*emit_f0ide*/ libarma3__missionNamespace;
-  _Tmp1384 = [ /* ATSSELfltrec */ (_Tmp1379 select 1), _Tmp1380, _Tmp1381] call /*emit_f0ide*/ libarma3__array_vt_swap1;
+  _Tmp1387 = /* ATSSELfltrec */ (_Arg0 select 1);
+  _Tmp1388 = /* ATSSELfltrec */ (_Arg0 select 0);
+  _Tmp1389 = /* ATSSELfltrec */ (_Tmp1387 select 0);
+  _Tmp1390 = /* ATSSELfltrec */ (_Tmp1387 select 1);
+  _Tmp1391 = /* ATSSELfltrec */ (_Tmp1387 select 2);
+  _Tmp1392 = /* ATSSELfltrec */ (_Tmp1387 select 3);
+  _Tmp1393 = [ "fn_support_request_support_vehicles"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1394 = [ ] call /*emit_f0ide*/ libarma3__missionNamespace;
+  _Tmp1395 = [ /* ATSSELfltrec */ (_Tmp1390 select 1), _Tmp1391, _Tmp1392] call /*emit_f0ide*/ libarma3__array_vt_swap1;
   _Casefunx1 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
@@ -13315,7 +13401,7 @@ private _Tmplab_sqf = 0;
     {
       // ATSbranchseq_beg
       case 1 : {
-        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1384 select 0 } )) ) then {
+        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1395 select 0 } )) ) then {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
            [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
@@ -13327,16 +13413,16 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_end
       // ATSbranchseq_beg
       case 3 : {
-        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1384 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 54579(line=1416, offs=16) -- 54705(line=1418, offs=80)");
+        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1395 select 0 }) ) then {
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 56443(line=1462, offs=16) -- 56569(line=1464, offs=80)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1386 = (_Tmp1384 select 0);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1384);;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1386] call /*emit_f0ide*/ fn_support__free_request_support_vehicle_record_vt
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1397 = (_Tmp1395 select 0);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1395);;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1397] call /*emit_f0ide*/ fn_support__free_request_support_vehicle_record_vt
       };
       // ATSbranchseq_end
       default { assert(false); };
@@ -13345,7 +13431,7 @@ private _Tmplab_sqf = 0;
   }; // endfun
   [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
-  _Tmp1387 = [ _Tmp1383, _Tmp1382, _Tmp1379, false] call /*emit_f0ide*/ libarma3__swapVariable_vt1;
+  _Tmp1398 = [ _Tmp1394, _Tmp1393, _Tmp1390, false] call /*emit_f0ide*/ libarma3__swapVariable_vt1;
   _Casefunx2 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
@@ -13353,7 +13439,7 @@ private _Tmplab_sqf = 0;
     {
       // ATSbranchseq_beg
       case 1 : {
-        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1387 select 0 } )) ) then {
+        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1398 select 0 } )) ) then {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
            [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
@@ -13365,16 +13451,16 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_end
       // ATSbranchseq_beg
       case 3 : {
-        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1387 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 54979(line=1427, offs=16) -- 55100(line=1429, offs=75)");
+        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1398 select 0 }) ) then {
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 56843(line=1473, offs=16) -- 56964(line=1475, offs=75)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1389 = (_Tmp1387 select 0);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1387);;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1389] call /*emit_f0ide*/ fn_support__free_request_support_vehicles_vt
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1400 = (_Tmp1398 select 0);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1398);;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1400] call /*emit_f0ide*/ fn_support__free_request_support_vehicles_vt
       };
       // ATSbranchseq_end
       default { assert(false); };
@@ -13383,10 +13469,10 @@ private _Tmplab_sqf = 0;
   }; // endfun
   [ _Casefunx2 /* emit_Casefunx */, 1 ] call _Casefunx2 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
-   /*ATSINSmove_void _*/[ _Tmp1382] call /*emit_f0ide*/ text__free_text;
-  _Tmp1391 = [_Tmp1377, _Tmp1378];
-  _Tmpret1375 = [ 1, _Tmp1391 ]/* emit2_ATSINSmove_con1 */;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1375;
+   /*ATSINSmove_void _*/[ _Tmp1393] call /*emit_f0ide*/ text__free_text;
+  _Tmp1402 = [_Tmp1388, _Tmp1389];
+  _Tmpret1386 = [ 1, _Tmp1402 ]/* emit2_ATSINSmove_con1 */;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1386;
 }; // end-of-function
 
 
@@ -13395,15 +13481,15 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmpret1400
-private _Tmpret1400 = 0;
+// var _Tmpret1411
+private _Tmpret1411 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab___patsfun_424 /*ATSINSflab*/ ;
-  _Tmpret1400 = [ 0, _Arg0 ]/* emit2_ATSINSmove_con1 */;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1400;
+  _Tmpret1411 = [ 0, _Arg0 ]/* emit2_ATSINSmove_con1 */;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1411;
 }; // end-of-function
 
 
@@ -13412,15 +13498,15 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmpret1401
-private _Tmpret1401 = 0;
+// var _Tmpret1412
+private _Tmpret1412 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab___patsfun_425 /*ATSINSflab*/ ;
-  _Tmpret1401 = [ _Arg0, /*emit_f0ide*/ f___patsfun_426, fn_addon__ensure_administrator] call /*emit_f0ide*/ result_vb__withExcept;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1401;
+  _Tmpret1412 = [ _Arg0, /*emit_f0ide*/ f___patsfun_426, fn_addon__ensure_administrator] call /*emit_f0ide*/ result_vb__withExcept;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1412;
 }; // end-of-function
 
 
@@ -13429,15 +13515,15 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmpret1402
-private _Tmpret1402 = 0;
+// var _Tmpret1413
+private _Tmpret1413 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab___patsfun_426 /*ATSINSflab*/ ;
-  _Tmpret1402 = [ 1, _Arg0 ]/* emit2_ATSINSmove_con1 */;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1402;
+  _Tmpret1413 = [ 1, _Arg0 ]/* emit2_ATSINSmove_con1 */;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1413;
 }; // end-of-function
 
 
@@ -13446,14 +13532,8 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmpret1323__1
-private _Tmpret1323__1 = 0;
-// var _Tmp1324__1
-private _Tmp1324__1 = 0;
-// var _Tmp1325__1
-private _Tmp1325__1 = 0;
-// var _Tmp1326__1
-private _Tmp1326__1 = 0;
+// var _Tmpret1326__1
+private _Tmpret1326__1 = 0;
 // var _Tmp1327__1
 private _Tmp1327__1 = 0;
 // var _Tmp1328__1
@@ -13468,16 +13548,22 @@ private _Tmp1331__1 = 0;
 private _Tmp1332__1 = 0;
 // var _Tmp1333__1
 private _Tmp1333__1 = 0;
+// var _Tmp1334__1
+private _Tmp1334__1 = 0;
+// var _Tmp1335__1
+private _Tmp1335__1 = 0;
+// var _Tmp1336__1
+private _Tmp1336__1 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_get_cursor_object_type_419 /*ATSINSflab*/ ;
-  _Tmp1324__1 = /* ATSSELfltrec */ (_Arg0 select 1);
-  _Tmp1325__1 = /* ATSSELfltrec */ (_Arg0 select 0);
-  _Tmp1326__1 = /* ATSSELfltrec */ (_Tmp1324__1 select 0);
-  _Tmp1327__1 = /* ATSSELfltrec */ (_Tmp1324__1 select 1);
-  _Tmp1328__1 = [ _Tmp1327__1] call /*emit_f0ide*/ libarma3__typeOf;
+  _Tmp1327__1 = /* ATSSELfltrec */ (_Arg0 select 1);
+  _Tmp1328__1 = /* ATSSELfltrec */ (_Arg0 select 0);
+  _Tmp1329__1 = /* ATSSELfltrec */ (_Tmp1327__1 select 0);
+  _Tmp1330__1 = /* ATSSELfltrec */ (_Tmp1327__1 select 1);
+  _Tmp1331__1 = [ _Tmp1330__1] call /*emit_f0ide*/ libarma3__typeOf;
   _Casefunx1 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
@@ -13485,32 +13571,32 @@ private _Tmplab_sqf = 0;
     {
       // ATSbranchseq_beg
       case 1 : {
-        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1328__1 select 0 } )) ) then {
+        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1331__1 select 0 } )) ) then {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
            [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 2 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1331__1 = [ 2, _Tmp1326__1 ]/* emit2_ATSINSmove_con1 */;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1330__1 = [_Tmp1325__1, _Tmp1331__1];
-/*emit2_branchlst rest-of-ATSINS*/        _Tmpret1323__1 = [ 0, _Tmp1330__1 ]/* emit2_ATSINSmove_con1 */
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1334__1 = [ 2, _Tmp1329__1 ]/* emit2_ATSINSmove_con1 */;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1333__1 = [_Tmp1328__1, _Tmp1334__1];
+/*emit2_branchlst rest-of-ATSINS*/        _Tmpret1326__1 = [ 0, _Tmp1333__1 ]/* emit2_ATSINSmove_con1 */
       };
       // ATSbranchseq_end
       // ATSbranchseq_beg
       case 3 : {
-        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1328__1 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 44938(line=1154, offs=7) -- 45443(line=1164, offs=41)");
+        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1331__1 select 0 }) ) then {
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 45091(line=1155, offs=7) -- 45596(line=1165, offs=41)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1329__1 = (_Tmp1328__1 select 0);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1328__1);;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1333__1 = [_Tmp1326__1, _Tmp1329__1];
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1332__1 = [_Tmp1325__1, _Tmp1333__1];
-/*emit2_branchlst rest-of-ATSINS*/        _Tmpret1323__1 = [ 1, _Tmp1332__1 ]/* emit2_ATSINSmove_con1 */
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1332__1 = (_Tmp1331__1 select 0);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1331__1);;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1336__1 = [_Tmp1329__1, _Tmp1332__1];
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1335__1 = [_Tmp1328__1, _Tmp1336__1];
+/*emit2_branchlst rest-of-ATSINS*/        _Tmpret1326__1 = [ 1, _Tmp1335__1 ]/* emit2_ATSINSmove_con1 */
       };
       // ATSbranchseq_end
       default { assert(false); };
@@ -13519,7 +13605,7 @@ private _Tmplab_sqf = 0;
   }; // endfun
   [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1323__1;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1326__1;
 }; // end-of-function
 
 
@@ -13543,71 +13629,71 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmp1472
-private _Tmp1472 = 0;
-// var _Tmp1473
-private _Tmp1473 = 0;
-// var _Tmp1474
-private _Tmp1474 = 0;
-// var _Tmp1475
-private _Tmp1475 = 0;
-// var _Tmp1476
-private _Tmp1476 = 0;
-// var _Tmp1477
-private _Tmp1477 = 0;
-// var _Tmp1478
-private _Tmp1478 = 0;
-// var _Tmp1479
-private _Tmp1479 = 0;
-// var _Tmp1480
-private _Tmp1480 = 0;
-// var _Tmp1481
-private _Tmp1481 = 0;
-// var _Tmp1482
-private _Tmp1482 = 0;
-// var _Tmp1483
-private _Tmp1483 = 0;
 // var _Tmp1484
 private _Tmp1484 = 0;
 // var _Tmp1485
 private _Tmp1485 = 0;
+// var _Tmp1486
+private _Tmp1486 = 0;
 // var _Tmp1487
 private _Tmp1487 = 0;
+// var _Tmp1488
+private _Tmp1488 = 0;
+// var _Tmp1489
+private _Tmp1489 = 0;
 // var _Tmp1490
 private _Tmp1490 = 0;
 // var _Tmp1491
 private _Tmp1491 = 0;
+// var _Tmp1492
+private _Tmp1492 = 0;
+// var _Tmp1493
+private _Tmp1493 = 0;
+// var _Tmp1494
+private _Tmp1494 = 0;
+// var _Tmp1495
+private _Tmp1495 = 0;
+// var _Tmp1496
+private _Tmp1496 = 0;
+// var _Tmp1497
+private _Tmp1497 = 0;
+// var _Tmp1499
+private _Tmp1499 = 0;
+// var _Tmp1502
+private _Tmp1502 = 0;
+// var _Tmp1503
+private _Tmp1503 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_hide_non_users_markers_429 /*ATSINSflab*/ ;
-  _Tmp1472 = [ ] call /*emit_f0ide*/ libarma3__allMapMarkers;
-  _Tmp1473 = [ _Tmp1472] call /*emit_f0ide*/ libarma3__array_vt_count;
-  _Tmp1474 = [ "_USER_DEFINED #"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1476 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-  _Tmp1478 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-  _Tmp1479 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-  _Tmp1480 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-  _Tmp1481 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-  _Tmp1477 = [_Tmp1478, _Tmp1479, _Tmp1480, _Tmp1481];
-  _Tmp1475 = [ _Tmp1474, _Tmp1472, _Tmp1473, _Tmp1476, _Tmp1477] call /*emit_f0ide*/ loop_430;
-  _Tmp1482 = [ ] call /*emit_f0ide*/ libarma3__player;
-  _Tmp1483 = [ _Tmp1482, _Arg0] call /*emit_f0ide*/ libarma3__getVariable;
-  _Tmp1484 = /* ATSSELfltrec */ (_Tmp1483 select 0);
-  _Tmp1485 = /* ATSSELfltrec */ (_Tmp1483 select 1);
-  if (_Tmp1484) then {
+  _Tmp1484 = [ ] call /*emit_f0ide*/ libarma3__allMapMarkers;
+  _Tmp1485 = [ _Tmp1484] call /*emit_f0ide*/ libarma3__array_vt_count;
+  _Tmp1486 = [ "_USER_DEFINED #"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1488 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+  _Tmp1490 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+  _Tmp1491 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+  _Tmp1492 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+  _Tmp1493 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+  _Tmp1489 = [_Tmp1490, _Tmp1491, _Tmp1492, _Tmp1493];
+  _Tmp1487 = [ _Tmp1486, _Tmp1484, _Tmp1485, _Tmp1488, _Tmp1489] call /*emit_f0ide*/ loop_430;
+  _Tmp1494 = [ ] call /*emit_f0ide*/ libarma3__player;
+  _Tmp1495 = [ _Tmp1494, _Arg0] call /*emit_f0ide*/ libarma3__getVariable;
+  _Tmp1496 = /* ATSSELfltrec */ (_Tmp1495 select 0);
+  _Tmp1497 = /* ATSSELfltrec */ (_Tmp1495 select 1);
+  if (_Tmp1496) then {
       ; // ATSINSmove_void();
     } // if-then
     else {
-      if (_Tmp1485) then {
-          _Tmp1487 = [ "hidden: "] call /*emit_f0ide*/ text__pack_string;
-           /*ATSINSmove_void _*/[ _Tmp1487] call /*emit_f0ide*/ libarma3__systemChat;
-           /*ATSINSmove_void _*/[ _Tmp1487] call /*emit_f0ide*/ text__free_text;
-          _Tmp1491 = [ _Tmp1475] call /*emit_f0ide*/ libarma3__str;
-          _Tmp1490 = [ _Tmp1491] call /*emit_f0ide*/ text__pack_string;
-           /*ATSINSmove_void _*/[ _Tmp1490] call /*emit_f0ide*/ libarma3__systemChat;
-           /*ATSINSmove_void _*/[ _Tmp1490] call /*emit_f0ide*/ text__free_text;
+      if (_Tmp1497) then {
+          _Tmp1499 = [ "hidden: "] call /*emit_f0ide*/ text__pack_string;
+           /*ATSINSmove_void _*/[ _Tmp1499] call /*emit_f0ide*/ libarma3__systemChat;
+           /*ATSINSmove_void _*/[ _Tmp1499] call /*emit_f0ide*/ text__free_text;
+          _Tmp1503 = [ _Tmp1487] call /*emit_f0ide*/ libarma3__str;
+          _Tmp1502 = [ _Tmp1503] call /*emit_f0ide*/ text__pack_string;
+           /*ATSINSmove_void _*/[ _Tmp1502] call /*emit_f0ide*/ libarma3__systemChat;
+           /*ATSINSmove_void _*/[ _Tmp1502] call /*emit_f0ide*/ text__free_text;
         } // if-then
         else {
           ; // ATSINSmove_void()
@@ -13615,8 +13701,8 @@ private _Tmplab_sqf = 0;
         }
     // if-else
     };
-   /*ATSINSmove_void _*/[ _Tmp1474] call /*emit_f0ide*/ text__free_text;
-   /*ATSINSmove_void _*/[ _Tmp1472, /*emit_f0ide*/ f___patsfun_432] call /*emit_f0ide*/ libarma3__array_vt_free;
+   /*ATSINSmove_void _*/[ _Tmp1486] call /*emit_f0ide*/ text__free_text;
+   /*ATSINSmove_void _*/[ _Tmp1484, /*emit_f0ide*/ f___patsfun_432] call /*emit_f0ide*/ libarma3__array_vt_free;
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
 }; // end-of-function
 
@@ -13636,28 +13722,8 @@ private _Apy2 = 0;
 private _Apy3 = 0;
 // var _Apy4
 private _Apy4 = 0;
-// var _Tmpret1448
-private _Tmpret1448 = 0;
-// var _Tmp1449
-private _Tmp1449 = 0;
-// var _Tmp1450
-private _Tmp1450 = 0;
-// var _Tmp1451
-private _Tmp1451 = 0;
-// var _Tmp1452
-private _Tmp1452 = 0;
-// var _Tmp1453
-private _Tmp1453 = 0;
-// var _Tmp1454
-private _Tmp1454 = 0;
-// var _Tmp1455
-private _Tmp1455 = 0;
-// var _Tmp1456
-private _Tmp1456 = 0;
-// var _Tmp1459
-private _Tmp1459 = 0;
-// var _Tmp1460
-private _Tmp1460 = 0;
+// var _Tmpret1460
+private _Tmpret1460 = 0;
 // var _Tmp1461
 private _Tmp1461 = 0;
 // var _Tmp1462
@@ -13666,18 +13732,38 @@ private _Tmp1462 = 0;
 private _Tmp1463 = 0;
 // var _Tmp1464
 private _Tmp1464 = 0;
+// var _Tmp1465
+private _Tmp1465 = 0;
 // var _Tmp1466
 private _Tmp1466 = 0;
 // var _Tmp1467
 private _Tmp1467 = 0;
 // var _Tmp1468
 private _Tmp1468 = 0;
-// var _Tmp1469
-private _Tmp1469 = 0;
-// var _Tmp1470
-private _Tmp1470 = 0;
 // var _Tmp1471
 private _Tmp1471 = 0;
+// var _Tmp1472
+private _Tmp1472 = 0;
+// var _Tmp1473
+private _Tmp1473 = 0;
+// var _Tmp1474
+private _Tmp1474 = 0;
+// var _Tmp1475
+private _Tmp1475 = 0;
+// var _Tmp1476
+private _Tmp1476 = 0;
+// var _Tmp1478
+private _Tmp1478 = 0;
+// var _Tmp1479
+private _Tmp1479 = 0;
+// var _Tmp1480
+private _Tmp1480 = 0;
+// var _Tmp1481
+private _Tmp1481 = 0;
+// var _Tmp1482
+private _Tmp1482 = 0;
+// var _Tmp1483
+private _Tmp1483 = 0;
 // var Funlab_sqf
 private _Funlab_sqf = 0;
 // var Tmplab, Tmplab_sqf
@@ -13687,12 +13773,12 @@ private _Tmplab_sqf = 0;
   while {true} do {
     _Funlab_sqf = 0;
     // __patsflab_loop_430 /*ATSINSflab*/ ;
-    _Tmp1449 = [ _Arg3, _Arg2] call /*emit_f0ide*/ atspre_g1uint_eq_size;
-    if (_Tmp1449) then {
-        _Tmpret1448 = _Arg4;
+    _Tmp1461 = [ _Arg3, _Arg2] call /*emit_f0ide*/ atspre_g1uint_eq_size;
+    if (_Tmp1461) then {
+        _Tmpret1460 = _Arg4;
       } // if-then
       else {
-        _Tmp1450 = [ _Arg1, _Arg3] call /*emit_f0ide*/ libarma3__array_vt_get1;
+        _Tmp1462 = [ _Arg1, _Arg3] call /*emit_f0ide*/ libarma3__array_vt_get1;
         _Casefunx1 /* emit_Casefunx */ = {
           params [ "_Casefun", "_Tmplab"];
           // switch(_Tmplab) {
@@ -13700,51 +13786,51 @@ private _Tmplab_sqf = 0;
           {
             // ATSbranchseq_beg
             case 1 : {
-              if(/*ATSCKptriscons*/ (not(isNil { _Tmp1450 select 0 } )) ) then {
+              if(/*ATSCKptriscons*/ (not(isNil { _Tmp1462 select 0 } )) ) then {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               } else {
                  [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 2 : {
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1454 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1453 = [ /* ATSSELfltrec */ (_Arg4 select 3), _Tmp1454] call /*emit_f0ide*/ atspre_g0uint_add_size;
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1451 = [/* ATSSELfltrec */ (_Arg4 select 0), /* ATSSELfltrec */ (_Arg4 select 1), /* ATSSELfltrec */ (_Arg4 select 2), _Tmp1453]
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1466 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1465 = [ /* ATSSELfltrec */ (_Arg4 select 3), _Tmp1466] call /*emit_f0ide*/ atspre_g0uint_add_size;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1463 = [/* ATSSELfltrec */ (_Arg4 select 0), /* ATSSELfltrec */ (_Arg4 select 1), /* ATSSELfltrec */ (_Arg4 select 2), _Tmp1465]
             };
             // ATSbranchseq_end
             // ATSbranchseq_beg
             case 3 : {
-              if(/*ATSCKptrisnull*/ ( isNil { _Tmp1450 select 0 }) ) then {
+              if(/*ATSCKptrisnull*/ ( isNil { _Tmp1462 select 0 }) ) then {
                 systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 1647(line=49, offs=13) -- 3080(line=71, offs=14)");
               } else {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1452 = (_Tmp1450 select 0);
-/*emit2_branchlst rest-of-ATSINS*/              // ATSINSfreecon(_Tmp1450);;
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1455 = [ _Tmp1452] call /*emit_f0ide*/ text__length;
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1456 = [ _Tmp1455, 1] call /*emit_f0ide*/ ATSLIB_056_prelude__lt_g1uint_int__247__4;
-/*emit2_branchlst rest-of-ATSINS*/              if (_Tmp1456) then {
-                  _Tmp1460 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-                  _Tmp1459 = [ /* ATSSELfltrec */ (_Arg4 select 2), _Tmp1460] call /*emit_f0ide*/ atspre_g0uint_add_size;
-                  _Tmp1451 = [/* ATSSELfltrec */ (_Arg4 select 0), /* ATSSELfltrec */ (_Arg4 select 1), _Tmp1459, /* ATSSELfltrec */ (_Arg4 select 3)];
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1464 = (_Tmp1462 select 0);
+/*emit2_branchlst rest-of-ATSINS*/              // ATSINSfreecon(_Tmp1462);;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1467 = [ _Tmp1464] call /*emit_f0ide*/ text__length;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1468 = [ _Tmp1467, 1] call /*emit_f0ide*/ ATSLIB_056_prelude__lt_g1uint_int__247__4;
+/*emit2_branchlst rest-of-ATSINS*/              if (_Tmp1468) then {
+                  _Tmp1472 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+                  _Tmp1471 = [ /* ATSSELfltrec */ (_Arg4 select 2), _Tmp1472] call /*emit_f0ide*/ atspre_g0uint_add_size;
+                  _Tmp1463 = [/* ATSSELfltrec */ (_Arg4 select 0), /* ATSSELfltrec */ (_Arg4 select 1), _Tmp1471, /* ATSSELfltrec */ (_Arg4 select 3)];
                 } // if-then
                 else {
-                  _Tmp1461 = [ _Arg0] call /*emit_f0ide*/ text__length;
-                  _Tmp1462 = [ _Tmp1461, _Tmp1452] call /*emit_f0ide*/ text__take;
-                  _Tmp1463 = [ _Arg0, _Tmp1462] call /*emit_f0ide*/ text__eq_text_text;
-                  _Tmp1464 = [ _Tmp1463] call /*emit_f0ide*/ atspre_neg_bool1;
-                  if (_Tmp1464) then {
-                       /*ATSINSmove_void _*/[ _Tmp1452, 0.0] call /*emit_f0ide*/ libarma3__setMarkerAlphaLocal;
-                      _Tmp1467 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-                      _Tmp1466 = [ /* ATSSELfltrec */ (_Arg4 select 0), _Tmp1467] call /*emit_f0ide*/ atspre_g0uint_add_size;
-                      _Tmp1451 = [_Tmp1466, /* ATSSELfltrec */ (_Arg4 select 1), /* ATSSELfltrec */ (_Arg4 select 2), /* ATSSELfltrec */ (_Arg4 select 3)];
+                  _Tmp1473 = [ _Arg0] call /*emit_f0ide*/ text__length;
+                  _Tmp1474 = [ _Tmp1473, _Tmp1464] call /*emit_f0ide*/ text__take;
+                  _Tmp1475 = [ _Arg0, _Tmp1474] call /*emit_f0ide*/ text__eq_text_text;
+                  _Tmp1476 = [ _Tmp1475] call /*emit_f0ide*/ atspre_neg_bool1;
+                  if (_Tmp1476) then {
+                       /*ATSINSmove_void _*/[ _Tmp1464, 0.0] call /*emit_f0ide*/ libarma3__setMarkerAlphaLocal;
+                      _Tmp1479 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+                      _Tmp1478 = [ /* ATSSELfltrec */ (_Arg4 select 0), _Tmp1479] call /*emit_f0ide*/ atspre_g0uint_add_size;
+                      _Tmp1463 = [_Tmp1478, /* ATSSELfltrec */ (_Arg4 select 1), /* ATSSELfltrec */ (_Arg4 select 2), /* ATSSELfltrec */ (_Arg4 select 3)];
                     } // if-then
                     else {
-                      _Tmp1469 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-                      _Tmp1468 = [ /* ATSSELfltrec */ (_Arg4 select 1), _Tmp1469] call /*emit_f0ide*/ atspre_g0uint_add_size;
-                      _Tmp1451 = [/* ATSSELfltrec */ (_Arg4 select 0), _Tmp1468, /* ATSSELfltrec */ (_Arg4 select 2), /* ATSSELfltrec */ (_Arg4 select 3)]
+                      _Tmp1481 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+                      _Tmp1480 = [ /* ATSSELfltrec */ (_Arg4 select 1), _Tmp1481] call /*emit_f0ide*/ atspre_g0uint_add_size;
+                      _Tmp1463 = [/* ATSSELfltrec */ (_Arg4 select 0), _Tmp1480, /* ATSSELfltrec */ (_Arg4 select 2), /* ATSSELfltrec */ (_Arg4 select 3)]
                     // if-else
                     }
                 // if-else
@@ -13757,13 +13843,13 @@ private _Tmplab_sqf = 0;
         }; // endfun
         [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
-        _Tmp1471 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-        _Tmp1470 = [ _Arg3, _Tmp1471] call /*emit_f0ide*/ atspre_g1uint_add_size;
+        _Tmp1483 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+        _Tmp1482 = [ _Arg3, _Tmp1483] call /*emit_f0ide*/ atspre_g1uint_add_size;
         /* ATSINSmove_tlcal */ _Apy0 = _Arg0;
         /* ATSINSmove_tlcal */ _Apy1 = _Arg1;
         /* ATSINSmove_tlcal */ _Apy2 = _Arg2;
-        /* ATSINSmove_tlcal */ _Apy3 = _Tmp1470;
-        /* ATSINSmove_tlcal */ _Apy4 = _Tmp1451;
+        /* ATSINSmove_tlcal */ _Apy3 = _Tmp1482;
+        /* ATSINSmove_tlcal */ _Apy4 = _Tmp1463;
         /* ATSINSargmove_tlcal */ _Arg0 = _Apy0;
         /* ATSINSargmove_tlcal */ _Arg1 = _Apy1;
         /* ATSINSargmove_tlcal */ _Arg2 = _Apy2;
@@ -13775,7 +13861,7 @@ private _Tmplab_sqf = 0;
       };
     if (_Funlab_sqf < 1) then { break; };
   }; // endwhile-fun
- /* ATSreturn */ _Tmpret1448;
+ /* ATSreturn */ _Tmpret1460;
 }; // end-of-function
 
 
@@ -13819,34 +13905,34 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmp1521
-private _Tmp1521 = 0;
-// var _Tmp1522
-private _Tmp1522 = 0;
-// var _Tmp1523
-private _Tmp1523 = 0;
-// var _Tmp1524
-private _Tmp1524 = 0;
-// var _Tmp1525
-private _Tmp1525 = 0;
+// var _Tmp1533
+private _Tmp1533 = 0;
+// var _Tmp1534
+private _Tmp1534 = 0;
+// var _Tmp1535
+private _Tmp1535 = 0;
+// var _Tmp1536
+private _Tmp1536 = 0;
+// var _Tmp1537
+private _Tmp1537 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_userMarkerThread /*ATSINSflab*/ ;
-  _Tmp1521 = [ ] call /*emit_f0ide*/ libarma3__player;
-  _Tmp1522 = [ "userMarkerThreadRunning"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1523 = [ "userMarkerThreadCounter"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1524 = [ "userMarkerThreadDebug"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1525 = [ "userMarkerThreadAlreadyRestored"] call /*emit_f0ide*/ text__pack_string;
-   /*ATSINSmove_void _*/[ _Tmp1521, _Tmp1522, true, false] call /*emit_f0ide*/ libarma3__setVariable;
-   /*ATSINSmove_void _*/[ _Tmp1521, _Tmp1524, false, false] call /*emit_f0ide*/ libarma3__setVariable;
-   /*ATSINSmove_void _*/[ _Tmp1521, _Tmp1525, false, false] call /*emit_f0ide*/ libarma3__setVariable;
-   /*ATSINSmove_void _*/[ _Tmp1522, _Tmp1523, _Tmp1524, _Tmp1525] call /*emit_f0ide*/ loop_435;
-   /*ATSINSmove_void _*/[ _Tmp1524] call /*emit_f0ide*/ text__free_text;
-   /*ATSINSmove_void _*/[ _Tmp1522] call /*emit_f0ide*/ text__free_text;
-   /*ATSINSmove_void _*/[ _Tmp1523] call /*emit_f0ide*/ text__free_text;
-   /*ATSINSmove_void _*/[ _Tmp1525] call /*emit_f0ide*/ text__free_text;
+  _Tmp1533 = [ ] call /*emit_f0ide*/ libarma3__player;
+  _Tmp1534 = [ "userMarkerThreadRunning"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1535 = [ "userMarkerThreadCounter"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1536 = [ "userMarkerThreadDebug"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1537 = [ "userMarkerThreadAlreadyRestored"] call /*emit_f0ide*/ text__pack_string;
+   /*ATSINSmove_void _*/[ _Tmp1533, _Tmp1534, true, false] call /*emit_f0ide*/ libarma3__setVariable;
+   /*ATSINSmove_void _*/[ _Tmp1533, _Tmp1536, false, false] call /*emit_f0ide*/ libarma3__setVariable;
+   /*ATSINSmove_void _*/[ _Tmp1533, _Tmp1537, false, false] call /*emit_f0ide*/ libarma3__setVariable;
+   /*ATSINSmove_void _*/[ _Tmp1534, _Tmp1535, _Tmp1536, _Tmp1537] call /*emit_f0ide*/ loop_435;
+   /*ATSINSmove_void _*/[ _Tmp1536] call /*emit_f0ide*/ text__free_text;
+   /*ATSINSmove_void _*/[ _Tmp1534] call /*emit_f0ide*/ text__free_text;
+   /*ATSINSmove_void _*/[ _Tmp1535] call /*emit_f0ide*/ text__free_text;
+   /*ATSINSmove_void _*/[ _Tmp1537] call /*emit_f0ide*/ text__free_text;
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
 }; // end-of-function
 
@@ -13856,24 +13942,24 @@ private _Tmplab_sqf = 0;
   params ["_Arg0", "_Arg1", "_Arg2"];
 //
 // knd = 0
-// var _Tmp1498
-private _Tmp1498 = 0;
-// var _Tmp1499
-private _Tmp1499 = 0;
-// var _Tmp1500
-private _Tmp1500 = 0;
-// var _Tmp1501
-private _Tmp1501 = 0;
-// var _Tmp1502
-private _Tmp1502 = 0;
+// var _Tmp1510
+private _Tmp1510 = 0;
+// var _Tmp1511
+private _Tmp1511 = 0;
+// var _Tmp1512
+private _Tmp1512 = 0;
+// var _Tmp1513
+private _Tmp1513 = 0;
+// var _Tmp1514
+private _Tmp1514 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_iteration_434 /*ATSINSflab*/ ;
    /*ATSINSmove_void _*/[ _Arg0] call /*emit_f0ide*/ hide_non_users_markers_429;
-  _Tmp1498 = [ _Arg0] call /*emit_f0ide*/ fn_persistentUserMarkers__am_i_the_first_user_of_side;
-  _Tmp1499 = [ _Arg2, _Arg1] call /*emit_f0ide*/ libarma3__getVariable1;
+  _Tmp1510 = [ _Arg0] call /*emit_f0ide*/ fn_persistentUserMarkers__am_i_the_first_user_of_side;
+  _Tmp1511 = [ _Arg2, _Arg1] call /*emit_f0ide*/ libarma3__getVariable1;
   _Casefunx1 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
@@ -13881,27 +13967,27 @@ private _Tmplab_sqf = 0;
     {
       // ATSbranchseq_beg
       case 1 : {
-        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1499 select 0 } )) ) then {
+        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1511 select 0 } )) ) then {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
            [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 2 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1500 = false
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1512 = false
       };
       // ATSbranchseq_end
       // ATSbranchseq_beg
       case 3 : {
-        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1499 select 0 }) ) then {
+        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1511 select 0 }) ) then {
           systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 5563(line=139, offs=46) -- 5667(line=141, offs=35)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1501 = (_Tmp1499 select 0);
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1500 = _Tmp1501
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1513 = (_Tmp1511 select 0);
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1512 = _Tmp1513
       };
       // ATSbranchseq_end
       default { assert(false); };
@@ -13910,14 +13996,14 @@ private _Tmplab_sqf = 0;
   }; // endfun
   [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
-  if (_Tmp1498) then {
-      _Tmp1502 = [ _Tmp1500] call /*emit_f0ide*/ atspre_neg_bool0;
+  if (_Tmp1510) then {
+      _Tmp1514 = [ _Tmp1512] call /*emit_f0ide*/ atspre_neg_bool0;
     } // if-then
     else {
-      _Tmp1502 = false
+      _Tmp1514 = false
     // if-else
     };
-  if (_Tmp1502) then {
+  if (_Tmp1514) then {
        /*ATSINSmove_void _*/[ _Arg0, _Arg1] call /*emit_f0ide*/ fn_persistentUserMarkers__try_restore_persisted_markers;
        /*ATSINSmove_void _*/[ _Arg2, _Arg1, true, false] call /*emit_f0ide*/ libarma3__setVariable;
     } // if-then
@@ -13942,30 +14028,30 @@ private _Apy1 = 0;
 private _Apy2 = 0;
 // var _Apy3
 private _Apy3 = 0;
-// var _Tmp1505
-private _Tmp1505 = 0;
-// var _Tmp1506
-private _Tmp1506 = 0;
-// var _Tmp1507
-private _Tmp1507 = 0;
-// var _Tmp1508
-private _Tmp1508 = 0;
-// var _Tmp1509
-private _Tmp1509 = 0;
-// var _Tmp1512
-private _Tmp1512 = 0;
-// var _Tmp1513
-private _Tmp1513 = 0;
-// var _Tmp1514
-private _Tmp1514 = 0;
-// var _Tmp1515
-private _Tmp1515 = 0;
-// var _Tmp1516
-private _Tmp1516 = 0;
 // var _Tmp1517
 private _Tmp1517 = 0;
 // var _Tmp1518
 private _Tmp1518 = 0;
+// var _Tmp1519
+private _Tmp1519 = 0;
+// var _Tmp1520
+private _Tmp1520 = 0;
+// var _Tmp1521
+private _Tmp1521 = 0;
+// var _Tmp1524
+private _Tmp1524 = 0;
+// var _Tmp1525
+private _Tmp1525 = 0;
+// var _Tmp1526
+private _Tmp1526 = 0;
+// var _Tmp1527
+private _Tmp1527 = 0;
+// var _Tmp1528
+private _Tmp1528 = 0;
+// var _Tmp1529
+private _Tmp1529 = 0;
+// var _Tmp1530
+private _Tmp1530 = 0;
 // var Funlab_sqf
 private _Funlab_sqf = 0;
 // var Tmplab, Tmplab_sqf
@@ -13975,34 +14061,34 @@ private _Tmplab_sqf = 0;
   while {true} do {
     _Funlab_sqf = 0;
     // __patsflab_loop_435 /*ATSINSflab*/ ;
-    _Tmp1505 = [ ] call /*emit_f0ide*/ libarma3__player;
-    _Tmp1506 = [ _Tmp1505, _Arg0] call /*emit_f0ide*/ libarma3__getVariable;
-    _Tmp1507 = /* ATSSELfltrec */ (_Tmp1506 select 0);
-    _Tmp1508 = /* ATSSELfltrec */ (_Tmp1506 select 1);
-    if (_Tmp1507) then {
-         /*ATSINSmove_void _*/[ _Tmp1505, _Arg0, true, false] call /*emit_f0ide*/ libarma3__setVariable;
-        _Tmp1509 = true;
+    _Tmp1517 = [ ] call /*emit_f0ide*/ libarma3__player;
+    _Tmp1518 = [ _Tmp1517, _Arg0] call /*emit_f0ide*/ libarma3__getVariable;
+    _Tmp1519 = /* ATSSELfltrec */ (_Tmp1518 select 0);
+    _Tmp1520 = /* ATSSELfltrec */ (_Tmp1518 select 1);
+    if (_Tmp1519) then {
+         /*ATSINSmove_void _*/[ _Tmp1517, _Arg0, true, false] call /*emit_f0ide*/ libarma3__setVariable;
+        _Tmp1521 = true;
       } // if-then
       else {
-        _Tmp1509 = _Tmp1508
+        _Tmp1521 = _Tmp1520
       // if-else
       };
-    if (_Tmp1509) then {
-         /*ATSINSmove_void _*/[ _Arg2, _Arg3, _Tmp1505] call /*emit_f0ide*/ iteration_434;
-        _Tmp1512 = [ _Tmp1505, _Arg1] call /*emit_f0ide*/ libarma3__getVariable;
-        _Tmp1513 = /* ATSSELfltrec */ (_Tmp1512 select 0);
-        _Tmp1514 = /* ATSSELfltrec */ (_Tmp1512 select 1);
-        if (_Tmp1513) then {
-            _Tmp1516 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-            _Tmp1515 = _Tmp1516;
+    if (_Tmp1521) then {
+         /*ATSINSmove_void _*/[ _Arg2, _Arg3, _Tmp1517] call /*emit_f0ide*/ iteration_434;
+        _Tmp1524 = [ _Tmp1517, _Arg1] call /*emit_f0ide*/ libarma3__getVariable;
+        _Tmp1525 = /* ATSSELfltrec */ (_Tmp1524 select 0);
+        _Tmp1526 = /* ATSSELfltrec */ (_Tmp1524 select 1);
+        if (_Tmp1525) then {
+            _Tmp1528 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+            _Tmp1527 = _Tmp1528;
           } // if-then
           else {
-            _Tmp1515 = _Tmp1514
+            _Tmp1527 = _Tmp1526
           // if-else
           };
-        _Tmp1518 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-        _Tmp1517 = [ _Tmp1515, _Tmp1518] call /*emit_f0ide*/ atspre_g0uint_add_size;
-         /*ATSINSmove_void _*/[ _Tmp1505, _Arg1, _Tmp1517, false] call /*emit_f0ide*/ libarma3__setVariable;
+        _Tmp1530 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+        _Tmp1529 = [ _Tmp1527, _Tmp1530] call /*emit_f0ide*/ atspre_g0uint_add_size;
+         /*ATSINSmove_void _*/[ _Tmp1517, _Arg1, _Tmp1529, false] call /*emit_f0ide*/ libarma3__setVariable;
          /*ATSINSmove_void _*/[ 1.0] call /*emit_f0ide*/ libarma3__sleep;
         /* ATSINSmove_tlcal */ _Apy0 = _Arg0;
         /* ATSINSmove_tlcal */ _Apy1 = _Arg1;
@@ -14029,19 +14115,19 @@ private _Tmplab_sqf = 0;
 /*emit_f0ide*/ fn_persistentUserMarkers__initClient = compileFinal {
 //
 // knd = 0
-// var _Tmp1534
-private _Tmp1534 = 0;
-// var _Tmp1535
-private _Tmp1535 = 0;
+// var _Tmp1546
+private _Tmp1546 = 0;
+// var _Tmp1547
+private _Tmp1547 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_initClient /*ATSINSflab*/ ;
-  _Tmp1534 = [ ] call /*emit_f0ide*/ ext_libarma3_hasInterface;
-  if (_Tmp1534) then {
-      _Tmp1535 = [ 0, fn_persistentUserMarkers__userMarkerThread] call /*emit_f0ide*/ libarma3__spawn;
-       /*ATSINSmove_void _*/[ _Tmp1535] call /*emit_f0ide*/ fn_persistentUserMarkers__storeUserMarkersSpawnHandle;
+  _Tmp1546 = [ ] call /*emit_f0ide*/ ext_libarma3_hasInterface;
+  if (_Tmp1546) then {
+      _Tmp1547 = [ 0, fn_persistentUserMarkers__userMarkerThread] call /*emit_f0ide*/ libarma3__spawn;
+       /*ATSINSmove_void _*/[ _Tmp1547] call /*emit_f0ide*/ fn_persistentUserMarkers__storeUserMarkersSpawnHandle;
        /*ATSINSmove_void _*/[ ] call /*emit_f0ide*/ fn_persistentUserMarkers__addMapActions;
     } // if-then
     else {
@@ -14056,20 +14142,20 @@ private _Tmplab_sqf = 0;
 /*emit_f0ide*/ fn_persistentUserMarkers__initServer = compileFinal {
 //
 // knd = 0
-// var _Tmp1538
-private _Tmp1538 = 0;
-// var _Tmp1540
-private _Tmp1540 = 0;
+// var _Tmp1550
+private _Tmp1550 = 0;
+// var _Tmp1552
+private _Tmp1552 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_initServer /*ATSINSflab*/ ;
-  _Tmp1538 = [ ] call /*emit_f0ide*/ ext_libarma3_hasInterface;
+  _Tmp1550 = [ ] call /*emit_f0ide*/ ext_libarma3_hasInterface;
    /*ATSINSmove_void _*/[ ] call /*emit_f0ide*/ fn_persistentUserMarkers__spawnUsersToSidesThread;
-  if (_Tmp1538) then {
-      _Tmp1540 = [ 0, fn_persistentUserMarkers__userMarkerThread] call /*emit_f0ide*/ libarma3__spawn;
-       /*ATSINSmove_void _*/[ _Tmp1540] call /*emit_f0ide*/ fn_persistentUserMarkers__storeUserMarkersSpawnHandle;
+  if (_Tmp1550) then {
+      _Tmp1552 = [ 0, fn_persistentUserMarkers__userMarkerThread] call /*emit_f0ide*/ libarma3__spawn;
+       /*ATSINSmove_void _*/[ _Tmp1552] call /*emit_f0ide*/ fn_persistentUserMarkers__storeUserMarkersSpawnHandle;
     } // if-then
     else {
       ; // ATSINSmove_void()
@@ -14084,55 +14170,6 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmp1542
-private _Tmp1542 = 0;
-// var _Tmp1543
-private _Tmp1543 = 0;
-// var _Tmp1544
-private _Tmp1544 = 0;
-// var _Tmp1545
-private _Tmp1545 = 0;
-// var _Tmp1546
-private _Tmp1546 = 0;
-// var Tmplab, Tmplab_sqf
-private _Tmplab = 0;
-private _Tmplab_sqf = 0;
-//
-  // __patsflab_storeUserMarkersSpawnHandle /*ATSINSflab*/ ;
-  _Tmp1542 = [ ] call /*emit_f0ide*/ libarma3__player;
-  _Tmp1543 = [ "UserMarkersSpawnHandle"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1544 = [ _Tmp1542, _Tmp1543, _Arg0, false] call /*emit_f0ide*/ libarma3__swapVariable_vt;
-  _Tmp1545 = /* ATSSELfltrec */ (_Tmp1544 select 0);
-  _Tmp1546 = /* ATSSELfltrec */ (_Tmp1544 select 1);
-  if (_Tmp1545) then {
-      ; // ATSINSmove_void();
-    } // if-then
-    else {
-       /*ATSINSmove_void _*/[ _Tmp1546] call /*emit_f0ide*/ libarma3__terminate
-    // if-else
-    };
-   /*ATSINSmove_void _*/[ _Tmp1543] call /*emit_f0ide*/ text__free_text;
-/*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
-}; // end-of-function
-
-
-/*fun*/
-/*emit_f0ide*/ fn_persistentUserMarkers__markerToSerializedMarker = compileFinal {
-  params ["_Arg0"];
-//
-// knd = 0
-// var _Tmpret1548
-private _Tmpret1548 = 0;
-// var _Tmp1549
-private _Tmp1549 = 0;
-// var _Tmp1550
-private _Tmp1550 = 0;
-// var _Tmp1551
-private _Tmp1551 = 0;
-// var _Tmp1552
-private _Tmp1552 = 0;
-// var _Tmp1553
-private _Tmp1553 = 0;
 // var _Tmp1554
 private _Tmp1554 = 0;
 // var _Tmp1555
@@ -14143,43 +14180,41 @@ private _Tmp1556 = 0;
 private _Tmp1557 = 0;
 // var _Tmp1558
 private _Tmp1558 = 0;
-// var _Tmp1559
-private _Tmp1559 = 0;
-// var _Tmp1560
-private _Tmp1560 = 0;
-// var _Tmp1561
-private _Tmp1561 = 0;
-// var _Tmp1562
-private _Tmp1562 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
-  // __patsflab_markerToSerializedMarker /*ATSINSflab*/ ;
-  _Tmp1549 = [ _Arg0] call /*emit_f0ide*/ text__copy;
-  _Tmp1550 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerChannel;
-  _Tmp1551 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerAlpha;
-  _Tmp1552 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerBrush;
-  _Tmp1553 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerColor;
-  _Tmp1554 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerDir;
-  _Tmp1555 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerDrawPriority;
-  _Tmp1556 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerPolyline;
-  _Tmp1557 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerPos;
-  _Tmp1558 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerShadow;
-  _Tmp1559 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerShape;
-  _Tmp1560 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerSize;
-  _Tmp1561 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerText;
-  _Tmp1562 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerType;
-  _Tmpret1548 = [_Tmp1549, _Tmp1550, _Tmp1551, _Tmp1552, _Tmp1553, _Tmp1554, _Tmp1555, _Tmp1556, _Tmp1557, _Tmp1558, _Tmp1559, _Tmp1560, _Tmp1561, _Tmp1562];
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1548;
+  // __patsflab_storeUserMarkersSpawnHandle /*ATSINSflab*/ ;
+  _Tmp1554 = [ ] call /*emit_f0ide*/ libarma3__player;
+  _Tmp1555 = [ "UserMarkersSpawnHandle"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1556 = [ _Tmp1554, _Tmp1555, _Arg0, false] call /*emit_f0ide*/ libarma3__swapVariable_vt;
+  _Tmp1557 = /* ATSSELfltrec */ (_Tmp1556 select 0);
+  _Tmp1558 = /* ATSSELfltrec */ (_Tmp1556 select 1);
+  if (_Tmp1557) then {
+      ; // ATSINSmove_void();
+    } // if-then
+    else {
+       /*ATSINSmove_void _*/[ _Tmp1558] call /*emit_f0ide*/ libarma3__terminate
+    // if-else
+    };
+   /*ATSINSmove_void _*/[ _Tmp1555] call /*emit_f0ide*/ text__free_text;
+/*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
 }; // end-of-function
 
 
 /*fun*/
-/*emit_f0ide*/ fn_persistentUserMarkers__free_serialized_marker = compileFinal {
+/*emit_f0ide*/ fn_persistentUserMarkers__markerToSerializedMarker = compileFinal {
   params ["_Arg0"];
 //
 // knd = 0
+// var _Tmpret1560
+private _Tmpret1560 = 0;
+// var _Tmp1561
+private _Tmp1561 = 0;
+// var _Tmp1562
+private _Tmp1562 = 0;
+// var _Tmp1563
+private _Tmp1563 = 0;
 // var _Tmp1564
 private _Tmp1564 = 0;
 // var _Tmp1565
@@ -14196,27 +14231,78 @@ private _Tmp1569 = 0;
 private _Tmp1570 = 0;
 // var _Tmp1571
 private _Tmp1571 = 0;
+// var _Tmp1572
+private _Tmp1572 = 0;
+// var _Tmp1573
+private _Tmp1573 = 0;
+// var _Tmp1574
+private _Tmp1574 = 0;
+// var Tmplab, Tmplab_sqf
+private _Tmplab = 0;
+private _Tmplab_sqf = 0;
+//
+  // __patsflab_markerToSerializedMarker /*ATSINSflab*/ ;
+  _Tmp1561 = [ _Arg0] call /*emit_f0ide*/ text__copy;
+  _Tmp1562 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerChannel;
+  _Tmp1563 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerAlpha;
+  _Tmp1564 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerBrush;
+  _Tmp1565 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerColor;
+  _Tmp1566 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerDir;
+  _Tmp1567 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerDrawPriority;
+  _Tmp1568 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerPolyline;
+  _Tmp1569 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerPos;
+  _Tmp1570 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerShadow;
+  _Tmp1571 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerShape;
+  _Tmp1572 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerSize;
+  _Tmp1573 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerText;
+  _Tmp1574 = [ _Arg0] call /*emit_f0ide*/ libarma3__markerType;
+  _Tmpret1560 = [_Tmp1561, _Tmp1562, _Tmp1563, _Tmp1564, _Tmp1565, _Tmp1566, _Tmp1567, _Tmp1568, _Tmp1569, _Tmp1570, _Tmp1571, _Tmp1572, _Tmp1573, _Tmp1574];
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1560;
+}; // end-of-function
+
+
+/*fun*/
+/*emit_f0ide*/ fn_persistentUserMarkers__free_serialized_marker = compileFinal {
+  params ["_Arg0"];
+//
+// knd = 0
+// var _Tmp1576
+private _Tmp1576 = 0;
+// var _Tmp1577
+private _Tmp1577 = 0;
+// var _Tmp1578
+private _Tmp1578 = 0;
+// var _Tmp1579
+private _Tmp1579 = 0;
+// var _Tmp1580
+private _Tmp1580 = 0;
+// var _Tmp1581
+private _Tmp1581 = 0;
+// var _Tmp1582
+private _Tmp1582 = 0;
+// var _Tmp1583
+private _Tmp1583 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_free_serialized_marker /*ATSINSflab*/ ;
-  _Tmp1564 = /* ATSSELfltrec */ (_Arg0 select 0);
-  _Tmp1565 = /* ATSSELfltrec */ (_Arg0 select 3);
-  _Tmp1566 = /* ATSSELfltrec */ (_Arg0 select 4);
-  _Tmp1567 = /* ATSSELfltrec */ (_Arg0 select 8);
-  _Tmp1568 = /* ATSSELfltrec */ (_Arg0 select 10);
-  _Tmp1569 = /* ATSSELfltrec */ (_Arg0 select 11);
-  _Tmp1570 = /* ATSSELfltrec */ (_Arg0 select 12);
-  _Tmp1571 = /* ATSSELfltrec */ (_Arg0 select 13);
-   /*ATSINSmove_void _*/[ _Tmp1564] call /*emit_f0ide*/ text__free_text;
-   /*ATSINSmove_void _*/[ _Tmp1565] call /*emit_f0ide*/ text__free_text;
-   /*ATSINSmove_void _*/[ _Tmp1566] call /*emit_f0ide*/ text__free_text;
-   /*ATSINSmove_void _*/[ _Tmp1568] call /*emit_f0ide*/ text__free_text;
-   /*ATSINSmove_void _*/[ _Tmp1570] call /*emit_f0ide*/ text__free_text;
-   /*ATSINSmove_void _*/[ _Tmp1571] call /*emit_f0ide*/ text__free_text;
-   /*ATSINSmove_void _*/[ /*emit_SELrecsin*/(_Tmp1567 select 0)] call /*emit_f0ide*/ libarma3__array_free;
-   /*ATSINSmove_void _*/[ /*emit_SELrecsin*/(_Tmp1569 select 0)] call /*emit_f0ide*/ libarma3__array_free;
+  _Tmp1576 = /* ATSSELfltrec */ (_Arg0 select 0);
+  _Tmp1577 = /* ATSSELfltrec */ (_Arg0 select 3);
+  _Tmp1578 = /* ATSSELfltrec */ (_Arg0 select 4);
+  _Tmp1579 = /* ATSSELfltrec */ (_Arg0 select 8);
+  _Tmp1580 = /* ATSSELfltrec */ (_Arg0 select 10);
+  _Tmp1581 = /* ATSSELfltrec */ (_Arg0 select 11);
+  _Tmp1582 = /* ATSSELfltrec */ (_Arg0 select 12);
+  _Tmp1583 = /* ATSSELfltrec */ (_Arg0 select 13);
+   /*ATSINSmove_void _*/[ _Tmp1576] call /*emit_f0ide*/ text__free_text;
+   /*ATSINSmove_void _*/[ _Tmp1577] call /*emit_f0ide*/ text__free_text;
+   /*ATSINSmove_void _*/[ _Tmp1578] call /*emit_f0ide*/ text__free_text;
+   /*ATSINSmove_void _*/[ _Tmp1580] call /*emit_f0ide*/ text__free_text;
+   /*ATSINSmove_void _*/[ _Tmp1582] call /*emit_f0ide*/ text__free_text;
+   /*ATSINSmove_void _*/[ _Tmp1583] call /*emit_f0ide*/ text__free_text;
+   /*ATSINSmove_void _*/[ /*emit_SELrecsin*/(_Tmp1579 select 0)] call /*emit_f0ide*/ libarma3__array_free;
+   /*ATSINSmove_void _*/[ /*emit_SELrecsin*/(_Tmp1581 select 0)] call /*emit_f0ide*/ libarma3__array_free;
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
 }; // end-of-function
 
@@ -14226,12 +14312,12 @@ private _Tmplab_sqf = 0;
   params ["_Arg0", "_Arg1", "_Arg2", "_Arg3", "_Arg4", "_Arg5"];
 //
 // knd = 0
-// var _Tmpret1579
-private _Tmpret1579 = 0;
-// var _Tmp1580
-private _Tmp1580 = 0;
-// var _Tmp1583
-private _Tmp1583 = 0;
+// var _Tmpret1591
+private _Tmpret1591 = 0;
+// var _Tmp1592
+private _Tmp1592 = 0;
+// var _Tmp1595
+private _Tmp1595 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
@@ -14252,7 +14338,7 @@ private _Tmplab_sqf = 0;
       };
       case 2 : {
 /*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/ /*D0Eappexp ATSfunclo_fun*/[_Arg3] call /*ATSfunclo_fun*/ _Arg2;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmpret1579 = [ 0, _Arg0 ]/* emit2_ATSINSmove_con1 */
+/*emit2_branchlst rest-of-ATSINS*/        _Tmpret1591 = [ 0, _Arg0 ]/* emit2_ATSINSmove_con1 */
       };
       // ATSbranchseq_end
       // ATSbranchseq_beg
@@ -14264,11 +14350,11 @@ private _Tmplab_sqf = 0;
         };
       };
       case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1580 = (_Arg4 select 0);
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1592 = (_Arg4 select 0);
 /*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Arg4);;
 /*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/ /*D0Eappexp ATSfunclo_fun*/[_Arg0] call /*ATSfunclo_fun*/ _Arg1;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1583 =  /*D0Eappexp ATSfunclo_fun*/[_Arg3, _Tmp1580] call /*ATSfunclo_fun*/ _Arg5;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmpret1579 = [ 1, _Tmp1583 ]/* emit2_ATSINSmove_con1 */
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1595 =  /*D0Eappexp ATSfunclo_fun*/[_Arg3, _Tmp1592] call /*ATSfunclo_fun*/ _Arg5;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmpret1591 = [ 1, _Tmp1595 ]/* emit2_ATSINSmove_con1 */
       };
       // ATSbranchseq_end
       default { assert(false); };
@@ -14277,7 +14363,7 @@ private _Tmplab_sqf = 0;
   }; // endfun
   [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1579;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1591;
 }; // end-of-function
 
 
@@ -14285,27 +14371,27 @@ private _Tmplab_sqf = 0;
 /*emit_f0ide*/ fn_persistentUserMarkers__gatherUsersSideMapMarkers = compileFinal {
 //
 // knd = 0
-// var _Tmpret1584
-private _Tmpret1584 = 0;
-// var _Tmp1644
-private _Tmp1644 = 0;
-// var _Tmp1645
-private _Tmp1645 = 0;
-// var _Tmp1646
-private _Tmp1646 = 0;
-// var _Tmp1647
-private _Tmp1647 = 0;
+// var _Tmpret1596
+private _Tmpret1596 = 0;
+// var _Tmp1656
+private _Tmp1656 = 0;
+// var _Tmp1657
+private _Tmp1657 = 0;
+// var _Tmp1658
+private _Tmp1658 = 0;
+// var _Tmp1659
+private _Tmp1659 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_gatherUsersSideMapMarkers /*ATSINSflab*/ ;
-  _Tmp1647 = [ ] call /*emit_f0ide*/ libarma3__player;
-  _Tmp1646 = [ _Tmp1647] call /*emit_f0ide*/ result_vb__pure_result_vt;
-  _Tmp1645 = [ _Tmp1646, /*emit_f0ide*/ get_player_uid_451] call /*emit_f0ide*/ result_vb__bind_result_vt;
-  _Tmp1644 = [ _Tmp1645, /*emit_f0ide*/ get_player_name_455] call /*emit_f0ide*/ result_vb__bind_result_vt;
-  _Tmpret1584 = [ _Tmp1644, /*emit_f0ide*/ worker_443] call /*emit_f0ide*/ result_vb__bind_result_vt;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1584;
+  _Tmp1659 = [ ] call /*emit_f0ide*/ libarma3__player;
+  _Tmp1658 = [ _Tmp1659] call /*emit_f0ide*/ result_vb__pure_result_vt;
+  _Tmp1657 = [ _Tmp1658, /*emit_f0ide*/ get_player_uid_451] call /*emit_f0ide*/ result_vb__bind_result_vt;
+  _Tmp1656 = [ _Tmp1657, /*emit_f0ide*/ get_player_name_455] call /*emit_f0ide*/ result_vb__bind_result_vt;
+  _Tmpret1596 = [ _Tmp1656, /*emit_f0ide*/ worker_443] call /*emit_f0ide*/ result_vb__bind_result_vt;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1596;
 }; // end-of-function
 
 
@@ -14314,49 +14400,49 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmpret1585
-private _Tmpret1585 = 0;
-// var _Tmp1586
-private _Tmp1586 = 0;
-// var _Tmp1587
-private _Tmp1587 = 0;
-// var _Tmp1588
-private _Tmp1588 = 0;
-// var _Tmp1589
-private _Tmp1589 = 0;
-// var _Tmp1590
-private _Tmp1590 = 0;
-// var _Tmp1591
-private _Tmp1591 = 0;
-// var _Tmp1592
-private _Tmp1592 = 0;
-// var _Tmp1593
-private _Tmp1593 = 0;
-// var _Tmp1625
-private _Tmp1625 = 0;
-// var _Tmp1626
-private _Tmp1626 = 0;
-// var _Tmp1629
-private _Tmp1629 = 0;
+// var _Tmpret1597
+private _Tmpret1597 = 0;
+// var _Tmp1598
+private _Tmp1598 = 0;
+// var _Tmp1599
+private _Tmp1599 = 0;
+// var _Tmp1600
+private _Tmp1600 = 0;
+// var _Tmp1601
+private _Tmp1601 = 0;
+// var _Tmp1602
+private _Tmp1602 = 0;
+// var _Tmp1603
+private _Tmp1603 = 0;
+// var _Tmp1604
+private _Tmp1604 = 0;
+// var _Tmp1605
+private _Tmp1605 = 0;
+// var _Tmp1637
+private _Tmp1637 = 0;
+// var _Tmp1638
+private _Tmp1638 = 0;
+// var _Tmp1641
+private _Tmp1641 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_worker_443 /*ATSINSflab*/ ;
-  _Tmp1586 = /* ATSSELfltrec */ (_Arg0 select 0);
-  _Tmp1587 = /* ATSSELfltrec */ (_Arg0 select 1);
-  _Tmp1588 = /* ATSSELfltrec */ (_Arg0 select 2);
-  _Tmp1589 = [ ] call /*emit_f0ide*/ libarma3__allMapMarkers;
-  _Tmp1590 = [ _Tmp1589] call /*emit_f0ide*/ libarma3__array_vt_count;
-  _Tmp1591 = [ _Tmp1586] call /*emit_f0ide*/ libarma3__side;
-  _Tmp1593 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-  _Tmp1592 = [ _Tmp1593] call /*emit_f0ide*/ libarma3__array_vt_create;
-  _Tmp1626 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-  _Tmp1625 = [ _Tmp1590, _Tmp1589, _Tmp1591, _Tmp1626, _Tmp1592] call /*emit_f0ide*/ loop_444;
-   /*ATSINSmove_void _*/[ _Tmp1589, /*emit_f0ide*/ f___patsfun_450] call /*emit_f0ide*/ libarma3__array_vt_free;
-  _Tmp1629 = [1, _Tmp1588, _Tmp1587, _Tmp1591, _Tmp1625];
-  _Tmpret1585 = [ 1, _Tmp1629 ]/* emit2_ATSINSmove_con1 */;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1585;
+  _Tmp1598 = /* ATSSELfltrec */ (_Arg0 select 0);
+  _Tmp1599 = /* ATSSELfltrec */ (_Arg0 select 1);
+  _Tmp1600 = /* ATSSELfltrec */ (_Arg0 select 2);
+  _Tmp1601 = [ ] call /*emit_f0ide*/ libarma3__allMapMarkers;
+  _Tmp1602 = [ _Tmp1601] call /*emit_f0ide*/ libarma3__array_vt_count;
+  _Tmp1603 = [ _Tmp1598] call /*emit_f0ide*/ libarma3__side;
+  _Tmp1605 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+  _Tmp1604 = [ _Tmp1605] call /*emit_f0ide*/ libarma3__array_vt_create;
+  _Tmp1638 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+  _Tmp1637 = [ _Tmp1602, _Tmp1601, _Tmp1603, _Tmp1638, _Tmp1604] call /*emit_f0ide*/ loop_444;
+   /*ATSINSmove_void _*/[ _Tmp1601, /*emit_f0ide*/ f___patsfun_450] call /*emit_f0ide*/ libarma3__array_vt_free;
+  _Tmp1641 = [1, _Tmp1600, _Tmp1599, _Tmp1603, _Tmp1637];
+  _Tmpret1597 = [ 1, _Tmp1641 ]/* emit2_ATSINSmove_con1 */;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1597;
 }; // end-of-function
 
 
@@ -14375,28 +14461,8 @@ private _Apy2 = 0;
 private _Apy3 = 0;
 // var _Apy4
 private _Apy4 = 0;
-// var _Tmpret1594
-private _Tmpret1594 = 0;
-// var _Tmp1595
-private _Tmp1595 = 0;
-// var _Tmp1596
-private _Tmp1596 = 0;
-// var _Tmp1597
-private _Tmp1597 = 0;
-// var _Tmp1598
-private _Tmp1598 = 0;
-// var _Tmp1599
-private _Tmp1599 = 0;
-// var _Tmp1600
-private _Tmp1600 = 0;
-// var _Tmp1601
-private _Tmp1601 = 0;
-// var _Tmp1604
-private _Tmp1604 = 0;
-// var _Tmp1605
-private _Tmp1605 = 0;
-// var _Tmp1606
-private _Tmp1606 = 0;
+// var _Tmpret1606
+private _Tmpret1606 = 0;
 // var _Tmp1607
 private _Tmp1607 = 0;
 // var _Tmp1608
@@ -14409,16 +14475,36 @@ private _Tmp1610 = 0;
 private _Tmp1611 = 0;
 // var _Tmp1612
 private _Tmp1612 = 0;
+// var _Tmp1613
+private _Tmp1613 = 0;
+// var _Tmp1616
+private _Tmp1616 = 0;
 // var _Tmp1617
 private _Tmp1617 = 0;
+// var _Tmp1618
+private _Tmp1618 = 0;
+// var _Tmp1619
+private _Tmp1619 = 0;
 // var _Tmp1620
 private _Tmp1620 = 0;
 // var _Tmp1621
 private _Tmp1621 = 0;
+// var _Tmp1622
+private _Tmp1622 = 0;
 // var _Tmp1623
 private _Tmp1623 = 0;
 // var _Tmp1624
 private _Tmp1624 = 0;
+// var _Tmp1629
+private _Tmp1629 = 0;
+// var _Tmp1632
+private _Tmp1632 = 0;
+// var _Tmp1633
+private _Tmp1633 = 0;
+// var _Tmp1635
+private _Tmp1635 = 0;
+// var _Tmp1636
+private _Tmp1636 = 0;
 // var Funlab_sqf
 private _Funlab_sqf = 0;
 // var Tmplab, Tmplab_sqf
@@ -14428,12 +14514,12 @@ private _Tmplab_sqf = 0;
   while {true} do {
     _Funlab_sqf = 0;
     // __patsflab_loop_444 /*ATSINSflab*/ ;
-    _Tmp1595 = [ _Arg3, _Arg0] call /*emit_f0ide*/ atspre_g1uint_eq_size;
-    if (_Tmp1595) then {
-        _Tmpret1594 = _Arg4;
+    _Tmp1607 = [ _Arg3, _Arg0] call /*emit_f0ide*/ atspre_g1uint_eq_size;
+    if (_Tmp1607) then {
+        _Tmpret1606 = _Arg4;
       } // if-then
       else {
-        _Tmp1596 = [ _Arg1, _Arg3] call /*emit_f0ide*/ libarma3__array_vt_get1;
+        _Tmp1608 = [ _Arg1, _Arg3] call /*emit_f0ide*/ libarma3__array_vt_get1;
         _Casefunx1 /* emit_Casefunx */ = {
           params [ "_Casefun", "_Tmplab"];
           // switch(_Tmplab) {
@@ -14441,19 +14527,19 @@ private _Tmplab_sqf = 0;
           {
             // ATSbranchseq_beg
             case 1 : {
-              if(/*ATSCKptriscons*/ (not(isNil { _Tmp1596 select 0 } )) ) then {
+              if(/*ATSCKptriscons*/ (not(isNil { _Tmp1608 select 0 } )) ) then {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               } else {
                  [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 2 : {
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1599 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1598 = [ _Arg3, _Tmp1599] call /*emit_f0ide*/ atspre_g1uint_add_size;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1611 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1610 = [ _Arg3, _Tmp1611] call /*emit_f0ide*/ atspre_g1uint_add_size;
 /*emit2_branchlst rest-of-ATSINS*/              /* ATSINSmove_tlcal */ _Apy0 = _Arg0;
               /* ATSINSmove_tlcal */ _Apy1 = _Arg1;
               /* ATSINSmove_tlcal */ _Apy2 = _Arg2;
-              /* ATSINSmove_tlcal */ _Apy3 = _Tmp1598;
+              /* ATSINSmove_tlcal */ _Apy3 = _Tmp1610;
               /* ATSINSmove_tlcal */ _Apy4 = _Arg4;
               /* ATSINSargmove_tlcal */ _Arg0 = _Apy0;
               /* ATSINSargmove_tlcal */ _Arg1 = _Apy1;
@@ -14466,24 +14552,24 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_end
             // ATSbranchseq_beg
             case 3 : {
-              if(/*ATSCKptrisnull*/ ( isNil { _Tmp1596 select 0 }) ) then {
+              if(/*ATSCKptrisnull*/ ( isNil { _Tmp1608 select 0 }) ) then {
                 systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 17281(line=449, offs=19) -- 20795(line=516, offs=24)");
               } else {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1597 = (_Tmp1596 select 0);
-/*emit2_branchlst rest-of-ATSINS*/              // ATSINSfreecon(_Tmp1596);;
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1600 = [ _Tmp1597] call /*emit_f0ide*/ text__length;
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1601 = [ _Tmp1600, 1] call /*emit_f0ide*/ ATSLIB_056_prelude__lt_g1uint_int__247__5;
-/*emit2_branchlst rest-of-ATSINS*/              if (_Tmp1601) then {
-                  _Tmp1605 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-                  _Tmp1604 = [ _Arg3, _Tmp1605] call /*emit_f0ide*/ atspre_g1uint_add_size;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1609 = (_Tmp1608 select 0);
+/*emit2_branchlst rest-of-ATSINS*/              // ATSINSfreecon(_Tmp1608);;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1612 = [ _Tmp1609] call /*emit_f0ide*/ text__length;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1613 = [ _Tmp1612, 1] call /*emit_f0ide*/ ATSLIB_056_prelude__lt_g1uint_int__247__5;
+/*emit2_branchlst rest-of-ATSINS*/              if (_Tmp1613) then {
+                  _Tmp1617 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+                  _Tmp1616 = [ _Arg3, _Tmp1617] call /*emit_f0ide*/ atspre_g1uint_add_size;
                   /* ATSINSmove_tlcal */ _Apy0 = _Arg0;
                   /* ATSINSmove_tlcal */ _Apy1 = _Arg1;
                   /* ATSINSmove_tlcal */ _Apy2 = _Arg2;
-                  /* ATSINSmove_tlcal */ _Apy3 = _Tmp1604;
+                  /* ATSINSmove_tlcal */ _Apy3 = _Tmp1616;
                   /* ATSINSmove_tlcal */ _Apy4 = _Arg4;
                   /* ATSINSargmove_tlcal */ _Arg0 = _Apy0;
                   /* ATSINSargmove_tlcal */ _Arg1 = _Apy1;
@@ -14494,8 +14580,8 @@ private _Tmplab_sqf = 0;
                    /*emit2_tailcalseqlst*/;
                 } // if-then
                 else {
-                  _Tmp1606 = [ _Tmp1597] call /*emit_f0ide*/ fn_persistentUserMarkers__markerToSide;
-                  _Tmp1607 = [ _Tmp1597] call /*emit_f0ide*/ libarma3__markerChannel;
+                  _Tmp1618 = [ _Tmp1609] call /*emit_f0ide*/ fn_persistentUserMarkers__markerToSide;
+                  _Tmp1619 = [ _Tmp1609] call /*emit_f0ide*/ libarma3__markerChannel;
                   _Casefunx2 /* emit_Casefunx */ = {
                     params [ "_Casefun", "_Tmplab"];
                     // switch(_Tmplab) {
@@ -14503,19 +14589,19 @@ private _Tmplab_sqf = 0;
                     {
                       // ATSbranchseq_beg
                       case 1 : {
-                        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1606 select 0 } )) ) then {
+                        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1618 select 0 } )) ) then {
                            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
                         } else {
                            [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
                         };
                       };
                       case 2 : {
-/*emit2_branchlst rest-of-ATSINS*/                        _Tmp1610 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-/*emit2_branchlst rest-of-ATSINS*/                        _Tmp1609 = [ _Arg3, _Tmp1610] call /*emit_f0ide*/ atspre_g1uint_add_size;
+/*emit2_branchlst rest-of-ATSINS*/                        _Tmp1622 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+/*emit2_branchlst rest-of-ATSINS*/                        _Tmp1621 = [ _Arg3, _Tmp1622] call /*emit_f0ide*/ atspre_g1uint_add_size;
 /*emit2_branchlst rest-of-ATSINS*/                        /* ATSINSmove_tlcal */ _Apy0 = _Arg0;
                         /* ATSINSmove_tlcal */ _Apy1 = _Arg1;
                         /* ATSINSmove_tlcal */ _Apy2 = _Arg2;
-                        /* ATSINSmove_tlcal */ _Apy3 = _Tmp1609;
+                        /* ATSINSmove_tlcal */ _Apy3 = _Tmp1621;
                         /* ATSINSmove_tlcal */ _Apy4 = _Arg4;
                         /* ATSINSargmove_tlcal */ _Arg0 = _Apy0;
                         /* ATSINSargmove_tlcal */ _Arg1 = _Apy1;
@@ -14528,32 +14614,32 @@ private _Tmplab_sqf = 0;
                       // ATSbranchseq_end
                       // ATSbranchseq_beg
                       case 3 : {
-                        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1606 select 0 }) ) then {
+                        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1618 select 0 }) ) then {
                           systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 18581(line=478, offs=31) -- 20711(line=513, offs=32)");
                         } else {
                            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
                         };
                       };
                       case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/                        _Tmp1608 = (_Tmp1606 select 0);
-/*emit2_branchlst rest-of-ATSINS*/                        _Tmp1612 = [ _Tmp1608, _Arg2] call /*emit_f0ide*/ ext_libarma3_eq_a_a;
-/*emit2_branchlst rest-of-ATSINS*/                        if (_Tmp1612) then {
-                            _Tmp1611 = [ _Tmp1607, 1] call /*emit_f0ide*/ ATSLIB_056_prelude__eq_g0int_int__446__1;
+/*emit2_branchlst rest-of-ATSINS*/                        _Tmp1620 = (_Tmp1618 select 0);
+/*emit2_branchlst rest-of-ATSINS*/                        _Tmp1624 = [ _Tmp1620, _Arg2] call /*emit_f0ide*/ ext_libarma3_eq_a_a;
+/*emit2_branchlst rest-of-ATSINS*/                        if (_Tmp1624) then {
+                            _Tmp1623 = [ _Tmp1619, 1] call /*emit_f0ide*/ ATSLIB_056_prelude__eq_g0int_int__446__1;
                           } // if-then
                           else {
-                            _Tmp1611 = false
+                            _Tmp1623 = false
                           // if-else
                           };
-/*emit2_branchlst rest-of-ATSINS*/                        if (_Tmp1611) then {
-                            _Tmp1617 = [ _Tmp1597] call /*emit_f0ide*/ fn_persistentUserMarkers__markerToSerializedMarker;
-                             /*ATSINSmove_void _*/[ _Arg4, _Tmp1617] call /*emit_f0ide*/ libarma3__array_vt_pushBack;
-                             /*ATSINSmove_void _*/[ _Tmp1597] call /*emit_f0ide*/ text__free_text;
-                            _Tmp1621 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-                            _Tmp1620 = [ _Arg3, _Tmp1621] call /*emit_f0ide*/ atspre_g1uint_add_size;
+/*emit2_branchlst rest-of-ATSINS*/                        if (_Tmp1623) then {
+                            _Tmp1629 = [ _Tmp1609] call /*emit_f0ide*/ fn_persistentUserMarkers__markerToSerializedMarker;
+                             /*ATSINSmove_void _*/[ _Arg4, _Tmp1629] call /*emit_f0ide*/ libarma3__array_vt_pushBack;
+                             /*ATSINSmove_void _*/[ _Tmp1609] call /*emit_f0ide*/ text__free_text;
+                            _Tmp1633 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+                            _Tmp1632 = [ _Arg3, _Tmp1633] call /*emit_f0ide*/ atspre_g1uint_add_size;
                             /* ATSINSmove_tlcal */ _Apy0 = _Arg0;
                             /* ATSINSmove_tlcal */ _Apy1 = _Arg1;
                             /* ATSINSmove_tlcal */ _Apy2 = _Arg2;
-                            /* ATSINSmove_tlcal */ _Apy3 = _Tmp1620;
+                            /* ATSINSmove_tlcal */ _Apy3 = _Tmp1632;
                             /* ATSINSmove_tlcal */ _Apy4 = _Arg4;
                             /* ATSINSargmove_tlcal */ _Arg0 = _Apy0;
                             /* ATSINSargmove_tlcal */ _Arg1 = _Apy1;
@@ -14564,13 +14650,13 @@ private _Tmplab_sqf = 0;
                              /*emit2_tailcalseqlst*/;
                           } // if-then
                           else {
-                             /*ATSINSmove_void _*/[ _Tmp1597] call /*emit_f0ide*/ text__free_text;
-                            _Tmp1624 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-                            _Tmp1623 = [ _Arg3, _Tmp1624] call /*emit_f0ide*/ atspre_g1uint_add_size;
+                             /*ATSINSmove_void _*/[ _Tmp1609] call /*emit_f0ide*/ text__free_text;
+                            _Tmp1636 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+                            _Tmp1635 = [ _Arg3, _Tmp1636] call /*emit_f0ide*/ atspre_g1uint_add_size;
                             /* ATSINSmove_tlcal */ _Apy0 = _Arg0;
                             /* ATSINSmove_tlcal */ _Apy1 = _Arg1;
                             /* ATSINSmove_tlcal */ _Apy2 = _Arg2;
-                            /* ATSINSmove_tlcal */ _Apy3 = _Tmp1623;
+                            /* ATSINSmove_tlcal */ _Apy3 = _Tmp1635;
                             /* ATSINSmove_tlcal */ _Apy4 = _Arg4;
                             /* ATSINSargmove_tlcal */ _Arg0 = _Apy0;
                             /* ATSINSargmove_tlcal */ _Arg1 = _Apy1;
@@ -14603,7 +14689,7 @@ private _Tmplab_sqf = 0;
       };
     if (_Funlab_sqf < 1) then { break; };
   }; // endwhile-fun
- /* ATSreturn */ _Tmpret1594;
+ /* ATSreturn */ _Tmpret1606;
 }; // end-of-function
 
 
@@ -14632,18 +14718,18 @@ private _Tmplab_sqf = 0;
   params ["_Arg0", "_Arg1"];
 //
 // knd = 0
-// var _Tmpret1613__1
-private _Tmpret1613__1 = 0;
-// var _Tmp1614__1
-private _Tmp1614__1 = 0;
+// var _Tmpret1625__1
+private _Tmpret1625__1 = 0;
+// var _Tmp1626__1
+private _Tmp1626__1 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_eq_g0int_int /*ATSINSflab*/ ;
-  _Tmp1614__1 = [ _Arg1] call /*emit_f0ide*/ atspre_g0int2int_int_int;
-  _Tmpret1613__1 = [ _Arg0, _Tmp1614__1] call /*emit_f0ide*/ atspre_g0int_eq_int;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1613__1;
+  _Tmp1626__1 = [ _Arg1] call /*emit_f0ide*/ atspre_g0int2int_int_int;
+  _Tmpret1625__1 = [ _Arg0, _Tmp1626__1] call /*emit_f0ide*/ atspre_g0int_eq_int;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1625__1;
 }; // end-of-function
 
 
@@ -14667,18 +14753,18 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmpret1630
-private _Tmpret1630 = 0;
-// var _Tmp1631
-private _Tmp1631 = 0;
+// var _Tmpret1642
+private _Tmpret1642 = 0;
+// var _Tmp1643
+private _Tmp1643 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_get_player_uid_451 /*ATSINSflab*/ ;
-  _Tmp1631 = [ _Arg0] call /*emit_f0ide*/ libarma3__getPlayerUID;
-  _Tmpret1630 = [ 0, /*emit_f0ide*/ f___patsfun_452, /*emit_f0ide*/ f___patsfun_453, _Arg0, _Tmp1631, /*emit_f0ide*/ f___patsfun_454] call /*emit_f0ide*/ option2result_441;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1630;
+  _Tmp1643 = [ _Arg0] call /*emit_f0ide*/ libarma3__getPlayerUID;
+  _Tmpret1642 = [ 0, /*emit_f0ide*/ f___patsfun_452, /*emit_f0ide*/ f___patsfun_453, _Arg0, _Tmp1643, /*emit_f0ide*/ f___patsfun_454] call /*emit_f0ide*/ option2result_441;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1642;
 }; // end-of-function
 
 
@@ -14717,15 +14803,15 @@ private _Tmplab_sqf = 0;
   params ["_Arg0", "_Arg1"];
 //
 // knd = 0
-// var _Tmpret1634
-private _Tmpret1634 = 0;
+// var _Tmpret1646
+private _Tmpret1646 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab___patsfun_454 /*ATSINSflab*/ ;
-  _Tmpret1634 = [_Arg0, _Arg1];
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1634;
+  _Tmpret1646 = [_Arg0, _Arg1];
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1646;
 }; // end-of-function
 
 
@@ -14734,27 +14820,27 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmpret1635
-private _Tmpret1635 = 0;
-// var _Tmp1636
-private _Tmp1636 = 0;
-// var _Tmp1637
-private _Tmp1637 = 0;
-// var _Tmp1638
-private _Tmp1638 = 0;
-// var _Tmp1639
-private _Tmp1639 = 0;
+// var _Tmpret1647
+private _Tmpret1647 = 0;
+// var _Tmp1648
+private _Tmp1648 = 0;
+// var _Tmp1649
+private _Tmp1649 = 0;
+// var _Tmp1650
+private _Tmp1650 = 0;
+// var _Tmp1651
+private _Tmp1651 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_get_player_name_455 /*ATSINSflab*/ ;
-  _Tmp1636 = /* ATSSELfltrec */ (_Arg0 select 0);
-  _Tmp1637 = /* ATSSELfltrec */ (_Arg0 select 1);
-  _Tmp1638 = [ _Tmp1636] call /*emit_f0ide*/ libarma3__name;
-  _Tmp1639 = [_Tmp1636, _Tmp1637];
-  _Tmpret1635 = [ 0, /*emit_f0ide*/ f___patsfun_456, /*emit_f0ide*/ f___patsfun_457, _Tmp1639, _Tmp1638, /*emit_f0ide*/ f___patsfun_458] call /*emit_f0ide*/ option2result_441;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1635;
+  _Tmp1648 = /* ATSSELfltrec */ (_Arg0 select 0);
+  _Tmp1649 = /* ATSSELfltrec */ (_Arg0 select 1);
+  _Tmp1650 = [ _Tmp1648] call /*emit_f0ide*/ libarma3__name;
+  _Tmp1651 = [_Tmp1648, _Tmp1649];
+  _Tmpret1647 = [ 0, /*emit_f0ide*/ f___patsfun_456, /*emit_f0ide*/ f___patsfun_457, _Tmp1651, _Tmp1650, /*emit_f0ide*/ f___patsfun_458] call /*emit_f0ide*/ option2result_441;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1647;
 }; // end-of-function
 
 
@@ -14778,15 +14864,15 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmp1642
-private _Tmp1642 = 0;
+// var _Tmp1654
+private _Tmp1654 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab___patsfun_457 /*ATSINSflab*/ ;
-  _Tmp1642 = /* ATSSELfltrec */ (_Arg0 select 1);
-   /*ATSINSmove_void _*/[ _Tmp1642] call /*emit_f0ide*/ text__free_text;
+  _Tmp1654 = /* ATSSELfltrec */ (_Arg0 select 1);
+   /*ATSINSmove_void _*/[ _Tmp1654] call /*emit_f0ide*/ text__free_text;
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
 }; // end-of-function
 
@@ -14796,15 +14882,15 @@ private _Tmplab_sqf = 0;
   params ["_Arg0", "_Arg1"];
 //
 // knd = 0
-// var _Tmpret1643
-private _Tmpret1643 = 0;
+// var _Tmpret1655
+private _Tmpret1655 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab___patsfun_458 /*ATSINSflab*/ ;
-  _Tmpret1643 = [/* ATSSELfltrec */ (_Arg0 select 0), /* ATSSELfltrec */ (_Arg0 select 1), _Arg1];
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1643;
+  _Tmpret1655 = [/* ATSSELfltrec */ (_Arg0 select 0), /* ATSSELfltrec */ (_Arg0 select 1), _Arg1];
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1655;
 }; // end-of-function
 
 
@@ -14813,41 +14899,41 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmpret1648
-private _Tmpret1648 = 0;
-// var _Tmp1649
-private _Tmp1649 = 0;
-// var _Tmp1650
-private _Tmp1650 = 0;
-// var _Tmp1651
-private _Tmp1651 = 0;
-// var _Tmp1652
-private _Tmp1652 = 0;
-// var _Tmp1653
-private _Tmp1653 = 0;
-// var _Tmp1656
-private _Tmp1656 = 0;
+// var _Tmpret1660
+private _Tmpret1660 = 0;
+// var _Tmp1661
+private _Tmp1661 = 0;
+// var _Tmp1662
+private _Tmp1662 = 0;
+// var _Tmp1663
+private _Tmp1663 = 0;
+// var _Tmp1664
+private _Tmp1664 = 0;
+// var _Tmp1665
+private _Tmp1665 = 0;
+// var _Tmp1668
+private _Tmp1668 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_markerToSide /*ATSINSflab*/ ;
-  _Tmp1649 = [ "_USER_DEFINED #"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1651 = [ _Tmp1649] call /*emit_f0ide*/ text__length;
-  _Tmp1650 = [ _Tmp1651, _Arg0] call /*emit_f0ide*/ text__take;
-  _Tmp1652 = [ _Tmp1649, _Tmp1650] call /*emit_f0ide*/ text__eq_text_text;
-  _Tmp1653 = [ _Tmp1652] call /*emit_f0ide*/ atspre_neg_bool1;
-  if (_Tmp1653) then {
-       /*ATSINSmove_void _*/[ _Tmp1649] call /*emit_f0ide*/ text__free_text;
-      /* ATSINSmove_nil */ _Tmpret1648 = /*ATSINSmove_nil*/ [nil];
+  _Tmp1661 = [ "_USER_DEFINED #"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1663 = [ _Tmp1661] call /*emit_f0ide*/ text__length;
+  _Tmp1662 = [ _Tmp1663, _Arg0] call /*emit_f0ide*/ text__take;
+  _Tmp1664 = [ _Tmp1661, _Tmp1662] call /*emit_f0ide*/ text__eq_text_text;
+  _Tmp1665 = [ _Tmp1664] call /*emit_f0ide*/ atspre_neg_bool1;
+  if (_Tmp1665) then {
+       /*ATSINSmove_void _*/[ _Tmp1661] call /*emit_f0ide*/ text__free_text;
+      /* ATSINSmove_nil */ _Tmpret1660 = /*ATSINSmove_nil*/ [nil];
     } // if-then
     else {
-       /*ATSINSmove_void _*/[ _Tmp1649] call /*emit_f0ide*/ text__free_text;
-      _Tmp1656 = [ ] call /*emit_f0ide*/ libarma3__independent;
-      _Tmpret1648 = [ _Tmp1656 ]/* emit2_ATSINSmove_con1 */
+       /*ATSINSmove_void _*/[ _Tmp1661] call /*emit_f0ide*/ text__free_text;
+      _Tmp1668 = [ ] call /*emit_f0ide*/ libarma3__independent;
+      _Tmpret1660 = [ _Tmp1668 ]/* emit2_ATSINSmove_con1 */
     // if-else
     };
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1648;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1660;
 }; // end-of-function
 
 
@@ -14856,18 +14942,18 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmpret1657
-private _Tmpret1657 = 0;
-// var _Tmp1658
-private _Tmp1658 = 0;
+// var _Tmpret1669
+private _Tmpret1669 = 0;
+// var _Tmp1670
+private _Tmp1670 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_playerUIDToSide /*ATSINSflab*/ ;
-  _Tmp1658 = [ ] call /*emit_f0ide*/ libarma3__independent;
-  _Tmpret1657 = [ _Tmp1658 ]/* emit2_ATSINSmove_con1 */;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1657;
+  _Tmp1670 = [ ] call /*emit_f0ide*/ libarma3__independent;
+  _Tmpret1669 = [ _Tmp1670 ]/* emit2_ATSINSmove_con1 */;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1669;
 }; // end-of-function
 
 
@@ -14875,15 +14961,15 @@ private _Tmplab_sqf = 0;
 /*emit_f0ide*/ fn_persistentUserMarkers__spawnUsersToSidesThread = compileFinal {
 //
 // knd = 0
-// var _Tmp1660
-private _Tmp1660 = 0;
+// var _Tmp1672
+private _Tmp1672 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_spawnUsersToSidesThread /*ATSINSflab*/ ;
-  _Tmp1660 = [ 0, fn_persistentUserMarkers__usersToSidesThread] call /*emit_f0ide*/ libarma3__spawn;
-   /*ATSINSmove_void _*/[ _Tmp1660] call /*emit_f0ide*/ fn_persistentUserMarkers__storeUsersToSidesThread;
+  _Tmp1672 = [ 0, fn_persistentUserMarkers__usersToSidesThread] call /*emit_f0ide*/ libarma3__spawn;
+   /*ATSINSmove_void _*/[ _Tmp1672] call /*emit_f0ide*/ fn_persistentUserMarkers__storeUsersToSidesThread;
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
 }; // end-of-function
 
@@ -14893,34 +14979,34 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmp1662
-private _Tmp1662 = 0;
-// var _Tmp1663
-private _Tmp1663 = 0;
-// var _Tmp1664
-private _Tmp1664 = 0;
-// var _Tmp1665
-private _Tmp1665 = 0;
-// var _Tmp1666
-private _Tmp1666 = 0;
+// var _Tmp1674
+private _Tmp1674 = 0;
+// var _Tmp1675
+private _Tmp1675 = 0;
+// var _Tmp1676
+private _Tmp1676 = 0;
+// var _Tmp1677
+private _Tmp1677 = 0;
+// var _Tmp1678
+private _Tmp1678 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_storeUsersToSidesThread /*ATSINSflab*/ ;
-  _Tmp1662 = [ ] call /*emit_f0ide*/ libarma3__serverNamespace;
-  _Tmp1663 = [ "UsersToSidesSpawnHandle"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1664 = [ _Tmp1662, _Tmp1663, _Arg0, false] call /*emit_f0ide*/ libarma3__swapVariable_vt;
-  _Tmp1665 = /* ATSSELfltrec */ (_Tmp1664 select 0);
-  _Tmp1666 = /* ATSSELfltrec */ (_Tmp1664 select 1);
-  if (_Tmp1665) then {
+  _Tmp1674 = [ ] call /*emit_f0ide*/ libarma3__serverNamespace;
+  _Tmp1675 = [ "UsersToSidesSpawnHandle"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1676 = [ _Tmp1674, _Tmp1675, _Arg0, false] call /*emit_f0ide*/ libarma3__swapVariable_vt;
+  _Tmp1677 = /* ATSSELfltrec */ (_Tmp1676 select 0);
+  _Tmp1678 = /* ATSSELfltrec */ (_Tmp1676 select 1);
+  if (_Tmp1677) then {
       ; // ATSINSmove_void();
     } // if-then
     else {
-       /*ATSINSmove_void _*/[ _Tmp1666] call /*emit_f0ide*/ libarma3__terminate
+       /*ATSINSmove_void _*/[ _Tmp1678] call /*emit_f0ide*/ libarma3__terminate
     // if-else
     };
-   /*ATSINSmove_void _*/[ _Tmp1663] call /*emit_f0ide*/ text__free_text;
+   /*ATSINSmove_void _*/[ _Tmp1675] call /*emit_f0ide*/ text__free_text;
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
 }; // end-of-function
 
@@ -14930,29 +15016,29 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmp1686
-private _Tmp1686 = 0;
-// var _Tmp1687
-private _Tmp1687 = 0;
-// var _Tmp1688
-private _Tmp1688 = 0;
-// var _Tmp1689
-private _Tmp1689 = 0;
+// var _Tmp1698
+private _Tmp1698 = 0;
+// var _Tmp1699
+private _Tmp1699 = 0;
+// var _Tmp1700
+private _Tmp1700 = 0;
+// var _Tmp1701
+private _Tmp1701 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_usersToSidesThread /*ATSINSflab*/ ;
-  _Tmp1686 = [ ] call /*emit_f0ide*/ libarma3__serverNamespace;
-  _Tmp1687 = [ "UsersToSidesThreadRunning"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1688 = [ "UsersToSidesThreadCounter"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1689 = [ "UsersToSidesThreadDebug"] call /*emit_f0ide*/ text__pack_string;
-   /*ATSINSmove_void _*/[ _Tmp1686, _Tmp1687, true, false] call /*emit_f0ide*/ libarma3__setVariable;
-   /*ATSINSmove_void _*/[ _Tmp1686, _Tmp1689, false, false] call /*emit_f0ide*/ libarma3__setVariable;
-   /*ATSINSmove_void _*/[ _Tmp1687, _Tmp1688, _Tmp1689, _Tmp1686] call /*emit_f0ide*/ loop_465;
-   /*ATSINSmove_void _*/[ _Tmp1689] call /*emit_f0ide*/ text__free_text;
-   /*ATSINSmove_void _*/[ _Tmp1687] call /*emit_f0ide*/ text__free_text;
-   /*ATSINSmove_void _*/[ _Tmp1688] call /*emit_f0ide*/ text__free_text;
+  _Tmp1698 = [ ] call /*emit_f0ide*/ libarma3__serverNamespace;
+  _Tmp1699 = [ "UsersToSidesThreadRunning"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1700 = [ "UsersToSidesThreadCounter"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1701 = [ "UsersToSidesThreadDebug"] call /*emit_f0ide*/ text__pack_string;
+   /*ATSINSmove_void _*/[ _Tmp1698, _Tmp1699, true, false] call /*emit_f0ide*/ libarma3__setVariable;
+   /*ATSINSmove_void _*/[ _Tmp1698, _Tmp1701, false, false] call /*emit_f0ide*/ libarma3__setVariable;
+   /*ATSINSmove_void _*/[ _Tmp1699, _Tmp1700, _Tmp1701, _Tmp1698] call /*emit_f0ide*/ loop_465;
+   /*ATSINSmove_void _*/[ _Tmp1701] call /*emit_f0ide*/ text__free_text;
+   /*ATSINSmove_void _*/[ _Tmp1699] call /*emit_f0ide*/ text__free_text;
+   /*ATSINSmove_void _*/[ _Tmp1700] call /*emit_f0ide*/ text__free_text;
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
 }; // end-of-function
 
@@ -14985,28 +15071,28 @@ private _Apy1 = 0;
 private _Apy2 = 0;
 // var _Apy3
 private _Apy3 = 0;
-// var _Tmp1671
-private _Tmp1671 = 0;
-// var _Tmp1672
-private _Tmp1672 = 0;
-// var _Tmp1673
-private _Tmp1673 = 0;
-// var _Tmp1674
-private _Tmp1674 = 0;
-// var _Tmp1677
-private _Tmp1677 = 0;
-// var _Tmp1678
-private _Tmp1678 = 0;
-// var _Tmp1679
-private _Tmp1679 = 0;
-// var _Tmp1680
-private _Tmp1680 = 0;
-// var _Tmp1681
-private _Tmp1681 = 0;
-// var _Tmp1682
-private _Tmp1682 = 0;
 // var _Tmp1683
 private _Tmp1683 = 0;
+// var _Tmp1684
+private _Tmp1684 = 0;
+// var _Tmp1685
+private _Tmp1685 = 0;
+// var _Tmp1686
+private _Tmp1686 = 0;
+// var _Tmp1689
+private _Tmp1689 = 0;
+// var _Tmp1690
+private _Tmp1690 = 0;
+// var _Tmp1691
+private _Tmp1691 = 0;
+// var _Tmp1692
+private _Tmp1692 = 0;
+// var _Tmp1693
+private _Tmp1693 = 0;
+// var _Tmp1694
+private _Tmp1694 = 0;
+// var _Tmp1695
+private _Tmp1695 = 0;
 // var Funlab_sqf
 private _Funlab_sqf = 0;
 // var Tmplab, Tmplab_sqf
@@ -15016,33 +15102,33 @@ private _Tmplab_sqf = 0;
   while {true} do {
     _Funlab_sqf = 0;
     // __patsflab_loop_465 /*ATSINSflab*/ ;
-    _Tmp1671 = [ _Arg3, _Arg0] call /*emit_f0ide*/ libarma3__getVariable;
-    _Tmp1672 = /* ATSSELfltrec */ (_Tmp1671 select 0);
-    _Tmp1673 = /* ATSSELfltrec */ (_Tmp1671 select 1);
-    if (_Tmp1672) then {
+    _Tmp1683 = [ _Arg3, _Arg0] call /*emit_f0ide*/ libarma3__getVariable;
+    _Tmp1684 = /* ATSSELfltrec */ (_Tmp1683 select 0);
+    _Tmp1685 = /* ATSSELfltrec */ (_Tmp1683 select 1);
+    if (_Tmp1684) then {
          /*ATSINSmove_void _*/[ _Arg3, _Arg0, true, false] call /*emit_f0ide*/ libarma3__setVariable;
-        _Tmp1674 = true;
+        _Tmp1686 = true;
       } // if-then
       else {
-        _Tmp1674 = _Tmp1673
+        _Tmp1686 = _Tmp1685
       // if-else
       };
-    if (_Tmp1674) then {
+    if (_Tmp1686) then {
          /*ATSINSmove_void _*/[ _Arg2, _Arg3] call /*emit_f0ide*/ iteration_464;
-        _Tmp1677 = [ _Arg3, _Arg1] call /*emit_f0ide*/ libarma3__getVariable;
-        _Tmp1678 = /* ATSSELfltrec */ (_Tmp1677 select 0);
-        _Tmp1679 = /* ATSSELfltrec */ (_Tmp1677 select 1);
-        if (_Tmp1678) then {
-            _Tmp1681 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-            _Tmp1680 = _Tmp1681;
+        _Tmp1689 = [ _Arg3, _Arg1] call /*emit_f0ide*/ libarma3__getVariable;
+        _Tmp1690 = /* ATSSELfltrec */ (_Tmp1689 select 0);
+        _Tmp1691 = /* ATSSELfltrec */ (_Tmp1689 select 1);
+        if (_Tmp1690) then {
+            _Tmp1693 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+            _Tmp1692 = _Tmp1693;
           } // if-then
           else {
-            _Tmp1680 = _Tmp1679
+            _Tmp1692 = _Tmp1691
           // if-else
           };
-        _Tmp1683 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-        _Tmp1682 = [ _Tmp1680, _Tmp1683] call /*emit_f0ide*/ atspre_g0uint_add_size;
-         /*ATSINSmove_void _*/[ _Arg3, _Arg1, _Tmp1682, false] call /*emit_f0ide*/ libarma3__setVariable;
+        _Tmp1695 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+        _Tmp1694 = [ _Tmp1692, _Tmp1695] call /*emit_f0ide*/ atspre_g0uint_add_size;
+         /*ATSINSmove_void _*/[ _Arg3, _Arg1, _Tmp1694, false] call /*emit_f0ide*/ libarma3__setVariable;
          /*ATSINSmove_void _*/[ 1.0] call /*emit_f0ide*/ libarma3__sleep;
         /* ATSINSmove_tlcal */ _Apy0 = _Arg0;
         /* ATSINSmove_tlcal */ _Apy1 = _Arg1;
@@ -15070,30 +15156,30 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmpret1695
-private _Tmpret1695 = 0;
-// var _Tmp1696
-private _Tmp1696 = 0;
-// var _Tmp1697
-private _Tmp1697 = 0;
-// var _Tmp1698
-private _Tmp1698 = 0;
-// var _Tmp1699
-private _Tmp1699 = 0;
+// var _Tmpret1707
+private _Tmpret1707 = 0;
+// var _Tmp1708
+private _Tmp1708 = 0;
+// var _Tmp1709
+private _Tmp1709 = 0;
+// var _Tmp1710
+private _Tmp1710 = 0;
 // var _Tmp1711
 private _Tmp1711 = 0;
+// var _Tmp1723
+private _Tmp1723 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_am_i_the_first_user_of_side /*ATSINSflab*/ ;
-  _Tmp1696 = [ ] call /*emit_f0ide*/ libarma3__allPlayers;
-  _Tmp1697 = [ ] call /*emit_f0ide*/ libarma3__player;
-  _Tmp1698 = [ _Tmp1697] call /*emit_f0ide*/ libarma3__side;
-  _Tmp1699 = [ _Tmp1696] call /*emit_f0ide*/ libarma3__array_vt_count;
-  _Tmp1711 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-  _Tmpret1695 = [ _Tmp1697, _Tmp1698, _Tmp1696, _Tmp1699, _Tmp1711] call /*emit_f0ide*/ loop_467;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1695;
+  _Tmp1708 = [ ] call /*emit_f0ide*/ libarma3__allPlayers;
+  _Tmp1709 = [ ] call /*emit_f0ide*/ libarma3__player;
+  _Tmp1710 = [ _Tmp1709] call /*emit_f0ide*/ libarma3__side;
+  _Tmp1711 = [ _Tmp1708] call /*emit_f0ide*/ libarma3__array_vt_count;
+  _Tmp1723 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+  _Tmpret1707 = [ _Tmp1709, _Tmp1710, _Tmp1708, _Tmp1711, _Tmp1723] call /*emit_f0ide*/ loop_467;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1707;
 }; // end-of-function
 
 
@@ -15112,28 +15198,28 @@ private _Apy2 = 0;
 private _Apy3 = 0;
 // var _Apy4
 private _Apy4 = 0;
-// var _Tmpret1700
-private _Tmpret1700 = 0;
-// var _Tmp1701
-private _Tmp1701 = 0;
-// var _Tmp1702
-private _Tmp1702 = 0;
-// var _Tmp1703
-private _Tmp1703 = 0;
-// var _Tmp1704
-private _Tmp1704 = 0;
-// var _Tmp1705
-private _Tmp1705 = 0;
-// var _Tmp1706
-private _Tmp1706 = 0;
-// var _Tmp1707
-private _Tmp1707 = 0;
-// var _Tmp1708
-private _Tmp1708 = 0;
-// var _Tmp1709
-private _Tmp1709 = 0;
-// var _Tmp1710
-private _Tmp1710 = 0;
+// var _Tmpret1712
+private _Tmpret1712 = 0;
+// var _Tmp1713
+private _Tmp1713 = 0;
+// var _Tmp1714
+private _Tmp1714 = 0;
+// var _Tmp1715
+private _Tmp1715 = 0;
+// var _Tmp1716
+private _Tmp1716 = 0;
+// var _Tmp1717
+private _Tmp1717 = 0;
+// var _Tmp1718
+private _Tmp1718 = 0;
+// var _Tmp1719
+private _Tmp1719 = 0;
+// var _Tmp1720
+private _Tmp1720 = 0;
+// var _Tmp1721
+private _Tmp1721 = 0;
+// var _Tmp1722
+private _Tmp1722 = 0;
 // var Funlab_sqf
 private _Funlab_sqf = 0;
 // var Tmplab, Tmplab_sqf
@@ -15143,12 +15229,12 @@ private _Tmplab_sqf = 0;
   while {true} do {
     _Funlab_sqf = 0;
     // __patsflab_loop_467 /*ATSINSflab*/ ;
-    _Tmp1701 = [ _Arg4, _Arg3] call /*emit_f0ide*/ atspre_g1uint_eq_size;
-    if (_Tmp1701) then {
-        _Tmpret1700 = false;
+    _Tmp1713 = [ _Arg4, _Arg3] call /*emit_f0ide*/ atspre_g1uint_eq_size;
+    if (_Tmp1713) then {
+        _Tmpret1712 = false;
       } // if-then
       else {
-        _Tmp1702 = [ _Arg2, _Arg4] call /*emit_f0ide*/ libarma3__array_vt_get1;
+        _Tmp1714 = [ _Arg2, _Arg4] call /*emit_f0ide*/ libarma3__array_vt_get1;
         _Casefunx1 /* emit_Casefunx */ = {
           params [ "_Casefun", "_Tmplab"];
           // switch(_Tmplab) {
@@ -15156,20 +15242,20 @@ private _Tmplab_sqf = 0;
           {
             // ATSbranchseq_beg
             case 1 : {
-              if(/*ATSCKptriscons*/ (not(isNil { _Tmp1702 select 0 } )) ) then {
+              if(/*ATSCKptriscons*/ (not(isNil { _Tmp1714 select 0 } )) ) then {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               } else {
                  [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 2 : {
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1705 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1704 = [ _Arg4, _Tmp1705] call /*emit_f0ide*/ atspre_g1uint_add_size;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1717 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1716 = [ _Arg4, _Tmp1717] call /*emit_f0ide*/ atspre_g1uint_add_size;
 /*emit2_branchlst rest-of-ATSINS*/              /* ATSINSmove_tlcal */ _Apy0 = _Arg0;
               /* ATSINSmove_tlcal */ _Apy1 = _Arg1;
               /* ATSINSmove_tlcal */ _Apy2 = _Arg2;
               /* ATSINSmove_tlcal */ _Apy3 = _Arg3;
-              /* ATSINSmove_tlcal */ _Apy4 = _Tmp1704;
+              /* ATSINSmove_tlcal */ _Apy4 = _Tmp1716;
               /* ATSINSargmove_tlcal */ _Arg0 = _Apy0;
               /* ATSINSargmove_tlcal */ _Arg1 = _Apy1;
               /* ATSINSargmove_tlcal */ _Arg2 = _Apy2;
@@ -15181,35 +15267,35 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_end
             // ATSbranchseq_beg
             case 3 : {
-              if(/*ATSCKptrisnull*/ ( isNil { _Tmp1702 select 0 }) ) then {
+              if(/*ATSCKptrisnull*/ ( isNil { _Tmp1714 select 0 }) ) then {
                 systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 31867(line=807, offs=15) -- 32997(line=836, offs=18)");
               } else {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1703 = (_Tmp1702 select 0);
-/*emit2_branchlst rest-of-ATSINS*/              // ATSINSfreecon(_Tmp1702);;
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1706 = [ _Tmp1703] call /*emit_f0ide*/ libarma3__side;
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1707 = [ _Tmp1706, _Arg1] call /*emit_f0ide*/ ext_libarma3_eq_a_a;
-/*emit2_branchlst rest-of-ATSINS*/              if (_Tmp1707) then {
-                  _Tmp1708 = [ _Arg0, _Tmp1703] call /*emit_f0ide*/ atspre_eq_ptr1_ptr1;
-                  if (_Tmp1708) then {
-                      _Tmpret1700 = true;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1715 = (_Tmp1714 select 0);
+/*emit2_branchlst rest-of-ATSINS*/              // ATSINSfreecon(_Tmp1714);;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1718 = [ _Tmp1715] call /*emit_f0ide*/ libarma3__side;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1719 = [ _Tmp1718, _Arg1] call /*emit_f0ide*/ ext_libarma3_eq_a_a;
+/*emit2_branchlst rest-of-ATSINS*/              if (_Tmp1719) then {
+                  _Tmp1720 = [ _Arg0, _Tmp1715] call /*emit_f0ide*/ atspre_eq_ptr1_ptr1;
+                  if (_Tmp1720) then {
+                      _Tmpret1712 = true;
                     } // if-then
                     else {
-                      _Tmpret1700 = false
+                      _Tmpret1712 = false
                     // if-else
                     };
                 } // if-then
                 else {
-                  _Tmp1710 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-                  _Tmp1709 = [ _Arg4, _Tmp1710] call /*emit_f0ide*/ atspre_g1uint_add_size;
+                  _Tmp1722 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+                  _Tmp1721 = [ _Arg4, _Tmp1722] call /*emit_f0ide*/ atspre_g1uint_add_size;
                   /* ATSINSmove_tlcal */ _Apy0 = _Arg0;
                   /* ATSINSmove_tlcal */ _Apy1 = _Arg1;
                   /* ATSINSmove_tlcal */ _Apy2 = _Arg2;
                   /* ATSINSmove_tlcal */ _Apy3 = _Arg3;
-                  /* ATSINSmove_tlcal */ _Apy4 = _Tmp1709;
+                  /* ATSINSmove_tlcal */ _Apy4 = _Tmp1721;
                   /* ATSINSargmove_tlcal */ _Arg0 = _Apy0;
                   /* ATSINSargmove_tlcal */ _Arg1 = _Apy1;
                   /* ATSINSargmove_tlcal */ _Arg2 = _Apy2;
@@ -15231,7 +15317,7 @@ private _Tmplab_sqf = 0;
       };
     if (_Funlab_sqf < 1) then { break; };
   }; // endwhile-fun
- /* ATSreturn */ _Tmpret1700;
+ /* ATSreturn */ _Tmpret1712;
 }; // end-of-function
 
 
@@ -15239,15 +15325,15 @@ private _Tmplab_sqf = 0;
 /*emit_f0ide*/ fn_persistentUserMarkers__is_map_marks_restore_enforced = compileFinal {
 //
 // knd = 0
-// var _Tmpret1712
-private _Tmpret1712 = 0;
+// var _Tmpret1724
+private _Tmpret1724 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_is_map_marks_restore_enforced /*ATSINSflab*/ ;
-  _Tmpret1712 = true;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1712;
+  _Tmpret1724 = true;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1724;
 }; // end-of-function
 
 
@@ -15256,46 +15342,46 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmp1714
-private _Tmp1714 = 0;
-// var _Tmp1715
-private _Tmp1715 = 0;
-// var _Tmp1716
-private _Tmp1716 = 0;
-// var _Tmp1717
-private _Tmp1717 = 0;
-// var _Tmp1718
-private _Tmp1718 = 0;
-// var _Tmp1719
-private _Tmp1719 = 0;
-// var _Tmp1720
-private _Tmp1720 = 0;
-// var _Tmp1721
-private _Tmp1721 = 0;
-// var _Tmp1722
-private _Tmp1722 = 0;
-// var _Tmp1723
-private _Tmp1723 = 0;
-// var _Tmp1724
-private _Tmp1724 = 0;
-// var _Tmp1725
-private _Tmp1725 = 0;
 // var _Tmp1726
 private _Tmp1726 = 0;
 // var _Tmp1727
 private _Tmp1727 = 0;
+// var _Tmp1728
+private _Tmp1728 = 0;
 // var _Tmp1729
 private _Tmp1729 = 0;
+// var _Tmp1730
+private _Tmp1730 = 0;
+// var _Tmp1731
+private _Tmp1731 = 0;
+// var _Tmp1732
+private _Tmp1732 = 0;
+// var _Tmp1733
+private _Tmp1733 = 0;
+// var _Tmp1734
+private _Tmp1734 = 0;
+// var _Tmp1735
+private _Tmp1735 = 0;
+// var _Tmp1736
+private _Tmp1736 = 0;
+// var _Tmp1737
+private _Tmp1737 = 0;
+// var _Tmp1738
+private _Tmp1738 = 0;
+// var _Tmp1739
+private _Tmp1739 = 0;
+// var _Tmp1741
+private _Tmp1741 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_try_persist_new_markers /*ATSINSflab*/ ;
-  _Tmp1714 = [ ] call /*emit_f0ide*/ libarma3__allMapMarkers;
-  _Tmp1715 = [ ] call /*emit_f0ide*/ libarma3__server;
-  _Tmp1716 = [ "persistentUserMarkers"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1717 = [ _Tmp1715, _Tmp1716, true] call /*emit_f0ide*/ libarma3__borrowVariable_vt1;
-  _Tmp1718 = [ ] call /*emit_f0ide*/ fn_persistentUserMarkers__is_map_marks_restore_enforced;
+  _Tmp1726 = [ ] call /*emit_f0ide*/ libarma3__allMapMarkers;
+  _Tmp1727 = [ ] call /*emit_f0ide*/ libarma3__server;
+  _Tmp1728 = [ "persistentUserMarkers"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1729 = [ _Tmp1727, _Tmp1728, true] call /*emit_f0ide*/ libarma3__borrowVariable_vt1;
+  _Tmp1730 = [ ] call /*emit_f0ide*/ fn_persistentUserMarkers__is_map_marks_restore_enforced;
   _Casefunx1 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
@@ -15303,30 +15389,30 @@ private _Tmplab_sqf = 0;
     {
       // ATSbranchseq_beg
       case 1 : {
-        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1717 select 0 } )) ) then {
+        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1729 select 0 } )) ) then {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
            [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 2 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1721 = [ ] call /*emit_f0ide*/ libarma3__hashMap_vt_create;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1722 = [ _Tmp1721] call /*emit_f0ide*/ libarma3__hashMap_vt_count;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1719 = _Tmp1721
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1733 = [ ] call /*emit_f0ide*/ libarma3__hashMap_vt_create;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1734 = [ _Tmp1733] call /*emit_f0ide*/ libarma3__hashMap_vt_count;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1731 = _Tmp1733
       };
       // ATSbranchseq_end
       // ATSbranchseq_beg
       case 3 : {
-        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1717 select 0 }) ) then {
+        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1729 select 0 }) ) then {
           systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 33947(line=862, offs=11) -- 34300(line=871, offs=68)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1720 = (_Tmp1717 select 0);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1717);;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1719 = _Tmp1720
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1732 = (_Tmp1729 select 0);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1729);;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1731 = _Tmp1732
       };
       // ATSbranchseq_end
       default { assert(false); };
@@ -15335,11 +15421,11 @@ private _Tmplab_sqf = 0;
   }; // endfun
   [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
-  _Tmp1723 = [ _Tmp1719] call /*emit_f0ide*/ libarma3__hashMap_vt_count;
-  _Tmp1724 = [ _Tmp1714] call /*emit_f0ide*/ libarma3__array_vt_count;
-  _Tmp1725 = [_Tmp1719, _Tmp1723];
-  _Tmp1726 = /* ATSSELfltrec */ (_Tmp1725 select 0);
-  _Tmp1727 = [ _Tmp1715, _Tmp1716, _Tmp1726, true] call /*emit_f0ide*/ libarma3__swapVariable_vt1;
+  _Tmp1735 = [ _Tmp1731] call /*emit_f0ide*/ libarma3__hashMap_vt_count;
+  _Tmp1736 = [ _Tmp1726] call /*emit_f0ide*/ libarma3__array_vt_count;
+  _Tmp1737 = [_Tmp1731, _Tmp1735];
+  _Tmp1738 = /* ATSSELfltrec */ (_Tmp1737 select 0);
+  _Tmp1739 = [ _Tmp1727, _Tmp1728, _Tmp1738, true] call /*emit_f0ide*/ libarma3__swapVariable_vt1;
   _Casefunx2 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
@@ -15347,7 +15433,7 @@ private _Tmplab_sqf = 0;
     {
       // ATSbranchseq_beg
       case 1 : {
-        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1727 select 0 } )) ) then {
+        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1739 select 0 } )) ) then {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
            [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
@@ -15359,16 +15445,16 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_end
       // ATSbranchseq_beg
       case 3 : {
-        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1727 select 0 }) ) then {
+        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1739 select 0 }) ) then {
           systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 34785(line=885, offs=9) -- 35032(line=893, offs=12)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1729 = (_Tmp1727 select 0);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1727);;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1729, /*emit_f0ide*/ f___patsfun_470] call /*emit_f0ide*/ libarma3__hashMap_vt_free
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1741 = (_Tmp1739 select 0);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1739);;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1741, /*emit_f0ide*/ f___patsfun_470] call /*emit_f0ide*/ libarma3__hashMap_vt_free
       };
       // ATSbranchseq_end
       default { assert(false); };
@@ -15377,8 +15463,8 @@ private _Tmplab_sqf = 0;
   }; // endfun
   [ _Casefunx2 /* emit_Casefunx */, 1 ] call _Casefunx2 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
-   /*ATSINSmove_void _*/[ _Tmp1716] call /*emit_f0ide*/ text__free_text;
-   /*ATSINSmove_void _*/[ _Tmp1714, /*emit_f0ide*/ f___patsfun_471] call /*emit_f0ide*/ libarma3__array_vt_free;
+   /*ATSINSmove_void _*/[ _Tmp1728] call /*emit_f0ide*/ text__free_text;
+   /*ATSINSmove_void _*/[ _Tmp1726, /*emit_f0ide*/ f___patsfun_471] call /*emit_f0ide*/ libarma3__array_vt_free;
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
 }; // end-of-function
 
@@ -15419,31 +15505,31 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmp1735
-private _Tmp1735 = 0;
-// var _Tmp1736
-private _Tmp1736 = 0;
-// var _Tmp1737
-private _Tmp1737 = 0;
-// var _Tmp1738
-private _Tmp1738 = 0;
-// var _Tmp1739
-private _Tmp1739 = 0;
-// var _Tmp1740
-private _Tmp1740 = 0;
-// var _Tmp1742
-private _Tmp1742 = 0;
+// var _Tmp1747
+private _Tmp1747 = 0;
+// var _Tmp1748
+private _Tmp1748 = 0;
+// var _Tmp1749
+private _Tmp1749 = 0;
+// var _Tmp1750
+private _Tmp1750 = 0;
+// var _Tmp1751
+private _Tmp1751 = 0;
+// var _Tmp1752
+private _Tmp1752 = 0;
+// var _Tmp1754
+private _Tmp1754 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_saveUsersSideMapMarkers /*ATSINSflab*/ ;
-  _Tmp1735 = [ /* ATSSELfltrec */ (_Arg0 select 3)] call /*emit_f0ide*/ libarma3__str;
-  _Tmp1737 = [ "fn_persistentUserMarkers_"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1738 = [ _Tmp1735] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1736 = [ _Tmp1737, _Tmp1738] call /*emit_f0ide*/ text__appendC_text_text;
-  _Tmp1739 = [ ] call /*emit_f0ide*/ libarma3__missionProfileNamespace;
-  _Tmp1740 = [ _Tmp1739, _Tmp1736, _Arg0, false] call /*emit_f0ide*/ libarma3__swapVariable_vt1;
+  _Tmp1747 = [ /* ATSSELfltrec */ (_Arg0 select 3)] call /*emit_f0ide*/ libarma3__str;
+  _Tmp1749 = [ "fn_persistentUserMarkers_"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1750 = [ _Tmp1747] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1748 = [ _Tmp1749, _Tmp1750] call /*emit_f0ide*/ text__appendC_text_text;
+  _Tmp1751 = [ ] call /*emit_f0ide*/ libarma3__missionProfileNamespace;
+  _Tmp1752 = [ _Tmp1751, _Tmp1748, _Arg0, false] call /*emit_f0ide*/ libarma3__swapVariable_vt1;
   _Casefunx1 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
@@ -15451,7 +15537,7 @@ private _Tmplab_sqf = 0;
     {
       // ATSbranchseq_beg
       case 1 : {
-        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1740 select 0 } )) ) then {
+        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1752 select 0 } )) ) then {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
            [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
@@ -15463,16 +15549,16 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_end
       // ATSbranchseq_beg
       case 3 : {
-        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1740 select 0 }) ) then {
+        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1752 select 0 }) ) then {
           systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 35616(line=908, offs=12) -- 35712(line=910, offs=54)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1742 = (_Tmp1740 select 0);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1740);;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1742] call /*emit_f0ide*/ fn_persistentUserMarkers__free_side_markers
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1754 = (_Tmp1752 select 0);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1752);;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1754] call /*emit_f0ide*/ fn_persistentUserMarkers__free_side_markers
       };
       // ATSbranchseq_end
       default { assert(false); };
@@ -15482,7 +15568,7 @@ private _Tmplab_sqf = 0;
   [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
    /*ATSINSmove_void _*/[ ] call /*emit_f0ide*/ libarma3__saveMissionProfileNamespace;
-   /*ATSINSmove_void _*/[ _Tmp1736] call /*emit_f0ide*/ text__free_text;
+   /*ATSINSmove_void _*/[ _Tmp1748] call /*emit_f0ide*/ text__free_text;
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
 }; // end-of-function
 
@@ -15492,23 +15578,23 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmp1745
-private _Tmp1745 = 0;
-// var _Tmp1746
-private _Tmp1746 = 0;
-// var _Tmp1747
-private _Tmp1747 = 0;
+// var _Tmp1757
+private _Tmp1757 = 0;
+// var _Tmp1758
+private _Tmp1758 = 0;
+// var _Tmp1759
+private _Tmp1759 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_free_side_markers /*ATSINSflab*/ ;
-  _Tmp1745 = /* ATSSELfltrec */ (_Arg0 select 1);
-  _Tmp1746 = /* ATSSELfltrec */ (_Arg0 select 2);
-  _Tmp1747 = /* ATSSELfltrec */ (_Arg0 select 4);
-   /*ATSINSmove_void _*/[ _Tmp1747, fn_persistentUserMarkers__free_serialized_marker] call /*emit_f0ide*/ libarma3__array_vt_free;
-   /*ATSINSmove_void _*/[ _Tmp1745] call /*emit_f0ide*/ text__free_text;
-   /*ATSINSmove_void _*/[ _Tmp1746] call /*emit_f0ide*/ text__free_text;
+  _Tmp1757 = /* ATSSELfltrec */ (_Arg0 select 1);
+  _Tmp1758 = /* ATSSELfltrec */ (_Arg0 select 2);
+  _Tmp1759 = /* ATSSELfltrec */ (_Arg0 select 4);
+   /*ATSINSmove_void _*/[ _Tmp1759, fn_persistentUserMarkers__free_serialized_marker] call /*emit_f0ide*/ libarma3__array_vt_free;
+   /*ATSINSmove_void _*/[ _Tmp1757] call /*emit_f0ide*/ text__free_text;
+   /*ATSINSmove_void _*/[ _Tmp1758] call /*emit_f0ide*/ text__free_text;
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
 }; // end-of-function
 
@@ -15518,39 +15604,39 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmpret1750
-private _Tmpret1750 = 0;
-// var _Tmp1751
-private _Tmp1751 = 0;
-// var _Tmp1752
-private _Tmp1752 = 0;
-// var _Tmp1753
-private _Tmp1753 = 0;
-// var _Tmp1754
-private _Tmp1754 = 0;
-// var _Tmp1755
-private _Tmp1755 = 0;
-// var _Tmp1756
-private _Tmp1756 = 0;
-// var _Tmp1757
-private _Tmp1757 = 0;
-// var _Tmp1759
-private _Tmp1759 = 0;
-// var _Tmp1760
-private _Tmp1760 = 0;
-// var _Tmp1762
-private _Tmp1762 = 0;
+// var _Tmpret1762
+private _Tmpret1762 = 0;
+// var _Tmp1763
+private _Tmp1763 = 0;
+// var _Tmp1764
+private _Tmp1764 = 0;
+// var _Tmp1765
+private _Tmp1765 = 0;
+// var _Tmp1766
+private _Tmp1766 = 0;
+// var _Tmp1767
+private _Tmp1767 = 0;
+// var _Tmp1768
+private _Tmp1768 = 0;
+// var _Tmp1769
+private _Tmp1769 = 0;
+// var _Tmp1771
+private _Tmp1771 = 0;
+// var _Tmp1772
+private _Tmp1772 = 0;
+// var _Tmp1774
+private _Tmp1774 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_loadUsersSideMapMarkers /*ATSINSflab*/ ;
-  _Tmp1751 = [ _Arg0] call /*emit_f0ide*/ libarma3__str;
-  _Tmp1753 = [ "fn_persistentUserMarkers_"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1754 = [ _Tmp1751] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1752 = [ _Tmp1753, _Tmp1754] call /*emit_f0ide*/ text__appendC_text_text;
-  _Tmp1755 = [ ] call /*emit_f0ide*/ libarma3__missionProfileNamespace;
-  _Tmp1756 = [ _Tmp1755, _Tmp1752, false] call /*emit_f0ide*/ libarma3__borrowVariable_vt1;
+  _Tmp1763 = [ _Arg0] call /*emit_f0ide*/ libarma3__str;
+  _Tmp1765 = [ "fn_persistentUserMarkers_"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1766 = [ _Tmp1763] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1764 = [ _Tmp1765, _Tmp1766] call /*emit_f0ide*/ text__appendC_text_text;
+  _Tmp1767 = [ ] call /*emit_f0ide*/ libarma3__missionProfileNamespace;
+  _Tmp1768 = [ _Tmp1767, _Tmp1764, false] call /*emit_f0ide*/ libarma3__borrowVariable_vt1;
   _Casefunx1 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
@@ -15558,30 +15644,30 @@ private _Tmplab_sqf = 0;
     {
       // ATSbranchseq_beg
       case 1 : {
-        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1756 select 0 } )) ) then {
+        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1768 select 0 } )) ) then {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
            [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 2 : {
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1752] call /*emit_f0ide*/ text__free_text;
-/*emit2_branchlst rest-of-ATSINS*/        /* ATSINSmove_nil */ _Tmpret1750 = /*ATSINSmove_nil*/ [nil]
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1764] call /*emit_f0ide*/ text__free_text;
+/*emit2_branchlst rest-of-ATSINS*/        /* ATSINSmove_nil */ _Tmpret1762 = /*ATSINSmove_nil*/ [nil]
       };
       // ATSbranchseq_end
       // ATSbranchseq_beg
       case 3 : {
-        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1756 select 0 }) ) then {
+        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1768 select 0 }) ) then {
           systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 36330(line=928, offs=3) -- 36846(line=941, offs=4)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1757 = (_Tmp1756 select 0);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1756);;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1759 = [ _Tmp1757] call /*emit_f0ide*/ libarma3__vt_copy;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1760 = [ _Tmp1755, _Tmp1752, _Tmp1759, false] call /*emit_f0ide*/ libarma3__swapVariable_vt1;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1769 = (_Tmp1768 select 0);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1768);;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1771 = [ _Tmp1769] call /*emit_f0ide*/ libarma3__vt_copy;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1772 = [ _Tmp1767, _Tmp1764, _Tmp1771, false] call /*emit_f0ide*/ libarma3__swapVariable_vt1;
 /*emit2_branchlst rest-of-ATSINS*/        _Casefunx2 /* emit_Casefunx */ = {
           params [ "_Casefun", "_Tmplab"];
           // switch(_Tmplab) {
@@ -15589,7 +15675,7 @@ private _Tmplab_sqf = 0;
           {
             // ATSbranchseq_beg
             case 1 : {
-              if(/*ATSCKptriscons*/ (not(isNil { _Tmp1760 select 0 } )) ) then {
+              if(/*ATSCKptriscons*/ (not(isNil { _Tmp1772 select 0 } )) ) then {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               } else {
                  [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
@@ -15601,16 +15687,16 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_end
             // ATSbranchseq_beg
             case 3 : {
-              if(/*ATSCKptrisnull*/ ( isNil { _Tmp1760 select 0 }) ) then {
+              if(/*ATSCKptrisnull*/ ( isNil { _Tmp1772 select 0 }) ) then {
                 systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 36671(line=936, offs=14) -- 36771(line=938, offs=56)");
               } else {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1762 = (_Tmp1760 select 0);
-/*emit2_branchlst rest-of-ATSINS*/              // ATSINSfreecon(_Tmp1760);;
-/*emit2_branchlst rest-of-ATSINS*/               /*ATSINSmove_void _*/[ _Tmp1762] call /*emit_f0ide*/ fn_persistentUserMarkers__free_side_markers
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1774 = (_Tmp1772 select 0);
+/*emit2_branchlst rest-of-ATSINS*/              // ATSINSfreecon(_Tmp1772);;
+/*emit2_branchlst rest-of-ATSINS*/               /*ATSINSmove_void _*/[ _Tmp1774] call /*emit_f0ide*/ fn_persistentUserMarkers__free_side_markers
             };
             // ATSbranchseq_end
             default { assert(false); };
@@ -15619,8 +15705,8 @@ private _Tmplab_sqf = 0;
         }; // endfun
         [ _Casefunx2 /* emit_Casefunx */, 1 ] call _Casefunx2 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1752] call /*emit_f0ide*/ text__free_text;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmpret1750 = [ _Tmp1757 ]/* emit2_ATSINSmove_con1 */
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1764] call /*emit_f0ide*/ text__free_text;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmpret1762 = [ _Tmp1769 ]/* emit2_ATSINSmove_con1 */
       };
       // ATSbranchseq_end
       default { assert(false); };
@@ -15629,7 +15715,7 @@ private _Tmplab_sqf = 0;
   }; // endfun
   [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1750;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1762;
 }; // end-of-function
 
 
@@ -15653,132 +15739,132 @@ private _Tmplab_sqf = 0;
   params ["_Arg0", "_Arg1"];
 //
 // knd = 0
-// var _Tmpret1765
-private _Tmpret1765 = 0;
-// var _Tmp1768
-private _Tmp1768 = 0;
-// var _Tmp1769
-private _Tmp1769 = 0;
-// var _Tmp1770
-private _Tmp1770 = 0;
-// var _Tmp1771
-private _Tmp1771 = 0;
-// var _Tmp1772
-private _Tmp1772 = 0;
-// var _Tmp1773
-private _Tmp1773 = 0;
-// var _Tmp1774
-private _Tmp1774 = 0;
-// var _Tmp1775
-private _Tmp1775 = 0;
-// var _Tmp1776
-private _Tmp1776 = 0;
-// var _Tmp1777
-private _Tmp1777 = 0;
-// var _Tmp1778
-private _Tmp1778 = 0;
-// var _Tmp1779
-private _Tmp1779 = 0;
+// var _Tmpret1777
+private _Tmpret1777 = 0;
 // var _Tmp1780
 private _Tmp1780 = 0;
+// var _Tmp1781
+private _Tmp1781 = 0;
+// var _Tmp1782
+private _Tmp1782 = 0;
+// var _Tmp1783
+private _Tmp1783 = 0;
+// var _Tmp1784
+private _Tmp1784 = 0;
+// var _Tmp1785
+private _Tmp1785 = 0;
+// var _Tmp1786
+private _Tmp1786 = 0;
+// var _Tmp1787
+private _Tmp1787 = 0;
+// var _Tmp1788
+private _Tmp1788 = 0;
+// var _Tmp1789
+private _Tmp1789 = 0;
+// var _Tmp1790
+private _Tmp1790 = 0;
+// var _Tmp1791
+private _Tmp1791 = 0;
+// var _Tmp1792
+private _Tmp1792 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_eq_serialized_marker_vt /*ATSINSflab*/ ;
-  _Tmp1780 = [ /* ATSSELfltrec */ (_Arg0 select 0), /* ATSSELfltrec */ (_Arg1 select 0)] call /*emit_f0ide*/ text__eq_text_text;
+  _Tmp1792 = [ /* ATSSELfltrec */ (_Arg0 select 0), /* ATSSELfltrec */ (_Arg1 select 0)] call /*emit_f0ide*/ text__eq_text_text;
+  if (_Tmp1792) then {
+      _Tmp1791 = [ /* ATSSELfltrec */ (_Arg0 select 1), /* ATSSELfltrec */ (_Arg1 select 1)] call /*emit_f0ide*/ ATSLIB_056_prelude__eq_g0int_int__446__2;
+    } // if-then
+    else {
+      _Tmp1791 = false
+    // if-else
+    };
+  if (_Tmp1791) then {
+      _Tmp1790 = [ /* ATSSELfltrec */ (_Arg0 select 2), /* ATSSELfltrec */ (_Arg1 select 2)] call /*emit_f0ide*/ atspre_g0float_eq_double;
+    } // if-then
+    else {
+      _Tmp1790 = false
+    // if-else
+    };
+  if (_Tmp1790) then {
+      _Tmp1789 = [ /* ATSSELfltrec */ (_Arg0 select 3), /* ATSSELfltrec */ (_Arg1 select 3)] call /*emit_f0ide*/ text__eq_text_text;
+    } // if-then
+    else {
+      _Tmp1789 = false
+    // if-else
+    };
+  if (_Tmp1789) then {
+      _Tmp1788 = [ /* ATSSELfltrec */ (_Arg0 select 4), /* ATSSELfltrec */ (_Arg1 select 4)] call /*emit_f0ide*/ text__eq_text_text;
+    } // if-then
+    else {
+      _Tmp1788 = false
+    // if-else
+    };
+  if (_Tmp1788) then {
+      _Tmp1787 = [ /* ATSSELfltrec */ (_Arg0 select 5), /* ATSSELfltrec */ (_Arg1 select 5)] call /*emit_f0ide*/ ATSLIB_056_prelude__eq_g0int_int__446__3;
+    } // if-then
+    else {
+      _Tmp1787 = false
+    // if-else
+    };
+  if (_Tmp1787) then {
+      _Tmp1786 = [ /* ATSSELfltrec */ (_Arg0 select 6), /* ATSSELfltrec */ (_Arg1 select 6)] call /*emit_f0ide*/ ATSLIB_056_prelude__eq_g0int_int__446__4;
+    } // if-then
+    else {
+      _Tmp1786 = false
+    // if-else
+    };
+  if (_Tmp1786) then {
+      _Tmp1785 = [ /* ATSSELfltrec */ (_Arg0 select 7), /* ATSSELfltrec */ (_Arg1 select 7)] call /*emit_f0ide*/ eq_poly_line_477;
+    } // if-then
+    else {
+      _Tmp1785 = false
+    // if-else
+    };
+  if (_Tmp1785) then {
+      _Tmp1784 = [ /* ATSSELfltrec */ (_Arg0 select 8), /* ATSSELfltrec */ (_Arg1 select 8)] call /*emit_f0ide*/ libarma3__eq_array_vt;
+    } // if-then
+    else {
+      _Tmp1784 = false
+    // if-else
+    };
+  if (_Tmp1784) then {
+      _Tmp1783 = [ /* ATSSELfltrec */ (_Arg0 select 9), /* ATSSELfltrec */ (_Arg1 select 9)] call /*emit_f0ide*/ atspre_eq_bool0_bool0;
+    } // if-then
+    else {
+      _Tmp1783 = false
+    // if-else
+    };
+  if (_Tmp1783) then {
+      _Tmp1782 = [ /* ATSSELfltrec */ (_Arg0 select 10), /* ATSSELfltrec */ (_Arg1 select 10)] call /*emit_f0ide*/ text__eq_text_text;
+    } // if-then
+    else {
+      _Tmp1782 = false
+    // if-else
+    };
+  if (_Tmp1782) then {
+      _Tmp1781 = [ /* ATSSELfltrec */ (_Arg0 select 11), /* ATSSELfltrec */ (_Arg1 select 11)] call /*emit_f0ide*/ libarma3__eq_array_vt;
+    } // if-then
+    else {
+      _Tmp1781 = false
+    // if-else
+    };
+  if (_Tmp1781) then {
+      _Tmp1780 = [ /* ATSSELfltrec */ (_Arg0 select 12), /* ATSSELfltrec */ (_Arg1 select 12)] call /*emit_f0ide*/ text__eq_text_text;
+    } // if-then
+    else {
+      _Tmp1780 = false
+    // if-else
+    };
   if (_Tmp1780) then {
-      _Tmp1779 = [ /* ATSSELfltrec */ (_Arg0 select 1), /* ATSSELfltrec */ (_Arg1 select 1)] call /*emit_f0ide*/ ATSLIB_056_prelude__eq_g0int_int__446__2;
+      _Tmpret1777 = [ /* ATSSELfltrec */ (_Arg0 select 13), /* ATSSELfltrec */ (_Arg1 select 13)] call /*emit_f0ide*/ text__eq_text_text;
     } // if-then
     else {
-      _Tmp1779 = false
+      _Tmpret1777 = false
     // if-else
     };
-  if (_Tmp1779) then {
-      _Tmp1778 = [ /* ATSSELfltrec */ (_Arg0 select 2), /* ATSSELfltrec */ (_Arg1 select 2)] call /*emit_f0ide*/ atspre_g0float_eq_double;
-    } // if-then
-    else {
-      _Tmp1778 = false
-    // if-else
-    };
-  if (_Tmp1778) then {
-      _Tmp1777 = [ /* ATSSELfltrec */ (_Arg0 select 3), /* ATSSELfltrec */ (_Arg1 select 3)] call /*emit_f0ide*/ text__eq_text_text;
-    } // if-then
-    else {
-      _Tmp1777 = false
-    // if-else
-    };
-  if (_Tmp1777) then {
-      _Tmp1776 = [ /* ATSSELfltrec */ (_Arg0 select 4), /* ATSSELfltrec */ (_Arg1 select 4)] call /*emit_f0ide*/ text__eq_text_text;
-    } // if-then
-    else {
-      _Tmp1776 = false
-    // if-else
-    };
-  if (_Tmp1776) then {
-      _Tmp1775 = [ /* ATSSELfltrec */ (_Arg0 select 5), /* ATSSELfltrec */ (_Arg1 select 5)] call /*emit_f0ide*/ ATSLIB_056_prelude__eq_g0int_int__446__3;
-    } // if-then
-    else {
-      _Tmp1775 = false
-    // if-else
-    };
-  if (_Tmp1775) then {
-      _Tmp1774 = [ /* ATSSELfltrec */ (_Arg0 select 6), /* ATSSELfltrec */ (_Arg1 select 6)] call /*emit_f0ide*/ ATSLIB_056_prelude__eq_g0int_int__446__4;
-    } // if-then
-    else {
-      _Tmp1774 = false
-    // if-else
-    };
-  if (_Tmp1774) then {
-      _Tmp1773 = [ /* ATSSELfltrec */ (_Arg0 select 7), /* ATSSELfltrec */ (_Arg1 select 7)] call /*emit_f0ide*/ eq_poly_line_477;
-    } // if-then
-    else {
-      _Tmp1773 = false
-    // if-else
-    };
-  if (_Tmp1773) then {
-      _Tmp1772 = [ /* ATSSELfltrec */ (_Arg0 select 8), /* ATSSELfltrec */ (_Arg1 select 8)] call /*emit_f0ide*/ libarma3__eq_array_vt;
-    } // if-then
-    else {
-      _Tmp1772 = false
-    // if-else
-    };
-  if (_Tmp1772) then {
-      _Tmp1771 = [ /* ATSSELfltrec */ (_Arg0 select 9), /* ATSSELfltrec */ (_Arg1 select 9)] call /*emit_f0ide*/ atspre_eq_bool0_bool0;
-    } // if-then
-    else {
-      _Tmp1771 = false
-    // if-else
-    };
-  if (_Tmp1771) then {
-      _Tmp1770 = [ /* ATSSELfltrec */ (_Arg0 select 10), /* ATSSELfltrec */ (_Arg1 select 10)] call /*emit_f0ide*/ text__eq_text_text;
-    } // if-then
-    else {
-      _Tmp1770 = false
-    // if-else
-    };
-  if (_Tmp1770) then {
-      _Tmp1769 = [ /* ATSSELfltrec */ (_Arg0 select 11), /* ATSSELfltrec */ (_Arg1 select 11)] call /*emit_f0ide*/ libarma3__eq_array_vt;
-    } // if-then
-    else {
-      _Tmp1769 = false
-    // if-else
-    };
-  if (_Tmp1769) then {
-      _Tmp1768 = [ /* ATSSELfltrec */ (_Arg0 select 12), /* ATSSELfltrec */ (_Arg1 select 12)] call /*emit_f0ide*/ text__eq_text_text;
-    } // if-then
-    else {
-      _Tmp1768 = false
-    // if-else
-    };
-  if (_Tmp1768) then {
-      _Tmpret1765 = [ /* ATSSELfltrec */ (_Arg0 select 13), /* ATSSELfltrec */ (_Arg1 select 13)] call /*emit_f0ide*/ text__eq_text_text;
-    } // if-then
-    else {
-      _Tmpret1765 = false
-    // if-else
-    };
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1765;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1777;
 }; // end-of-function
 
 
@@ -15787,18 +15873,18 @@ private _Tmplab_sqf = 0;
   params ["_Arg0", "_Arg1"];
 //
 // knd = 0
-// var _Tmpret1766
-private _Tmpret1766 = 0;
-// var _Tmp1767
-private _Tmp1767 = 0;
+// var _Tmpret1778
+private _Tmpret1778 = 0;
+// var _Tmp1779
+private _Tmp1779 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_eq_poly_line_477 /*ATSINSflab*/ ;
-  _Tmp1767 = [ _Arg0, _Arg1] call /*emit_f0ide*/ libarma3__eq_array_vt;
-  _Tmpret1766 = _Tmp1767;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1766;
+  _Tmp1779 = [ _Arg0, _Arg1] call /*emit_f0ide*/ libarma3__eq_array_vt;
+  _Tmpret1778 = _Tmp1779;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1778;
 }; // end-of-function
 
 
@@ -15807,18 +15893,18 @@ private _Tmplab_sqf = 0;
   params ["_Arg0", "_Arg1"];
 //
 // knd = 0
-// var _Tmpret1613__2
-private _Tmpret1613__2 = 0;
-// var _Tmp1614__2
-private _Tmp1614__2 = 0;
+// var _Tmpret1625__2
+private _Tmpret1625__2 = 0;
+// var _Tmp1626__2
+private _Tmp1626__2 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_eq_g0int_int /*ATSINSflab*/ ;
-  _Tmp1614__2 = [ _Arg1] call /*emit_f0ide*/ atspre_g0int2int_int_int;
-  _Tmpret1613__2 = [ _Arg0, _Tmp1614__2] call /*emit_f0ide*/ atspre_g0int_eq_int;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1613__2;
+  _Tmp1626__2 = [ _Arg1] call /*emit_f0ide*/ atspre_g0int2int_int_int;
+  _Tmpret1625__2 = [ _Arg0, _Tmp1626__2] call /*emit_f0ide*/ atspre_g0int_eq_int;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1625__2;
 }; // end-of-function
 
 
@@ -15827,18 +15913,18 @@ private _Tmplab_sqf = 0;
   params ["_Arg0", "_Arg1"];
 //
 // knd = 0
-// var _Tmpret1613__3
-private _Tmpret1613__3 = 0;
-// var _Tmp1614__3
-private _Tmp1614__3 = 0;
+// var _Tmpret1625__3
+private _Tmpret1625__3 = 0;
+// var _Tmp1626__3
+private _Tmp1626__3 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_eq_g0int_int /*ATSINSflab*/ ;
-  _Tmp1614__3 = [ _Arg1] call /*emit_f0ide*/ atspre_g0int2int_int_int;
-  _Tmpret1613__3 = [ _Arg0, _Tmp1614__3] call /*emit_f0ide*/ atspre_g0int_eq_int;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1613__3;
+  _Tmp1626__3 = [ _Arg1] call /*emit_f0ide*/ atspre_g0int2int_int_int;
+  _Tmpret1625__3 = [ _Arg0, _Tmp1626__3] call /*emit_f0ide*/ atspre_g0int_eq_int;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1625__3;
 }; // end-of-function
 
 
@@ -15847,18 +15933,18 @@ private _Tmplab_sqf = 0;
   params ["_Arg0", "_Arg1"];
 //
 // knd = 0
-// var _Tmpret1613__4
-private _Tmpret1613__4 = 0;
-// var _Tmp1614__4
-private _Tmp1614__4 = 0;
+// var _Tmpret1625__4
+private _Tmpret1625__4 = 0;
+// var _Tmp1626__4
+private _Tmp1626__4 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_eq_g0int_int /*ATSINSflab*/ ;
-  _Tmp1614__4 = [ _Arg1] call /*emit_f0ide*/ atspre_g0int2int_int_int;
-  _Tmpret1613__4 = [ _Arg0, _Tmp1614__4] call /*emit_f0ide*/ atspre_g0int_eq_int;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1613__4;
+  _Tmp1626__4 = [ _Arg1] call /*emit_f0ide*/ atspre_g0int2int_int_int;
+  _Tmpret1625__4 = [ _Arg0, _Tmp1626__4] call /*emit_f0ide*/ atspre_g0int_eq_int;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1625__4;
 }; // end-of-function
 
 
@@ -15867,28 +15953,28 @@ private _Tmplab_sqf = 0;
   params ["_Arg0", "_Arg1"];
 //
 // knd = 0
-// var _Tmp1788
-private _Tmp1788 = 0;
-// var _Tmp1796
-private _Tmp1796 = 0;
-// var _Tmp1797
-private _Tmp1797 = 0;
-// var _Tmp1798
-private _Tmp1798 = 0;
 // var _Tmp1800
 private _Tmp1800 = 0;
+// var _Tmp1808
+private _Tmp1808 = 0;
+// var _Tmp1809
+private _Tmp1809 = 0;
+// var _Tmp1810
+private _Tmp1810 = 0;
+// var _Tmp1812
+private _Tmp1812 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_ensure_map_marker_exist /*ATSINSflab*/ ;
-  _Tmp1788 = [ _Arg0] call /*emit_f0ide*/ libarma3__array_vt_count;
-  _Tmp1797 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-  _Tmp1796 = [ _Arg0, _Tmp1788, _Arg1, _Tmp1797] call /*emit_f0ide*/ loop_483;
-  _Tmp1798 = [ ] call /*emit_f0ide*/ libarma3__player;
-  _Tmp1800 = [ _Tmp1796] call /*emit_f0ide*/ atspre_neg_bool0;
-  if (_Tmp1800) then {
-       /*ATSINSmove_void _*/[ /* ATSSELfltrec */ (_Arg1 select 0), /* ATSSELfltrec */ (_Arg1 select 8), /* ATSSELfltrec */ (_Arg1 select 1), _Tmp1798] call /*emit_f0ide*/ libarma3__createMarker;
+  _Tmp1800 = [ _Arg0] call /*emit_f0ide*/ libarma3__array_vt_count;
+  _Tmp1809 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+  _Tmp1808 = [ _Arg0, _Tmp1800, _Arg1, _Tmp1809] call /*emit_f0ide*/ loop_483;
+  _Tmp1810 = [ ] call /*emit_f0ide*/ libarma3__player;
+  _Tmp1812 = [ _Tmp1808] call /*emit_f0ide*/ atspre_neg_bool0;
+  if (_Tmp1812) then {
+       /*ATSINSmove_void _*/[ /* ATSSELfltrec */ (_Arg1 select 0), /* ATSSELfltrec */ (_Arg1 select 8), /* ATSSELfltrec */ (_Arg1 select 1), _Tmp1810] call /*emit_f0ide*/ libarma3__createMarker;
     } // if-then
     else {
       ; // ATSINSmove_void()
@@ -15912,20 +15998,20 @@ private _Apy1 = 0;
 private _Apy2 = 0;
 // var _Apy3
 private _Apy3 = 0;
-// var _Tmpret1789
-private _Tmpret1789 = 0;
-// var _Tmp1790
-private _Tmp1790 = 0;
-// var _Tmp1791
-private _Tmp1791 = 0;
-// var _Tmp1792
-private _Tmp1792 = 0;
-// var _Tmp1793
-private _Tmp1793 = 0;
-// var _Tmp1794
-private _Tmp1794 = 0;
-// var _Tmp1795
-private _Tmp1795 = 0;
+// var _Tmpret1801
+private _Tmpret1801 = 0;
+// var _Tmp1802
+private _Tmp1802 = 0;
+// var _Tmp1803
+private _Tmp1803 = 0;
+// var _Tmp1804
+private _Tmp1804 = 0;
+// var _Tmp1805
+private _Tmp1805 = 0;
+// var _Tmp1806
+private _Tmp1806 = 0;
+// var _Tmp1807
+private _Tmp1807 = 0;
 // var Funlab_sqf
 private _Funlab_sqf = 0;
 // var Tmplab, Tmplab_sqf
@@ -15935,14 +16021,14 @@ private _Tmplab_sqf = 0;
   while {true} do {
     _Funlab_sqf = 0;
     // __patsflab_loop_483 /*ATSINSflab*/ ;
-    _Tmp1790 = [ _Arg3, _Arg1] call /*emit_f0ide*/ atspre_g1uint_eq_size;
-    if (_Tmp1790) then {
-        _Tmpret1789 = false;
+    _Tmp1802 = [ _Arg3, _Arg1] call /*emit_f0ide*/ atspre_g1uint_eq_size;
+    if (_Tmp1802) then {
+        _Tmpret1801 = false;
       } // if-then
       else {
-        _Tmp1792 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-        _Tmp1791 = [ _Arg3, _Tmp1792] call /*emit_f0ide*/ atspre_g1uint_add_size;
-        _Tmp1793 = [ _Arg0, _Arg3] call /*emit_f0ide*/ libarma3__array_vt_get1;
+        _Tmp1804 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+        _Tmp1803 = [ _Arg3, _Tmp1804] call /*emit_f0ide*/ atspre_g1uint_add_size;
+        _Tmp1805 = [ _Arg0, _Arg3] call /*emit_f0ide*/ libarma3__array_vt_get1;
         _Casefunx1 /* emit_Casefunx */ = {
           params [ "_Casefun", "_Tmplab"];
           // switch(_Tmplab) {
@@ -15950,7 +16036,7 @@ private _Tmplab_sqf = 0;
           {
             // ATSbranchseq_beg
             case 1 : {
-              if(/*ATSCKptriscons*/ (not(isNil { _Tmp1793 select 0 } )) ) then {
+              if(/*ATSCKptriscons*/ (not(isNil { _Tmp1805 select 0 } )) ) then {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               } else {
                  [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
@@ -15960,7 +16046,7 @@ private _Tmplab_sqf = 0;
 /*emit2_branchlst rest-of-ATSINS*/              /* ATSINSmove_tlcal */ _Apy0 = _Arg0;
               /* ATSINSmove_tlcal */ _Apy1 = _Arg1;
               /* ATSINSmove_tlcal */ _Apy2 = _Arg2;
-              /* ATSINSmove_tlcal */ _Apy3 = _Tmp1791;
+              /* ATSINSmove_tlcal */ _Apy3 = _Tmp1803;
               /* ATSINSargmove_tlcal */ _Arg0 = _Apy0;
               /* ATSINSargmove_tlcal */ _Arg1 = _Apy1;
               /* ATSINSargmove_tlcal */ _Arg2 = _Apy2;
@@ -15971,24 +16057,24 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_end
             // ATSbranchseq_beg
             case 3 : {
-              if(/*ATSCKptrisnull*/ ( isNil { _Tmp1793 select 0 }) ) then {
+              if(/*ATSCKptrisnull*/ ( isNil { _Tmp1805 select 0 }) ) then {
                 systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 39258(line=1018, offs=15) -- 39692(line=1027, offs=16)");
               } else {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1794 = (_Tmp1793 select 0);
-/*emit2_branchlst rest-of-ATSINS*/              // ATSINSfreecon(_Tmp1793);;
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1795 = [ _Tmp1794, /* ATSSELfltrec */ (_Arg2 select 0)] call /*emit_f0ide*/ text__eq_text_text;
-/*emit2_branchlst rest-of-ATSINS*/              if (_Tmp1795) then {
-                  _Tmpret1789 = true;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1806 = (_Tmp1805 select 0);
+/*emit2_branchlst rest-of-ATSINS*/              // ATSINSfreecon(_Tmp1805);;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1807 = [ _Tmp1806, /* ATSSELfltrec */ (_Arg2 select 0)] call /*emit_f0ide*/ text__eq_text_text;
+/*emit2_branchlst rest-of-ATSINS*/              if (_Tmp1807) then {
+                  _Tmpret1801 = true;
                 } // if-then
                 else {
                   /* ATSINSmove_tlcal */ _Apy0 = _Arg0;
                   /* ATSINSmove_tlcal */ _Apy1 = _Arg1;
                   /* ATSINSmove_tlcal */ _Apy2 = _Arg2;
-                  /* ATSINSmove_tlcal */ _Apy3 = _Tmp1791;
+                  /* ATSINSmove_tlcal */ _Apy3 = _Tmp1803;
                   /* ATSINSargmove_tlcal */ _Arg0 = _Apy0;
                   /* ATSINSargmove_tlcal */ _Arg1 = _Apy1;
                   /* ATSINSargmove_tlcal */ _Arg2 = _Apy2;
@@ -16009,7 +16095,7 @@ private _Tmplab_sqf = 0;
       };
     if (_Funlab_sqf < 1) then { break; };
   }; // endwhile-fun
- /* ATSreturn */ _Tmpret1789;
+ /* ATSreturn */ _Tmpret1801;
 }; // end-of-function
 
 
@@ -16018,10 +16104,10 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmp1809
-private _Tmp1809 = 0;
-// var _Tmp1816
-private _Tmp1816 = 0;
+// var _Tmp1821
+private _Tmp1821 = 0;
+// var _Tmp1828
+private _Tmp1828 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
@@ -16032,15 +16118,15 @@ private _Tmplab_sqf = 0;
    /*ATSINSmove_void _*/[ /* ATSSELfltrec */ (_Arg0 select 0), /* ATSSELfltrec */ (_Arg0 select 4)] call /*emit_f0ide*/ libarma3__setMarkerColor;
    /*ATSINSmove_void _*/[ /* ATSSELfltrec */ (_Arg0 select 0), /* ATSSELfltrec */ (_Arg0 select 5)] call /*emit_f0ide*/ libarma3__setMarkerDir;
    /*ATSINSmove_void _*/[ /* ATSSELfltrec */ (_Arg0 select 0), /* ATSSELfltrec */ (_Arg0 select 6)] call /*emit_f0ide*/ libarma3__setMarkerDrawPriority;
-  _Tmp1809 = [ /* ATSSELfltrec */ (_Arg0 select 7)] call /*emit_f0ide*/ poly_line_vt_count_485;
+  _Tmp1821 = [ /* ATSSELfltrec */ (_Arg0 select 7)] call /*emit_f0ide*/ poly_line_vt_count_485;
    /*ATSINSmove_void _*/[ /* ATSSELfltrec */ (_Arg0 select 0), /* ATSSELfltrec */ (_Arg0 select 8)] call /*emit_f0ide*/ libarma3__setMarkerPos;
    /*ATSINSmove_void _*/[ /* ATSSELfltrec */ (_Arg0 select 0), /* ATSSELfltrec */ (_Arg0 select 9)] call /*emit_f0ide*/ libarma3__setMarkerShadow;
    /*ATSINSmove_void _*/[ /* ATSSELfltrec */ (_Arg0 select 0), /* ATSSELfltrec */ (_Arg0 select 10)] call /*emit_f0ide*/ libarma3__setMarkerShape;
    /*ATSINSmove_void _*/[ /* ATSSELfltrec */ (_Arg0 select 0), /* ATSSELfltrec */ (_Arg0 select 11)] call /*emit_f0ide*/ libarma3__setMarkerSize;
    /*ATSINSmove_void _*/[ /* ATSSELfltrec */ (_Arg0 select 0), /* ATSSELfltrec */ (_Arg0 select 12)] call /*emit_f0ide*/ libarma3__setMarkerText;
    /*ATSINSmove_void _*/[ /* ATSSELfltrec */ (_Arg0 select 0), /* ATSSELfltrec */ (_Arg0 select 13)] call /*emit_f0ide*/ libarma3__setMarkerType;
-  _Tmp1816 = [ _Tmp1809, 1] call /*emit_f0ide*/ ATSLIB_056_prelude__gt_g1uint_int__24__4;
-  if (_Tmp1816) then {
+  _Tmp1828 = [ _Tmp1821, 1] call /*emit_f0ide*/ ATSLIB_056_prelude__gt_g1uint_int__24__4;
+  if (_Tmp1828) then {
        /*ATSINSmove_void _*/[ /* ATSSELfltrec */ (_Arg0 select 0), /* ATSSELfltrec */ (_Arg0 select 7)] call /*emit_f0ide*/ libarma3__setMarkerPolyline;
     } // if-then
     else {
@@ -16056,18 +16142,18 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmpret1807
-private _Tmpret1807 = 0;
-// var _Tmp1808
-private _Tmp1808 = 0;
+// var _Tmpret1819
+private _Tmpret1819 = 0;
+// var _Tmp1820
+private _Tmp1820 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_poly_line_vt_count_485 /*ATSINSflab*/ ;
-  _Tmp1808 = [ _Arg0] call /*emit_f0ide*/ libarma3__array_vt_count;
-  _Tmpret1807 = _Tmp1808;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1807;
+  _Tmp1820 = [ _Arg0] call /*emit_f0ide*/ libarma3__array_vt_count;
+  _Tmpret1819 = _Tmp1820;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1819;
 }; // end-of-function
 
 
@@ -16096,18 +16182,18 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmp1820
-private _Tmp1820 = 0;
-// var _Tmp1821
-private _Tmp1821 = 0;
-// var _Tmp1822
-private _Tmp1822 = 0;
+// var _Tmp1832
+private _Tmp1832 = 0;
+// var _Tmp1833
+private _Tmp1833 = 0;
+// var _Tmp1834
+private _Tmp1834 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_persist_user_map_markers /*ATSINSflab*/ ;
-  _Tmp1820 = [ ] call /*emit_f0ide*/ fn_persistentUserMarkers__gatherUsersSideMapMarkers;
+  _Tmp1832 = [ ] call /*emit_f0ide*/ fn_persistentUserMarkers__gatherUsersSideMapMarkers;
   _Casefunx1 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
@@ -16115,31 +16201,31 @@ private _Tmplab_sqf = 0;
     {
       // ATSbranchseq_beg
       case 1 : {
-        if(not(/*ATSCKpat_con1(*/(_Tmp1820 select 0) == 0)) then {
+        if(not(/*ATSCKpat_con1(*/(_Tmp1832 select 0) == 0)) then {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
            [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 2 : {
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1820);;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1822 = [ "gatherUsersSideMapMarkers failed"] call /*emit_f0ide*/ text__pack_string;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1822] call /*emit_f0ide*/ libarma3__systemChat;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1822] call /*emit_f0ide*/ text__free_text
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1832);;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1834 = [ "gatherUsersSideMapMarkers failed"] call /*emit_f0ide*/ text__pack_string;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1834] call /*emit_f0ide*/ libarma3__systemChat;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1834] call /*emit_f0ide*/ text__free_text
       };
       // ATSbranchseq_end
       // ATSbranchseq_beg
       case 3 : {
-        if(not(/*ATSCKpat_con1(*/(_Tmp1820 select 0) == 1)) then {
+        if(not(/*ATSCKpat_con1(*/(_Tmp1832 select 0) == 1)) then {
           systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 41716(line=1082, offs=11) -- 42044(line=1089, offs=88)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1821 = (_Tmp1820 select 1);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1820);;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1821, fn_persistentUserMarkers__saveUsersSideMapMarkers] call /*emit_f0ide*/ libarma3__remoteExecServer
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1833 = (_Tmp1832 select 1);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1832);;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1833, fn_persistentUserMarkers__saveUsersSideMapMarkers] call /*emit_f0ide*/ libarma3__remoteExecServer
       };
       // ATSbranchseq_end
       default { assert(false); };
@@ -16157,23 +16243,23 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmp1825
-private _Tmp1825 = 0;
-// var _Tmp1826
-private _Tmp1826 = 0;
-// var _Tmp1827
-private _Tmp1827 = 0;
-// var _Tmp1828
-private _Tmp1828 = 0;
-// var _Tmp1829
-private _Tmp1829 = 0;
+// var _Tmp1837
+private _Tmp1837 = 0;
+// var _Tmp1838
+private _Tmp1838 = 0;
+// var _Tmp1839
+private _Tmp1839 = 0;
+// var _Tmp1840
+private _Tmp1840 = 0;
+// var _Tmp1841
+private _Tmp1841 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_load_and_restore_user_map_markers_server_side /*ATSINSflab*/ ;
-  _Tmp1825 = [ _Arg0] call /*emit_f0ide*/ libarma3__side;
-  _Tmp1826 = [ _Tmp1825] call /*emit_f0ide*/ fn_persistentUserMarkers__loadUsersSideMapMarkers;
+  _Tmp1837 = [ _Arg0] call /*emit_f0ide*/ libarma3__side;
+  _Tmp1838 = [ _Tmp1837] call /*emit_f0ide*/ fn_persistentUserMarkers__loadUsersSideMapMarkers;
   _Casefunx1 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
@@ -16181,31 +16267,31 @@ private _Tmplab_sqf = 0;
     {
       // ATSbranchseq_beg
       case 1 : {
-        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1826 select 0 } )) ) then {
+        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1838 select 0 } )) ) then {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
            [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 2 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1828 = [ "loadUsersSideMapMarkers: nothing loaded"] call /*emit_f0ide*/ text__pack_string;
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1829 = [ _Tmp1828] call /*emit_f0ide*/ text__text2string;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1829] call /*emit_f0ide*/ libarma3__diag_log;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1828] call /*emit_f0ide*/ text__free_text
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1840 = [ "loadUsersSideMapMarkers: nothing loaded"] call /*emit_f0ide*/ text__pack_string;
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1841 = [ _Tmp1840] call /*emit_f0ide*/ text__text2string;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1841] call /*emit_f0ide*/ libarma3__diag_log;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1840] call /*emit_f0ide*/ text__free_text
       };
       // ATSbranchseq_end
       // ATSbranchseq_beg
       case 3 : {
-        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1826 select 0 }) ) then {
+        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1838 select 0 }) ) then {
           systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 42307(line=1099, offs=11) -- 43026(line=1115, offs=10)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1827 = (_Tmp1826 select 0);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1826);;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Arg0, _Tmp1827, fn_persistentUserMarkers__restore_user_map_markers] call /*emit_f0ide*/ libarma3__remoteExecClient
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1839 = (_Tmp1838 select 0);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1838);;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Arg0, _Tmp1839, fn_persistentUserMarkers__restore_user_map_markers] call /*emit_f0ide*/ libarma3__remoteExecClient
       };
       // ATSbranchseq_end
       default { assert(false); };
@@ -16222,15 +16308,15 @@ private _Tmplab_sqf = 0;
 /*emit_f0ide*/ fn_persistentUserMarkers__load_and_restore_user_map_markers_any_user = compileFinal {
 //
 // knd = 0
-// var _Tmp1832
-private _Tmp1832 = 0;
+// var _Tmp1844
+private _Tmp1844 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_load_and_restore_user_map_markers_any_user /*ATSINSflab*/ ;
-  _Tmp1832 = [ ] call /*emit_f0ide*/ libarma3__player;
-   /*ATSINSmove_void _*/[ _Tmp1832, fn_persistentUserMarkers__load_and_restore_user_map_markers_server_side] call /*emit_f0ide*/ libarma3__remoteExecServer;
+  _Tmp1844 = [ ] call /*emit_f0ide*/ libarma3__player;
+   /*ATSINSmove_void _*/[ _Tmp1844, fn_persistentUserMarkers__load_and_restore_user_map_markers_server_side] call /*emit_f0ide*/ libarma3__remoteExecServer;
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
 }; // end-of-function
 
@@ -16240,15 +16326,15 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmp1834
-private _Tmp1834 = 0;
+// var _Tmp1846
+private _Tmp1846 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_load_and_restore_user_map_markers /*ATSINSflab*/ ;
-  _Tmp1834 = [ ] call /*emit_f0ide*/ libarma3__player;
-   /*ATSINSmove_void _*/[ _Tmp1834, fn_persistentUserMarkers__load_and_restore_user_map_markers_server_side] call /*emit_f0ide*/ libarma3__remoteExecServer;
+  _Tmp1846 = [ ] call /*emit_f0ide*/ libarma3__player;
+   /*ATSINSmove_void _*/[ _Tmp1846, fn_persistentUserMarkers__load_and_restore_user_map_markers_server_side] call /*emit_f0ide*/ libarma3__remoteExecServer;
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
 }; // end-of-function
 
@@ -16281,22 +16367,22 @@ private _Apy1 = 0;
 private _Apy2 = 0;
 // var _Apy3
 private _Apy3 = 0;
-// var _Tmp1837
-private _Tmp1837 = 0;
-// var _Tmp1838
-private _Tmp1838 = 0;
-// var _Tmp1839
-private _Tmp1839 = 0;
-// var _Tmp1840
-private _Tmp1840 = 0;
-// var _Tmp1842
-private _Tmp1842 = 0;
-// var _Tmp1844
-private _Tmp1844 = 0;
-// var _Tmp1845
-private _Tmp1845 = 0;
-// var _Tmp1847
-private _Tmp1847 = 0;
+// var _Tmp1849
+private _Tmp1849 = 0;
+// var _Tmp1850
+private _Tmp1850 = 0;
+// var _Tmp1851
+private _Tmp1851 = 0;
+// var _Tmp1852
+private _Tmp1852 = 0;
+// var _Tmp1854
+private _Tmp1854 = 0;
+// var _Tmp1856
+private _Tmp1856 = 0;
+// var _Tmp1857
+private _Tmp1857 = 0;
+// var _Tmp1859
+private _Tmp1859 = 0;
 // var Funlab_sqf
 private _Funlab_sqf = 0;
 // var Tmplab, Tmplab_sqf
@@ -16306,14 +16392,14 @@ private _Tmplab_sqf = 0;
   while {true} do {
     _Funlab_sqf = 0;
     // __patsflab_loop_492 /*ATSINSflab*/ ;
-    _Tmp1837 = [ _Arg3, _Arg1] call /*emit_f0ide*/ atspre_g1uint_eq_size;
-    if (_Tmp1837) then {
+    _Tmp1849 = [ _Arg3, _Arg1] call /*emit_f0ide*/ atspre_g1uint_eq_size;
+    if (_Tmp1849) then {
         ; // ATSINSmove_void();
       } // if-then
       else {
-        _Tmp1839 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-        _Tmp1838 = [ _Arg3, _Tmp1839] call /*emit_f0ide*/ atspre_g1uint_add_size;
-        _Tmp1840 = [ _Arg0, _Arg3] call /*emit_f0ide*/ libarma3__array_vt_get1;
+        _Tmp1851 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+        _Tmp1850 = [ _Arg3, _Tmp1851] call /*emit_f0ide*/ atspre_g1uint_add_size;
+        _Tmp1852 = [ _Arg0, _Arg3] call /*emit_f0ide*/ libarma3__array_vt_get1;
         _Casefunx1 /* emit_Casefunx */ = {
           params [ "_Casefun", "_Tmplab"];
           // switch(_Tmplab) {
@@ -16321,7 +16407,7 @@ private _Tmplab_sqf = 0;
           {
             // ATSbranchseq_beg
             case 1 : {
-              if(/*ATSCKptriscons*/ (not(isNil { _Tmp1840 select 0 } )) ) then {
+              if(/*ATSCKptriscons*/ (not(isNil { _Tmp1852 select 0 } )) ) then {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               } else {
                  [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
@@ -16333,27 +16419,27 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_end
             // ATSbranchseq_beg
             case 3 : {
-              if(/*ATSCKptrisnull*/ ( isNil { _Tmp1840 select 0 }) ) then {
+              if(/*ATSCKptrisnull*/ ( isNil { _Tmp1852 select 0 }) ) then {
                 systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 44411(line=1154, offs=19) -- 45220(line=1168, offs=19)");
               } else {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1842 = (_Tmp1840 select 0);
-/*emit2_branchlst rest-of-ATSINS*/              // ATSINSfreecon(_Tmp1840);;
-/*emit2_branchlst rest-of-ATSINS*/               /*ATSINSmove_void _*/[ _Arg2, _Tmp1842] call /*emit_f0ide*/ fn_persistentUserMarkers__ensure_map_marker_exist;
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1844 = [ /* ATSSELfltrec */ (_Tmp1842 select 0)] call /*emit_f0ide*/ fn_persistentUserMarkers__markerToSerializedMarker;
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1845 = [ _Tmp1844, _Tmp1842] call /*emit_f0ide*/ fn_persistentUserMarkers__eq_serialized_marker_vt;
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1847 = [ _Tmp1845] call /*emit_f0ide*/ atspre_neg_bool0;
-/*emit2_branchlst rest-of-ATSINS*/              if (_Tmp1847) then {
-                   /*ATSINSmove_void _*/[ _Tmp1842] call /*emit_f0ide*/ fn_persistentUserMarkers__reset_marker;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1854 = (_Tmp1852 select 0);
+/*emit2_branchlst rest-of-ATSINS*/              // ATSINSfreecon(_Tmp1852);;
+/*emit2_branchlst rest-of-ATSINS*/               /*ATSINSmove_void _*/[ _Arg2, _Tmp1854] call /*emit_f0ide*/ fn_persistentUserMarkers__ensure_map_marker_exist;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1856 = [ /* ATSSELfltrec */ (_Tmp1854 select 0)] call /*emit_f0ide*/ fn_persistentUserMarkers__markerToSerializedMarker;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1857 = [ _Tmp1856, _Tmp1854] call /*emit_f0ide*/ fn_persistentUserMarkers__eq_serialized_marker_vt;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1859 = [ _Tmp1857] call /*emit_f0ide*/ atspre_neg_bool0;
+/*emit2_branchlst rest-of-ATSINS*/              if (_Tmp1859) then {
+                   /*ATSINSmove_void _*/[ _Tmp1854] call /*emit_f0ide*/ fn_persistentUserMarkers__reset_marker;
                 } // if-then
                 else {
                   ; // ATSINSmove_void()
                 // if-else
                 };
-/*emit2_branchlst rest-of-ATSINS*/               /*ATSINSmove_void _*/[ _Tmp1844] call /*emit_f0ide*/ fn_persistentUserMarkers__free_serialized_marker
+/*emit2_branchlst rest-of-ATSINS*/               /*ATSINSmove_void _*/[ _Tmp1856] call /*emit_f0ide*/ fn_persistentUserMarkers__free_serialized_marker
             };
             // ATSbranchseq_end
             default { assert(false); };
@@ -16365,7 +16451,7 @@ private _Tmplab_sqf = 0;
         /* ATSINSmove_tlcal */ _Apy0 = _Arg0;
         /* ATSINSmove_tlcal */ _Apy1 = _Arg1;
         /* ATSINSmove_tlcal */ _Apy2 = _Arg2;
-        /* ATSINSmove_tlcal */ _Apy3 = _Tmp1838;
+        /* ATSINSmove_tlcal */ _Apy3 = _Tmp1850;
         /* ATSINSargmove_tlcal */ _Arg0 = _Apy0;
         /* ATSINSargmove_tlcal */ _Arg1 = _Apy1;
         /* ATSINSargmove_tlcal */ _Arg2 = _Apy2;
@@ -16385,22 +16471,22 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmp1849
-private _Tmp1849 = 0;
-// var _Tmp1850
-private _Tmp1850 = 0;
-// var _Tmp1852
-private _Tmp1852 = 0;
+// var _Tmp1861
+private _Tmp1861 = 0;
+// var _Tmp1862
+private _Tmp1862 = 0;
+// var _Tmp1864
+private _Tmp1864 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_draw_markers_493 /*ATSINSflab*/ ;
-  _Tmp1849 = [ ] call /*emit_f0ide*/ libarma3__allMapMarkers;
-  _Tmp1850 = [ /* ATSSELfltrec */ (_Arg0 select 4)] call /*emit_f0ide*/ libarma3__array_vt_count;
-  _Tmp1852 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-   /*ATSINSmove_void _*/[ /* ATSSELfltrec */ (_Arg0 select 4), _Tmp1850, _Tmp1849, _Tmp1852] call /*emit_f0ide*/ loop_492;
-   /*ATSINSmove_void _*/[ _Tmp1849, /*emit_f0ide*/ f___patsfun_494] call /*emit_f0ide*/ libarma3__array_vt_free;
+  _Tmp1861 = [ ] call /*emit_f0ide*/ libarma3__allMapMarkers;
+  _Tmp1862 = [ /* ATSSELfltrec */ (_Arg0 select 4)] call /*emit_f0ide*/ libarma3__array_vt_count;
+  _Tmp1864 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+   /*ATSINSmove_void _*/[ /* ATSSELfltrec */ (_Arg0 select 4), _Tmp1862, _Tmp1861, _Tmp1864] call /*emit_f0ide*/ loop_492;
+   /*ATSINSmove_void _*/[ _Tmp1861, /*emit_f0ide*/ f___patsfun_494] call /*emit_f0ide*/ libarma3__array_vt_free;
    /*ATSINSmove_void _*/[ _Arg0] call /*emit_f0ide*/ fn_persistentUserMarkers__free_side_markers;
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
 }; // end-of-function
@@ -16425,15 +16511,15 @@ private _Tmplab_sqf = 0;
 /*emit_f0ide*/ fn_persistentUserMarkers__mapX = compileFinal {
 //
 // knd = 0
-// var _Tmpret1855
-private _Tmpret1855 = 0;
+// var _Tmpret1867
+private _Tmpret1867 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_mapX /*ATSINSflab*/ ;
-  _Tmpret1855 = [ ] call /*emit_f0ide*/ ext_mapX;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1855;
+  _Tmpret1867 = [ ] call /*emit_f0ide*/ ext_mapX;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1867;
 }; // end-of-function
 
 
@@ -16441,67 +16527,67 @@ private _Tmplab_sqf = 0;
 /*emit_f0ide*/ fn_persistentUserMarkers__addMapActions = compileFinal {
 //
 // knd = 0
-// var _Tmp1857
-private _Tmp1857 = 0;
-// var _Tmp1858
-private _Tmp1858 = 0;
-// var _Tmp1859
-private _Tmp1859 = 0;
-// var _Tmp1860
-private _Tmp1860 = 0;
-// var _Tmp1861
-private _Tmp1861 = 0;
-// var _Tmp1862
-private _Tmp1862 = 0;
-// var _Tmp1863
-private _Tmp1863 = 0;
-// var _Tmp1864
-private _Tmp1864 = 0;
-// var _Tmp1865
-private _Tmp1865 = 0;
-// var _Tmp1866
-private _Tmp1866 = 0;
-// var _Tmp1867
-private _Tmp1867 = 0;
+// var _Tmp1869
+private _Tmp1869 = 0;
+// var _Tmp1870
+private _Tmp1870 = 0;
 // var _Tmp1871
 private _Tmp1871 = 0;
 // var _Tmp1872
 private _Tmp1872 = 0;
+// var _Tmp1873
+private _Tmp1873 = 0;
 // var _Tmp1874
 private _Tmp1874 = 0;
+// var _Tmp1875
+private _Tmp1875 = 0;
 // var _Tmp1876
 private _Tmp1876 = 0;
 // var _Tmp1877
 private _Tmp1877 = 0;
+// var _Tmp1878
+private _Tmp1878 = 0;
 // var _Tmp1879
 private _Tmp1879 = 0;
-// var _Tmp1881
-private _Tmp1881 = 0;
-// var _Tmp1882
-private _Tmp1882 = 0;
+// var _Tmp1883
+private _Tmp1883 = 0;
 // var _Tmp1884
 private _Tmp1884 = 0;
+// var _Tmp1886
+private _Tmp1886 = 0;
+// var _Tmp1888
+private _Tmp1888 = 0;
+// var _Tmp1889
+private _Tmp1889 = 0;
+// var _Tmp1891
+private _Tmp1891 = 0;
+// var _Tmp1893
+private _Tmp1893 = 0;
+// var _Tmp1894
+private _Tmp1894 = 0;
+// var _Tmp1896
+private _Tmp1896 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_addMapActions /*ATSINSflab*/ ;
-  _Tmp1857 = [ ] call /*emit_f0ide*/ fn_persistentUserMarkers__mapX;
-  _Tmp1858 = [ ] call /*emit_f0ide*/ libarma3__player;
-  _Tmp1860 = [ "STR_persistentUserMarkers_restore_map_markers"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1859 = [ _Tmp1860] call /*emit_f0ide*/ libarma3__localize;
-  _Tmp1862 = [ "STR_persistentUserMarkers_clean_and_restore_map_markers"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1861 = [ _Tmp1862] call /*emit_f0ide*/ libarma3__localize;
-  _Tmp1864 = [ "STR_persistentUserMarkers_save_map_markers"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1863 = [ _Tmp1864] call /*emit_f0ide*/ libarma3__localize;
-  _Tmp1865 = [ _Tmp1857, _Tmp1859, fn_persistentUserMarkers__restoreMapMarkers_action, 0, 1.5, false, true] call /*emit_f0ide*/ libarma3__addAction;
-  _Tmp1866 = [ _Tmp1857, _Tmp1861, fn_persistentUserMarkers__cleanAndRestoreMapMarkers_action, 0, 1.5, false, true] call /*emit_f0ide*/ libarma3__addAction;
-  _Tmp1867 = [ _Tmp1857, _Tmp1863, fn_persistentUserMarkers__saveMapMarkers_action, 0, 1.5, false, true] call /*emit_f0ide*/ libarma3__addAction;
-   /*ATSINSmove_void _*/[ _Tmp1859] call /*emit_f0ide*/ text__free_text;
-   /*ATSINSmove_void _*/[ _Tmp1861] call /*emit_f0ide*/ text__free_text;
-   /*ATSINSmove_void _*/[ _Tmp1863] call /*emit_f0ide*/ text__free_text;
-  _Tmp1871 = [ "fn_persistentUserMarkers_restoreMapMarkers_action_id"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1872 = [ _Tmp1857, _Tmp1871, _Tmp1865, false] call /*emit_f0ide*/ libarma3__swapVariable_vt1;
+  _Tmp1869 = [ ] call /*emit_f0ide*/ fn_persistentUserMarkers__mapX;
+  _Tmp1870 = [ ] call /*emit_f0ide*/ libarma3__player;
+  _Tmp1872 = [ "STR_persistentUserMarkers_restore_map_markers"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1871 = [ _Tmp1872] call /*emit_f0ide*/ libarma3__localize;
+  _Tmp1874 = [ "STR_persistentUserMarkers_clean_and_restore_map_markers"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1873 = [ _Tmp1874] call /*emit_f0ide*/ libarma3__localize;
+  _Tmp1876 = [ "STR_persistentUserMarkers_save_map_markers"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1875 = [ _Tmp1876] call /*emit_f0ide*/ libarma3__localize;
+  _Tmp1877 = [ _Tmp1869, _Tmp1871, fn_persistentUserMarkers__restoreMapMarkers_action, 0, 1.5, false, true] call /*emit_f0ide*/ libarma3__addAction;
+  _Tmp1878 = [ _Tmp1869, _Tmp1873, fn_persistentUserMarkers__cleanAndRestoreMapMarkers_action, 0, 1.5, false, true] call /*emit_f0ide*/ libarma3__addAction;
+  _Tmp1879 = [ _Tmp1869, _Tmp1875, fn_persistentUserMarkers__saveMapMarkers_action, 0, 1.5, false, true] call /*emit_f0ide*/ libarma3__addAction;
+   /*ATSINSmove_void _*/[ _Tmp1871] call /*emit_f0ide*/ text__free_text;
+   /*ATSINSmove_void _*/[ _Tmp1873] call /*emit_f0ide*/ text__free_text;
+   /*ATSINSmove_void _*/[ _Tmp1875] call /*emit_f0ide*/ text__free_text;
+  _Tmp1883 = [ "fn_persistentUserMarkers_restoreMapMarkers_action_id"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1884 = [ _Tmp1869, _Tmp1883, _Tmp1877, false] call /*emit_f0ide*/ libarma3__swapVariable_vt1;
   _Casefunx1 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
@@ -16509,7 +16595,7 @@ private _Tmplab_sqf = 0;
     {
       // ATSbranchseq_beg
       case 1 : {
-        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1872 select 0 } )) ) then {
+        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1884 select 0 } )) ) then {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
            [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
@@ -16521,16 +16607,16 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_end
       // ATSbranchseq_beg
       case 3 : {
-        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1872 select 0 }) ) then {
+        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1884 select 0 }) ) then {
           systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 48102(line=1260, offs=12) -- 48227(line=1262, offs=83)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1874 = (_Tmp1872 select 0);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1872);;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1857, _Tmp1874] call /*emit_f0ide*/ libarma3__removeAction
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1886 = (_Tmp1884 select 0);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1884);;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1869, _Tmp1886] call /*emit_f0ide*/ libarma3__removeAction
       };
       // ATSbranchseq_end
       default { assert(false); };
@@ -16539,9 +16625,9 @@ private _Tmplab_sqf = 0;
   }; // endfun
   [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
-   /*ATSINSmove_void _*/[ _Tmp1871] call /*emit_f0ide*/ text__free_text;
-  _Tmp1876 = [ "fn_persistentUserMarkers_cleanAndRestoreMapMarkers_action_id"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1877 = [ _Tmp1857, _Tmp1876, _Tmp1866, false] call /*emit_f0ide*/ libarma3__swapVariable_vt1;
+   /*ATSINSmove_void _*/[ _Tmp1883] call /*emit_f0ide*/ text__free_text;
+  _Tmp1888 = [ "fn_persistentUserMarkers_cleanAndRestoreMapMarkers_action_id"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1889 = [ _Tmp1869, _Tmp1888, _Tmp1878, false] call /*emit_f0ide*/ libarma3__swapVariable_vt1;
   _Casefunx2 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
@@ -16549,7 +16635,7 @@ private _Tmplab_sqf = 0;
     {
       // ATSbranchseq_beg
       case 1 : {
-        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1877 select 0 } )) ) then {
+        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1889 select 0 } )) ) then {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
            [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
@@ -16561,16 +16647,16 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_end
       // ATSbranchseq_beg
       case 3 : {
-        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1877 select 0 }) ) then {
+        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1889 select 0 }) ) then {
           systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 48681(line=1272, offs=12) -- 48806(line=1274, offs=83)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1879 = (_Tmp1877 select 0);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1877);;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1857, _Tmp1879] call /*emit_f0ide*/ libarma3__removeAction
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1891 = (_Tmp1889 select 0);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1889);;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1869, _Tmp1891] call /*emit_f0ide*/ libarma3__removeAction
       };
       // ATSbranchseq_end
       default { assert(false); };
@@ -16579,9 +16665,9 @@ private _Tmplab_sqf = 0;
   }; // endfun
   [ _Casefunx2 /* emit_Casefunx */, 1 ] call _Casefunx2 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
-   /*ATSINSmove_void _*/[ _Tmp1876] call /*emit_f0ide*/ text__free_text;
-  _Tmp1881 = [ "fn_persistentUserMarkers_saveMapMarkers_action_id"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1882 = [ _Tmp1857, _Tmp1881, _Tmp1867, false] call /*emit_f0ide*/ libarma3__swapVariable_vt1;
+   /*ATSINSmove_void _*/[ _Tmp1888] call /*emit_f0ide*/ text__free_text;
+  _Tmp1893 = [ "fn_persistentUserMarkers_saveMapMarkers_action_id"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1894 = [ _Tmp1869, _Tmp1893, _Tmp1879, false] call /*emit_f0ide*/ libarma3__swapVariable_vt1;
   _Casefunx3 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
@@ -16589,7 +16675,7 @@ private _Tmplab_sqf = 0;
     {
       // ATSbranchseq_beg
       case 1 : {
-        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1882 select 0 } )) ) then {
+        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1894 select 0 } )) ) then {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
            [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
@@ -16601,16 +16687,16 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_end
       // ATSbranchseq_beg
       case 3 : {
-        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1882 select 0 }) ) then {
+        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1894 select 0 }) ) then {
           systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 49224(line=1284, offs=12) -- 49349(line=1286, offs=83)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1884 = (_Tmp1882 select 0);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1882);;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1857, _Tmp1884] call /*emit_f0ide*/ libarma3__removeAction
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1896 = (_Tmp1894 select 0);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1894);;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1869, _Tmp1896] call /*emit_f0ide*/ libarma3__removeAction
       };
       // ATSbranchseq_end
       default { assert(false); };
@@ -16619,65 +16705,13 @@ private _Tmplab_sqf = 0;
   }; // endfun
   [ _Casefunx3 /* emit_Casefunx */, 1 ] call _Casefunx3 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
-   /*ATSINSmove_void _*/[ _Tmp1881] call /*emit_f0ide*/ text__free_text;
+   /*ATSINSmove_void _*/[ _Tmp1893] call /*emit_f0ide*/ text__free_text;
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
 }; // end-of-function
 
 
 /*fun*/
 /*emit_f0ide*/ fn_persistentUserMarkers__restoreMapMarkers_action = compileFinal {
-  params ["_Arg0", "_Arg1", "_Arg2", "_Arg3"];
-//
-// knd = 0
-// var _Tmp1886
-private _Tmp1886 = 0;
-// var _Tmp1887
-private _Tmp1887 = 0;
-// var _Tmp1889
-private _Tmp1889 = 0;
-// var _Tmp1890
-private _Tmp1890 = 0;
-// var _Tmp1892
-private _Tmp1892 = 0;
-// var _Tmp1893
-private _Tmp1893 = 0;
-// var _Tmp1895
-private _Tmp1895 = 0;
-// var Tmplab, Tmplab_sqf
-private _Tmplab = 0;
-private _Tmplab_sqf = 0;
-//
-  // __patsflab_restoreMapMarkers_action /*ATSINSflab*/ ;
-  _Tmp1886 = [ _Arg1] call /*emit_f0ide*/ libarma3__isNotNull;
-  if (_Tmp1886) then {
-      _Tmp1887 = [ _Arg1] call /*emit_f0ide*/ fn_addon__ADDON_fnc_isEligibleCommander;
-      if (_Tmp1887) then {
-           /*ATSINSmove_void _*/[ _Arg1] call /*emit_f0ide*/ fn_persistentUserMarkers__load_and_restore_user_map_markers;
-          _Tmp1890 = [ "STR_persistentUserMarkers_user_map_markers_loaded_and_restored"] call /*emit_f0ide*/ text__pack_string;
-          _Tmp1889 = [ _Tmp1890] call /*emit_f0ide*/ libarma3__localize;
-           /*ATSINSmove_void _*/[ _Tmp1889] call /*emit_f0ide*/ libarma3__systemChat;
-           /*ATSINSmove_void _*/[ _Tmp1889] call /*emit_f0ide*/ text__free_text;
-        } // if-then
-        else {
-          _Tmp1893 = [ "STR_persistentUserMarkers_only_commander_can_do_this"] call /*emit_f0ide*/ text__pack_string;
-          _Tmp1892 = [ _Tmp1893] call /*emit_f0ide*/ libarma3__localize;
-           /*ATSINSmove_void _*/[ _Tmp1892] call /*emit_f0ide*/ libarma3__systemChat;
-           /*ATSINSmove_void _*/[ _Tmp1892] call /*emit_f0ide*/ text__free_text
-        // if-else
-        };
-    } // if-then
-    else {
-      _Tmp1895 = [ "restoreMapMarkers_action: caller is null"] call /*emit_f0ide*/ text__pack_string;
-       /*ATSINSmove_void _*/[ _Tmp1895] call /*emit_f0ide*/ libarma3__systemChat;
-       /*ATSINSmove_void _*/[ _Tmp1895] call /*emit_f0ide*/ text__free_text
-    // if-else
-    };
-/*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
-}; // end-of-function
-
-
-/*fun*/
-/*emit_f0ide*/ fn_persistentUserMarkers__saveMapMarkers_action = compileFinal {
   params ["_Arg0", "_Arg1", "_Arg2", "_Arg3"];
 //
 // knd = 0
@@ -16699,13 +16733,13 @@ private _Tmp1907 = 0;
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
-  // __patsflab_saveMapMarkers_action /*ATSINSflab*/ ;
+  // __patsflab_restoreMapMarkers_action /*ATSINSflab*/ ;
   _Tmp1898 = [ _Arg1] call /*emit_f0ide*/ libarma3__isNotNull;
   if (_Tmp1898) then {
       _Tmp1899 = [ _Arg1] call /*emit_f0ide*/ fn_addon__ADDON_fnc_isEligibleCommander;
       if (_Tmp1899) then {
-           /*ATSINSmove_void _*/[ _Arg1] call /*emit_f0ide*/ fn_persistentUserMarkers__persist_user_map_markers;
-          _Tmp1902 = [ "STR_persistentUserMarkers_user_map_markers_saved"] call /*emit_f0ide*/ text__pack_string;
+           /*ATSINSmove_void _*/[ _Arg1] call /*emit_f0ide*/ fn_persistentUserMarkers__load_and_restore_user_map_markers;
+          _Tmp1902 = [ "STR_persistentUserMarkers_user_map_markers_loaded_and_restored"] call /*emit_f0ide*/ text__pack_string;
           _Tmp1901 = [ _Tmp1902] call /*emit_f0ide*/ libarma3__localize;
            /*ATSINSmove_void _*/[ _Tmp1901] call /*emit_f0ide*/ libarma3__systemChat;
            /*ATSINSmove_void _*/[ _Tmp1901] call /*emit_f0ide*/ text__free_text;
@@ -16719,9 +16753,61 @@ private _Tmplab_sqf = 0;
         };
     } // if-then
     else {
-      _Tmp1907 = [ "saveMapMarkers_action: caller is null"] call /*emit_f0ide*/ text__pack_string;
+      _Tmp1907 = [ "restoreMapMarkers_action: caller is null"] call /*emit_f0ide*/ text__pack_string;
        /*ATSINSmove_void _*/[ _Tmp1907] call /*emit_f0ide*/ libarma3__systemChat;
        /*ATSINSmove_void _*/[ _Tmp1907] call /*emit_f0ide*/ text__free_text
+    // if-else
+    };
+/*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
+}; // end-of-function
+
+
+/*fun*/
+/*emit_f0ide*/ fn_persistentUserMarkers__saveMapMarkers_action = compileFinal {
+  params ["_Arg0", "_Arg1", "_Arg2", "_Arg3"];
+//
+// knd = 0
+// var _Tmp1910
+private _Tmp1910 = 0;
+// var _Tmp1911
+private _Tmp1911 = 0;
+// var _Tmp1913
+private _Tmp1913 = 0;
+// var _Tmp1914
+private _Tmp1914 = 0;
+// var _Tmp1916
+private _Tmp1916 = 0;
+// var _Tmp1917
+private _Tmp1917 = 0;
+// var _Tmp1919
+private _Tmp1919 = 0;
+// var Tmplab, Tmplab_sqf
+private _Tmplab = 0;
+private _Tmplab_sqf = 0;
+//
+  // __patsflab_saveMapMarkers_action /*ATSINSflab*/ ;
+  _Tmp1910 = [ _Arg1] call /*emit_f0ide*/ libarma3__isNotNull;
+  if (_Tmp1910) then {
+      _Tmp1911 = [ _Arg1] call /*emit_f0ide*/ fn_addon__ADDON_fnc_isEligibleCommander;
+      if (_Tmp1911) then {
+           /*ATSINSmove_void _*/[ _Arg1] call /*emit_f0ide*/ fn_persistentUserMarkers__persist_user_map_markers;
+          _Tmp1914 = [ "STR_persistentUserMarkers_user_map_markers_saved"] call /*emit_f0ide*/ text__pack_string;
+          _Tmp1913 = [ _Tmp1914] call /*emit_f0ide*/ libarma3__localize;
+           /*ATSINSmove_void _*/[ _Tmp1913] call /*emit_f0ide*/ libarma3__systemChat;
+           /*ATSINSmove_void _*/[ _Tmp1913] call /*emit_f0ide*/ text__free_text;
+        } // if-then
+        else {
+          _Tmp1917 = [ "STR_persistentUserMarkers_only_commander_can_do_this"] call /*emit_f0ide*/ text__pack_string;
+          _Tmp1916 = [ _Tmp1917] call /*emit_f0ide*/ libarma3__localize;
+           /*ATSINSmove_void _*/[ _Tmp1916] call /*emit_f0ide*/ libarma3__systemChat;
+           /*ATSINSmove_void _*/[ _Tmp1916] call /*emit_f0ide*/ text__free_text
+        // if-else
+        };
+    } // if-then
+    else {
+      _Tmp1919 = [ "saveMapMarkers_action: caller is null"] call /*emit_f0ide*/ text__pack_string;
+       /*ATSINSmove_void _*/[ _Tmp1919] call /*emit_f0ide*/ libarma3__systemChat;
+       /*ATSINSmove_void _*/[ _Tmp1919] call /*emit_f0ide*/ text__free_text
     // if-else
     };
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
@@ -16733,48 +16819,48 @@ private _Tmplab_sqf = 0;
   params ["_Arg0", "_Arg1", "_Arg2", "_Arg3"];
 //
 // knd = 0
-// var _Tmp1910
-private _Tmp1910 = 0;
-// var _Tmp1911
-private _Tmp1911 = 0;
-// var _Tmp1914
-private _Tmp1914 = 0;
-// var _Tmp1915
-private _Tmp1915 = 0;
-// var _Tmp1917
-private _Tmp1917 = 0;
-// var _Tmp1918
-private _Tmp1918 = 0;
-// var _Tmp1920
-private _Tmp1920 = 0;
+// var _Tmp1922
+private _Tmp1922 = 0;
+// var _Tmp1923
+private _Tmp1923 = 0;
+// var _Tmp1926
+private _Tmp1926 = 0;
+// var _Tmp1927
+private _Tmp1927 = 0;
+// var _Tmp1929
+private _Tmp1929 = 0;
+// var _Tmp1930
+private _Tmp1930 = 0;
+// var _Tmp1932
+private _Tmp1932 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_cleanAndRestoreMapMarkers_action /*ATSINSflab*/ ;
-  _Tmp1910 = [ _Arg1] call /*emit_f0ide*/ libarma3__isNotNull;
-  if (_Tmp1910) then {
-      _Tmp1911 = [ _Arg1] call /*emit_f0ide*/ fn_addon__ADDON_fnc_isEligibleCommander;
-      if (_Tmp1911) then {
+  _Tmp1922 = [ _Arg1] call /*emit_f0ide*/ libarma3__isNotNull;
+  if (_Tmp1922) then {
+      _Tmp1923 = [ _Arg1] call /*emit_f0ide*/ fn_addon__ADDON_fnc_isEligibleCommander;
+      if (_Tmp1923) then {
            /*ATSINSmove_void _*/[ _Arg1] call /*emit_f0ide*/ fn_persistentUserMarkers__clean_user_map_markers;
            /*ATSINSmove_void _*/[ _Arg1] call /*emit_f0ide*/ fn_persistentUserMarkers__load_and_restore_user_map_markers;
-          _Tmp1915 = [ "STR_persistentUserMarkers_user_map_markers_cleaned_and_restored"] call /*emit_f0ide*/ text__pack_string;
-          _Tmp1914 = [ _Tmp1915] call /*emit_f0ide*/ libarma3__localize;
-           /*ATSINSmove_void _*/[ _Tmp1914] call /*emit_f0ide*/ libarma3__systemChat;
-           /*ATSINSmove_void _*/[ _Tmp1914] call /*emit_f0ide*/ text__free_text;
+          _Tmp1927 = [ "STR_persistentUserMarkers_user_map_markers_cleaned_and_restored"] call /*emit_f0ide*/ text__pack_string;
+          _Tmp1926 = [ _Tmp1927] call /*emit_f0ide*/ libarma3__localize;
+           /*ATSINSmove_void _*/[ _Tmp1926] call /*emit_f0ide*/ libarma3__systemChat;
+           /*ATSINSmove_void _*/[ _Tmp1926] call /*emit_f0ide*/ text__free_text;
         } // if-then
         else {
-          _Tmp1918 = [ "STR_persistentUserMarkers_only_commander_can_do_this"] call /*emit_f0ide*/ text__pack_string;
-          _Tmp1917 = [ _Tmp1918] call /*emit_f0ide*/ libarma3__localize;
-           /*ATSINSmove_void _*/[ _Tmp1917] call /*emit_f0ide*/ libarma3__systemChat;
-           /*ATSINSmove_void _*/[ _Tmp1917] call /*emit_f0ide*/ text__free_text
+          _Tmp1930 = [ "STR_persistentUserMarkers_only_commander_can_do_this"] call /*emit_f0ide*/ text__pack_string;
+          _Tmp1929 = [ _Tmp1930] call /*emit_f0ide*/ libarma3__localize;
+           /*ATSINSmove_void _*/[ _Tmp1929] call /*emit_f0ide*/ libarma3__systemChat;
+           /*ATSINSmove_void _*/[ _Tmp1929] call /*emit_f0ide*/ text__free_text
         // if-else
         };
     } // if-then
     else {
-      _Tmp1920 = [ "saveMapMarkers_action: caller is null"] call /*emit_f0ide*/ text__pack_string;
-       /*ATSINSmove_void _*/[ _Tmp1920] call /*emit_f0ide*/ libarma3__systemChat;
-       /*ATSINSmove_void _*/[ _Tmp1920] call /*emit_f0ide*/ text__free_text
+      _Tmp1932 = [ "saveMapMarkers_action: caller is null"] call /*emit_f0ide*/ text__pack_string;
+       /*ATSINSmove_void _*/[ _Tmp1932] call /*emit_f0ide*/ libarma3__systemChat;
+       /*ATSINSmove_void _*/[ _Tmp1932] call /*emit_f0ide*/ text__free_text
     // if-else
     };
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
@@ -16786,30 +16872,30 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmp1923
-private _Tmp1923 = 0;
-// var _Tmp1924
-private _Tmp1924 = 0;
-// var _Tmp1938
-private _Tmp1938 = 0;
-// var _Tmp1939
-private _Tmp1939 = 0;
-// var _Tmp1940
-private _Tmp1940 = 0;
+// var _Tmp1935
+private _Tmp1935 = 0;
+// var _Tmp1936
+private _Tmp1936 = 0;
+// var _Tmp1950
+private _Tmp1950 = 0;
+// var _Tmp1951
+private _Tmp1951 = 0;
+// var _Tmp1952
+private _Tmp1952 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_clean_user_map_markers /*ATSINSflab*/ ;
-  _Tmp1923 = [ ] call /*emit_f0ide*/ libarma3__allMapMarkers;
-  _Tmp1924 = [ _Tmp1923] call /*emit_f0ide*/ libarma3__array_vt_count;
-  _Tmp1938 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-   /*ATSINSmove_void _*/[ _Tmp1923, _Tmp1924, _Tmp1938] call /*emit_f0ide*/ loop_501;
-  _Tmp1940 = [ "STR_persistentUserMarkers_user_map_markers_cleaned"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1939 = [ _Tmp1940] call /*emit_f0ide*/ libarma3__localize;
-   /*ATSINSmove_void _*/[ _Tmp1939] call /*emit_f0ide*/ libarma3__systemChat;
-   /*ATSINSmove_void _*/[ _Tmp1939] call /*emit_f0ide*/ text__free_text;
-   /*ATSINSmove_void _*/[ _Tmp1923, /*emit_f0ide*/ f___patsfun_502] call /*emit_f0ide*/ libarma3__array_vt_free;
+  _Tmp1935 = [ ] call /*emit_f0ide*/ libarma3__allMapMarkers;
+  _Tmp1936 = [ _Tmp1935] call /*emit_f0ide*/ libarma3__array_vt_count;
+  _Tmp1950 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+   /*ATSINSmove_void _*/[ _Tmp1935, _Tmp1936, _Tmp1950] call /*emit_f0ide*/ loop_501;
+  _Tmp1952 = [ "STR_persistentUserMarkers_user_map_markers_cleaned"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1951 = [ _Tmp1952] call /*emit_f0ide*/ libarma3__localize;
+   /*ATSINSmove_void _*/[ _Tmp1951] call /*emit_f0ide*/ libarma3__systemChat;
+   /*ATSINSmove_void _*/[ _Tmp1951] call /*emit_f0ide*/ text__free_text;
+   /*ATSINSmove_void _*/[ _Tmp1935, /*emit_f0ide*/ f___patsfun_502] call /*emit_f0ide*/ libarma3__array_vt_free;
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
 }; // end-of-function
 
@@ -16825,24 +16911,24 @@ private _Apy0 = 0;
 private _Apy1 = 0;
 // var _Apy2
 private _Apy2 = 0;
-// var _Tmp1926
-private _Tmp1926 = 0;
-// var _Tmp1927
-private _Tmp1927 = 0;
-// var _Tmp1929
-private _Tmp1929 = 0;
-// var _Tmp1930
-private _Tmp1930 = 0;
-// var _Tmp1931
-private _Tmp1931 = 0;
-// var _Tmp1932
-private _Tmp1932 = 0;
-// var _Tmp1933
-private _Tmp1933 = 0;
-// var _Tmp1935
-private _Tmp1935 = 0;
-// var _Tmp1936
-private _Tmp1936 = 0;
+// var _Tmp1938
+private _Tmp1938 = 0;
+// var _Tmp1939
+private _Tmp1939 = 0;
+// var _Tmp1941
+private _Tmp1941 = 0;
+// var _Tmp1942
+private _Tmp1942 = 0;
+// var _Tmp1943
+private _Tmp1943 = 0;
+// var _Tmp1944
+private _Tmp1944 = 0;
+// var _Tmp1945
+private _Tmp1945 = 0;
+// var _Tmp1947
+private _Tmp1947 = 0;
+// var _Tmp1948
+private _Tmp1948 = 0;
 // var Funlab_sqf
 private _Funlab_sqf = 0;
 // var Tmplab, Tmplab_sqf
@@ -16852,12 +16938,12 @@ private _Tmplab_sqf = 0;
   while {true} do {
     _Funlab_sqf = 0;
     // __patsflab_loop_501 /*ATSINSflab*/ ;
-    _Tmp1926 = [ _Arg2, _Arg1] call /*emit_f0ide*/ atspre_g1uint_eq_size;
-    if (_Tmp1926) then {
+    _Tmp1938 = [ _Arg2, _Arg1] call /*emit_f0ide*/ atspre_g1uint_eq_size;
+    if (_Tmp1938) then {
         ; // ATSINSmove_void();
       } // if-then
       else {
-        _Tmp1927 = [ _Arg0, _Arg2] call /*emit_f0ide*/ libarma3__array_vt_get1;
+        _Tmp1939 = [ _Arg0, _Arg2] call /*emit_f0ide*/ libarma3__array_vt_get1;
         _Casefunx1 /* emit_Casefunx */ = {
           params [ "_Casefun", "_Tmplab"];
           // switch(_Tmplab) {
@@ -16865,7 +16951,7 @@ private _Tmplab_sqf = 0;
           {
             // ATSbranchseq_beg
             case 1 : {
-              if(/*ATSCKptriscons*/ (not(isNil { _Tmp1927 select 0 } )) ) then {
+              if(/*ATSCKptriscons*/ (not(isNil { _Tmp1939 select 0 } )) ) then {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               } else {
                  [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
@@ -16877,27 +16963,27 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_end
             // ATSbranchseq_beg
             case 3 : {
-              if(/*ATSCKptrisnull*/ ( isNil { _Tmp1927 select 0 }) ) then {
+              if(/*ATSCKptrisnull*/ ( isNil { _Tmp1939 select 0 }) ) then {
                 systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 54009(line=1419, offs=22) -- 54672(line=1431, offs=21)");
               } else {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1929 = (_Tmp1927 select 0);
-/*emit2_branchlst rest-of-ATSINS*/              // ATSINSfreecon(_Tmp1927);;
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1930 = [ "_USER_DEFINED #"] call /*emit_f0ide*/ text__pack_string;
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1932 = [ _Tmp1930] call /*emit_f0ide*/ text__length;
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1931 = [ _Tmp1932, _Tmp1929] call /*emit_f0ide*/ text__take;
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1933 = [ _Tmp1931, _Tmp1930] call /*emit_f0ide*/ text__eq_text_text;
-/*emit2_branchlst rest-of-ATSINS*/              if (_Tmp1933) then {
-                   /*ATSINSmove_void _*/[ _Tmp1929] call /*emit_f0ide*/ libarma3__deleteMarker;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1941 = (_Tmp1939 select 0);
+/*emit2_branchlst rest-of-ATSINS*/              // ATSINSfreecon(_Tmp1939);;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1942 = [ "_USER_DEFINED #"] call /*emit_f0ide*/ text__pack_string;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1944 = [ _Tmp1942] call /*emit_f0ide*/ text__length;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1943 = [ _Tmp1944, _Tmp1941] call /*emit_f0ide*/ text__take;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1945 = [ _Tmp1943, _Tmp1942] call /*emit_f0ide*/ text__eq_text_text;
+/*emit2_branchlst rest-of-ATSINS*/              if (_Tmp1945) then {
+                   /*ATSINSmove_void _*/[ _Tmp1941] call /*emit_f0ide*/ libarma3__deleteMarker;
                 } // if-then
                 else {
                   ; // ATSINSmove_void()
                 // if-else
                 };
-/*emit2_branchlst rest-of-ATSINS*/               /*ATSINSmove_void _*/[ _Tmp1930] call /*emit_f0ide*/ text__free_text
+/*emit2_branchlst rest-of-ATSINS*/               /*ATSINSmove_void _*/[ _Tmp1942] call /*emit_f0ide*/ text__free_text
             };
             // ATSbranchseq_end
             default { assert(false); };
@@ -16906,11 +16992,11 @@ private _Tmplab_sqf = 0;
         }; // endfun
         [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
-        _Tmp1936 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-        _Tmp1935 = [ _Arg2, _Tmp1936] call /*emit_f0ide*/ atspre_g1uint_add_size;
+        _Tmp1948 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+        _Tmp1947 = [ _Arg2, _Tmp1948] call /*emit_f0ide*/ atspre_g1uint_add_size;
         /* ATSINSmove_tlcal */ _Apy0 = _Arg0;
         /* ATSINSmove_tlcal */ _Apy1 = _Arg1;
-        /* ATSINSmove_tlcal */ _Apy2 = _Tmp1935;
+        /* ATSINSmove_tlcal */ _Apy2 = _Tmp1947;
         /* ATSINSargmove_tlcal */ _Arg0 = _Apy0;
         /* ATSINSargmove_tlcal */ _Arg1 = _Apy1;
         /* ATSINSargmove_tlcal */ _Arg2 = _Apy2;
