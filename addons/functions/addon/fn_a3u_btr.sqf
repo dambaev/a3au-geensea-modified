@@ -13246,8 +13246,8 @@ private _Tmplab_sqf = 0;
     // __patsflab_loop_423 /*ATSINSflab*/ ;
     _Tmp1357 = [ _Arg5, _Arg4] call /*emit_f0ide*/ atspre_g1uint_eq_size;
     if (_Tmp1357) then {
-        _Tmp1359 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-        _Tmp1360 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+        _Tmp1359 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+        _Tmp1360 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
         /* ATSINSmove_nil */ _Tmp1361 = /*ATSINSmove_nil*/ [nil];
         _Tmp1358 = [_Arg2, _Tmp1359, _Tmp1360, _Tmp1361];
         _Tmp1364 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;

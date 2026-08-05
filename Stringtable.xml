@@ -69,23 +69,23 @@
           <Original>finish support request</Original>
           <Russian>Завершить запрос поддержки</Russian>
         </Key>
-        <Key ID=STR_persistentUserMarkers_only_administrator_can_do_this>
+        <Key ID="STR_persistentUserMarkers_only_administrator_can_do_this">
           <Original>only administrators can do this</Original>
           <Russian>Это действие доступно только администрации</Russian>
         </Key>
-        <Key ID=STR_support_cant_borrow_new_vehicle>
+        <Key ID="STR_support_cant_borrow_new_vehicle">
           <Original>unable to borrow new vehicle element</Original>
           <Russian>Не получилось завладеть элементом массива нового транспорта</Russian>
         </Key>
-        <Key ID=STR_support_cursor_object_not_vehicle>
+        <Key ID="STR_support_cursor_object_not_vehicle">
           <Original>cursor object not vehicle</Original>
           <Russian>Вы не смотрите на транспортное средство</Russian>
         </Key>
-        <Key ID=STR_support_request_support_new_actions_added>
+        <Key ID="STR_support_request_support_new_actions_added">
           <Original>appropriate actions added to actions menu</Original>
           <Russian>Новые действия добавлены в меню действий</Russian>
         </Key>
-        <Key ID=STR_support_vehicle_added_to_support>
+        <Key ID="STR_support_vehicle_added_to_support">
           <Original>support vehicle added to support request</Original>
           <Russian>Транспортное средство добавлено в запрос поддержки</Russian>
         </Key>
