@@ -1680,7 +1680,7 @@ ext_libarma3_bindConfig = {
 ext_libarma3_getText = {
   params [ "_cfg"];
   private _ret = getText _cfg;
-  systemChat( "ext_libarma3_getText " + str _ret);
+  systemChat( "ext_libarma3_getText " + str _cfg + " " + str _ret);
   private _is_nil = isNil { _ret};
   if _is_nil then {
     [ _is_nil, nil];
