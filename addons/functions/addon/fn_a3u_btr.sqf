@@ -16637,68 +16637,91 @@ private _Tmplab_sqf = 0;
 /*emit_f0ide*/ fn_persistentUserMarkers__addMapActions = compileFinal {
 //
 // knd = 0
-// var _Tmp1909
-private _Tmp1909 = 0;
-// var _Tmp1910
-private _Tmp1910 = 0;
-// var _Tmp1911
-private _Tmp1911 = 0;
-// var _Tmp1912
-private _Tmp1912 = 0;
+// var _Tmp1893
+private _Tmp1893 = 0;
 // var _Tmp1913
 private _Tmp1913 = 0;
-// var _Tmp1914
-private _Tmp1914 = 0;
 // var _Tmp1915
 private _Tmp1915 = 0;
-// var _Tmp1916
-private _Tmp1916 = 0;
 // var _Tmp1917
 private _Tmp1917 = 0;
 // var _Tmp1918
 private _Tmp1918 = 0;
 // var _Tmp1919
 private _Tmp1919 = 0;
+// var _Tmp1920
+private _Tmp1920 = 0;
+// var _Tmp1921
+private _Tmp1921 = 0;
+// var _Tmp1922
+private _Tmp1922 = 0;
 // var _Tmp1923
 private _Tmp1923 = 0;
 // var _Tmp1924
 private _Tmp1924 = 0;
+// var _Tmp1925
+private _Tmp1925 = 0;
 // var _Tmp1926
 private _Tmp1926 = 0;
+// var _Tmp1927
+private _Tmp1927 = 0;
 // var _Tmp1928
 private _Tmp1928 = 0;
 // var _Tmp1929
 private _Tmp1929 = 0;
-// var _Tmp1931
-private _Tmp1931 = 0;
-// var _Tmp1933
-private _Tmp1933 = 0;
+// var _Tmp1930
+private _Tmp1930 = 0;
 // var _Tmp1934
 private _Tmp1934 = 0;
-// var _Tmp1936
-private _Tmp1936 = 0;
+// var _Tmp1935
+private _Tmp1935 = 0;
+// var _Tmp1937
+private _Tmp1937 = 0;
+// var _Tmp1939
+private _Tmp1939 = 0;
+// var _Tmp1940
+private _Tmp1940 = 0;
+// var _Tmp1942
+private _Tmp1942 = 0;
+// var _Tmp1944
+private _Tmp1944 = 0;
+// var _Tmp1945
+private _Tmp1945 = 0;
+// var _Tmp1947
+private _Tmp1947 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_addMapActions /*ATSINSflab*/ ;
+  _Tmp1893 = [ "fn_persistentUserMarkers__addActions"] call /*emit_f0ide*/ text__pack_string;
+   /*ATSINSmove_void _*/[ _Tmp1893] call /*emit_f0ide*/ libarma3__systemChat0;
+   /*ATSINSmove_void _*/[ "fn_persistentUserMarkers__addActions"] call /*emit_f0ide*/ libarma3__diag_log;
    /*ATSINSmove_void _*/[ 600] call /*emit_f0ide*/ wait_for_map_not_nil_499;
-  _Tmp1909 = [ ] call /*emit_f0ide*/ fn_persistentUserMarkers__mapX;
-  _Tmp1910 = [ ] call /*emit_f0ide*/ libarma3__player;
-  _Tmp1912 = [ "STR_persistentUserMarkers_restore_map_markers"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1911 = [ _Tmp1912] call /*emit_f0ide*/ libarma3__localize;
-  _Tmp1914 = [ "STR_persistentUserMarkers_clean_and_restore_map_markers"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1913 = [ _Tmp1914] call /*emit_f0ide*/ libarma3__localize;
-  _Tmp1916 = [ "STR_persistentUserMarkers_save_map_markers"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1915 = [ _Tmp1916] call /*emit_f0ide*/ libarma3__localize;
-  _Tmp1917 = [ _Tmp1909, _Tmp1911, fn_persistentUserMarkers__restoreMapMarkers_action, 0, 1.5, false, true] call /*emit_f0ide*/ libarma3__addAction;
-  _Tmp1918 = [ _Tmp1909, _Tmp1913, fn_persistentUserMarkers__cleanAndRestoreMapMarkers_action, 0, 1.5, false, true] call /*emit_f0ide*/ libarma3__addAction;
-  _Tmp1919 = [ _Tmp1909, _Tmp1915, fn_persistentUserMarkers__saveMapMarkers_action, 0, 1.5, false, true] call /*emit_f0ide*/ libarma3__addAction;
-   /*ATSINSmove_void _*/[ _Tmp1911] call /*emit_f0ide*/ text__free_text;
-   /*ATSINSmove_void _*/[ _Tmp1913] call /*emit_f0ide*/ text__free_text;
-   /*ATSINSmove_void _*/[ _Tmp1915] call /*emit_f0ide*/ text__free_text;
-  _Tmp1923 = [ "fn_persistentUserMarkers_restoreMapMarkers_action_id"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1924 = [ _Tmp1909, _Tmp1923, _Tmp1917, false] call /*emit_f0ide*/ libarma3__swapVariable_vt1;
+  _Tmp1913 = [ "fn_persistentUserMarkers__addActions1"] call /*emit_f0ide*/ text__pack_string;
+   /*ATSINSmove_void _*/[ _Tmp1913] call /*emit_f0ide*/ libarma3__systemChat0;
+   /*ATSINSmove_void _*/[ "fn_persistentUserMarkers__addActions1"] call /*emit_f0ide*/ libarma3__diag_log;
+  _Tmp1915 = [ ] call /*emit_f0ide*/ fn_persistentUserMarkers__mapX;
+  _Tmp1918 = [ "fn_persistentUserMarkers__addActions1 "] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1920 = [ _Tmp1915] call /*emit_f0ide*/ libarma3__str;
+  _Tmp1919 = [ _Tmp1920] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1917 = [ _Tmp1918, _Tmp1919] call /*emit_f0ide*/ text__appendC_text_text;
+   /*ATSINSmove_void _*/[ _Tmp1917] call /*emit_f0ide*/ libarma3__systemChat0;
+  _Tmp1921 = [ ] call /*emit_f0ide*/ libarma3__player;
+  _Tmp1923 = [ "STR_persistentUserMarkers_restore_map_markers"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1922 = [ _Tmp1923] call /*emit_f0ide*/ libarma3__localize;
+  _Tmp1925 = [ "STR_persistentUserMarkers_clean_and_restore_map_markers"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1924 = [ _Tmp1925] call /*emit_f0ide*/ libarma3__localize;
+  _Tmp1927 = [ "STR_persistentUserMarkers_save_map_markers"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1926 = [ _Tmp1927] call /*emit_f0ide*/ libarma3__localize;
+  _Tmp1928 = [ _Tmp1915, _Tmp1922, fn_persistentUserMarkers__restoreMapMarkers_action, 0, 1.5, false, true] call /*emit_f0ide*/ libarma3__addAction;
+  _Tmp1929 = [ _Tmp1915, _Tmp1924, fn_persistentUserMarkers__cleanAndRestoreMapMarkers_action, 0, 1.5, false, true] call /*emit_f0ide*/ libarma3__addAction;
+  _Tmp1930 = [ _Tmp1915, _Tmp1926, fn_persistentUserMarkers__saveMapMarkers_action, 0, 1.5, false, true] call /*emit_f0ide*/ libarma3__addAction;
+   /*ATSINSmove_void _*/[ _Tmp1922] call /*emit_f0ide*/ text__free_text;
+   /*ATSINSmove_void _*/[ _Tmp1924] call /*emit_f0ide*/ text__free_text;
+   /*ATSINSmove_void _*/[ _Tmp1926] call /*emit_f0ide*/ text__free_text;
+  _Tmp1934 = [ "fn_persistentUserMarkers_restoreMapMarkers_action_id"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1935 = [ _Tmp1915, _Tmp1934, _Tmp1928, false] call /*emit_f0ide*/ libarma3__swapVariable_vt1;
   _Casefunx1 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
@@ -16706,7 +16729,7 @@ private _Tmplab_sqf = 0;
     {
       // ATSbranchseq_beg
       case 1 : {
-        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1924 select 0 } )) ) then {
+        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1935 select 0 } )) ) then {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
            [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
@@ -16718,16 +16741,16 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_end
       // ATSbranchseq_beg
       case 3 : {
-        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1924 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 47632(line=1259, offs=12) -- 47757(line=1261, offs=83)");
+        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1935 select 0 }) ) then {
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 48099(line=1268, offs=12) -- 48224(line=1270, offs=83)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1926 = (_Tmp1924 select 0);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1924);;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1909, _Tmp1926] call /*emit_f0ide*/ libarma3__removeAction
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1937 = (_Tmp1935 select 0);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1935);;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1915, _Tmp1937] call /*emit_f0ide*/ libarma3__removeAction
       };
       // ATSbranchseq_end
       default { assert(false); };
@@ -16736,9 +16759,9 @@ private _Tmplab_sqf = 0;
   }; // endfun
   [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
-   /*ATSINSmove_void _*/[ _Tmp1923] call /*emit_f0ide*/ text__free_text;
-  _Tmp1928 = [ "fn_persistentUserMarkers_cleanAndRestoreMapMarkers_action_id"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1929 = [ _Tmp1909, _Tmp1928, _Tmp1918, false] call /*emit_f0ide*/ libarma3__swapVariable_vt1;
+   /*ATSINSmove_void _*/[ _Tmp1934] call /*emit_f0ide*/ text__free_text;
+  _Tmp1939 = [ "fn_persistentUserMarkers_cleanAndRestoreMapMarkers_action_id"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1940 = [ _Tmp1915, _Tmp1939, _Tmp1929, false] call /*emit_f0ide*/ libarma3__swapVariable_vt1;
   _Casefunx2 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
@@ -16746,7 +16769,7 @@ private _Tmplab_sqf = 0;
     {
       // ATSbranchseq_beg
       case 1 : {
-        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1929 select 0 } )) ) then {
+        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1940 select 0 } )) ) then {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
            [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
@@ -16758,16 +16781,16 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_end
       // ATSbranchseq_beg
       case 3 : {
-        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1929 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 48211(line=1271, offs=12) -- 48336(line=1273, offs=83)");
+        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1940 select 0 }) ) then {
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 48678(line=1280, offs=12) -- 48803(line=1282, offs=83)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1931 = (_Tmp1929 select 0);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1929);;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1909, _Tmp1931] call /*emit_f0ide*/ libarma3__removeAction
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1942 = (_Tmp1940 select 0);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1940);;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1915, _Tmp1942] call /*emit_f0ide*/ libarma3__removeAction
       };
       // ATSbranchseq_end
       default { assert(false); };
@@ -16776,9 +16799,9 @@ private _Tmplab_sqf = 0;
   }; // endfun
   [ _Casefunx2 /* emit_Casefunx */, 1 ] call _Casefunx2 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
-   /*ATSINSmove_void _*/[ _Tmp1928] call /*emit_f0ide*/ text__free_text;
-  _Tmp1933 = [ "fn_persistentUserMarkers_saveMapMarkers_action_id"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1934 = [ _Tmp1909, _Tmp1933, _Tmp1919, false] call /*emit_f0ide*/ libarma3__swapVariable_vt1;
+   /*ATSINSmove_void _*/[ _Tmp1939] call /*emit_f0ide*/ text__free_text;
+  _Tmp1944 = [ "fn_persistentUserMarkers_saveMapMarkers_action_id"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1945 = [ _Tmp1915, _Tmp1944, _Tmp1930, false] call /*emit_f0ide*/ libarma3__swapVariable_vt1;
   _Casefunx3 /* emit_Casefunx */ = {
     params [ "_Casefun", "_Tmplab"];
     // switch(_Tmplab) {
@@ -16786,7 +16809,7 @@ private _Tmplab_sqf = 0;
     {
       // ATSbranchseq_beg
       case 1 : {
-        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1934 select 0 } )) ) then {
+        if(/*ATSCKptriscons*/ (not(isNil { _Tmp1945 select 0 } )) ) then {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         } else {
            [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
@@ -16798,16 +16821,16 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_end
       // ATSbranchseq_beg
       case 3 : {
-        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1934 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 48754(line=1283, offs=12) -- 48879(line=1285, offs=83)");
+        if(/*ATSCKptrisnull*/ ( isNil { _Tmp1945 select 0 }) ) then {
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 49221(line=1292, offs=12) -- 49346(line=1294, offs=83)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
       };
       case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/        _Tmp1936 = (_Tmp1934 select 0);
-/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1934);;
-/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1909, _Tmp1936] call /*emit_f0ide*/ libarma3__removeAction
+/*emit2_branchlst rest-of-ATSINS*/        _Tmp1947 = (_Tmp1945 select 0);
+/*emit2_branchlst rest-of-ATSINS*/        // ATSINSfreecon(_Tmp1945);;
+/*emit2_branchlst rest-of-ATSINS*/         /*ATSINSmove_void _*/[ _Tmp1915, _Tmp1947] call /*emit_f0ide*/ libarma3__removeAction
       };
       // ATSbranchseq_end
       default { assert(false); };
@@ -16816,7 +16839,7 @@ private _Tmplab_sqf = 0;
   }; // endfun
   [ _Casefunx3 /* emit_Casefunx */, 1 ] call _Casefunx3 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
-   /*ATSINSmove_void _*/[ _Tmp1933] call /*emit_f0ide*/ text__free_text;
+   /*ATSINSmove_void _*/[ _Tmp1944] call /*emit_f0ide*/ text__free_text;
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
 }; // end-of-function
 
@@ -16828,22 +16851,22 @@ private _Tmplab_sqf = 0;
 // knd = 1
 // var _Apy0
 private _Apy0 = 0;
-// var _Tmp1893
-private _Tmp1893 = 0;
 // var _Tmp1896
 private _Tmp1896 = 0;
 // var _Tmp1899
 private _Tmp1899 = 0;
-// var _Tmp1901
-private _Tmp1901 = 0;
 // var _Tmp1902
 private _Tmp1902 = 0;
-// var _Tmp1903
-private _Tmp1903 = 0;
+// var _Tmp1904
+private _Tmp1904 = 0;
 // var _Tmp1905
 private _Tmp1905 = 0;
-// var _Tmp1907
-private _Tmp1907 = 0;
+// var _Tmp1906
+private _Tmp1906 = 0;
+// var _Tmp1908
+private _Tmp1908 = 0;
+// var _Tmp1910
+private _Tmp1910 = 0;
 // var Funlab_sqf
 private _Funlab_sqf = 0;
 // var Tmplab, Tmplab_sqf
@@ -16853,34 +16876,34 @@ private _Tmplab_sqf = 0;
   while {true} do {
     _Funlab_sqf = 0;
     // __patsflab_wait_for_map_not_nil_499 /*ATSINSflab*/ ;
-    _Tmp1893 = [ _Arg0, 0] call /*emit_f0ide*/ ATSLIB_056_prelude__eq_g1int_int__377__2;
-    if (_Tmp1893) then {
+    _Tmp1896 = [ _Arg0, 0] call /*emit_f0ide*/ ATSLIB_056_prelude__eq_g1int_int__377__2;
+    if (_Tmp1896) then {
         ; // ATSINSmove_void();
       } // if-then
       else {
-        _Tmp1896 = [ /*emit_f0ide*/ f___patsfun_501] call /*emit_f0ide*/ libarma3__isNil_eval;
-        if (_Tmp1896) then {
-            _Tmp1899 = [ "map is nil"] call /*emit_f0ide*/ text__pack_string;
-             /*ATSINSmove_void _*/[ _Tmp1899] call /*emit_f0ide*/ libarma3__systemChat0;
+        _Tmp1899 = [ /*emit_f0ide*/ f___patsfun_501] call /*emit_f0ide*/ libarma3__isNil_eval;
+        if (_Tmp1899) then {
+            _Tmp1902 = [ "map is nil"] call /*emit_f0ide*/ text__pack_string;
+             /*ATSINSmove_void _*/[ _Tmp1902] call /*emit_f0ide*/ libarma3__systemChat0;
              /*ATSINSmove_void _*/[ 1.0] call /*emit_f0ide*/ libarma3__sleep;
-            _Tmp1901 = [ _Arg0, 1] call /*emit_f0ide*/ atspre_g1int_sub_int;
-            /* ATSINSmove_tlcal */ _Apy0 = _Tmp1901;
+            _Tmp1904 = [ _Arg0, 1] call /*emit_f0ide*/ atspre_g1int_sub_int;
+            /* ATSINSmove_tlcal */ _Apy0 = _Tmp1904;
             /* ATSINSargmove_tlcal */ _Arg0 = _Apy0;
             _Funlab_sqf = 1; /*ATSINSfgoto*/ // __patsflab_wait_for_map_not_nil_499
              /*emit2_tailcalseqlst*/;
           } // if-then
           else {
-            _Tmp1902 = [ ] call /*emit_f0ide*/ fn_persistentUserMarkers__mapX;
-            _Tmp1903 = [ _Tmp1902] call /*emit_f0ide*/ libarma3__isNotNull;
-            if (_Tmp1903) then {
+            _Tmp1905 = [ ] call /*emit_f0ide*/ fn_persistentUserMarkers__mapX;
+            _Tmp1906 = [ _Tmp1905] call /*emit_f0ide*/ libarma3__isNotNull;
+            if (_Tmp1906) then {
                 ; // ATSINSmove_void();
               } // if-then
               else {
-                _Tmp1905 = [ "map is null"] call /*emit_f0ide*/ text__pack_string;
-                 /*ATSINSmove_void _*/[ _Tmp1905] call /*emit_f0ide*/ libarma3__systemChat0;
+                _Tmp1908 = [ "map is null"] call /*emit_f0ide*/ text__pack_string;
+                 /*ATSINSmove_void _*/[ _Tmp1908] call /*emit_f0ide*/ libarma3__systemChat0;
                  /*ATSINSmove_void _*/[ 1.0] call /*emit_f0ide*/ libarma3__sleep;
-                _Tmp1907 = [ _Arg0, 1] call /*emit_f0ide*/ atspre_g1int_sub_int;
-                /* ATSINSmove_tlcal */ _Apy0 = _Tmp1907;
+                _Tmp1910 = [ _Arg0, 1] call /*emit_f0ide*/ atspre_g1int_sub_int;
+                /* ATSINSmove_tlcal */ _Apy0 = _Tmp1910;
                 /* ATSINSargmove_tlcal */ _Arg0 = _Apy0;
                 _Funlab_sqf = 1; /*ATSINSfgoto*/ // __patsflab_wait_for_map_not_nil_499
                  /*emit2_tailcalseqlst*/
@@ -16920,15 +16943,15 @@ private _Tmplab_sqf = 0;
 /*emit_f0ide*/ f___patsfun_501 = compileFinal {
 //
 // knd = 0
-// var _Tmpret1897
-private _Tmpret1897 = 0;
+// var _Tmpret1900
+private _Tmpret1900 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab___patsfun_501 /*ATSINSflab*/ ;
-  _Tmpret1897 = [ ] call /*emit_f0ide*/ fn_persistentUserMarkers__mapX;
-/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1897;
+  _Tmpret1900 = [ ] call /*emit_f0ide*/ fn_persistentUserMarkers__mapX;
+/*emit_f0body_0 emit2_instr_ln*/  /* ATSreturn */ _Tmpret1900;
 }; // end-of-function
 
 
@@ -16937,47 +16960,47 @@ private _Tmplab_sqf = 0;
   params ["_Arg0", "_Arg1", "_Arg2", "_Arg3"];
 //
 // knd = 0
-// var _Tmp1938
-private _Tmp1938 = 0;
-// var _Tmp1939
-private _Tmp1939 = 0;
-// var _Tmp1941
-private _Tmp1941 = 0;
-// var _Tmp1942
-private _Tmp1942 = 0;
-// var _Tmp1944
-private _Tmp1944 = 0;
-// var _Tmp1945
-private _Tmp1945 = 0;
-// var _Tmp1947
-private _Tmp1947 = 0;
+// var _Tmp1949
+private _Tmp1949 = 0;
+// var _Tmp1950
+private _Tmp1950 = 0;
+// var _Tmp1952
+private _Tmp1952 = 0;
+// var _Tmp1953
+private _Tmp1953 = 0;
+// var _Tmp1955
+private _Tmp1955 = 0;
+// var _Tmp1956
+private _Tmp1956 = 0;
+// var _Tmp1958
+private _Tmp1958 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_restoreMapMarkers_action /*ATSINSflab*/ ;
-  _Tmp1938 = [ _Arg1] call /*emit_f0ide*/ libarma3__isNotNull;
-  if (_Tmp1938) then {
-      _Tmp1939 = [ _Arg1] call /*emit_f0ide*/ fn_addon__ADDON_fnc_isEligibleCommander;
-      if (_Tmp1939) then {
+  _Tmp1949 = [ _Arg1] call /*emit_f0ide*/ libarma3__isNotNull;
+  if (_Tmp1949) then {
+      _Tmp1950 = [ _Arg1] call /*emit_f0ide*/ fn_addon__ADDON_fnc_isEligibleCommander;
+      if (_Tmp1950) then {
            /*ATSINSmove_void _*/[ _Arg1] call /*emit_f0ide*/ fn_persistentUserMarkers__load_and_restore_user_map_markers;
-          _Tmp1942 = [ "STR_persistentUserMarkers_user_map_markers_loaded_and_restored"] call /*emit_f0ide*/ text__pack_string;
-          _Tmp1941 = [ _Tmp1942] call /*emit_f0ide*/ libarma3__localize;
-           /*ATSINSmove_void _*/[ _Tmp1941] call /*emit_f0ide*/ libarma3__systemChat;
-           /*ATSINSmove_void _*/[ _Tmp1941] call /*emit_f0ide*/ text__free_text;
+          _Tmp1953 = [ "STR_persistentUserMarkers_user_map_markers_loaded_and_restored"] call /*emit_f0ide*/ text__pack_string;
+          _Tmp1952 = [ _Tmp1953] call /*emit_f0ide*/ libarma3__localize;
+           /*ATSINSmove_void _*/[ _Tmp1952] call /*emit_f0ide*/ libarma3__systemChat;
+           /*ATSINSmove_void _*/[ _Tmp1952] call /*emit_f0ide*/ text__free_text;
         } // if-then
         else {
-          _Tmp1945 = [ "STR_persistentUserMarkers_only_commander_can_do_this"] call /*emit_f0ide*/ text__pack_string;
-          _Tmp1944 = [ _Tmp1945] call /*emit_f0ide*/ libarma3__localize;
-           /*ATSINSmove_void _*/[ _Tmp1944] call /*emit_f0ide*/ libarma3__systemChat;
-           /*ATSINSmove_void _*/[ _Tmp1944] call /*emit_f0ide*/ text__free_text
+          _Tmp1956 = [ "STR_persistentUserMarkers_only_commander_can_do_this"] call /*emit_f0ide*/ text__pack_string;
+          _Tmp1955 = [ _Tmp1956] call /*emit_f0ide*/ libarma3__localize;
+           /*ATSINSmove_void _*/[ _Tmp1955] call /*emit_f0ide*/ libarma3__systemChat;
+           /*ATSINSmove_void _*/[ _Tmp1955] call /*emit_f0ide*/ text__free_text
         // if-else
         };
     } // if-then
     else {
-      _Tmp1947 = [ "restoreMapMarkers_action: caller is null"] call /*emit_f0ide*/ text__pack_string;
-       /*ATSINSmove_void _*/[ _Tmp1947] call /*emit_f0ide*/ libarma3__systemChat;
-       /*ATSINSmove_void _*/[ _Tmp1947] call /*emit_f0ide*/ text__free_text
+      _Tmp1958 = [ "restoreMapMarkers_action: caller is null"] call /*emit_f0ide*/ text__pack_string;
+       /*ATSINSmove_void _*/[ _Tmp1958] call /*emit_f0ide*/ libarma3__systemChat;
+       /*ATSINSmove_void _*/[ _Tmp1958] call /*emit_f0ide*/ text__free_text
     // if-else
     };
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
@@ -16989,47 +17012,47 @@ private _Tmplab_sqf = 0;
   params ["_Arg0", "_Arg1", "_Arg2", "_Arg3"];
 //
 // knd = 0
-// var _Tmp1950
-private _Tmp1950 = 0;
-// var _Tmp1951
-private _Tmp1951 = 0;
-// var _Tmp1953
-private _Tmp1953 = 0;
-// var _Tmp1954
-private _Tmp1954 = 0;
-// var _Tmp1956
-private _Tmp1956 = 0;
-// var _Tmp1957
-private _Tmp1957 = 0;
-// var _Tmp1959
-private _Tmp1959 = 0;
+// var _Tmp1961
+private _Tmp1961 = 0;
+// var _Tmp1962
+private _Tmp1962 = 0;
+// var _Tmp1964
+private _Tmp1964 = 0;
+// var _Tmp1965
+private _Tmp1965 = 0;
+// var _Tmp1967
+private _Tmp1967 = 0;
+// var _Tmp1968
+private _Tmp1968 = 0;
+// var _Tmp1970
+private _Tmp1970 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_saveMapMarkers_action /*ATSINSflab*/ ;
-  _Tmp1950 = [ _Arg1] call /*emit_f0ide*/ libarma3__isNotNull;
-  if (_Tmp1950) then {
-      _Tmp1951 = [ _Arg1] call /*emit_f0ide*/ fn_addon__ADDON_fnc_isEligibleCommander;
-      if (_Tmp1951) then {
+  _Tmp1961 = [ _Arg1] call /*emit_f0ide*/ libarma3__isNotNull;
+  if (_Tmp1961) then {
+      _Tmp1962 = [ _Arg1] call /*emit_f0ide*/ fn_addon__ADDON_fnc_isEligibleCommander;
+      if (_Tmp1962) then {
            /*ATSINSmove_void _*/[ _Arg1] call /*emit_f0ide*/ fn_persistentUserMarkers__persist_user_map_markers;
-          _Tmp1954 = [ "STR_persistentUserMarkers_user_map_markers_saved"] call /*emit_f0ide*/ text__pack_string;
-          _Tmp1953 = [ _Tmp1954] call /*emit_f0ide*/ libarma3__localize;
-           /*ATSINSmove_void _*/[ _Tmp1953] call /*emit_f0ide*/ libarma3__systemChat;
-           /*ATSINSmove_void _*/[ _Tmp1953] call /*emit_f0ide*/ text__free_text;
+          _Tmp1965 = [ "STR_persistentUserMarkers_user_map_markers_saved"] call /*emit_f0ide*/ text__pack_string;
+          _Tmp1964 = [ _Tmp1965] call /*emit_f0ide*/ libarma3__localize;
+           /*ATSINSmove_void _*/[ _Tmp1964] call /*emit_f0ide*/ libarma3__systemChat;
+           /*ATSINSmove_void _*/[ _Tmp1964] call /*emit_f0ide*/ text__free_text;
         } // if-then
         else {
-          _Tmp1957 = [ "STR_persistentUserMarkers_only_commander_can_do_this"] call /*emit_f0ide*/ text__pack_string;
-          _Tmp1956 = [ _Tmp1957] call /*emit_f0ide*/ libarma3__localize;
-           /*ATSINSmove_void _*/[ _Tmp1956] call /*emit_f0ide*/ libarma3__systemChat;
-           /*ATSINSmove_void _*/[ _Tmp1956] call /*emit_f0ide*/ text__free_text
+          _Tmp1968 = [ "STR_persistentUserMarkers_only_commander_can_do_this"] call /*emit_f0ide*/ text__pack_string;
+          _Tmp1967 = [ _Tmp1968] call /*emit_f0ide*/ libarma3__localize;
+           /*ATSINSmove_void _*/[ _Tmp1967] call /*emit_f0ide*/ libarma3__systemChat;
+           /*ATSINSmove_void _*/[ _Tmp1967] call /*emit_f0ide*/ text__free_text
         // if-else
         };
     } // if-then
     else {
-      _Tmp1959 = [ "saveMapMarkers_action: caller is null"] call /*emit_f0ide*/ text__pack_string;
-       /*ATSINSmove_void _*/[ _Tmp1959] call /*emit_f0ide*/ libarma3__systemChat;
-       /*ATSINSmove_void _*/[ _Tmp1959] call /*emit_f0ide*/ text__free_text
+      _Tmp1970 = [ "saveMapMarkers_action: caller is null"] call /*emit_f0ide*/ text__pack_string;
+       /*ATSINSmove_void _*/[ _Tmp1970] call /*emit_f0ide*/ libarma3__systemChat;
+       /*ATSINSmove_void _*/[ _Tmp1970] call /*emit_f0ide*/ text__free_text
     // if-else
     };
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
@@ -17041,48 +17064,48 @@ private _Tmplab_sqf = 0;
   params ["_Arg0", "_Arg1", "_Arg2", "_Arg3"];
 //
 // knd = 0
-// var _Tmp1962
-private _Tmp1962 = 0;
-// var _Tmp1963
-private _Tmp1963 = 0;
-// var _Tmp1966
-private _Tmp1966 = 0;
-// var _Tmp1967
-private _Tmp1967 = 0;
-// var _Tmp1969
-private _Tmp1969 = 0;
-// var _Tmp1970
-private _Tmp1970 = 0;
-// var _Tmp1972
-private _Tmp1972 = 0;
+// var _Tmp1973
+private _Tmp1973 = 0;
+// var _Tmp1974
+private _Tmp1974 = 0;
+// var _Tmp1977
+private _Tmp1977 = 0;
+// var _Tmp1978
+private _Tmp1978 = 0;
+// var _Tmp1980
+private _Tmp1980 = 0;
+// var _Tmp1981
+private _Tmp1981 = 0;
+// var _Tmp1983
+private _Tmp1983 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_cleanAndRestoreMapMarkers_action /*ATSINSflab*/ ;
-  _Tmp1962 = [ _Arg1] call /*emit_f0ide*/ libarma3__isNotNull;
-  if (_Tmp1962) then {
-      _Tmp1963 = [ _Arg1] call /*emit_f0ide*/ fn_addon__ADDON_fnc_isEligibleCommander;
-      if (_Tmp1963) then {
+  _Tmp1973 = [ _Arg1] call /*emit_f0ide*/ libarma3__isNotNull;
+  if (_Tmp1973) then {
+      _Tmp1974 = [ _Arg1] call /*emit_f0ide*/ fn_addon__ADDON_fnc_isEligibleCommander;
+      if (_Tmp1974) then {
            /*ATSINSmove_void _*/[ _Arg1] call /*emit_f0ide*/ fn_persistentUserMarkers__clean_user_map_markers;
            /*ATSINSmove_void _*/[ _Arg1] call /*emit_f0ide*/ fn_persistentUserMarkers__load_and_restore_user_map_markers;
-          _Tmp1967 = [ "STR_persistentUserMarkers_user_map_markers_cleaned_and_restored"] call /*emit_f0ide*/ text__pack_string;
-          _Tmp1966 = [ _Tmp1967] call /*emit_f0ide*/ libarma3__localize;
-           /*ATSINSmove_void _*/[ _Tmp1966] call /*emit_f0ide*/ libarma3__systemChat;
-           /*ATSINSmove_void _*/[ _Tmp1966] call /*emit_f0ide*/ text__free_text;
+          _Tmp1978 = [ "STR_persistentUserMarkers_user_map_markers_cleaned_and_restored"] call /*emit_f0ide*/ text__pack_string;
+          _Tmp1977 = [ _Tmp1978] call /*emit_f0ide*/ libarma3__localize;
+           /*ATSINSmove_void _*/[ _Tmp1977] call /*emit_f0ide*/ libarma3__systemChat;
+           /*ATSINSmove_void _*/[ _Tmp1977] call /*emit_f0ide*/ text__free_text;
         } // if-then
         else {
-          _Tmp1970 = [ "STR_persistentUserMarkers_only_commander_can_do_this"] call /*emit_f0ide*/ text__pack_string;
-          _Tmp1969 = [ _Tmp1970] call /*emit_f0ide*/ libarma3__localize;
-           /*ATSINSmove_void _*/[ _Tmp1969] call /*emit_f0ide*/ libarma3__systemChat;
-           /*ATSINSmove_void _*/[ _Tmp1969] call /*emit_f0ide*/ text__free_text
+          _Tmp1981 = [ "STR_persistentUserMarkers_only_commander_can_do_this"] call /*emit_f0ide*/ text__pack_string;
+          _Tmp1980 = [ _Tmp1981] call /*emit_f0ide*/ libarma3__localize;
+           /*ATSINSmove_void _*/[ _Tmp1980] call /*emit_f0ide*/ libarma3__systemChat;
+           /*ATSINSmove_void _*/[ _Tmp1980] call /*emit_f0ide*/ text__free_text
         // if-else
         };
     } // if-then
     else {
-      _Tmp1972 = [ "saveMapMarkers_action: caller is null"] call /*emit_f0ide*/ text__pack_string;
-       /*ATSINSmove_void _*/[ _Tmp1972] call /*emit_f0ide*/ libarma3__systemChat;
-       /*ATSINSmove_void _*/[ _Tmp1972] call /*emit_f0ide*/ text__free_text
+      _Tmp1983 = [ "saveMapMarkers_action: caller is null"] call /*emit_f0ide*/ text__pack_string;
+       /*ATSINSmove_void _*/[ _Tmp1983] call /*emit_f0ide*/ libarma3__systemChat;
+       /*ATSINSmove_void _*/[ _Tmp1983] call /*emit_f0ide*/ text__free_text
     // if-else
     };
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
@@ -17094,30 +17117,30 @@ private _Tmplab_sqf = 0;
   params ["_Arg0"];
 //
 // knd = 0
-// var _Tmp1975
-private _Tmp1975 = 0;
-// var _Tmp1976
-private _Tmp1976 = 0;
-// var _Tmp1990
-private _Tmp1990 = 0;
-// var _Tmp1991
-private _Tmp1991 = 0;
-// var _Tmp1992
-private _Tmp1992 = 0;
+// var _Tmp1986
+private _Tmp1986 = 0;
+// var _Tmp1987
+private _Tmp1987 = 0;
+// var _Tmp2001
+private _Tmp2001 = 0;
+// var _Tmp2002
+private _Tmp2002 = 0;
+// var _Tmp2003
+private _Tmp2003 = 0;
 // var Tmplab, Tmplab_sqf
 private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_clean_user_map_markers /*ATSINSflab*/ ;
-  _Tmp1975 = [ ] call /*emit_f0ide*/ libarma3__allMapMarkers;
-  _Tmp1976 = [ _Tmp1975] call /*emit_f0ide*/ libarma3__array_vt_count;
-  _Tmp1990 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-   /*ATSINSmove_void _*/[ _Tmp1975, _Tmp1976, _Tmp1990] call /*emit_f0ide*/ loop_506;
-  _Tmp1992 = [ "STR_persistentUserMarkers_user_map_markers_cleaned"] call /*emit_f0ide*/ text__pack_string;
-  _Tmp1991 = [ _Tmp1992] call /*emit_f0ide*/ libarma3__localize;
-   /*ATSINSmove_void _*/[ _Tmp1991] call /*emit_f0ide*/ libarma3__systemChat;
-   /*ATSINSmove_void _*/[ _Tmp1991] call /*emit_f0ide*/ text__free_text;
-   /*ATSINSmove_void _*/[ _Tmp1975, /*emit_f0ide*/ f___patsfun_507] call /*emit_f0ide*/ libarma3__array_vt_free;
+  _Tmp1986 = [ ] call /*emit_f0ide*/ libarma3__allMapMarkers;
+  _Tmp1987 = [ _Tmp1986] call /*emit_f0ide*/ libarma3__array_vt_count;
+  _Tmp2001 = [ 0] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+   /*ATSINSmove_void _*/[ _Tmp1986, _Tmp1987, _Tmp2001] call /*emit_f0ide*/ loop_506;
+  _Tmp2003 = [ "STR_persistentUserMarkers_user_map_markers_cleaned"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp2002 = [ _Tmp2003] call /*emit_f0ide*/ libarma3__localize;
+   /*ATSINSmove_void _*/[ _Tmp2002] call /*emit_f0ide*/ libarma3__systemChat;
+   /*ATSINSmove_void _*/[ _Tmp2002] call /*emit_f0ide*/ text__free_text;
+   /*ATSINSmove_void _*/[ _Tmp1986, /*emit_f0ide*/ f___patsfun_507] call /*emit_f0ide*/ libarma3__array_vt_free;
 /*emit_f0body_0 emit2_instr_ln*/  // return/*_void*/;;
 }; // end-of-function
 
@@ -17133,24 +17156,24 @@ private _Apy0 = 0;
 private _Apy1 = 0;
 // var _Apy2
 private _Apy2 = 0;
-// var _Tmp1978
-private _Tmp1978 = 0;
-// var _Tmp1979
-private _Tmp1979 = 0;
-// var _Tmp1981
-private _Tmp1981 = 0;
-// var _Tmp1982
-private _Tmp1982 = 0;
-// var _Tmp1983
-private _Tmp1983 = 0;
-// var _Tmp1984
-private _Tmp1984 = 0;
-// var _Tmp1985
-private _Tmp1985 = 0;
-// var _Tmp1987
-private _Tmp1987 = 0;
-// var _Tmp1988
-private _Tmp1988 = 0;
+// var _Tmp1989
+private _Tmp1989 = 0;
+// var _Tmp1990
+private _Tmp1990 = 0;
+// var _Tmp1992
+private _Tmp1992 = 0;
+// var _Tmp1993
+private _Tmp1993 = 0;
+// var _Tmp1994
+private _Tmp1994 = 0;
+// var _Tmp1995
+private _Tmp1995 = 0;
+// var _Tmp1996
+private _Tmp1996 = 0;
+// var _Tmp1998
+private _Tmp1998 = 0;
+// var _Tmp1999
+private _Tmp1999 = 0;
 // var Funlab_sqf
 private _Funlab_sqf = 0;
 // var Tmplab, Tmplab_sqf
@@ -17160,12 +17183,12 @@ private _Tmplab_sqf = 0;
   while {true} do {
     _Funlab_sqf = 0;
     // __patsflab_loop_506 /*ATSINSflab*/ ;
-    _Tmp1978 = [ _Arg2, _Arg1] call /*emit_f0ide*/ atspre_g1uint_eq_size;
-    if (_Tmp1978) then {
+    _Tmp1989 = [ _Arg2, _Arg1] call /*emit_f0ide*/ atspre_g1uint_eq_size;
+    if (_Tmp1989) then {
         ; // ATSINSmove_void();
       } // if-then
       else {
-        _Tmp1979 = [ _Arg0, _Arg2] call /*emit_f0ide*/ libarma3__array_vt_get1;
+        _Tmp1990 = [ _Arg0, _Arg2] call /*emit_f0ide*/ libarma3__array_vt_get1;
         _Casefunx1 /* emit_Casefunx */ = {
           params [ "_Casefun", "_Tmplab"];
           // switch(_Tmplab) {
@@ -17173,7 +17196,7 @@ private _Tmplab_sqf = 0;
           {
             // ATSbranchseq_beg
             case 1 : {
-              if(/*ATSCKptriscons*/ (not(isNil { _Tmp1979 select 0 } )) ) then {
+              if(/*ATSCKptriscons*/ (not(isNil { _Tmp1990 select 0 } )) ) then {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               } else {
                  [ _Casefun, 2 ]  call _Casefun /*emit_Casefun2*/;
@@ -17185,27 +17208,27 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_end
             // ATSbranchseq_beg
             case 3 : {
-              if(/*ATSCKptrisnull*/ ( isNil { _Tmp1979 select 0 }) ) then {
-                systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 53539(line=1418, offs=22) -- 54202(line=1430, offs=21)");
+              if(/*ATSCKptrisnull*/ ( isNil { _Tmp1990 select 0 }) ) then {
+                systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_persistentUserMarkers.dats: 54006(line=1427, offs=22) -- 54669(line=1439, offs=21)");
               } else {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
             };
             case 4 : {
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1981 = (_Tmp1979 select 0);
-/*emit2_branchlst rest-of-ATSINS*/              // ATSINSfreecon(_Tmp1979);;
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1982 = [ "_USER_DEFINED #"] call /*emit_f0ide*/ text__pack_string;
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1984 = [ _Tmp1982] call /*emit_f0ide*/ text__length;
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1983 = [ _Tmp1984, _Tmp1981] call /*emit_f0ide*/ text__take;
-/*emit2_branchlst rest-of-ATSINS*/              _Tmp1985 = [ _Tmp1983, _Tmp1982] call /*emit_f0ide*/ text__eq_text_text;
-/*emit2_branchlst rest-of-ATSINS*/              if (_Tmp1985) then {
-                   /*ATSINSmove_void _*/[ _Tmp1981] call /*emit_f0ide*/ libarma3__deleteMarker;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1992 = (_Tmp1990 select 0);
+/*emit2_branchlst rest-of-ATSINS*/              // ATSINSfreecon(_Tmp1990);;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1993 = [ "_USER_DEFINED #"] call /*emit_f0ide*/ text__pack_string;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1995 = [ _Tmp1993] call /*emit_f0ide*/ text__length;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1994 = [ _Tmp1995, _Tmp1992] call /*emit_f0ide*/ text__take;
+/*emit2_branchlst rest-of-ATSINS*/              _Tmp1996 = [ _Tmp1994, _Tmp1993] call /*emit_f0ide*/ text__eq_text_text;
+/*emit2_branchlst rest-of-ATSINS*/              if (_Tmp1996) then {
+                   /*ATSINSmove_void _*/[ _Tmp1992] call /*emit_f0ide*/ libarma3__deleteMarker;
                 } // if-then
                 else {
                   ; // ATSINSmove_void()
                 // if-else
                 };
-/*emit2_branchlst rest-of-ATSINS*/               /*ATSINSmove_void _*/[ _Tmp1982] call /*emit_f0ide*/ text__free_text
+/*emit2_branchlst rest-of-ATSINS*/               /*ATSINSmove_void _*/[ _Tmp1993] call /*emit_f0ide*/ text__free_text
             };
             // ATSbranchseq_end
             default { assert(false); };
@@ -17214,11 +17237,11 @@ private _Tmplab_sqf = 0;
         }; // endfun
         [ _Casefunx1 /* emit_Casefunx */, 1 ] call _Casefunx1 /* emit_Casefunx */ /* emit_Casefunx2 */
 ;
-        _Tmp1988 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
-        _Tmp1987 = [ _Arg2, _Tmp1988] call /*emit_f0ide*/ atspre_g1uint_add_size;
+        _Tmp1999 = [ 1] call /*emit_f0ide*/ atspre_g1int2uint_int_size;
+        _Tmp1998 = [ _Arg2, _Tmp1999] call /*emit_f0ide*/ atspre_g1uint_add_size;
         /* ATSINSmove_tlcal */ _Apy0 = _Arg0;
         /* ATSINSmove_tlcal */ _Apy1 = _Arg1;
-        /* ATSINSmove_tlcal */ _Apy2 = _Tmp1987;
+        /* ATSINSmove_tlcal */ _Apy2 = _Tmp1998;
         /* ATSINSargmove_tlcal */ _Arg0 = _Apy0;
         /* ATSINSargmove_tlcal */ _Arg1 = _Apy1;
         /* ATSINSargmove_tlcal */ _Arg2 = _Apy2;
