@@ -12622,6 +12622,7 @@ private _Tmplab_sqf = 0;
 /*emit2_branchlst rest-of-ATSINS*/              _Tmp1229 = [ _Tmp1230, /* ATSSELfltrec */ (_Tmp1226 select 0)] call /*emit_f0ide*/ libarma3__bindConfig;
 /*emit2_branchlst rest-of-ATSINS*/              _Tmp1233 = [ "displayName"] call /*emit_f0ide*/ text__pack_string;
 /*emit2_branchlst rest-of-ATSINS*/              _Tmp1228 = [ _Tmp1229, _Tmp1233] call /*emit_f0ide*/ libarma3__bindConfigC;
+                systemChat( "_Tmp1228 " + str _Tmp1228);
 /*emit2_branchlst rest-of-ATSINS*/              _Tmp1227 = [ _Tmp1228] call /*emit_f0ide*/ libarma3__getText;
                 systemChat( "_Tmp1227 " + str _Tmp1227);
 /*emit2_branchlst rest-of-ATSINS*/              _Casefunx2 /* emit_Casefunx */ = {
