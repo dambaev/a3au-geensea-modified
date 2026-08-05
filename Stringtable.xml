@@ -62,12 +62,32 @@
           <Russian>Транспорт поддержки не найден?</Russian>
         </Key>
         <Key ID="STR_support_place_vehicle">
-          <Original>place support vehicle</Original>
-          <Russian>Разместить технику поддержки</Russian>
+          <Original>place support vehicle: %1 (%2 / %3)</Original>
+	  <Russian>Разместить технику поддержки: %1 (%2 / %3)</Russian>
         </Key>
         <Key ID="STR_support_finish_support_request">
           <Original>finish support request</Original>
           <Russian>Завершить запрос поддержки</Russian>
+        </Key>
+        <Key ID=STR_persistentUserMarkers_only_administrator_can_do_this>
+          <Original>only administrators can do this</Original>
+          <Russian>Это действие доступно только администрации</Russian>
+        </Key>
+        <Key ID=STR_support_cant_borrow_new_vehicle>
+          <Original>unable to borrow new vehicle element</Original>
+          <Russian>Не получилось завладеть элементом массива нового транспорта</Russian>
+        </Key>
+        <Key ID=STR_support_cursor_object_not_vehicle>
+          <Original>cursor object not vehicle</Original>
+          <Russian>Вы не смотрите на транспортное средство</Russian>
+        </Key>
+        <Key ID=STR_support_request_support_new_actions_added>
+          <Original>appropriate actions added to actions menu</Original>
+          <Russian>Новые действия добавлены в меню действий</Russian>
+        </Key>
+        <Key ID=STR_support_vehicle_added_to_support>
+          <Original>support vehicle added to support request</Original>
+          <Russian>Транспортное средство добавлено в запрос поддержки</Russian>
         </Key>
 
     </Package>
