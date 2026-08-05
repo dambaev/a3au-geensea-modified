@@ -1680,6 +1680,7 @@ ext_libarma3_bindConfig = {
 ext_libarma3_getText = {
   params [ "_cfg"];
   private _ret = getText _cfg;
+  systemChat( "ext_libarma3_getText " + str _ret);
   private _is_nil = isNil { _ret};
   if _is_nil then {
     [ _is_nil, nil];
@@ -9560,6 +9561,7 @@ private _Tmplab_sqf = 0;
 //
   // __patsflab_getText /*ATSINSflab*/ ;
   _Tmp912 = [ _Arg0] call /*emit_f0ide*/ ext_libarma3_getText;
+  systemChat( "_Tmp912 " + str _Tmp912);
   _Tmp913 = /* ATSSELfltrec */ (_Tmp912 select 0);
   _Tmp914 = /* ATSSELfltrec */ (_Tmp912 select 1);
   if (_Tmp913) then {
@@ -9567,7 +9569,9 @@ private _Tmplab_sqf = 0;
     } // if-then
     else {
       _Tmp918 = [ _Tmp914] call /*emit_f0ide*/ libarma3__string_length;
+  systemChat( "_Tmp918 " + str _Tmp918);
       _Tmp915 = [ _Tmp918, 0] call /*emit_f0ide*/ ATSLIB_056_prelude__gt_g1uint_int__24__3;
+  systemChat( "_Tmp915 " + str _Tmp915);
       if (_Tmp915) then {
           _Tmp919 = [ _Tmp914] call /*emit_f0ide*/ text__pack_string;
           _Tmpret911 = [ _Tmp919 ]/* emit2_ATSINSmove_con1 */;
