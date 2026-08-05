@@ -400,7 +400,13 @@ ext_libarma3_systemChat = {
 //
 ext_libarma3_isNil_arg = {
   params [ "_env"];
-  [isNil { _env; }, _env];
+  private _is_nil = isNil { _env };
+  if _is_nil
+    tnen {
+      [ _is_nil, nil];
+    } else {
+      [ _is_nil, _env];
+    };
 };
 //
 // ATSextcode_end()
@@ -411,7 +417,7 @@ ext_libarma3_isNil_arg = {
 //
 ext_libarma3_isNil_eval = {
   params [ "_f"];
-  isNil { _f; };
+  isNil { [] call _f; };
 };
 //
 // ATSextcode_end()
@@ -7308,7 +7314,7 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_beg
             case 3 : {
               if(/*ATSCKptrisnull*/ ( isNil { _Tmp675 select 0 }) ) then {
-                systemChat( "ATSINScaseof_fail " + "/nix/store/hw80k2rq0v52w0brmm0fbmxn5k3q9zx9-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 20904(line=960, offs=11) -- 21296(line=967, offs=12)");
+                systemChat( "ATSINScaseof_fail " + "/nix/store/pbwsfspb3l06y517qpld32yqnsa1nrj7-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 21036(line=967, offs=11) -- 21428(line=974, offs=12)");
               } else {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
@@ -8249,7 +8255,7 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_beg
             case 3 : {
               if(/*ATSCKptrisnull*/ ( isNil { _Tmp782 select 0 }) ) then {
-                systemChat( "ATSINScaseof_fail " + "/nix/store/hw80k2rq0v52w0brmm0fbmxn5k3q9zx9-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 38144(line=1708, offs=13) -- 38507(line=1718, offs=14)");
+                systemChat( "ATSINScaseof_fail " + "/nix/store/pbwsfspb3l06y517qpld32yqnsa1nrj7-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 38276(line=1715, offs=13) -- 38639(line=1725, offs=14)");
               } else {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
@@ -8278,7 +8284,7 @@ private _Tmplab_sqf = 0;
                   // ATSbranchseq_beg
                   case 3 : {
                     if(/*ATSCKptrisnull*/ ( isNil { _Tmp785 select 0 }) ) then {
-                      systemChat( "ATSINScaseof_fail " + "/nix/store/hw80k2rq0v52w0brmm0fbmxn5k3q9zx9-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 38329(line=1713, offs=15) -- 38493(line=1717, offs=51)");
+                      systemChat( "ATSINScaseof_fail " + "/nix/store/pbwsfspb3l06y517qpld32yqnsa1nrj7-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 38461(line=1720, offs=15) -- 38625(line=1724, offs=51)");
                     } else {
                        [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
                     };
@@ -8692,7 +8698,7 @@ private _Tmplab_sqf = 0;
           };
           case 5 : {
             if(/*ATSCKptriscons*/ (not(isNil { _Tmp816 select 0 } )) ) then {
-              systemChat( "ATSINScaseof_fail " + "/nix/store/hw80k2rq0v52w0brmm0fbmxn5k3q9zx9-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 43644(line=1954, offs=13) -- 44159(line=1966, offs=46)");
+              systemChat( "ATSINScaseof_fail " + "/nix/store/pbwsfspb3l06y517qpld32yqnsa1nrj7-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 43776(line=1961, offs=13) -- 44291(line=1973, offs=46)");
             } else {
                [ _Casefun, 6 ]  call _Casefun /*emit_Casefun2*/;
             };
@@ -8705,7 +8711,7 @@ private _Tmplab_sqf = 0;
           // ATSbranchseq_beg
           case 7 : {
             if(/*ATSCKptriscons*/ (not(isNil { _Tmp815 select 0 } )) ) then {
-              systemChat( "ATSINScaseof_fail " + "/nix/store/hw80k2rq0v52w0brmm0fbmxn5k3q9zx9-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 43644(line=1954, offs=13) -- 44159(line=1966, offs=46)");
+              systemChat( "ATSINScaseof_fail " + "/nix/store/pbwsfspb3l06y517qpld32yqnsa1nrj7-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 43776(line=1961, offs=13) -- 44291(line=1973, offs=46)");
             } else {
                [ _Casefun, 8 ]  call _Casefun /*emit_Casefun2*/;
             };
@@ -8725,14 +8731,14 @@ private _Tmplab_sqf = 0;
           // ATSbranchseq_beg
           case 10 : {
             if(/*ATSCKptriscons*/ (not(isNil { _Tmp815 select 0 } )) ) then {
-              systemChat( "ATSINScaseof_fail " + "/nix/store/hw80k2rq0v52w0brmm0fbmxn5k3q9zx9-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 43644(line=1954, offs=13) -- 44159(line=1966, offs=46)");
+              systemChat( "ATSINScaseof_fail " + "/nix/store/pbwsfspb3l06y517qpld32yqnsa1nrj7-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 43776(line=1961, offs=13) -- 44291(line=1973, offs=46)");
             } else {
                [ _Casefun, 11 ]  call _Casefun /*emit_Casefun2*/;
             };
           };
           case 11 : {
             if(/*ATSCKptriscons*/ (not(isNil { _Tmp816 select 0 } )) ) then {
-              systemChat( "ATSINScaseof_fail " + "/nix/store/hw80k2rq0v52w0brmm0fbmxn5k3q9zx9-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 43644(line=1954, offs=13) -- 44159(line=1966, offs=46)");
+              systemChat( "ATSINScaseof_fail " + "/nix/store/pbwsfspb3l06y517qpld32yqnsa1nrj7-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 43776(line=1961, offs=13) -- 44291(line=1973, offs=46)");
             } else {
                [ _Casefun, 12 ]  call _Casefun /*emit_Casefun2*/;
             };
@@ -9713,7 +9719,7 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_beg
             case 3 : {
               if(/*ATSCKptrisnull*/ ( isNil { _Tmp928 select 0 }) ) then {
-                systemChat( "ATSINScaseof_fail " + "/nix/store/hw80k2rq0v52w0brmm0fbmxn5k3q9zx9-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 66592(line=2878, offs=22) -- 67064(line=2888, offs=21)");
+                systemChat( "ATSINScaseof_fail " + "/nix/store/pbwsfspb3l06y517qpld32yqnsa1nrj7-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 66724(line=2885, offs=22) -- 67196(line=2895, offs=21)");
               } else {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
@@ -9743,7 +9749,7 @@ private _Tmplab_sqf = 0;
                   // ATSbranchseq_beg
                   case 3 : {
                     if(/*ATSCKptrisnull*/ ( isNil { _Tmp932 select 0 }) ) then {
-                      systemChat( "ATSINScaseof_fail " + "/nix/store/hw80k2rq0v52w0brmm0fbmxn5k3q9zx9-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 66841(line=2883, offs=31) -- 67043(line=2887, offs=32)");
+                      systemChat( "ATSINScaseof_fail " + "/nix/store/pbwsfspb3l06y517qpld32yqnsa1nrj7-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 66973(line=2890, offs=31) -- 67175(line=2894, offs=32)");
                     } else {
                        [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
                     };
@@ -9894,7 +9900,7 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_beg
             case 3 : {
               if(/*ATSCKptrisnull*/ ( isNil { _Tmp944 select 0 }) ) then {
-                systemChat( "ATSINScaseof_fail " + "/nix/store/hw80k2rq0v52w0brmm0fbmxn5k3q9zx9-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 68271(line=2925, offs=22) -- 68755(line=2935, offs=21)");
+                systemChat( "ATSINScaseof_fail " + "/nix/store/pbwsfspb3l06y517qpld32yqnsa1nrj7-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 68403(line=2932, offs=22) -- 68887(line=2942, offs=21)");
               } else {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
@@ -9924,7 +9930,7 @@ private _Tmplab_sqf = 0;
                   // ATSbranchseq_beg
                   case 3 : {
                     if(/*ATSCKptrisnull*/ ( isNil { _Tmp948 select 0 }) ) then {
-                      systemChat( "ATSINScaseof_fail " + "/nix/store/hw80k2rq0v52w0brmm0fbmxn5k3q9zx9-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 68525(line=2930, offs=31) -- 68734(line=2934, offs=32)");
+                      systemChat( "ATSINScaseof_fail " + "/nix/store/pbwsfspb3l06y517qpld32yqnsa1nrj7-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 68657(line=2937, offs=31) -- 68866(line=2941, offs=32)");
                     } else {
                        [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
                     };
@@ -10651,9 +10657,9 @@ private _Tmplab = 0;
 private _Tmplab_sqf = 0;
 //
   // __patsflab_addActions /*ATSINSflab*/ ;
-  _Tmp1014 = [ "fn_suport__addActions"] call /*emit_f0ide*/ text__pack_string;
+  _Tmp1014 = [ "fn_support__addActions"] call /*emit_f0ide*/ text__pack_string;
    /*ATSINSmove_void _*/[ _Tmp1014] call /*emit_f0ide*/ libarma3__systemChat0;
-   /*ATSINSmove_void _*/[ "fn_suport__addActions"] call /*emit_f0ide*/ libarma3__diag_log;
+   /*ATSINSmove_void _*/[ "fn_support__addActions"] call /*emit_f0ide*/ libarma3__diag_log;
    /*ATSINSmove_void _*/[ 600] call /*emit_f0ide*/ wait_for_commander_not_nil_376;
   _Tmp1035 = [ ] call /*emit_f0ide*/ fn_addon__commander;
   _Tmp1036 = [ ] call /*emit_f0ide*/ libarma3__player;
@@ -10689,7 +10695,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp1047 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 4620(line=130, offs=12) -- 4895(line=135, offs=51)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 4622(line=130, offs=12) -- 4897(line=135, offs=51)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -10728,7 +10734,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp1051 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 5210(line=143, offs=12) -- 5485(line=148, offs=51)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 5212(line=143, offs=12) -- 5487(line=148, offs=51)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -10956,7 +10962,7 @@ private _Tmplab_sqf = 0;
       };
       case 7 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp1098 select 0) == 1)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 6745(line=186, offs=3) -- 7602(line=207, offs=6)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 6747(line=186, offs=3) -- 7604(line=207, offs=6)");
         } else {
            [ _Casefun, 8 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -10974,7 +10980,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 9 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp1085 select 0) == 1)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 6745(line=186, offs=3) -- 7602(line=207, offs=6)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 6747(line=186, offs=3) -- 7604(line=207, offs=6)");
         } else {
 /*emit2_branchlst rest-of-ATSINS*/          _Tmp1100 = (_Tmp1085 select 1);
            [ _Casefun, 10 ]  call _Casefun /*emit_Casefun2*/;
@@ -11085,7 +11091,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp1069 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 10317(line=285, offs=12) -- 10614(line=292, offs=13)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 10319(line=285, offs=12) -- 10616(line=292, offs=13)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -11123,7 +11129,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp1072 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 10854(line=300, offs=12) -- 11151(line=307, offs=13)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 10856(line=300, offs=12) -- 11153(line=307, offs=13)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -11161,7 +11167,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp1075 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 11377(line=315, offs=12) -- 11674(line=322, offs=13)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 11379(line=315, offs=12) -- 11676(line=322, offs=13)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -11331,7 +11337,7 @@ private _Tmplab_sqf = 0;
       };
       case 7 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp1159 select 0) == 1)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 17164(line=443, offs=3) -- 17628(line=455, offs=4)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 17166(line=443, offs=3) -- 17630(line=455, offs=4)");
         } else {
            [ _Casefun, 8 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -11345,7 +11351,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 9 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp1117 select 0) == 1)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 17164(line=443, offs=3) -- 17628(line=455, offs=4)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 17166(line=443, offs=3) -- 17630(line=455, offs=4)");
         } else {
 /*emit2_branchlst rest-of-ATSINS*/          _Tmp1161 = (_Tmp1117 select 1);
            [ _Casefun, 10 ]  call _Casefun /*emit_Casefun2*/;
@@ -11496,7 +11502,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp1130 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 12910(line=358, offs=27) -- 13632(line=370, offs=26)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 12912(line=358, offs=27) -- 13634(line=370, offs=26)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -11596,7 +11602,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp1139 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 14353(line=387, offs=27) -- 15037(line=398, offs=26)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 14355(line=387, offs=27) -- 15039(line=398, offs=26)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -11696,7 +11702,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp1148 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 15770(line=415, offs=27) -- 16433(line=426, offs=26)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 15772(line=415, offs=27) -- 16435(line=426, offs=26)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -11862,7 +11868,7 @@ private _Tmplab_sqf = 0;
       };
       case 11 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp1252 select 0) == 2)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 19883(line=522, offs=3) -- 21190(line=552, offs=6)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 19885(line=522, offs=3) -- 21192(line=552, offs=6)");
         } else {
            [ _Casefun, 12 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -11880,7 +11886,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 13 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp1234 select 0) == 1)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 19883(line=522, offs=3) -- 21190(line=552, offs=6)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 19885(line=522, offs=3) -- 21192(line=552, offs=6)");
         } else {
 /*emit2_branchlst rest-of-ATSINS*/          _Tmp1254 = (_Tmp1234 select 1);
            [ _Casefun, 14 ]  call _Casefun /*emit_Casefun2*/;
@@ -11968,7 +11974,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp1170 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 23008(line=602, offs=11) -- 23485(line=612, offs=21)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 23010(line=602, offs=11) -- 23487(line=612, offs=21)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -12077,7 +12083,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp1222 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 31014(line=763, offs=16) -- 32049(line=783, offs=19)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 31016(line=763, offs=16) -- 32051(line=783, offs=19)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -12118,7 +12124,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp1229 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 32398(line=793, offs=16) -- 32562(line=797, offs=17)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 32400(line=793, offs=16) -- 32564(line=797, offs=17)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -12238,7 +12244,7 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_beg
             case 3 : {
               if(/*ATSCKptrisnull*/ ( isNil { _Tmp1188 select 0 }) ) then {
-                systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 26478(line=683, offs=27) -- 29887(line=738, offs=30)");
+                systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 26480(line=683, offs=27) -- 29889(line=738, offs=30)");
               } else {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
@@ -12273,7 +12279,7 @@ private _Tmplab_sqf = 0;
                   // ATSbranchseq_beg
                   case 3 : {
                     if(/*ATSCKptrisnull*/ ( isNil { _Tmp1191 select 0 }) ) then {
-                      systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 27330(line=698, offs=39) -- 27508(line=700, offs=76)");
+                      systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 27332(line=698, offs=39) -- 27510(line=700, offs=76)");
                     } else {
                        [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
                     };
@@ -12622,7 +12628,7 @@ private _Tmplab_sqf = 0;
       };
       case 11 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp1313 select 0) == 2)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 35202(line=882, offs=5) -- 36491(line=912, offs=6)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 35204(line=882, offs=5) -- 36493(line=912, offs=6)");
         } else {
            [ _Casefun, 12 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -12640,7 +12646,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 13 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp1295 select 0) == 1)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 35202(line=882, offs=5) -- 36491(line=912, offs=6)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 35204(line=882, offs=5) -- 36493(line=912, offs=6)");
         } else {
 /*emit2_branchlst rest-of-ATSINS*/          _Tmp1315 = (_Tmp1295 select 1);
            [ _Casefun, 14 ]  call _Casefun /*emit_Casefun2*/;
@@ -12913,7 +12919,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 4 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp1418 select 0) == 0)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 41259(line=1050, offs=3) -- 42844(line=1086, offs=4)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 41261(line=1050, offs=3) -- 42846(line=1086, offs=4)");
         } else {
 /*emit2_branchlst rest-of-ATSINS*/          _Tmp1443 = (_Tmp1418 select 1);
            [ _Casefun, 5 ]  call _Casefun /*emit_Casefun2*/;
@@ -12943,7 +12949,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 8 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp1418 select 0) == 0)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 41259(line=1050, offs=3) -- 42844(line=1086, offs=4)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 41261(line=1050, offs=3) -- 42846(line=1086, offs=4)");
         } else {
 /*emit2_branchlst rest-of-ATSINS*/          _Tmp1447 = (_Tmp1418 select 1);
            [ _Casefun, 9 ]  call _Casefun /*emit_Casefun2*/;
@@ -12972,7 +12978,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 12 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp1418 select 0) == 0)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 41259(line=1050, offs=3) -- 42844(line=1086, offs=4)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 41261(line=1050, offs=3) -- 42846(line=1086, offs=4)");
         } else {
 /*emit2_branchlst rest-of-ATSINS*/          _Tmp1451 = (_Tmp1418 select 1);
            [ _Casefun, 13 ]  call _Casefun /*emit_Casefun2*/;
@@ -13002,7 +13008,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 16 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp1418 select 0) == 0)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 41259(line=1050, offs=3) -- 42844(line=1086, offs=4)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 41261(line=1050, offs=3) -- 42846(line=1086, offs=4)");
         } else {
 /*emit2_branchlst rest-of-ATSINS*/          _Tmp1455 = (_Tmp1418 select 1);
            [ _Casefun, 17 ]  call _Casefun /*emit_Casefun2*/;
@@ -13014,7 +13020,7 @@ private _Tmplab_sqf = 0;
       };
       case 18 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp1457 select 0) == 1)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 41259(line=1050, offs=3) -- 42844(line=1086, offs=4)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 41261(line=1050, offs=3) -- 42846(line=1086, offs=4)");
         } else {
            [ _Casefun, 19 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -13097,7 +13103,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp1333 select 0) == 0)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 44059(line=1119, offs=7) -- 44582(line=1132, offs=8)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 44061(line=1119, offs=7) -- 44584(line=1132, offs=8)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -13187,7 +13193,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp1358 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 48377(line=1248, offs=24) -- 48621(line=1252, offs=48)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 48379(line=1248, offs=24) -- 48623(line=1252, offs=48)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -13337,7 +13343,7 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_beg
             case 3 : {
               if(/*ATSCKptriscons*/ (not(isNil { _Tmp1376 select 0 } )) ) then {
-                systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 51538(line=1327, offs=15) -- 53248(line=1371, offs=16)");
+                systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 51540(line=1327, offs=15) -- 53250(line=1371, offs=16)");
               } else {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
@@ -13495,7 +13501,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp1409 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 57030(line=1474, offs=16) -- 57156(line=1476, offs=80)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 57032(line=1474, offs=16) -- 57158(line=1476, offs=80)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -13533,7 +13539,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp1412 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 57430(line=1485, offs=16) -- 57551(line=1487, offs=75)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 57432(line=1485, offs=16) -- 57553(line=1487, offs=75)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -13668,7 +13674,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp1345__1 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 45678(line=1167, offs=7) -- 46183(line=1177, offs=41)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 45680(line=1167, offs=7) -- 46185(line=1177, offs=41)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
