@@ -401,12 +401,11 @@ ext_libarma3_systemChat = {
 ext_libarma3_isNil_arg = {
   params [ "_env"];
   private _is_nil = isNil { _env };
-  if _is_nil
-    tnen {
-      [ _is_nil, nil];
-    } else {
-      [ _is_nil, _env];
-    };
+  if (_is_nil) then {
+    [ _is_nil, nil];
+  } else {
+    [ _is_nil, _env];
+  };
 };
 //
 // ATSextcode_end()
@@ -7314,7 +7313,7 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_beg
             case 3 : {
               if(/*ATSCKptrisnull*/ ( isNil { _Tmp675 select 0 }) ) then {
-                systemChat( "ATSINScaseof_fail " + "/nix/store/pbwsfspb3l06y517qpld32yqnsa1nrj7-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 21036(line=967, offs=11) -- 21428(line=974, offs=12)");
+                systemChat( "ATSINScaseof_fail " + "/nix/store/j4xccxwyp70r9qry1f1xwkwg04kgq36r-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 21026(line=966, offs=11) -- 21418(line=973, offs=12)");
               } else {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
@@ -8255,7 +8254,7 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_beg
             case 3 : {
               if(/*ATSCKptrisnull*/ ( isNil { _Tmp782 select 0 }) ) then {
-                systemChat( "ATSINScaseof_fail " + "/nix/store/pbwsfspb3l06y517qpld32yqnsa1nrj7-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 38276(line=1715, offs=13) -- 38639(line=1725, offs=14)");
+                systemChat( "ATSINScaseof_fail " + "/nix/store/j4xccxwyp70r9qry1f1xwkwg04kgq36r-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 38266(line=1714, offs=13) -- 38629(line=1724, offs=14)");
               } else {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
@@ -8284,7 +8283,7 @@ private _Tmplab_sqf = 0;
                   // ATSbranchseq_beg
                   case 3 : {
                     if(/*ATSCKptrisnull*/ ( isNil { _Tmp785 select 0 }) ) then {
-                      systemChat( "ATSINScaseof_fail " + "/nix/store/pbwsfspb3l06y517qpld32yqnsa1nrj7-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 38461(line=1720, offs=15) -- 38625(line=1724, offs=51)");
+                      systemChat( "ATSINScaseof_fail " + "/nix/store/j4xccxwyp70r9qry1f1xwkwg04kgq36r-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 38451(line=1719, offs=15) -- 38615(line=1723, offs=51)");
                     } else {
                        [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
                     };
@@ -8698,7 +8697,7 @@ private _Tmplab_sqf = 0;
           };
           case 5 : {
             if(/*ATSCKptriscons*/ (not(isNil { _Tmp816 select 0 } )) ) then {
-              systemChat( "ATSINScaseof_fail " + "/nix/store/pbwsfspb3l06y517qpld32yqnsa1nrj7-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 43776(line=1961, offs=13) -- 44291(line=1973, offs=46)");
+              systemChat( "ATSINScaseof_fail " + "/nix/store/j4xccxwyp70r9qry1f1xwkwg04kgq36r-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 43766(line=1960, offs=13) -- 44281(line=1972, offs=46)");
             } else {
                [ _Casefun, 6 ]  call _Casefun /*emit_Casefun2*/;
             };
@@ -8711,7 +8710,7 @@ private _Tmplab_sqf = 0;
           // ATSbranchseq_beg
           case 7 : {
             if(/*ATSCKptriscons*/ (not(isNil { _Tmp815 select 0 } )) ) then {
-              systemChat( "ATSINScaseof_fail " + "/nix/store/pbwsfspb3l06y517qpld32yqnsa1nrj7-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 43776(line=1961, offs=13) -- 44291(line=1973, offs=46)");
+              systemChat( "ATSINScaseof_fail " + "/nix/store/j4xccxwyp70r9qry1f1xwkwg04kgq36r-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 43766(line=1960, offs=13) -- 44281(line=1972, offs=46)");
             } else {
                [ _Casefun, 8 ]  call _Casefun /*emit_Casefun2*/;
             };
@@ -8731,14 +8730,14 @@ private _Tmplab_sqf = 0;
           // ATSbranchseq_beg
           case 10 : {
             if(/*ATSCKptriscons*/ (not(isNil { _Tmp815 select 0 } )) ) then {
-              systemChat( "ATSINScaseof_fail " + "/nix/store/pbwsfspb3l06y517qpld32yqnsa1nrj7-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 43776(line=1961, offs=13) -- 44291(line=1973, offs=46)");
+              systemChat( "ATSINScaseof_fail " + "/nix/store/j4xccxwyp70r9qry1f1xwkwg04kgq36r-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 43766(line=1960, offs=13) -- 44281(line=1972, offs=46)");
             } else {
                [ _Casefun, 11 ]  call _Casefun /*emit_Casefun2*/;
             };
           };
           case 11 : {
             if(/*ATSCKptriscons*/ (not(isNil { _Tmp816 select 0 } )) ) then {
-              systemChat( "ATSINScaseof_fail " + "/nix/store/pbwsfspb3l06y517qpld32yqnsa1nrj7-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 43776(line=1961, offs=13) -- 44291(line=1973, offs=46)");
+              systemChat( "ATSINScaseof_fail " + "/nix/store/j4xccxwyp70r9qry1f1xwkwg04kgq36r-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 43766(line=1960, offs=13) -- 44281(line=1972, offs=46)");
             } else {
                [ _Casefun, 12 ]  call _Casefun /*emit_Casefun2*/;
             };
@@ -9719,7 +9718,7 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_beg
             case 3 : {
               if(/*ATSCKptrisnull*/ ( isNil { _Tmp928 select 0 }) ) then {
-                systemChat( "ATSINScaseof_fail " + "/nix/store/pbwsfspb3l06y517qpld32yqnsa1nrj7-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 66724(line=2885, offs=22) -- 67196(line=2895, offs=21)");
+                systemChat( "ATSINScaseof_fail " + "/nix/store/j4xccxwyp70r9qry1f1xwkwg04kgq36r-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 66714(line=2884, offs=22) -- 67186(line=2894, offs=21)");
               } else {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
@@ -9749,7 +9748,7 @@ private _Tmplab_sqf = 0;
                   // ATSbranchseq_beg
                   case 3 : {
                     if(/*ATSCKptrisnull*/ ( isNil { _Tmp932 select 0 }) ) then {
-                      systemChat( "ATSINScaseof_fail " + "/nix/store/pbwsfspb3l06y517qpld32yqnsa1nrj7-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 66973(line=2890, offs=31) -- 67175(line=2894, offs=32)");
+                      systemChat( "ATSINScaseof_fail " + "/nix/store/j4xccxwyp70r9qry1f1xwkwg04kgq36r-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 66963(line=2889, offs=31) -- 67165(line=2893, offs=32)");
                     } else {
                        [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
                     };
@@ -9900,7 +9899,7 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_beg
             case 3 : {
               if(/*ATSCKptrisnull*/ ( isNil { _Tmp944 select 0 }) ) then {
-                systemChat( "ATSINScaseof_fail " + "/nix/store/pbwsfspb3l06y517qpld32yqnsa1nrj7-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 68403(line=2932, offs=22) -- 68887(line=2942, offs=21)");
+                systemChat( "ATSINScaseof_fail " + "/nix/store/j4xccxwyp70r9qry1f1xwkwg04kgq36r-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 68393(line=2931, offs=22) -- 68877(line=2941, offs=21)");
               } else {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
@@ -9930,7 +9929,7 @@ private _Tmplab_sqf = 0;
                   // ATSbranchseq_beg
                   case 3 : {
                     if(/*ATSCKptrisnull*/ ( isNil { _Tmp948 select 0 }) ) then {
-                      systemChat( "ATSINScaseof_fail " + "/nix/store/pbwsfspb3l06y517qpld32yqnsa1nrj7-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 68657(line=2937, offs=31) -- 68866(line=2941, offs=32)");
+                      systemChat( "ATSINScaseof_fail " + "/nix/store/j4xccxwyp70r9qry1f1xwkwg04kgq36r-libarma3-sqf-dev/include/libarma3-sqf/DATS/libarma3.dats: 68647(line=2936, offs=31) -- 68856(line=2940, offs=32)");
                     } else {
                        [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
                     };
