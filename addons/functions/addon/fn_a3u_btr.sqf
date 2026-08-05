@@ -12447,7 +12447,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp1258 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 34355(line=825, offs=16) -- 35390(line=845, offs=19)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 34411(line=826, offs=16) -- 35446(line=846, offs=19)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -12488,7 +12488,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp1265 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 35739(line=855, offs=16) -- 35903(line=859, offs=17)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 35795(line=856, offs=16) -- 35959(line=860, offs=17)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -12608,7 +12608,7 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_beg
             case 3 : {
               if(/*ATSCKptrisnull*/ ( isNil { _Tmp1224 select 0 }) ) then {
-                systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 29819(line=745, offs=27) -- 33228(line=800, offs=30)");
+                systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 29819(line=745, offs=27) -- 33284(line=801, offs=30)");
               } else {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
@@ -12623,6 +12623,7 @@ private _Tmplab_sqf = 0;
 /*emit2_branchlst rest-of-ATSINS*/              _Tmp1233 = [ "displayName"] call /*emit_f0ide*/ text__pack_string;
 /*emit2_branchlst rest-of-ATSINS*/              _Tmp1228 = [ _Tmp1229, _Tmp1233] call /*emit_f0ide*/ libarma3__bindConfigC;
 /*emit2_branchlst rest-of-ATSINS*/              _Tmp1227 = [ _Tmp1228] call /*emit_f0ide*/ libarma3__getText;
+                systemChat( "_Tmp1227 " + str _Tmp1227);
 /*emit2_branchlst rest-of-ATSINS*/              _Casefunx2 /* emit_Casefunx */ = {
                 params [ "_Casefun", "_Tmplab"];
                 // switch(_Tmplab) {
@@ -12643,7 +12644,7 @@ private _Tmplab_sqf = 0;
                   // ATSbranchseq_beg
                   case 3 : {
                     if(/*ATSCKptrisnull*/ ( isNil { _Tmp1227 select 0 }) ) then {
-                      systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 30671(line=760, offs=39) -- 30849(line=762, offs=76)");
+                      systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 30727(line=761, offs=39) -- 30905(line=763, offs=76)");
                     } else {
                        [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
                     };
@@ -12961,7 +12962,7 @@ private _Tmplab_sqf = 0;
           // ATSbranchseq_beg
           case 3 : {
             if(/*ATSCKptrisnull*/ ( isNil { _Tmp1341 select 0 }) ) then {
-              systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 40897(line=979, offs=14) -- 40996(line=981, offs=55)");
+              systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 40953(line=980, offs=14) -- 41052(line=982, offs=55)");
             } else {
                [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
             };
@@ -13187,7 +13188,7 @@ private _Tmplab_sqf = 0;
       };
       case 11 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp1386 select 0) == 2)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 43318(line=1053, offs=5) -- 44607(line=1083, offs=6)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 43374(line=1054, offs=5) -- 44663(line=1084, offs=6)");
         } else {
            [ _Casefun, 12 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -13205,7 +13206,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 13 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp1368 select 0) == 1)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 43318(line=1053, offs=5) -- 44607(line=1083, offs=6)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 43374(line=1054, offs=5) -- 44663(line=1084, offs=6)");
         } else {
 /*emit2_branchlst rest-of-ATSINS*/          _Tmp1388 = (_Tmp1368 select 1);
            [ _Casefun, 14 ]  call _Casefun /*emit_Casefun2*/;
@@ -13478,7 +13479,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 4 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp1491 select 0) == 0)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 49375(line=1221, offs=3) -- 50960(line=1257, offs=4)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 49431(line=1222, offs=3) -- 51016(line=1258, offs=4)");
         } else {
 /*emit2_branchlst rest-of-ATSINS*/          _Tmp1516 = (_Tmp1491 select 1);
            [ _Casefun, 5 ]  call _Casefun /*emit_Casefun2*/;
@@ -13508,7 +13509,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 8 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp1491 select 0) == 0)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 49375(line=1221, offs=3) -- 50960(line=1257, offs=4)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 49431(line=1222, offs=3) -- 51016(line=1258, offs=4)");
         } else {
 /*emit2_branchlst rest-of-ATSINS*/          _Tmp1520 = (_Tmp1491 select 1);
            [ _Casefun, 9 ]  call _Casefun /*emit_Casefun2*/;
@@ -13537,7 +13538,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 12 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp1491 select 0) == 0)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 49375(line=1221, offs=3) -- 50960(line=1257, offs=4)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 49431(line=1222, offs=3) -- 51016(line=1258, offs=4)");
         } else {
 /*emit2_branchlst rest-of-ATSINS*/          _Tmp1524 = (_Tmp1491 select 1);
            [ _Casefun, 13 ]  call _Casefun /*emit_Casefun2*/;
@@ -13567,7 +13568,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 16 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp1491 select 0) == 0)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 49375(line=1221, offs=3) -- 50960(line=1257, offs=4)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 49431(line=1222, offs=3) -- 51016(line=1258, offs=4)");
         } else {
 /*emit2_branchlst rest-of-ATSINS*/          _Tmp1528 = (_Tmp1491 select 1);
            [ _Casefun, 17 ]  call _Casefun /*emit_Casefun2*/;
@@ -13579,7 +13580,7 @@ private _Tmplab_sqf = 0;
       };
       case 18 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp1530 select 0) == 1)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 49375(line=1221, offs=3) -- 50960(line=1257, offs=4)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 49431(line=1222, offs=3) -- 51016(line=1258, offs=4)");
         } else {
            [ _Casefun, 19 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -13662,7 +13663,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(not(/*ATSCKpat_con1(*/(_Tmp1406 select 0) == 0)) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 52175(line=1290, offs=7) -- 52698(line=1303, offs=8)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 52231(line=1291, offs=7) -- 52754(line=1304, offs=8)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -13752,7 +13753,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp1431 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 56493(line=1419, offs=24) -- 56737(line=1423, offs=48)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 56549(line=1420, offs=24) -- 56793(line=1424, offs=48)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -13902,7 +13903,7 @@ private _Tmplab_sqf = 0;
             // ATSbranchseq_beg
             case 3 : {
               if(/*ATSCKptriscons*/ (not(isNil { _Tmp1449 select 0 } )) ) then {
-                systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 59654(line=1498, offs=15) -- 61364(line=1542, offs=16)");
+                systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 59710(line=1499, offs=15) -- 61420(line=1543, offs=16)");
               } else {
                  [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
               };
@@ -14060,7 +14061,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp1482 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 65146(line=1645, offs=16) -- 65272(line=1647, offs=80)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 65202(line=1646, offs=16) -- 65328(line=1648, offs=80)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -14098,7 +14099,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp1485 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 65546(line=1656, offs=16) -- 65667(line=1658, offs=75)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 65602(line=1657, offs=16) -- 65723(line=1659, offs=75)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
@@ -14233,7 +14234,7 @@ private _Tmplab_sqf = 0;
       // ATSbranchseq_beg
       case 3 : {
         if(/*ATSCKptrisnull*/ ( isNil { _Tmp1418__1 select 0 }) ) then {
-          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 53794(line=1338, offs=7) -- 54299(line=1348, offs=41)");
+          systemChat( "ATSINScaseof_fail " + "/build/a3u-btr/src/DATS/fn_support.dats: 53850(line=1339, offs=7) -- 54355(line=1349, offs=41)");
         } else {
            [ _Casefun, 4 ]  call _Casefun /*emit_Casefun2*/;
         };
