@@ -1809,7 +1809,7 @@ ext_isBoss = {
 //
 ext_libarma3_HR_GRG_fnc_confirmPlacement = {
   params [ "_class_name" , "_on_placed", "_env", "_extra_text"];
-  [_class_name, _on_placed, _env, nil, nil, nil, _extra_text]
+  [_class_name, _on_placed, {[false]}, _env, nil, nil, nil, _extra_text]
     call HR_GRG_fnc_confirmPlacement;
 };
 //
