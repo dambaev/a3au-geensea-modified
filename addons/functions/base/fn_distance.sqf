@@ -1021,7 +1021,7 @@ do
             case Occupants:
             {
               if( !(alive _x)) then { continue; };
-              if( speed _x < 100) then {
+              if( speed _x < 300) then {
                 _occupants pushBackUnique _x;
               } else {
                 _occupants_planes pushBackUnique _x;
