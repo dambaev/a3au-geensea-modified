@@ -1030,7 +1030,7 @@ do
             case Invaders:
             {
               if( !(alive _x)) then { continue; };
-              if( speed _x < 100) then {
+              if( speed _x < 300) then {
                 _invaders pushBack _x;
               } else {
                 _invaders_planes pushBackUnique _x;
@@ -1039,7 +1039,7 @@ do
             case teamPlayer:
             {
               if( !(alive _x)) then { continue; };
-              if( speed _x < 100) then {
+              if( speed _x < 300) then {
                 _teamplayer pushBackUnique _x;
               } else {
                 _teamplayer_planes pushBackUnique _x;
