@@ -183,7 +183,7 @@ waitUntil {
   private _spawned_vehicles_count = count _vehiclesX;
   private _alive_vehicles_count = count (_vehiclesX select { alive _x});
   private _damaged_vehicles_count = count (_vehiclesX select {
-        ((getAllHitPointsDamage _x) select 2) select { _x >= 1}
+        count (((getAllHitPointsDamage _x) select 2) select { _x >= 1}) > 0
       }
     );
   private _next_reload_time = spawner getVariable [_timeKey, 0];
