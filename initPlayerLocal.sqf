@@ -130,7 +130,7 @@ call ADDON_fnc_trader_sellVehicleAddActionInit;
   };
 };
 
-spawn {
+[] spawn {
   waitUntil {
     sleep 1;
     not (isNull (uiNameSpace getVariable "H8erHUD"))
