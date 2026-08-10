@@ -236,17 +236,17 @@ private _processOccupantMarker = {
             private _should_be_aa_spawn = !_should_be_full_spawn;
             // if somebody green fast target is inside _AA_spawn_distance
             private _timeKey = _marker + "_AA_reload_after_time";
-            private _is_AA_reload_time_reached = !_should_be_full_spawn && {
+            private _is_AA_reload_time_reached = _should_be_aa_spawn && {
                 tierWar >= A3A_occupantPermanentSAMTierWar
               } && {
                 spawner getVariable [ _timeKey, 0] <= time
               };
-            private _spawn_by_fia_fast = !_should_be_aa_spawn && _is_AA_reload_time_reached;
-            _should_be_aa_spawn = _should_be_aa_spawn || _spawn_by_fia_fast;
-            private _spawn_by_players_fast = !_should_be_aa_spawn && _is_AA_reload_time_reached;
+            private _spawn_by_fia_fast = _should_be_aa_spawn;
+            _should_be_aa_spawn = _should_be_aa_spawn;
+            private _spawn_by_players_fast = _should_be_aa_spawn;
             _should_be_aa_spawn = _should_be_aa_spawn || _spawn_by_players_fast;
             // if somebody opfor fast target is inside _AA_spawn_distance
-            private _spawn_by_inv_fast = !_should_be_aa_spawn && _is_AA_reload_time_reached;
+            private _spawn_by_inv_fast = _should_be_aa_spawn;
             _should_be_aa_spawn = _should_be_aa_spawn || _spawn_by_inv_fast;
             // if somebody green is inside distanceSPWN
             // or somebody opfor is inside distanceSPWN2
