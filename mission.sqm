@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=681;
+		nextID=692;
 	};
 	class Camera
 	{
-		pos[]={6476.7422,90.817497,4896.5508};
-		dir[]={-0.50759166,-0.774625,0.37729535};
-		up[]={-0.62170357,0.63240314,0.46211573};
-		aside[]={0.59656996,-2.431625e-07,0.80259269};
+		pos[]={6472.9883,64.43,4847.5112};
+		dir[]={-0.11530791,-0.3993403,0.90952492};
+		up[]={-0.050225779,0.91680318,0.39617178};
+		aside[]={0.99206311,-1.7436832e-08,0.12577191};
 	};
 };
 binarizationWanted=0;
@@ -2410,15 +2410,16 @@ class Mission
 				class Item0
 				{
 					dataType="Marker";
-					position[]={3136.2546,6.1020274,8320.1348};
+					position[]={3141.7959,6.1020274,8361.7578};
 					name="seaport";
 					markerType="RECTANGLE";
 					type="rectangle";
 					colorName="ColorWEST";
-					a=134.67267;
-					b=91.436241;
+					a=93.148766;
+					b=85.193497;
 					angle=106.133;
 					id=162;
+					atlOffset=-0.35106659;
 				};
 				class Item1
 				{
@@ -2448,15 +2449,16 @@ class Mission
 				class Item3
 				{
 					dataType="Marker";
-					position[]={13042.294,3.1415946,12463.744};
+					position[]={13018.891,3.1415946,12467.959};
 					name="seaport_3";
 					markerType="RECTANGLE";
 					type="rectangle";
 					colorName="ColorWEST";
-					a=70;
-					b=53.636196;
+					a=66.152863;
+					b=44.256836;
 					angle=90.898567;
 					id=165;
+					atlOffset=-1.7287648;
 				};
 				class Item4
 				{
@@ -2526,21 +2528,21 @@ class Mission
 				class Item9
 				{
 					dataType="Marker";
-					position[]={19024.953,4.7209907,798.73157};
+					position[]={18939.887,10.169739,908.44019};
 					name="seaport_5";
 					markerType="RECTANGLE";
 					type="rectangle";
 					colorName="ColorWEST";
-					a=169.95082;
-					b=99.523102;
-					angle=237.63937;
+					a=125.16168;
+					b=83.536415;
+					angle=180.07205;
 					id=2563;
-					atlOffset=-0.1994071;
+					atlOffset=1.5397387;
 				};
 				class Item10
 				{
 					dataType="Marker";
-					position[]={19035.154,3.3072538,831.86798};
+					position[]={19028.832,4.219851,849.93408};
 					name="seap_5_vehicle";
 					markerType="RECTANGLE";
 					type="rectangle";
@@ -2549,19 +2551,21 @@ class Mission
 					b=10.466;
 					angle=242.40297;
 					id=2564;
+					atlOffset=4.7683716e-07;
 				};
 				class Item11
 				{
 					dataType="Marker";
-					position[]={3277.8965,4.1900001,3500.9792};
+					position[]={3263.0903,4.1900001,3456.271};
 					name="seaport_6";
 					markerType="RECTANGLE";
 					type="rectangle";
 					colorName="ColorWEST";
-					a=127.9091;
-					b=99.523102;
+					a=113.14637;
+					b=54.800373;
 					angle=0.055634234;
 					id=2582;
+					atlOffset=-0.47357559;
 				};
 				class Item12
 				{
@@ -2579,15 +2583,16 @@ class Mission
 				class Item13
 				{
 					dataType="Marker";
-					position[]={2885.6746,4.1900001,1969.3776};
+					position[]={2885.2844,4.1900001,2001.8937};
 					name="seaport_7";
 					markerType="RECTANGLE";
 					type="rectangle";
 					colorName="ColorWEST";
 					a=116.51926;
-					b=71.896042;
+					b=39.377537;
 					angle=359.31253;
 					id=2592;
+					atlOffset=-0.015482903;
 				};
 				class Item14
 				{
@@ -2646,7 +2651,7 @@ class Mission
 				};
 			};
 			id=161;
-			atlOffset=35.483463;
+			atlOffset=35.497669;
 		};
 		class Item8
 		{
