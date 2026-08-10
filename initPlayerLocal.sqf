@@ -130,6 +130,13 @@ call ADDON_fnc_trader_sellVehicleAddActionInit;
   };
 };
 
-["KEYS", true] call A3A_fnc_disableInfoBar;
+spawn {
+  waitUntil {
+    sleep 1;
+    not (isNull (uiNameSpace getVariable "H8erHUD"))
+  }
+  ["KEYS", true] call A3A_fnc_disableInfoBar;
+};
+
 []spawn compileFinal(preprocessFile"AFAR\init.sqf");
 
