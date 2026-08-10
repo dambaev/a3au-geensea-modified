@@ -130,5 +130,6 @@ call ADDON_fnc_trader_sellVehicleAddActionInit;
   };
 };
 
+["KEYS", true] call A3A_fnc_disableInfoBar;
 []spawn compileFinal(preprocessFile"AFAR\init.sqf");
 
