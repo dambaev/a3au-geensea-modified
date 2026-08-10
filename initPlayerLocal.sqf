@@ -19,15 +19,12 @@ waitUntil { sleep 1; !(isNil {A3A_faction_occ})};
 waitUntil { sleep 1; !(isNil {A3A_faction_inv})};
 if( A3A_faction_occ get "name" == "CDF") then {
   A3A_faction_occ set ["name", "ЧСО", false];
-  publicVariable "A3A_faction_occ";
 };
 if( A3A_faction_inv get "name" == "US Army") then {
   A3A_faction_inv set ["name", "Армия США", false];
-  publicVariable "A3A_faction_inv";
 };
 if( A3A_faction_riv get "name" == "CHDKZ") then {
-  A3A_faction_inv set ["name", "РДК", false];
-  publicVariable "A3A_faction_riv";
+  A3A_faction_riv set ["name", "РДК", false];
 };
 A3A_faction_reb set ["name", "ДВ РФ", false];
 
