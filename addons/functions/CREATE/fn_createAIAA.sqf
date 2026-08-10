@@ -7,13 +7,22 @@ if (!isServer and hasInterface) exitWith{};
 
 params ["_markerX"];
 
+if( isNil {ADDON_fnc_createAIAADebug}) then {
+  ADDON_fnc_createAIAADebug = false;
+  publicVariable "ADDON_fnc_createAIAADebug";
+};
+
 //Not sure if that ever happens, but it reduces redundance
 if(isNil {spawner getVariable _markerX }) exitWith {
-  ServerInfo_1("tried to call with %1, but spawner unaware?", _markerX);
+  if( ADDON_fnc_createAIAADebug) then {
+    ServerInfo_1("tried to call with %1, but spawner unaware?", _markerX);
+  };
 };
 if(spawner getVariable _markerX == 2) exitWith {};
 
-ServerInfo_1("Spawning AA on Base %1", _markerX);
+if( ADDON_fnc_createAIAADebug) then {
+  ServerInfo_1("Spawning AA on Base %1", _markerX);
+};
 
 private _vehiclesX = [];
 private _groups = [];
@@ -65,7 +74,9 @@ if (garrison getVariable [_markerX + "_samDestroyedCD", 0] == 0) then
 			};
 
       if( !isNil { _veh}) then {
-        ServerInfo_2("[%1]: created SAM %2", _markerX, typeOf _aaVehicle);
+        if( ADDON_fnc_createAIAADebug) then {
+          ServerInfo_2("[%1]: created SAM %2", _markerX, typeOf _aaVehicle);
+        };
       };
 			private _aaGroup = [_sideX, _aaVehicle] call A3A_fnc_createVehicleCrew;
 			[_aaVehicle, _sideX] call A3A_fnc_AIVEHinit;
@@ -129,7 +140,9 @@ if (random 10 < (tierWar + difficultyCoef)) then {
 			_veh setDir (_spawnParameter select 1);
 		};
     if( !isNil { _veh}) then {
-      ServerInfo_2("[%1]: created AA %2", _markerX, typeOf _veh);
+      if( ADDON_fnc_createAIAADebug) then {
+        ServerInfo_2("[%1]: created AA %2", _markerX, typeOf _veh);
+      };
     };
 
 		_groupVeh = [_sideX, _veh] call A3A_fnc_createVehicleCrew;
@@ -152,26 +165,52 @@ if (random 10 < (tierWar + difficultyCoef)) then {
   [_x, true] call A3U_fnc_setLock;
 } forEach _vehiclesX;
 
-ServerInfo_2("[%1]: DESPAWNAA wait loop", _markerX);
+if( ADDON_fnc_createAIAADebug) then {
+  ServerInfo_1("[%1]: DESPAWNAA wait loop", _markerX);
+};
 _timeKey = _markerX + "_AA_reload_after_time";
 if( count (_vehiclesX ) < 1 ) then {
-  ServerInfo_2("[%1]: unable to spawn AA units, delay next call", _markerX);
+  if( ADDON_fnc_createAIAADebug) then {
+    ServerInfo_1("[%1]: unable to spawn AA units, delay next call", _markerX);
+  };
   spawner setVariable [_timeKey, time + 300, true];
   spawner setVariable [ _markerX, DESPAWNAA, true];
+} else {
+  spawner setVariable [_timeKey, 0, true];
 };
 waitUntil {
-  sleep 1;
-  if( count (_vehiclesX select { alive _x} ) < 1 ) then {
+  sleep 10;
+  private _spawned_vehicles_count = count _vehiclesX;
+  private _alive_vehicles_count = count (_vehiclesX select { alive _x});
+  private _damaged_vehicles_count = count (_vehiclesX select {
+        ((getAllHitPointsDamage _x) select 2) select { _x >= 1}
+      }
+    );
+  private _next_reload_time = spawner getVariable [_timeKey, 0];
+  private _next_reload_time_reached = _next_reload_time > 0 && {
+      _next_reload_time <= time
+    };
+  if( _damaged_vehicles_count > 0 && _next_reload_time == 0) then {
+      if( ADDON_fnc_createAIAADebug) then {
+        ServerInfo_1("[%1]: some AA vehicles had been damaged, set resupply delay", _markerX);
+      };
+    spawner setVariable [_timeKey, time + 300, true];
+  };
+  if( _next_reload_time_reached || _alive_vehicles_count < 1 ) then {
     spawner setVariable [ _markerX, DESPAWNAA, true];
   };
   ( (isNil {spawner getVariable _markerX})
   || spawner getVariable _markerX == DESPAWNAA
   )
 };
-ServerInfo_1("[%1]: DESPAWN", _markerX);
+if( ADDON_fnc_createAIAADebug) then {
+  ServerInfo_1("[%1]: DESPAWN", _markerX);
+};
 
 if(isNil {spawner getVariable _markerX}) then {
-  ServerInfo_1("[%1]: spawner getVariable _markerX = nil ", _markerX);
+  if( ADDON_fnc_createAIAADebug) then {
+    ServerInfo_1("[%1]: spawner getVariable _markerX = nil ", _markerX);
+  };
 };
 _spawnsUsed call A3A_fnc_freeSpawnPositions;
 
@@ -192,6 +231,8 @@ if( _dead_vehicles_coef > 0) then {
 { deleteVehicle _x; } forEach _vehiclesX;
 
 
-ServerInfo_2("[%1]: DESPAWNED, dead vehicles coef %2", _markerX, _dead_vehicles_coef);
+if( ADDON_fnc_createAIAADebug) then {
+  ServerInfo_2("[%1]: DESPAWNED, dead vehicles coef %2", _markerX, _dead_vehicles_coef);
+};
 spawner setVariable [ _markerX, DESPAWN, true];
 
