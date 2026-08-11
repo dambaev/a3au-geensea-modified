@@ -227,7 +227,10 @@ if (!_hardCodedAntennas) then {
                   };
                   [ 0, 5000] call A3A_fnc_resourcesFIA;
                   private _any_occ_group = allGroups select {
-                         (count ( (units _x) select { [ _x ] call A3A_fnc_canFight } ) > 0)
+                         (count ( (units _x) select {
+                              ([ _x ] call A3A_fnc_canFight)
+                           && ( (_x getVariable ["A3A_canCallSupportAt", -1]) <= time)
+                         } ) > 0)
                       && (side _x == Occupants)
                     };
                   if( count _any_occ_group > 0) then {
@@ -292,7 +295,10 @@ if (count _posAntennas > 0) then {
               };
               [ 0, 5000] call A3A_fnc_resourcesFIA;
               private _any_occ_group = allGroups select {
-                     (count ( (units _x) select { [ _x ] call A3A_fnc_canFight } ) > 0)
+                     (count ( (units _x) select {
+                          ([ _x ] call A3A_fnc_canFight)
+                       && ( (_x getVariable ["A3A_canCallSupportAt", -1]) <= time)
+                     } ) > 0)
                   && (side _x == Occupants)
                 };
               if( count _any_occ_group > 0) then {
