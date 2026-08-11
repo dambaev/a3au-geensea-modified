@@ -71,8 +71,9 @@ while {true} do
     A3A_resourcesDefenceOcc = (A3A_resourcesDefenceOcc + _resRateDef) min _maxDef;
     A3A_resourcesAttackOcc = A3A_resourcesAttackOcc + _resRateAtk;
 
-    if ((!isNull theBoss) && A3A_resourcesAttackOcc > 0 && !bigAttackInProgress) then
+    if ((!isNull theBoss && isPlayer theBoss) && A3A_resourcesAttackOcc > 0 && !bigAttackInProgress) then
     {
+        ServerInfo_2( "theBoss now is %1 / %2", str theBoss, name theBoss);
         private _success = [Occupants] call A3A_fnc_chooseAttack;
         if (!_success) then {
             // something went wrong, don't spam
@@ -101,6 +102,7 @@ while {true} do
 
         if ((!isNull theBoss) && tierWar >= A3A_invaderAttackTierWar && A3A_resourcesAttackInv > 0 && !bigAttackInProgress) then
         {
+            ServerInfo_2( "theBoss now is %1 / %2", str theBoss, name theBoss);
             private _success = [Invaders] call A3A_fnc_chooseAttack;
             if (!_success) then {
                 // something went wrong, don't spam
