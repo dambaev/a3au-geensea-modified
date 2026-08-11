@@ -14,6 +14,9 @@ Info("patching A3A functions");
 ["A3A\addons\core\functions\Base\", "A3A_fnc_", [["rebuildRadioTower", "fn_rebuildRadioTower"]], true] call BIS_fnc_loadFunctions;
 ["A3A_fnc_rebuildRadioTower"] call BIS_fnc_recompile;
 
+["A3A\addons\core\functions\CREATE\", "A3A_fnc_", [["AIVEHinit", "fn_AIVEHinit"]], true] call BIS_fnc_loadFunctions;
+["A3A_fnc_AIVEHinit"] call BIS_fnc_recompile;
+
 ["A3A\addons\core\functions\CREATE\", "A3A_fnc_", [["attackHQ", "fn_attackHQ"]], true] call BIS_fnc_loadFunctions;
 ["A3A_fnc_attackHQ"] call BIS_fnc_recompile;
 
