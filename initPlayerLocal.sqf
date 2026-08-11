@@ -133,7 +133,9 @@ call ADDON_fnc_trader_sellVehicleAddActionInit;
 [] spawn {
   waitUntil {
     sleep 1;
-    not (isNull (uiNameSpace getVariable "H8erHUD"))
+    (    (!isNil {uiNameSpace getVariable "H8erHUD"})
+      && { !isNull (uiNameSpace getVariable "H8erHUD") }
+    )
   };
   ["KEYS", true] call A3A_fnc_disableInfoBar;
 };
