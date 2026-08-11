@@ -11,6 +11,9 @@ Info("patching A3A functions");
 ["A3A\addons\core\functions\Base\", "A3A_fnc_", [["localize_format_taskSetDescription", "fn_localize_format_taskSetDescription"]], true] call BIS_fnc_loadFunctions;
 ["A3A_fnc_localize_format_taskSetDescription"] call BIS_fnc_recompile;
 
+["A3A\addons\core\functions\Base\", "A3A_fnc_", [["rebuildRadioTower", "fn_rebuildRadioTower"]], true] call BIS_fnc_loadFunctions;
+["A3A_fnc_rebuildRadioTower"] call BIS_fnc_recompile;
+
 ["A3A\addons\core\functions\CREATE\", "A3A_fnc_", [["attackHQ", "fn_attackHQ"]], true] call BIS_fnc_loadFunctions;
 ["A3A_fnc_attackHQ"] call BIS_fnc_recompile;
 
@@ -133,6 +136,9 @@ Info("patching A3A functions");
 
 ["A3A\addons\core\functions\REINF\", "A3A_fnc_", [["buildMinefield", "fn_buildMinefield"]], true] call BIS_fnc_loadFunctions;
 ["A3A_fnc_buildMinefield"] call BIS_fnc_recompile;
+
+["A3A\addons\core\functions\init\", "A3A_fnc_", [["initZones", "fn_initZones"]], true] call BIS_fnc_loadFunctions;
+["A3A_fnc_initZones"] call BIS_fnc_recompile;
 
 ["A3A\addons\scrt\Outpost\", "A3A_fnc_", [["outpost_createAa", "fn_outpost_createAa"]], true] call BIS_fnc_loadFunctions;
 ["A3A_fnc_outpost_createAa"] call BIS_fnc_recompile;
