@@ -451,12 +451,22 @@ private _processFIAMarker = {
                   [_position, distanceSPWN, distanceSPWN] isNotEqualTo []
               };
             _is_should_spawn = _is_should_spawn || _spawn_by_occ_slow;
+            private _spawn_by_occ_fast = !_is_should_spawn && {
+                _occupants_planes inAreaArray
+                  [_position, distanceSPWN, distanceSPWN] isNotEqualTo []
+              };
+            _is_should_spawn = _is_should_spawn || _spawn_by_occ_fast;
             // or sombody opfor is inside distanceSPWN
             private _spawn_by_inv_slow = !_is_should_spawn && {
               _invaders inAreaArray
                 [_position, distanceSPWN, distanceSPWN] isNotEqualTo []
               };
             _is_should_spawn = _is_should_spawn || _spawn_by_inv_slow;
+            private _spawn_by_inv_fast = !_is_should_spawn && {
+                _invaders_planes inAreaArray
+                  [_position, distanceSPWN, distanceSPWN] isNotEqualTo []
+              };
+            _is_should_spawn = _is_should_spawn || _spawn_by_inv_fast;
 
             if (_is_should_spawn)
             then
