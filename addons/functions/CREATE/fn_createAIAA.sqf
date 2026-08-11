@@ -78,7 +78,7 @@ if (garrison getVariable [_markerX + "_samDestroyedCD", 0] == 0) then
           ServerInfo_2("[%1]: created SAM %2", _markerX, typeOf _aaVehicle);
         };
       };
-			private _aaGroup = [_sideX, _aaVehicle] call A3A_fnc_createVehicleCrew;
+			private _aaGroup = [_sideX, _aaVehicle, "AA"] call A3A_fnc_createVehicleCrew;
 			[_aaVehicle, _sideX] call A3A_fnc_AIVEHinit;
 
 			_soldiers append (units _aaGroup); //not sure if needed
@@ -145,7 +145,7 @@ if (random 10 < (tierWar + difficultyCoef)) then {
       };
     };
 
-		_groupVeh = [_sideX, _veh] call A3A_fnc_createVehicleCrew;
+		_groupVeh = [_sideX, _veh, "AA"] call A3A_fnc_createVehicleCrew;
 		{[_x,_markerX] call A3A_fnc_NATOinit} forEach units _groupVeh;
 		[_veh, _sideX] call A3A_fnc_AIVEHinit;
 		_soldiers append units _groupVeh;
