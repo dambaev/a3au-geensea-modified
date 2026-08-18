@@ -978,7 +978,7 @@ do
               if( _x != effectiveCommander _veh || !(alive _veh)) then {
                 continue;
               };
-              if ( (_veh isKindOf "Plane" && speed _veh > 600)
+              if ( (_veh isKindOf "Plane" && speed _veh > 300)
                  || ((!(_veh isKindOf "Plane"))
                      && _veh isKindOf "Air" && speed _veh > 150
                     )
@@ -996,7 +996,7 @@ do
               if( _x != effectiveCommander _veh || !(alive _veh)) then {
                 continue;
               };
-              if ( (_veh isKindOf "Plane" && speed _veh > 600)
+              if ( (_veh isKindOf "Plane" && speed _veh > 300)
                  || ((!(_veh isKindOf "Plane"))
                      && _veh isKindOf "Air" && speed _veh > 150
                     )
@@ -1014,7 +1014,7 @@ do
               if( _x != effectiveCommander _veh || !(alive _veh)) then {
                 continue;
               };
-              if ( (_veh isKindOf "Plane" && speed _veh > 600)
+              if ( (_veh isKindOf "Plane" && speed _veh > 300)
                  || ((!(_veh isKindOf "Plane"))
                      && _veh isKindOf "Air" && speed _veh > 150
                     )
@@ -1069,7 +1069,7 @@ do
             private _veh = vehicle _rp;
             if (_veh in _players_vehicles) then { continue };
             if ( !A3A_excludePlayersFromPlanes
-               && (_veh isKindOf "Plane" && speed _veh > 600)
+               && (_veh isKindOf "Plane" && speed _veh > 300)
                || ((!(_veh isKindOf "Plane"))
                    && _veh isKindOf "Air" && speed _veh > 150
                   )
