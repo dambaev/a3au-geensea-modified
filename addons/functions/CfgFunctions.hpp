@@ -9,6 +9,11 @@ class CfgFunctions
           file = "addons\functions\A3A";
           class A3A_patches {};
         };
+        class A3U
+        {
+          file = "addons\functions\A3U";
+          class A3U_patches {};
+        };
         class Dialogs
         {
             file = "addons\functions\Dialogs";
