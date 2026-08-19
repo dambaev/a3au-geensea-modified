@@ -158,3 +158,6 @@ Info("patching A3A functions");
 ["A3A\addons\scrt\Outpost\", "A3A_fnc_", [["outpost_createWatchpost", "fn_outpost_createWatchpost"]], true] call BIS_fnc_loadFunctions;
 ["A3A_fnc_outpost_createWatchpost"] call BIS_fnc_recompile;
 
+["A3A\addons\ultimate\functions\blackmarket\", "A3A_fnc_", [["hasRequirements", "fn_hasRequirements"]], true] call BIS_fnc_loadFunctions;
+["A3A_fnc_hasRequirements"] call BIS_fnc_recompile;
+
